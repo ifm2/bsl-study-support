@@ -1,5 +1,10 @@
 # Changelog
 
+## Topic icons and reference visibility - 23 October 2026
+
+- Added icons to the Level 2 topic menu, matching the Level 1 lesson menu style.
+- Entry IDs and workbook page references are now hidden by default. The toggle still shows them on demand.
+
 ## Practice flow and project introduction - 23 October 2026
 
 - Rewrote the README as an introduction to the project, its study modes, vocabulary, data maintenance and development checks.

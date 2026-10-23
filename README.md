@@ -18,7 +18,7 @@ Dictionary is the starting view. It shows vocabulary cards grouped by category, 
 
 - **Flashcard** loads a video when you press Play.
 - **Autoplay** plays the visible videos muted and looping, subject to your browser's playback limits.
-- **Show entry ID & workbook page** lets you hide reference details for a less cluttered view.
+- **Show entry ID & workbook page** is off by default for a less cluttered view. Switch it on when you want to see reference details.
 
 ## Practice mode
 

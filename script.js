@@ -14,6 +14,7 @@ const lessonsByLevel = {
  2:[...new Set(allVocabulary.filter(r => r.level==='2').map(r => r.topic))]
 };
 const lessonEmoji = ['👋','🔢','🌦️','📅','💬','🐾','🚌','👨‍👩‍👧‍👦','👕','🔄','🍽️','🏠','🧑‍🤝‍🧑','🎓'];
+const topicEmoji = {'Work Life':'💼','The Home':'🏠','Education':'🎓','People and Personalities':'👥','Hobbies and Activities':'🎨','Health and Fitness':'💪','Home Life':'🧺','Travel and Holidays':'✈️','Food and Drink':'🍽️'};
 let currentLevel=1, currentLesson=1, vocabulary=[], categories=[];
 let studyMode='dictionary', playbackMode='flashcard';
 let practiceCategory='', practiceRows=null, practiceIndex=0, answerRevealed=false;
@@ -32,8 +33,8 @@ function groupName(level,key) {return level===1 ? `Lesson ${key}: ${lessonsByLev
 function chooseLevel(level) {
  currentLevel=level; $('level-nav').value=String(level); $('lesson-nav').replaceChildren();
  lessonsByLevel[level].forEach((name,i) => {
-  const prefix=level===1 ? `${lessonEmoji[i]}  ` : '';
-  const option=element('option','',level===1 ? `${prefix}Lesson ${i+1}: ${name}` : name);
+  const prefix=level===1 ? `${lessonEmoji[i]}  ` : `${topicEmoji[name] || '📚'}  `;
+  const option=element('option','',level===1 ? `${prefix}Lesson ${i+1}: ${name}` : `${prefix}${name}`);
   option.value=level===1 ? String(i+1) : name; $('lesson-nav').append(option);
  });
  $('level-summary').textContent=`Level ${level} · Vocabulary library · ${lessonsByLevel[level].length} ${level===1 ? 'lessons' : 'topics'}`;
@@ -245,5 +246,5 @@ $('random-order').addEventListener('change',() => {resetPractice();render();});
 $('hide-english').addEventListener('change',() => {answerRevealed=false;render();});
 $('show-details').addEventListener('change',() => {document.querySelectorAll('.entry-meta').forEach(meta => {meta.hidden=!$('show-details').checked;});});
 // Reset restored browser form values on each page load.
-$('show-details').checked=true;$('random-order').checked=true;$('hide-english').checked=true;
+$('show-details').checked=false;$('random-order').checked=true;$('hide-english').checked=true;
 chooseLevel(1);

@@ -15,7 +15,10 @@ const root=path.resolve(__dirname,'..');
  await page.goto(pathToFileURL(path.join(root,'index.html')).href);
  assert.equal(await page.locator('#study-dictionary').getAttribute('aria-pressed'),'true');
  assert.equal(await page.locator('#mode-flashcard').getAttribute('aria-pressed'),'true');
- for(const id of ['show-details','random-order','hide-english'])assert.equal(await page.isChecked('#'+id),true);
+ assert.equal(await page.isChecked('#show-details'),false);
+ assert.equal(await page.locator('.entry-meta:visible').count(),0);
+ await page.check('#show-details');assert.equal(await page.locator('.entry-meta:visible').count(),39);
+ for(const id of ['random-order','hide-english'])assert.equal(await page.isChecked('#'+id),true);
  assert.equal(await page.locator('video').count(),0);assert.equal(requests,0);
  assert.equal(await page.locator('.support-link a').getAttribute('href'),'https://ko-fi.com/S6S24KS6O');
  assert.equal(await page.locator('.support-link a').getAttribute('target'),'_blank');
@@ -30,7 +33,9 @@ const root=path.resolve(__dirname,'..');
  }
  await page.selectOption('#level-nav','2');
  const topics=[...new Set(data.lesson_vocabulary.filter(r=>r.level==='2').map(r=>r.topic))];
- assert.deepEqual(await page.locator('#lesson-nav option').allTextContents(),topics);
+ const topicIcons=['💼','🏠','🎓','👥','🎨','💪','🧺','✈️','🍽️'];
+ assert.deepEqual(await page.locator('#lesson-nav option').allTextContents(),topics.map((topic,i)=>`${topicIcons[i]}  ${topic}`));
+ assert.deepEqual(await page.locator('#lesson-nav option').evaluateAll(options=>options.map(o=>o.value)),topics);
  assert.equal(await page.locator('label[for="lesson-nav"]').innerText(),'Choose topic');
  for(const topic of topics) {
   await page.selectOption('#lesson-nav',topic);
@@ -163,7 +168,9 @@ const root=path.resolve(__dirname,'..');
   return {stopped,retained,released:video.paused&&!video.isConnected&&!video.children.length};
  });assert.deepEqual(cleanup,{stopped:true,retained:true,released:true});
  await page.reload();assert.equal(await page.locator('#study-dictionary').getAttribute('aria-pressed'),'true');
- for(const id of ['show-details','random-order','hide-english'])assert.equal(await page.isChecked('#'+id),true);
+ assert.equal(await page.isChecked('#show-details'),false);
+ assert.equal(await page.locator('.entry-meta:visible').count(),0);
+ for(const id of ['random-order','hide-english'])assert.equal(await page.isChecked('#'+id),true);
  assert.deepEqual(errors,[]);
  console.log('PASS: all dictionary data/menus; defaults; MP4 and fallback; Dictionary modes; Practice autoplay/canplay; rating-only advance and cleanup; stable complete shuffle; reveal; independent settings; single/multi-card distributions; topic/category headings; restart/session behavior; cross-set search; responsive cards/results 320/390/768/1280; no JS errors. External media intentionally aborted.');
  }finally{await browser.close();}
