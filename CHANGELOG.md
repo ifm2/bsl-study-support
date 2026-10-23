@@ -22,7 +22,7 @@
 - Matched dictionary meanings where available, accepted explicit plural normalisation and suitable context-specific pages, and rejected unrelated meanings.
 - Added an unresolved-video checklist. No speculative or composite URLs and no extra variants were generated.
 - Preserved all existing vocabulary, IDs, Level 1 videos, topics, practice scoring and search behavior.
-- Kept exactly three CSV masters. No workbook PDFs included. No live GitHub repository changed.
+- Kept exactly three CSV masters
 
 ## v3 changelog - 23 October 2026
 
@@ -33,7 +33,6 @@
 - Added search suggestions linking to matching lessons/topics in either level when the current set has no match.
 - Preserved Level 1 data, stable IDs, selected videos, default settings and Dictionary playback features.
 - Kept exactly three CSV masters. No new signing URLs or video variants were invented; all candidates remain Unverified. 282 Level 2 memberships have a candidate; 531 await video and are excluded from Practice.
-- No workbook PDFs included and no live repository changes.
 
 ## v2 changelog - 22 October 2026
 
