@@ -76,6 +76,16 @@ The generator validates keys, references and fields, then updates `data/data.js`
 
 The site consists of plain HTML, CSS and JavaScript. GitHub Pages can serve it directly from the repository root.
 
+### Local video verification
+
+Use `VerifyVideo.html` to review unverified videos, replace a selected video URL, or assign a candidate to an entry awaiting video. Run the local editor server from the repository root:
+
+```text
+python tools/verify_video_server.py
+```
+
+Then open `http://127.0.0.1:8000/VerifyVideo.html`. Saving writes the CSV masters and regenerates `data/data.js` and `data/data.json`; each edit is recorded in `data/video_edit_log.csv`. Keep this local tool off a public server. The preview supports direct video URLs such as MP4; some hosts block playback when embedded.
+
 ## Development checks
 
 ```text
