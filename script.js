@@ -76,7 +76,7 @@ function makeVideo(row,autoplay,hiddenAnswer) {
  const showError=() => {if(video.isConnected) video.replaceWith(element('div','video-error','Video unavailable — try the dictionary link below.'));};
  video.addEventListener('error',showError);source.addEventListener('error',showError);
  if(autoplay) video.addEventListener('canplay',() => {
-  if(studyMode==='dictionary' && playbackMode==='autoplay' && video.isConnected) video.play().catch(() => {});
+  if((studyMode==='practice' || playbackMode==='autoplay') && video.isConnected) video.play().catch(() => {});
  },{once:true});
  return video;
 }
@@ -88,9 +88,9 @@ function makeTile(row,practice=false) {
  const pages=row.source_pages || row.source_page;
  const meta=element('small','entry-meta',`#${row.entry_id} · Workbook page${pages.includes(';') ? 's' : ''} ${pages}`);
  meta.hidden=!$('show-details').checked;titleRow.append(title,meta);
- const player=element('div','player');const autoplay=!practice && playbackMode==='autoplay';
+ const player=element('div','player');const autoplay=practice || playbackMode==='autoplay';
  if(!row.video_url) player.append(element('p','video-error','Awaiting video'));
- else if(autoplay) player.append(makeVideo(row,true,false));
+ else if(autoplay) player.append(makeVideo(row,true,hiddenAnswer));
  else {
   const launch=element('button','flashcard-launch');launch.type='button';
   launch.setAttribute('aria-label',hiddenAnswer ? 'Play practice sign video' : `Play ${row.word} sign video`);
@@ -112,20 +112,12 @@ function makeTile(row,practice=false) {
   const confidence=element('fieldset','confidence');
   confidence.append(element('legend','','How did you do?'));
   const choices=element('div','confidence-choices');
-  for(const [value,label] of [[0,'Not yet'],[0.5,'Almost'],[1,'Got it']]) {
+  for(const [value,label] of [[0,'Not Yet'],[0.5,'Almost'],[1,'Got it']]) {
    const button=element('button','confidence-button',label);button.type='button';
    button.dataset.score=String(value);
-   button.addEventListener('click',() => {
-    ratings.set(row.entry_id,value);updateRatings();renderScore();
-   });choices.append(button);
+   button.addEventListener('click',() => ratePractice(row,value),{once:true});choices.append(button);
   }
   confidence.append(choices);
-  const updateRatings=() => {
-   choices.querySelectorAll('button').forEach(button => {
-    const selected=ratings.get(row.entry_id)===Number(button.dataset.score);
-    button.classList.toggle('active',selected);button.setAttribute('aria-pressed',String(selected));
-   });
-  };
   const updateAnswer=() => {
    const hidden=$('hide-english').checked && !answerRevealed;
    title.textContent=hidden ? 'What is this sign?' : row.word;dictionary.hidden=hidden;
@@ -136,7 +128,7 @@ function makeTile(row,practice=false) {
    player.querySelector('button')?.setAttribute('aria-label',hidden ? 'Play practice sign video' : `Play ${row.word} sign video`);
   };
   reveal.addEventListener('click',() => {answerRevealed=true;updateAnswer();});
-  updateRatings();updateAnswer();tile.append(answer,reveal,confidence);
+  updateAnswer();tile.append(answer,reveal,confidence);
  }
  tile.append(bottom);return tile;
 }
@@ -172,20 +164,19 @@ function renderScore() {
  if(studyMode!=='practice' || !practiceRows?.length) return;
  const rated=practiceRows.filter(r => ratings.has(r.entry_id)).length;
  $('practice-progress').textContent=`${rated} of ${practiceRows.length} cards rated`;
- if(practiceIndex!==practiceRows.length-1) return;
+ if(practiceIndex<practiceRows.length || rated!==practiceRows.length) return;
  panel.hidden=false;
- if(rated===practiceRows.length) {
-  const total=practiceRows.reduce((sum,row) => sum+ratings.get(row.entry_id),0);
-  panel.append(element('h3','',`Your score: ${total} / ${practiceRows.length} (${Math.round(total/practiceRows.length*100)}%)`));
-  panel.append(element('p','','Not yet = 0 · Almost = ½ · Got it = 1. This is your confidence score.'));
- } else {
-  panel.append(element('h3','','Finish rating your cards'));
-  panel.append(element('p','',`${practiceRows.length-rated} card${practiceRows.length-rated===1 ? '' : 's'} still need a rating before your score is ready.`));
-  const missing=element('button','answer-button','Go to next unrated card');missing.type='button';
-  missing.addEventListener('click',() => {
-   practiceIndex=practiceRows.findIndex(r => !ratings.has(r.entry_id));answerRevealed=false;render();
-  });panel.append(missing);
+ const label=groupName(currentLevel,currentLesson)+(practiceCategory ? ': '+practiceCategory : '');
+ const heading=element('h3','',`Your Score for ${label}`);heading.tabIndex=-1;panel.append(heading);
+ const breakdown=element('dl','score-breakdown');
+ for(const [value,label] of [[0,'Not Yet'],[0.5,'Almost'],[1,'Got it']]) {
+  const count=practiceRows.filter(row => ratings.get(row.entry_id)===value).length;
+  const percentage=Number((count/practiceRows.length*100).toFixed(1));
+  const result=element('div','score-result');result.dataset.rating=String(value);
+  result.append(element('dt','',label),element('dd','score-percentage',`${percentage}%`),element('dd','score-count',`${count} of ${practiceRows.length} ${practiceRows.length===1 ? 'card' : 'cards'}`));
+  breakdown.append(result);
  }
+ panel.append(breakdown);
  const restart=element('button','answer-button','Restart practice');restart.type='button';
  restart.addEventListener('click',() => {ratings.clear();practiceIndex=0;answerRevealed=false;render();});panel.append(restart);
 }
@@ -210,16 +201,15 @@ function renderOtherMatches(rows) {
 }
 function render() {
  stopPlayers();content.replaceChildren();const rows=searchRows();renderCategories(rows);
- $('practice-navigation').hidden=true;
+ $('practice-position').hidden=true;
  $('practice-progress').textContent='';
  if(studyMode==='practice') {
   if(practiceRows===null) startPractice(rows);
   const excluded=rows.filter(r => (!practiceCategory || r.category===practiceCategory) && !canPractice(r)).length;
-  $('stats').textContent=`${practiceRows.length} practice cards${excluded ? ` · ${excluded} entries without an available video excluded` : ''}`;
-  if(practiceRows.length) {
+  $('stats').textContent=`${practiceRows.length} practice ${practiceRows.length===1 ? 'card' : 'cards'}${excluded ? ` · ${excluded} entries without an available video excluded` : ''}`;
+  if(practiceRows.length && practiceIndex<practiceRows.length) {
    const stage=element('div','practice-stage');stage.append(makeTile(practiceRows[practiceIndex],true));content.append(stage);
-   $('practice-navigation').hidden=false;$('practice-position').textContent=`Card ${practiceIndex+1} of ${practiceRows.length}`;
-   $('practice-prev').disabled=practiceIndex===0;$('practice-next').disabled=practiceIndex===practiceRows.length-1;
+   $('practice-position').hidden=false;$('practice-position').textContent=`Card ${practiceIndex+1} of ${practiceRows.length}`;
   }
  } else {
   $('stats').textContent=`${rows.length} of ${vocabulary.length} vocabulary entries`;
@@ -229,7 +219,8 @@ function render() {
    const grid=element('div','grid');matching.forEach(r => grid.append(makeTile(r)));section.append(grid);content.append(section);
   }
  }
- if(!content.children.length) {
+ const finished=studyMode==='practice' && practiceRows?.length && practiceIndex>=practiceRows.length;
+ if(!content.children.length && !finished) {
   const message=!vocabulary.length ? 'No vocabulary entries are provided for this lesson in the current dataset.'
    : studyMode==='practice' && rows.length ? 'No practice videos available in this set yet. View these entries in Dictionary.'
    : 'No signs found in this set. Try a different search or category.';
@@ -237,9 +228,11 @@ function render() {
  }
  renderOtherMatches(rows);renderScore();
 }
-function movePractice(delta) {
- const next=practiceIndex+delta;if(!practiceRows || next<0 || next>=practiceRows.length) return;
- practiceIndex=next;answerRevealed=false;render();
+function ratePractice(row,value) {
+ if(studyMode!=='practice' || practiceRows?.[practiceIndex]?.entry_id!==row.entry_id || ratings.has(row.entry_id)) return;
+ ratings.set(row.entry_id,value);practiceIndex++;answerRevealed=false;render();
+ const focusTarget=content.querySelector('.answer-button:not([hidden]),.confidence-button') || $('practice-score').querySelector('h3');
+ focusTarget?.focus({preventScroll:true});
 }
 $('level-nav').addEventListener('change',() => chooseLevel(Number($('level-nav').value)));
 $('lesson-nav').addEventListener('change',() => chooseLesson(currentLevel===1 ? Number($('lesson-nav').value) : $('lesson-nav').value));
@@ -251,7 +244,6 @@ $('mode-autoplay').addEventListener('click',() => setPlaybackMode('autoplay'));
 $('random-order').addEventListener('change',() => {resetPractice();render();});
 $('hide-english').addEventListener('change',() => {answerRevealed=false;render();});
 $('show-details').addEventListener('change',() => {document.querySelectorAll('.entry-meta').forEach(meta => {meta.hidden=!$('show-details').checked;});});
-$('practice-prev').addEventListener('click',() => movePractice(-1));$('practice-next').addEventListener('click',() => movePractice(1));
 // Reset restored browser form values on each page load.
 $('show-details').checked=true;$('random-order').checked=true;$('hide-english').checked=true;
 chooseLevel(1);

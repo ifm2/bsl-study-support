@@ -62,3 +62,5 @@ button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{ou
 .tile-heading small{white-space:normal;overflow-wrap:anywhere}
 
 .support-link{margin-bottom:18px}.support-link a{display:inline-flex;max-width:100%}.support-link img{display:block;height:36px;width:auto;max-width:100%;object-fit:contain}
+
+.practice-position{text-align:center;max-width:480px;margin:18px auto;color:#345861;font-size:13px}.score-breakdown{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:20px 0}.score-result{background:white;border-radius:10px;padding:16px 8px}.score-result dt{font-size:14px;font-weight:700}.score-result dd{margin:8px 0 0}.score-percentage{font-size:28px;font-weight:800;color:#0b6265}.score-count{font-size:12px;color:#60767d}.practice-score h3{overflow-wrap:anywhere}@media(max-width:380px){.score-breakdown{gap:6px}.score-result{padding:14px 4px}.score-result dt{font-size:12px}.score-percentage{font-size:24px}.score-count{font-size:10px}}

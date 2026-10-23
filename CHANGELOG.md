@@ -1,5 +1,13 @@
 # Changelog
 
+## Practice flow and project introduction - 23 October 2026
+
+- Rewrote the README as an introduction to the project, its study modes, vocabulary, data maintenance and development checks.
+- Practice videos now autoplay muted and looping, independently of Dictionary playback settings.
+- Every confidence choice records a rating and advances to the next card. Removed Previous and Next buttons.
+- Replaced the overall weighted score with separate Not Yet, Almost and Got it percentages and counts.
+- Results now name the selected lesson/topic and category, omitting the category suffix for All categories. Videos stop when the set is complete.
+
 ## v4 changelog - 23 October 2026
 
 - Added the requested Ko-fi button in the footer.

@@ -1,68 +1,92 @@
-# BSL Support Dictionary v4
+# BSL Study Support
 
-Extract the ZIP and open `index.html`. No build or server is needed to browse. Direct signing videos require an internet connection.
+BSL Study Support is a video dictionary and revision tool for learners of British Sign Language. It brings vocabulary into one place so you can look up signs, revisit course material and practise recognising signs at your own pace.
 
-## Changes in this version
+Level 1 vocabulary follows the course's lessons. Level 2 vocabulary is organised by topic, combining related material and recaps from different workbook sections. Each set is divided into smaller categories so you can focus on what you want to study.
 
-- Level 1 keeps its original 14 lessons and all 852 vocabulary occurrences, IDs, ordering, page references, labels, notes and selected videos.
-- Level 2 now uses nine topic options rather than lessons: Work Life, The Home, Education, People and Personalities, Hobbies and Activities, Health and Fitness, Home Life, Travel and Holidays, Food and Drink.
-- Imported 813 Level 2 topic/category memberships from the reviewed workbook extraction. All slash-separated Level 2 labels were split into individual entries, then duplicate labels within the same topic/category merged. Words may belong to more than one topic/category while sharing a deduplicated sign record.
-- NMF markers, source wording and all printed page references are retained as data. Display words omit the source's NMF/count/spelling reminders. The supplied blank pages are intentional, as confirmed by the user; they are not treated as missing content. No Shopping and Spending vocabulary list was extracted from those blank pages, and no entries or placeholder lessons have been invented.
-- Practice reveals the answer at the top of the card and in larger text below the video, immediately above the confidence buttons. The Reveal button disappears once used; there is no per-card Hide button. Moving cards conceals English again when Hide English is enabled.
-- Confidence choices are Not yet (0), Almost (0.5), Got it (1). Every card must have one rating. At the last card, a completed set shows total points and percentage; skipped cards are identified with a button to the next unrated card. Previous/Next allows rating corrections without double-counting. Restart clears ratings and keeps the same order.
-- No local search match now shows buttons to matching lessons/topics in either level. Clicking one keeps the search query and opens that set.
+## Getting started
 
-## Video coverage and Ko-fi
+Download or clone this repository and open `index.html` in your browser. There is no build step, account or installation required to browse the dictionary. An internet connection is needed to load the signing videos and Ko-fi image.
 
-A Ko-fi support button in the footer uses the requested image and https://ko-fi.com/S6S24KS6O. It opens a new tab with noopener/noreferrer. No donation is made automatically.
+Choose a level, then a lesson or topic. Use the category links to find a section, or search for an English word. If the current set has no match, the site shows links to matching lessons and topics elsewhere in the dictionary.
 
-Every one of the 531 previously unassigned Level 2 memberships was included in the lookup: these represented 467 distinct sign records. Actual SignBSL pages supplied 406 new selected video records, reused across 470 memberships. Level 2 now has 752 memberships with candidates; 61 remain Awaiting video and are excluded from Practice.
+## Dictionary mode
 
-For every newly assigned video, its URL was extracted from an actual source page and returned HTTP 200 or 206 with an MP4 file header. Its source-page URL, lookup word, check timestamp and HTTP result are recorded in `data/video_lookup_audit.json`. Dictionary links on new candidates open that source page, including context-specific lookups.
+Dictionary is the starting view. It shows vocabulary cards grouped by category, with each entry's English word, selected video, source link and verification status.
 
-There are now 969 video records. All remain Unverified for correct signing: a responding MP4 is not a linguistic verification. Original video records, IDs and assignments are unchanged. No speculative URL patterns, composite phrases or unobserved alternative variants were added. One sourced candidate per resolved new sign was imported.
+- **Flashcard** loads a video when you press Play.
+- **Autoplay** plays the visible videos muted and looping, subject to your browser's playback limits.
+- **Show entry ID & workbook page** lets you hide reference details for a less cluttered view.
 
-The 61 remaining entries include words whose dictionary page has no video, phrases/ranges and proper names without a suitable standalone clip, and cases where the available sign means something different. For example, the underground-railway video was not assigned to Subway in the food topic. Some equivalent-term follow-up requests returned HTTP 403. See `REMAINING_VIDEOS.md` for the word-by-word checklist and `VIDEO_LOOKUP_REPORT.md` for the method.
+## Practice mode
 
-Remote availability can change. The checks read the MP4 header rather than playing every full clip. Signing accuracy, rights and uninterrupted playback have not been verified. Existing videos request direct MP4 playback, muted, looping and inline; actual playback and simultaneous Autoplay depend on the host/browser.
+Practice shows one sign at a time. Select a category or leave **All categories** selected to practise the whole lesson or topic. Search can also narrow the set.
 
-## Defaults and sessions
+1. Watch the video, which plays automatically, muted and looping. If your browser blocks autoplay, use its Play control.
+2. With **Hide English** enabled, guess the word and press **Reveal answer**. The answer appears above and below the video.
+3. Choose **Not Yet**, **Almost** or **Got it**. Each choice records your rating and automatically moves to the next card.
+4. After the final card, see the percentage of cards in each of the three groups. The results heading names the lesson or topic and, when selected, the category.
 
-Level 1, Lesson 1, Dictionary and Flashcard are the defaults. Show entry ID & workbook page is ON. In Practice, Random order and Hide English start ON. The two practice settings remain independent.
+There are no Previous or Next buttons. Restart practice at the end to try the same set again. The results describe the ratings you selected; the site does not assess your signing or check answers automatically.
 
-A practice session is the selected level/set, search and category. Changing one of these or Random order starts a fresh deck and clears ratings. Revealing, rating, toggling details, switching playback modes, or visiting Dictionary preserves the current deck order and ratings. Reveal and confidence clicks do not stop the active video. Navigating cards or leaving the current view stops/releases its player. Refresh starts over; ratings are kept only in the current page session.
+**Random order** and **Hide English** start on and can be changed independently. The shuffled order stays fixed while you work through the set. Changing the lesson, topic, category, search or Random order starts a fresh practice session. Switching between Dictionary and Practice keeps your place and recorded ratings. Refreshing the page clears the session.
 
-## Three CSV masters
+Entries without an assigned video remain visible in Dictionary but are excluded from Practice. If a remote video fails to load, the card provides a dictionary source link after its answer is revealed.
 
-`data/signs.csv` holds deduplicated word/meaning records with permanent sign_id.
+## Vocabulary organisation
 
-`data/videos.csv` holds the existing candidates, permanent video_id, sign ownership, source, URL, priority and per-video verification status.
+| Level | Organisation |
+| --- | --- |
+| Level 1 | 14 course lessons, with vocabulary kept in permanent workbook order. Lesson 14 has no explicit vocabulary entries in the supplied dataset. |
+| Level 2 | Work Life; The Home; Education; People and Personalities; Hobbies and Activities; Health and Fitness; Home Life; Travel and Holidays; Food and Drink. |
 
-`data/lesson_vocabulary.csv` retains its existing filename for compatibility. Its new columns are:
+Words can appear in more than one lesson, topic or category. These are separate study memberships that can share the same sign and video record.
 
-- topic: blank for Level 1; the topic name for Level 2. Level 2 lesson is blank.
-- nmf: TRUE where the source explicitly marks NMF, otherwise FALSE. FALSE does not imply a sign never uses a non-manual feature.
-- source_pages: all printed page references, separated by semicolons. source_page remains the first page for backwards compatibility.
+Workbook page references and original wording are retained for checking. Level 2 display words omit variation counts and fingerspelling reminders. Explicit Non-Manual Feature (NMF) reminders are stored in an `nmf` field rather than included in the displayed word. Slash-separated Level 2 labels are stored as individual entries.
 
-All original fields and IDs on Level 1 rows remain intact. New numeric entry/order IDs start at 853; do not renumber existing records. A blank selected_video_id means no candidate has been assigned. Do not invent a URL to fill that gap. Assign a sourced candidate to its sign in videos.csv, then select that video explicitly on the relevant occurrence rows.
+## Video sources and limitations
 
-After CSV edits run `python tools/generate_data.py`. It validates all three masters and regenerates `data/data.js` and `data/data.json`. The browser loads the generated JavaScript so local file browsing works. Generated files and test fixtures are not extra masters.
+The dictionary uses direct MP4 links from [SignBSL](https://www.signbsl.com/) and credits the selected source through each card's dictionary link. Video rights remain with their respective owners. This project is an independent study aid to use alongside your course and tutor.
 
-The split vocabulary review CSV is delivered separately from the website package so the website keeps exactly three CSV masters.
+Videos marked **Unverified** have not been confirmed for signing accuracy or regional suitability. A successful URL check does not establish that the clip is the correct sign for every context. Remote availability can change. Entries marked **Awaiting video** do not yet have a suitable selected candidate.
 
-## Replace GitHub files when ready
+See [remaining video lookups](REMAINING_VIDEOS.md) for unresolved entries and [the lookup report](VIDEO_LOOKUP_REPORT.md) for source-checking details. Recorded technical checks are in `data/video_lookup_audit.json`. Workbook PDFs are not distributed with the project.
 
-1. Back up/download the current repository. Note its existing GitHub Pages publishing folder (root or docs).
-2. Extract this ZIP and preview index.html from the inner bsl-support-dictionary-v4 folder.
-3. On a review branch, copy the CONTENTS of that inner folder into the existing publishing folder. Replace index.html, script.js, style.css and the complete data folder together. Do not add an extra nested site folder. Preserve repository configuration, CNAME/custom domain and unrelated files.
-4. Keep the three data CSVs and both generated data files together. tools, tests, README and reports can be included for maintenance. Test fixtures/screenshots are optional for the published page. Do not upload workbook PDFs or use the review CSV as a fourth master.
-5. Review the diff and try Level 1, Level 2 topics, Practice reveal/scoring and a cross-set search. Merge/publish only when approved. After deployment, refresh and test remote MP4 playback on your device.
+## Maintaining the data
 
-This task did not modify or publish the live GitHub repository.
+The three editable CSV masters are:
 
-## Tests
+| File | Purpose |
+| --- | --- |
+| `data/signs.csv` | Deduplicated words/meanings, identified by permanent `sign_id`. |
+| `data/videos.csv` | Sourced video candidates, sign ownership, permanent `video_id`, priority and per-video verification status. |
+| `data/lesson_vocabulary.csv` | Study memberships, linking an entry to a sign, selected video, level, lesson/topic, category, source wording and pages. |
 
-- `python -m unittest discover -s tests -v`
-- `node tests/browser.cjs` (Playwright and installed Microsoft Edge required; set NODE_PATH to your Playwright packages if necessary).
+The vocabulary file keeps its original name for compatibility. Level 1 rows use `lesson` and leave `topic` blank; Level 2 rows use `topic` and leave `lesson` blank. `source_pages` records all printed page references, while `source_page` retains the first reference. `nmf` is TRUE only where explicitly marked in the source; FALSE does not mean the sign never uses a non-manual feature.
 
-Browser tests abort external media to exercise fallback behavior. They validate source selection, playback settings and cleanup, not successful remote signing playback. See VALIDATION_REPORT.md for coverage. The separate source lookup checked the new remote MP4 headers; UI regression tests still abort remote media.
+Keep all existing IDs permanent. A blank `selected_video_id` means no candidate is assigned. Add only sourced video URLs and keep their verification status accurate.
+
+After editing the CSVs, run:
+
+```text
+python tools/generate_data.py
+```
+
+The generator validates keys, references and fields, then updates `data/data.js` and `data/data.json`. These generated files support browsing directly from disk and must be published with the CSVs. They and the test fixtures are not additional data masters.
+
+The site consists of plain HTML, CSS and JavaScript. GitHub Pages can serve it directly from the repository root.
+
+## Development checks
+
+```text
+python -m unittest discover -s tests -v
+node tests/browser.cjs
+```
+
+The browser suite requires Playwright and Microsoft Edge. Set `NODE_PATH` to the Playwright package location if needed. It covers the vocabulary, navigation, playback settings, practice flow, rating percentages and responsive layout. External media requests are deliberately aborted during UI tests, so these checks do not establish live video availability or signing accuracy.
+
+## Support and project history
+
+If you find the project useful, you can [support it on Ko-fi](https://ko-fi.com/S6S24KS6O).
+
+Release history is recorded in [CHANGELOG.md](CHANGELOG.md).

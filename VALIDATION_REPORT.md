@@ -1,4 +1,14 @@
-# v4 validation report
+# Validation report
+
+## Current practice flow - 23 October 2026
+
+All seven Python data/provenance tests pass. The vocabulary, CSV masters, video assignments and stable IDs are unchanged by this update.
+
+The updated headless Edge suite passes: all dictionary rows and menus; defaults; direct MP4 selection and fallback; Dictionary playback; muted, looping, inline Practice autoplay and its canplay handler; rating-only advancement through the full 39-card shuffled deck without duplicates or omissions; playback cleanup and answer concealment on each advance; no Previous/Next controls; prominent one-way reveal; session persistence; restart; one-card distributions for each choice; mixed multi-card rating percentages; the exact Health and Fitness: Anatomy heading and the All categories heading without a suffix; empty sets and awaiting-video exclusion; cross-set search; responsive card and result layouts at 320/390/768/1280 pixels; no JavaScript errors.
+
+Desktop and mobile results and Practice views were visually inspected. External media is deliberately aborted in the regression suite. This validates playback configuration and lifecycle, not successful live remote playback or signing accuracy.
+
+## Previous v4 baseline
 
 23 October 2026. New version based on v3.
 

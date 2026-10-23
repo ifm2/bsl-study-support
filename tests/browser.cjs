@@ -53,60 +53,101 @@ const root=path.resolve(__dirname,'..');
  assert.equal(auto.length,39);assert.ok(auto.every(v=>v.muted&&v.loop&&v.auto&&v.inline));
  assert.equal(auto[0].src,'https://media.signbsl.com/videos/bsl/signstation/hello.mp4');
  await page.click('#mode-flashcard');assert.equal(await page.locator('video').count(),0);
- await page.click('#study-practice');assert.equal(await page.locator('.tile').count(),1);assert.equal(await word(),'What is this sign?');
- const first=await cardId();await page.click('.answer-button');
- assert.notEqual(await word(),'What is this sign?');assert.equal(await page.locator('.revealed-answer').innerText(),await word());
- assert.equal(await page.locator('.revealed-answer').isVisible(),true);assert.equal(await page.locator('.answer-button:visible').count(),0);
- await page.getByRole('button',{name:'Almost',exact:true}).click();assert.match(await page.locator('#practice-progress').innerText(),/^1 of/);
- await page.click('#practice-next');assert.equal(await word(),'What is this sign?');assert.equal(await page.locator('.revealed-answer').isVisible(),false);
- await page.click('#practice-prev');assert.equal(await cardId(),first);await page.click('.answer-button');
- assert.equal(await page.getByRole('button',{name:'Almost',exact:true}).getAttribute('aria-pressed'),'true');
- await page.getByRole('button',{name:'Got it',exact:true}).click();assert.match(await page.locator('#practice-progress').innerText(),/^1 of/);
- await page.uncheck('#show-details');assert.equal(await cardId(),first);assert.equal(await page.locator('.entry-meta').isVisible(),false);
+
+ // Practice autoplay works even though Dictionary is set to Flashcard.
+ const initial=await page.evaluate(()=>{
+  document.getElementById('study-practice').click();const v=document.querySelector('video');
+  let playCalls=0;v.play=()=>{playCalls++;return Promise.resolve();};v.dispatchEvent(new Event('canplay'));
+  return {muted:v.muted,loop:v.loop,auto:v.autoplay,inline:v.playsInline,preload:v.preload,playCalls,label:v.getAttribute('aria-label')};
+ });
+ assert.deepEqual(initial,{muted:true,loop:true,auto:true,inline:true,preload:'auto',playCalls:1,label:'Practice sign video'});
+ assert.equal(await page.locator('.tile').count(),1);assert.equal(await word(),'What is this sign?');
+ assert.equal(await page.locator('#practice-next,#practice-prev').count(),0);
+ const reveal=async()=>{if(await page.locator('#content .answer-button:visible').count())await page.locator('#content .answer-button').click();};
+ const rate=async label=>{await reveal();await page.getByRole('button',{name:label,exact:true}).click();};
+ const first=await cardId();await reveal();
+ assert.equal(await page.locator('.revealed-answer').innerText(),await word());
+ assert.equal(await page.locator('#content .answer-button:visible').count(),0);
+ const nextProps=await page.evaluate(()=>{
+  const old=document.querySelector('video');const retained=old;
+  // Errors can remove the deliberately aborted player; test cleanup synchronously on a fresh render.
+  document.getElementById('hide-english').click();
+  const current=document.querySelector('video');
+  document.querySelector('.confidence-button[data-score="1"]').click();
+  const next=document.querySelector('video');
+  return {released:current.paused&&!current.isConnected&&!current.children.length,auto:next.autoplay,muted:next.muted,loop:next.loop};
+ });
+ assert.deepEqual(nextProps,{released:true,auto:true,muted:true,loop:true});
+ assert.notEqual(await cardId(),first);assert.match(await page.locator('#practice-progress').innerText(),/^1 of/);
+ await page.check('#hide-english');assert.equal(await word(),'What is this sign?');
+ const second=await cardId();await page.click('#study-dictionary');await page.click('#study-practice');
+ assert.equal(await cardId(),second);assert.match(await page.locator('#practice-progress').innerText(),/^1 of/);
+ await page.uncheck('#show-details');assert.equal(await cardId(),second);assert.equal(await page.locator('.entry-meta').isVisible(),false);
  await page.uncheck('#hide-english');assert.notEqual(await word(),'What is this sign?');
- await page.check('#hide-english');assert.equal(await cardId(),first);
- // Complete random deck in both directions; ratings don't reshuffle it.
- const deck=[first];for(let i=1;i<39;i++){await page.click('#practice-next');deck.push(await cardId());}
- assert.equal(new Set(deck).size,39);assert.equal(await page.locator('#practice-next').isDisabled(),true);
- assert.match(await page.locator('#practice-score').innerText(),/Finish rating/);
- await page.getByRole('button',{name:'Go to next unrated card'}).click();assert.equal(await cardId(),deck[1]);
- for(let i=2;i<39;i++)await page.click('#practice-next');
- for(let i=37;i>=0;i--){await page.click('#practice-prev');assert.equal(await cardId(),deck[i]);}
- await page.click('#study-dictionary');await page.click('#study-practice');assert.equal(await cardId(),first);
- await page.uncheck('#random-order');assert.equal(await cardId(),'1');assert.match(await page.locator('#practice-progress').innerText(),/^0 of/);
- await page.fill('#search','thank you');await page.click('.answer-button');await page.getByRole('button',{name:'Almost',exact:true}).click();
- assert.match(await page.locator('#practice-score').innerText(),/Your score: 0.5 \/ 1 \(50%\)/);
- await page.getByRole('button',{name:'Not yet',exact:true}).click();assert.match(await page.locator('#practice-score').innerText(),/0 \/ 1 \(0%\)/);
- await page.getByRole('button',{name:'Got it',exact:true}).click();assert.match(await page.locator('#practice-score').innerText(),/1 \/ 1 \(100%\)/);
- await page.getByRole('button',{name:'Restart practice'}).click();assert.match(await page.locator('#practice-progress').innerText(),/^0 of/);
- // Full multi-card mixed score, including skips and backward score edits.
- await page.selectOption('#lesson-nav','1');
- await page.locator('#category-nav button').nth(1).click();
- const count=Number((await page.locator('#practice-position').innerText()).split(' of ')[1]);let total=0;
- for(let i=0;i<count;i++) {
-  await page.click('.answer-button');const index=i%3;
-  await page.getByRole('button',{name:['Not yet','Almost','Got it'][index],exact:true}).click();total += [0,.5,1][index];
-  if(i<count-1)await page.click('#practice-next');
+ await page.check('#hide-english');assert.equal(await cardId(),second);
+ // Rate the rest of the stable random deck through buttons, with no card repeats or omissions.
+ const deck=[first];
+ for(let i=1;i<39;i++){deck.push(await cardId());await rate('Almost');}
+ assert.equal(new Set(deck).size,39);
+ assert.deepEqual([...deck].sort(),data.lesson_vocabulary.filter(r=>r.level==='1'&&r.lesson==='1').map(r=>r.entry_id).sort());
+ assert.equal(await page.locator('.tile').count(),0);assert.equal(await page.locator('video').count(),0);
+ assert.equal(await page.locator('#practice-score').isVisible(),true);
+ assert.equal(await page.locator('#practice-position').isVisible(),false);
+ assert.equal(await page.locator('.score-result[data-rating="0"] .score-percentage').innerText(),'0%');
+ assert.equal(await page.locator('.score-result[data-rating="0.5"] .score-percentage').innerText(),'97.4%');
+ assert.equal(await page.locator('.score-result[data-rating="1"] .score-percentage').innerText(),'2.6%');
+ assert.equal((await page.locator('#practice-score').innerText()).includes('This is your confidence score'),false);
+ assert.equal((await page.locator('#practice-score').innerText()).includes('Your score:'),false);
+ await page.click('#study-dictionary');await page.click('#study-practice');
+ assert.equal(await page.locator('.tile').count(),0);assert.equal(await page.locator('#practice-score').isVisible(),true);
+ await page.getByRole('button',{name:'Restart practice'}).click();assert.equal(await cardId(),first);
+ assert.match(await page.locator('#practice-progress').innerText(),/^0 of/);
+ await page.uncheck('#random-order');assert.equal(await cardId(),'1');
+ // One-card sets: each confidence button completes the set and reports a distribution.
+ for(const label of ['Not Yet','Almost','Got it']) {
+  await page.fill('#search','thank you');
+  await rate(label);
+  assert.equal(await page.locator('.tile').count(),0);
+  const value={'Not Yet':0,Almost:.5,'Got it':1}[label];
+  for(const score of [0,.5,1])assert.equal(await page.locator(`.score-result[data-rating="${score}"] .score-percentage`).innerText(),score===value?'100%':'0%');
+  await page.getByRole('button',{name:'Restart practice'}).click();
  }
- assert.ok((await page.locator('#practice-score').innerText()).includes(`Your score: ${total} / ${count} (${Math.round(total/count*100)}%)`));
+ // Requested Level 2 heading: topic with selected category, no overall score.
+ await page.selectOption('#level-nav','2');await page.selectOption('#lesson-nav','Health and Fitness');
+ await page.getByRole('button',{name:'Anatomy',exact:true}).click();
+ const anatomy=data.lesson_vocabulary.filter(r=>r.level==='2'&&r.topic==='Health and Fitness'&&r.category==='Anatomy'&&eligible(r));
+ const ratings=[0,0,0,.5,.5,1,1,1,1,1,1,1];
+ let counts={0:0,'0.5':0,1:0};
+ for(let i=0;i<anatomy.length;i++) {
+  assert.equal(await cardId(),anatomy[i].entry_id);
+  const score=ratings[i%ratings.length];counts[score]++;await rate({0:'Not Yet','0.5':'Almost',1:'Got it'}[score]);
+ }
+ assert.equal(await page.locator('#practice-score h3').innerText(),'Your Score for Health and Fitness: Anatomy');
+ for(const score of [0,.5,1]) {
+  const expected=Number((counts[score]/anatomy.length*100).toFixed(1))+'%';
+  assert.equal(await page.locator(`.score-result[data-rating="${score}"] .score-percentage`).innerText(),expected);
+ }
  await page.screenshot({path:path.join(root,'tests/practice-score.png'),fullPage:true});
- // Level 2 practice excludes entries without media and doesn't erase dictionary words.
- await page.selectOption('#level-nav','2');
- const work=data.lesson_vocabulary.filter(r=>r.level==='2'&&r.topic==='Work Life');
- assert.match(await page.locator('#stats').innerText(),new RegExp('^'+work.filter(eligible).length+' practice cards'));
- await page.fill('#search','photographer');
+ await page.getByRole('button',{name:'All categories',exact:true}).click();await page.fill('#search','arm');
+ // Search resets the category and produces one matching Anatomy card.
+ assert.equal(await page.locator('.tile').count(),1);await rate('Got it');
+ assert.equal(await page.locator('#practice-score h3').innerText(),'Your Score for Health and Fitness');
+ await page.selectOption('#lesson-nav','Work Life');await page.fill('#search','photographer');
  assert.equal(await page.locator('.tile').count(),0);assert.match(await page.locator('.empty').innerText(),/No practice videos/);
+ assert.equal(await page.locator('#practice-score').isVisible(),false);
  await page.click('#study-dictionary');assert.deepEqual(await page.locator('.tile h4').allTextContents(),['Photographer']);
  await page.selectOption('#level-nav','1');await page.check('#show-details');
  await page.screenshot({path:path.join(root,'tests/desktop.png')});
  for(const width of [320,390,768,1280]) {
   await page.setViewportSize({width,height:950});
   for(const mode of ['dictionary','practice']) {
-   await page.click('#study-'+mode);
-   if(mode==='practice'){await page.locator('.answer-button').first().click();}
+   await page.click('#study-'+mode);if(mode==='practice')await reveal();
    assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`overflow ${width} ${mode}`);
    if(width===390)await page.screenshot({path:path.join(root,'tests/mobile-'+mode+'.png'),fullPage:mode==='practice'});
   }
+  await page.fill('#search','thank you');await rate('Almost');
+  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`result overflow ${width}`);
+  if(width===390)await page.screenshot({path:path.join(root,'tests/mobile-score.png'),fullPage:true});
   await page.selectOption('#level-nav','2');await page.selectOption('#lesson-nav','People and Personalities');
   assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth));
   await page.selectOption('#level-nav','1');
@@ -116,13 +157,14 @@ const root=path.resolve(__dirname,'..');
   document.getElementById('mode-autoplay').click();const old=[...document.querySelectorAll('video')];
   document.getElementById('study-practice').click();
   const stopped=old.length===39&&old.every(v=>v.paused&&!v.isConnected&&!v.children.length);
-  document.querySelector('.flashcard-launch').click();const video=document.querySelector('video');
-  document.querySelector('.answer-button').click();const retained=document.querySelector('video')===video;
-  document.getElementById('practice-next').click();return {stopped,retained,released:video.paused&&!video.isConnected&&!video.children.length};
+  const video=document.querySelector('video');
+  document.querySelector('#content .answer-button').click();const retained=document.querySelector('video')===video;
+  document.querySelector('.confidence-button[data-score="1"]').click();
+  return {stopped,retained,released:video.paused&&!video.isConnected&&!video.children.length};
  });assert.deepEqual(cleanup,{stopped:true,retained:true,released:true});
  await page.reload();assert.equal(await page.locator('#study-dictionary').getAttribute('aria-pressed'),'true');
  for(const id of ['show-details','random-order','hide-english'])assert.equal(await page.isChecked('#'+id),true);
  assert.deepEqual(errors,[]);
- console.log('PASS: all Level 1/2 rows and topic menus; defaults; direct MP4 and fallback; playback cleanup; shuffle stability; one-way reveal; independent settings; scores 0/50/100 and mixed multi-card; skipped ratings; score edits/restart; cross-level search navigation; responsive 320/390/768/1280; no JS errors. Signing media intentionally aborted and remains Unverified.');
+ console.log('PASS: all dictionary data/menus; defaults; MP4 and fallback; Dictionary modes; Practice autoplay/canplay; rating-only advance and cleanup; stable complete shuffle; reveal; independent settings; single/multi-card distributions; topic/category headings; restart/session behavior; cross-set search; responsive cards/results 320/390/768/1280; no JS errors. External media intentionally aborted.');
  }finally{await browser.close();}
 })().catch(e=>{console.error(e);process.exit(1);});
