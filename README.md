@@ -2,13 +2,15 @@
 
 BSL Study Support is a video dictionary and revision tool for learners of British Sign Language. It brings vocabulary into one place so you can look up signs, revisit course material and practise recognising signs at your own pace.
 
-Level 1 vocabulary follows the course's lessons. Level 2 vocabulary is organised by topic, combining related material and recaps from different workbook sections. Each set is divided into smaller categories so you can focus on what you want to study.
+Currently the site works on vocabulary from a Level 1 and Level 2 course. Each week Level is broken down into topics. Each topic is divided into smaller categories so you can focus on what you want to study.
 
 ## Getting started
 
 Download or clone this repository and open `index.html` in your browser. There is no build step, account or installation required to browse the dictionary. An internet connection is needed to load the signing videos and Ko-fi image.
 
 Choose a level, then a lesson or topic. Use the category links to find a section, or search for an English word. If the current set has no match, the site shows links to matching lessons and topics elsewhere in the dictionary.
+
+The site is also hosted on https://ifm2.github.io/bsl-study-support/
 
 ## Dictionary mode
 
@@ -22,12 +24,10 @@ Dictionary is the starting view. It shows vocabulary cards grouped by category, 
 
 Practice shows one sign at a time. Select a category or leave **All categories** selected to practise the whole lesson or topic. Search can also narrow the set.
 
-1. Watch the video, which plays automatically, muted and looping. If your browser blocks autoplay, use its Play control.
+1. Watch the video, which plays automatically and looping. If your browser blocks autoplay, use its Play control.
 2. With **Hide English** enabled, guess the word and press **Reveal answer**. The answer appears above and below the video.
 3. Choose **Not Yet**, **Almost** or **Got it**. Each choice records your rating and automatically moves to the next card.
-4. After the final card, see the percentage of cards in each of the three groups. The results heading names the lesson or topic and, when selected, the category.
-
-There are no Previous or Next buttons. Restart practice at the end to try the same set again. The results describe the ratings you selected; the site does not assess your signing or check answers automatically.
+4. After the final card, see your results. 
 
 **Random order** and **Hide English** start on and can be changed independently. The shuffled order stays fixed while you work through the set. Changing the lesson, topic, category, search or Random order starts a fresh practice session. Switching between Dictionary and Practice keeps your place and recorded ratings. Refreshing the page clears the session.
 
@@ -48,7 +48,7 @@ Workbook page references and original wording are retained for checking. Level 2
 
 The dictionary uses direct MP4 links from [SignBSL](https://www.signbsl.com/) and credits the selected source through each card's dictionary link. Video rights remain with their respective owners. This project is an independent study aid to use alongside your course and tutor.
 
-Videos marked **Unverified** have not been confirmed for signing accuracy or regional suitability. A successful URL check does not establish that the clip is the correct sign for every context. Remote availability can change. Entries marked **Awaiting video** do not yet have a suitable selected candidate.
+Videos marked **Unverified** have not been confirmed for signing accuracy or regional suitability. A successful URL check does not establish that the clip is the correct sign for every context. Entries marked **Awaiting video** do not yet have a suitable selected candidate.
 
 See [remaining video lookups](REMAINING_VIDEOS.md) for unresolved entries and [the lookup report](VIDEO_LOOKUP_REPORT.md) for source-checking details. Recorded technical checks are in `data/video_lookup_audit.json`. Workbook PDFs are not distributed with the project.
 
