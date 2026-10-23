@@ -84,7 +84,7 @@ Use `VerifyVideo.html` to review unverified videos, replace a selected video URL
 python tools/verify_video_server.py
 ```
 
-Then open `http://127.0.0.1:8000/VerifyVideo.html`. Saving writes the CSV masters and regenerates `data/data.js` and `data/data.json`; each edit is recorded in `data/video_edit_log.csv`. Keep this local tool off a public server. The preview supports direct video URLs such as MP4; some hosts block playback when embedded.
+Then open `http://127.0.0.1:8000/VerifyVideo.html`. Saving updates the affected row in the CSV master and regenerates `data/data.js` and `data/data.json`. Keep this local tool off a public server. The preview supports direct video URLs such as MP4; some hosts block playback when embedded.
 
 ## Development checks
 

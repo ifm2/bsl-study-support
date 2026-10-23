@@ -88,7 +88,7 @@ function makeTile(row,practice=false) {
  const title=element('h4','',hiddenAnswer ? 'What is this sign?' : row.word);
  const pages=row.source_pages || row.source_page;
  const meta=element('small','entry-meta',`#${row.entry_id} · Workbook page${pages.includes(';') ? 's' : ''} ${pages}`);
- meta.hidden=!$('show-details').checked;titleRow.append(title,meta);
+ meta.hidden=$('hide-details').checked;titleRow.append(title,meta);
  const player=element('div','player');const autoplay=practice || playbackMode==='autoplay';
  if(!row.video_url) player.append(element('p','video-error','Awaiting video'));
  else if(autoplay) player.append(makeVideo(row,true,hiddenAnswer));
@@ -102,7 +102,7 @@ function makeTile(row,practice=false) {
    player.replaceChildren(video);video.play().catch(() => {});
   },{once:true});player.append(launch);
  }
- const bottom=element('div','bottom');bottom.append(element('span','',row.status));
+ const bottom=element('div','bottom');const videoStatus=element('span','',row.status);videoStatus.hidden=row.status==='Verified';bottom.append(videoStatus);
  const dictionary=element('a','','Check dictionary ↗');
  dictionary.href=row.dictionary_url;
  dictionary.target='_blank';dictionary.rel='noopener noreferrer';dictionary.hidden=hiddenAnswer;bottom.append(dictionary);
@@ -244,7 +244,7 @@ $('mode-flashcard').addEventListener('click',() => setPlaybackMode('flashcard'))
 $('mode-autoplay').addEventListener('click',() => setPlaybackMode('autoplay'));
 $('random-order').addEventListener('change',() => {resetPractice();render();});
 $('hide-english').addEventListener('change',() => {answerRevealed=false;render();});
-$('show-details').addEventListener('change',() => {document.querySelectorAll('.entry-meta').forEach(meta => {meta.hidden=!$('show-details').checked;});});
+$('hide-details').addEventListener('change',() => {document.querySelectorAll('.entry-meta').forEach(meta => {meta.hidden=$('hide-details').checked;});});
 // Reset restored browser form values on each page load.
-$('show-details').checked=false;$('random-order').checked=true;$('hide-english').checked=true;
+$('hide-details').checked=true;$('random-order').checked=true;$('hide-english').checked=true;
 chooseLevel(1);
