@@ -34,3 +34,31 @@ header p{font-size:13px;margin:0;color:#d7f0ed}
 .lesson-picker select:focus-visible{outline:3px solid #e7a831;outline-offset:2px}
 #lesson-description:empty{display:none}
 @media(max-width:640px){header{padding:16px 0 15px}.lesson-picker{align-items:stretch;flex-direction:column;gap:6px}.lesson-picker select{width:100%}}
+
+/* Shared Dictionary / Practice controls. */
+[hidden],.tile-heading small[hidden],.bottom a[hidden]{display:none!important}
+.level-picker{display:flex;align-items:center;gap:12px;margin-top:12px;font-size:13px;font-weight:700}
+.level-picker select{max-width:100%;min-width:0;padding:9px 12px;border:1px solid #bcd5d2;border-radius:9px;background:#fff;color:#17333b;font:inherit}
+.check-control{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:#315a61;cursor:pointer}
+.check-control input{width:18px;height:18px;margin:0;accent-color:#116a6b;flex-shrink:0}
+.practice-settings{display:flex;gap:24px;flex-wrap:wrap;margin:20px 0 10px}
+.practice-stage{max-width:480px;margin:0 auto}
+.practice-navigation{max-width:480px;margin:18px auto;display:flex;align-items:center;justify-content:space-between;gap:12px}
+.practice-navigation button,.answer-button{border:1px solid #bcd5d2;border-radius:9px;background:#fff;color:#11676c;font:inherit;font-size:14px;font-weight:700;padding:12px;cursor:pointer}
+.practice-navigation button:disabled{opacity:.45;cursor:default}
+#practice-position{font-size:13px;text-align:center;color:#345861}
+.answer-button{display:block;width:calc(100% - 30px);margin:14px 15px 2px;background:#e4eeee}
+.category-nav button{border:0;display:inline-flex;align-items:center;padding:9px 13px;border-radius:999px;background:#e4eeee;color:#145c62;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
+.category-nav button.active{background:#116a6b;color:white}
+button:focus-visible,select:focus-visible,input:focus-visible,a:focus-visible{outline:3px solid #e7a831;outline-offset:3px}
+.intro>div{min-width:0}.intro{margin-top:20px}.lesson-picker select{min-width:0}
+@media(max-width:640px){.level-picker{align-items:flex-start;flex-direction:column;gap:6px}.level-picker select{width:100%}.mode-bar>.check-control{width:100%}.practice-navigation{gap:6px}.practice-navigation button{padding:12px 9px}.tile .bottom{flex-wrap:wrap}.search{min-width:0}.lesson-picker select{font-size:13px}}
+.revealed-answer{font-size:clamp(23px,4vw,32px);font-weight:800;text-align:center;color:#0b6265;margin:18px 15px 10px;overflow-wrap:anywhere}
+.confidence{border:0;margin:16px 15px;padding:0}.confidence legend{font-size:14px;font-weight:700;margin-bottom:10px}
+.confidence-choices{display:flex;gap:7px}.confidence-button{flex:1;border:1px solid #bed5d2;border-radius:9px;padding:12px 6px;background:white;color:#145c62;font:inherit;font-size:13px;font-weight:700;cursor:pointer}
+.confidence-button.active{background:#116a6b;color:white;border-color:#116a6b}
+.practice-score{max-width:480px;margin:24px auto;padding:20px;border:1px solid #bed5d2;border-radius:14px;background:#e4eeee;text-align:center}.practice-score h3{margin:0 0 12px}.practice-score p{font-size:14px;line-height:1.6}.practice-score .answer-button{margin:12px 0 0;width:100%;background:white}
+.other-matches{background:#e4eeee;border:1px solid #bed5d2;border-radius:12px;padding:16px;margin:18px 0}.other-matches p{margin:0 0 12px}.search-destination{display:block;border:1px solid #bed5d2;border-radius:9px;background:white;color:#145c62;padding:10px 14px;margin:8px 0 0;font:inherit;font-size:14px;text-align:left;cursor:pointer;max-width:100%;overflow-wrap:anywhere}
+.tile-heading small{white-space:normal;overflow-wrap:anywhere}
+
+.support-link{margin-bottom:18px}.support-link a{display:inline-flex;max-width:100%}.support-link img{display:block;height:36px;width:auto;max-width:100%;object-fit:contain}
