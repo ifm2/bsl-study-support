@@ -17,6 +17,32 @@ class Handler(SimpleHTTPRequestHandler):
         super().__init__(*args, directory=str(ROOT), **kwargs)
 
     def do_POST(self):
+        if self.path == '/api/verify':
+            try:
+                length = int(self.headers.get('Content-Length', '0'))
+                body = json.loads(self.rfile.read(length))
+                data = generate_data.load()
+                entry = next((e for e in data['lesson_vocabulary'] if e['entry_id'] == str(body.get('entry_id', ''))), None)
+                if not entry or not entry['selected_video_id']:
+                    raise ValueError('This entry has no assigned video to verify.')
+                video = next((v for v in data['videos'] if v['video_id'] == entry['selected_video_id']), None)
+                if not video:
+                    raise ValueError('Selected video was not found.')
+                video['verification_status'] = 'Verified'
+                generate_data.validate(data)
+                data['lesson_vocabulary'].sort(key=lambda r: int(r['global_order']))
+                data['signs'].sort(key=lambda r: r['sign_id'])
+                data['videos'].sort(key=lambda r: (r['sign_id'], int(r['priority'])))
+                for name, rows in data.items():
+                    with (ROOT / f'data/{name}.csv').open('w', encoding='utf-8', newline='') as f:
+                        writer=csv.DictWriter(f, fieldnames=generate_data.FIELDS[name], lineterminator='\n')
+                        writer.writeheader(); writer.writerows(rows)
+                output = json.dumps(data, ensure_ascii=False, indent=2)
+                (ROOT / 'data/data.json').write_text(output + '\n', encoding='utf-8')
+                (ROOT / 'data/data.js').write_text('window.BSL_DATA = ' + output + ';\n', encoding='utf-8')
+                return self.respond(200, {'video_id':video['video_id'],'message':f'{video["video_id"]} marked Verified.','data':data})
+            except Exception as e:
+                return self.respond(400, {'error':str(e)})
         if self.path != '/api/save':
             return self.send_error(404)
         try:
