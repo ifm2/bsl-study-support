@@ -8,7 +8,7 @@ import re
 ROOT = Path(__file__).resolve().parents[1]
 FIELDS = {
     'signs': {'sign_id', 'word', 'meaning'},
-    'videos': {'video_id', 'sign_id', 'source', 'url', 'verification_status', 'priority'},
+    'videos': {'video_id', 'sign_id', 'source', 'url', 'verification_status', 'priority', 'problem_report'},
     'lesson_vocabulary': {'entry_id', 'sign_id', 'selected_video_id', 'level', 'lesson',
                           'category', 'global_order', 'source_page', 'word', 'source_text', 'notes',
                           'topic', 'nmf', 'source_pages'},
@@ -54,6 +54,7 @@ def validate(data):
         require(v['priority'].isdigit() and int(v['priority']) > 0, 'Priority must be a positive integer')
         require(v['verification_status'] in {'Unverified', 'Verified', 'Unavailable', 'Rejected'}, 'Unknown verification status')
         require(bool(v['source'].strip()), 'Video source must not be empty')
+        require(len(v['problem_report']) <= 1000, 'Video problem reports must be 1000 characters or fewer')
         pair = (v['sign_id'], v['url'])
         priority = (v['sign_id'], int(v['priority']))
         require(pair not in pairs, 'Duplicate sign/video URL')
@@ -70,8 +71,9 @@ def validate(data):
         require(key not in sequence_positions, 'Duplicate video sequence position')
         sequence_positions.add(key)
     for sign_id in {clip['sign_id'] for clip in sequences}:
-        require({p for sid, p in sequence_positions if sid == sign_id} == {1, 2, 3},
-                'Each video sequence must contain clips at positions 1, 2, and 3')
+        positions = sorted(p for sid, p in sequence_positions if sid == sign_id)
+        require(len(positions) in {2, 3} and positions == list(range(1, len(positions) + 1)),
+                'Each video sequence must contain two or three clips in order')
     for r in entries:
         require(r['sign_id'] in smap, 'Unknown lesson sign_id: ' + r['sign_id'])
         require(r['level'] in {'1', '2'}, 'Level must be 1 or 2')

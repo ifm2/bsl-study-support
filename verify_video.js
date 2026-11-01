@@ -6,15 +6,26 @@
   let mode = 'unverified';
   let cursor = 0;
   let query = '';
+  let levelFilter = 'all';
+  let lessonFilter = 'all';
 
   const selected = entry => data.videos.find(video => video.video_id === entry.selected_video_id);
+  const wordParts = word => Array.from(word.matchAll(/[\p{L}\p{N}]+(?:['’][\p{L}\p{N}]+)*/gu), match => match[0]);
   const sequenceFor = signId => (data.video_sequences || [])
     .filter(clip => clip.sign_id === signId)
     .sort((a, b) => Number(a.position) - Number(b.position));
+  const sequenceForWord = word => {
+    const signIds = new Set(data.lesson_vocabulary.filter(entry => entry.word === word).map(entry => entry.sign_id));
+    return (data.video_sequences || []).filter(clip => signIds.has(clip.sign_id));
+  };
   const unresolved = () => data.lesson_vocabulary.filter(entry => {
     const video = selected(entry);
     return video && video.verification_status === 'Unverified';
   });
+  const lessonKey = entry => entry.level === '1'
+    ? `1:lesson:${entry.lesson}` : `2:topic:${entry.topic}`;
+  const lessonName = entry => entry.level === '1'
+    ? `Lesson ${entry.lesson}` : entry.topic;
   const awaiting = () => data.lesson_vocabulary.filter(entry => !selected(entry));
   const isDirectMp4 = value => {
     try {
@@ -154,7 +165,6 @@
         const url = new URL(input.value);
         if (url.protocol !== 'https:') throw Error('Enter a SignBSL sign URL with #video-id, or a direct .mp4 URL.');
         const result = await save({entry_id: entry.entry_id, url: url.href, mode});
-        cursor = 0;
         onDone?.(result);
       } catch (error) {
         status(error.message || 'Enter a valid video URL.', 'error');
@@ -168,12 +178,15 @@
     const existing = sequenceFor(entry.sign_id).map(clip => clip.url);
     const details = document.createElement('details');
     details.className = 'sequence-editor';
-    details.open = existing.length === 3;
+    details.open = existing.length > 0;
     const summary = document.createElement('summary');
-    summary.textContent = existing.length === 3 ? 'Edit three-clip sequence' : 'Set up a three-clip sequence';
+    const words = wordParts(entry.word);
+    const clipCount = [2, 3].includes(words.length) ? words.length : (existing.length || 3);
+    summary.textContent = existing.length
+      ? `Edit ${clipCount}-clip sequence`
+      : `Set up a ${clipCount}-clip sequence`;
     details.append(summary);
-    const words = entry.word.trim().split(/\s+/);
-    const labels = words.length === 3 ? words : ['Clip 1', 'Clip 2', 'Clip 3'];
+    const labels = words.length === clipCount ? words : Array.from({length: clipCount}, (_, index) => `Clip ${index + 1}`);
     const inputs = [];
     labels.forEach((name, index) => {
       const label = document.createElement('label');
@@ -191,16 +204,16 @@
     actions.className = 'fields';
     actions.append(button('Preview sequence', () => {
       const urls = inputs.map(input => input.value.trim());
-      if (!urls.every(isDirectMp4)) {
-        status('Enter three direct HTTPS .mp4 URLs to preview the sequence.', 'error');
+      if (![2, 3].includes(urls.length) || !urls.every(isDirectMp4)) {
+        status('Enter two or three direct HTTPS .mp4 URLs to preview the sequence.', 'error');
         return;
       }
       previewSequence(urls, previewArea, true);
     }));
     actions.append(button('Save sequence', async () => {
       const urls = inputs.map(input => input.value.trim());
-      if (!urls.every(isDirectMp4)) {
-        status('Enter three direct HTTPS .mp4 URLs to save the sequence.', 'error');
+      if (![2, 3].includes(urls.length) || !urls.every(isDirectMp4)) {
+        status('Enter two or three direct HTTPS .mp4 URLs to save the sequence.', 'error');
         return;
       }
       try {
@@ -214,26 +227,142 @@
     return details;
   }
 
+  function wordEditor(entry, onDone) {
+    const details = document.createElement('details');
+    details.className = 'word-editor';
+    const summary = document.createElement('summary');
+    summary.textContent = 'Correct word';
+    const label = document.createElement('label');
+    label.textContent = 'Dictionary word';
+    const input = document.createElement('input');
+    input.type = 'text';
+    input.maxLength = 100;
+    input.value = entry.word;
+    label.append(input);
+    const actions = document.createElement('div');
+    actions.className = 'fields';
+    actions.append(button('Save word', async () => {
+      const word = input.value.trim().replace(/\s+/g, ' ');
+      if (!word) {
+        status('Enter the corrected word.', 'error');
+        return;
+      }
+      try {
+        await request('/api/word', {entry_id: entry.entry_id, word});
+        onDone?.();
+      } catch (error) {
+        status(error.message, 'error');
+      }
+    }));
+    details.append(summary, label, actions);
+    return details;
+  }
+
   function renderUnverified() {
-    const rows = unresolved();
+    const allRows = unresolved();
+    const levelRows = allRows.filter(entry => levelFilter === 'all' || entry.level === levelFilter);
+    const rows = levelRows.filter(entry => lessonFilter === 'all' || lessonKey(entry) === lessonFilter);
     if (cursor >= rows.length) cursor = Math.max(0, rows.length - 1);
+    if (cursor < 0) cursor = 0;
+    work.replaceChildren();
+    const heading = document.createElement('h2');
+    heading.textContent = 'Fix Video - Individual';
+    work.append(heading);
+
+    const filters = document.createElement('div');
+    filters.className = 'fields';
+    const levelLabel = document.createElement('label');
+    levelLabel.textContent = 'Level';
+    const levelSelect = document.createElement('select');
+    const levels = [
+      ['all', `All levels (${allRows.length} unverified)`],
+      ...[...new Set(data.lesson_vocabulary.map(entry => entry.level))]
+        .sort((a, b) => Number(a) - Number(b))
+        .map(level => [level, `Level ${level} (${allRows.filter(entry => entry.level === level).length} unverified)`])
+    ];
+    levels.forEach(([value, label]) => {
+      const option = document.createElement('option');
+      option.value = value;
+      option.textContent = label;
+      levelSelect.append(option);
+    });
+    levelSelect.value = levelFilter;
+    levelLabel.append(levelSelect);
+
+    const lessonLabel = document.createElement('label');
+    lessonLabel.textContent = 'Lesson or topic';
+    const lessonSelect = document.createElement('select');
+    const lessonOptions = data.lesson_vocabulary.filter(entry =>
+      levelFilter === 'all' || entry.level === levelFilter);
+    const lessonGroups = new Map();
+    lessonOptions.forEach(entry => {
+      const key = lessonKey(entry);
+      if (!lessonGroups.has(key)) lessonGroups.set(key, {entry, count: 0});
+    });
+    allRows.forEach(entry => {
+      const key = lessonKey(entry);
+      if (lessonGroups.has(key)) lessonGroups.get(key).count++;
+    });
+    const options = [['all', `All lessons (${levelRows.length} unverified)`]];
+    [...lessonGroups.entries()]
+      .sort(([, a], [, b]) => lessonName(a.entry).localeCompare(lessonName(b.entry), undefined, {numeric: true}))
+      .forEach(([key, group]) => {
+        const prefix = levelFilter === 'all' ? `Level ${group.entry.level} · ` : '';
+        options.push([key, `${prefix}${lessonName(group.entry)} (${group.count} unverified)`]);
+      });
+    options.forEach(([value, label]) => {
+      const option = document.createElement('option');
+      option.value = value;
+      option.textContent = label;
+      lessonSelect.append(option);
+    });
+    if (![...lessonSelect.options].some(option => option.value === lessonFilter)) lessonFilter = 'all';
+    lessonSelect.value = lessonFilter;
+    levelSelect.addEventListener('change', () => {
+      levelFilter = levelSelect.value;
+      lessonFilter = 'all';
+      cursor = 0;
+      renderUnverified();
+    });
+    lessonSelect.addEventListener('change', () => {
+      lessonFilter = lessonSelect.value;
+      cursor = 0;
+      renderUnverified();
+    });
+    lessonLabel.append(lessonSelect);
+    filters.append(levelLabel, lessonLabel);
+    work.append(filters);
     if (!rows.length) {
-      work.innerHTML = '<h2>All assigned videos verified</h2><p>No unverified video candidates remain.</p>';
+      const empty = document.createElement('p');
+      empty.textContent = allRows.length
+        ? 'No unverified videos in this Level and Lesson selection.'
+        : 'All assigned videos verified. No unverified video candidates remain.';
+      work.append(empty);
       return;
     }
     const entry = rows[cursor];
     const video = selected(entry);
     const clips = sequenceFor(entry.sign_id);
-    work.replaceChildren();
-    const heading = document.createElement('h2');
-    heading.textContent = 'Fix Video - Individual';
     const word = document.createElement('p');
     word.className = 'entry-title';
     word.textContent = entry.word;
+    const titleRow = document.createElement('div');
+    titleRow.className = 'entry-title-row';
+    titleRow.append(word, wordEditor(entry, renderUnverified));
     const meta = document.createElement('p');
     meta.className = 'muted';
     meta.textContent = `Entry ${entry.entry_id} · ${entry.topic || `Lesson ${entry.lesson}`} · ${cursor + 1} of ${rows.length} · ${video.video_id} (${video.verification_status})`;
-    work.append(heading, word, meta);
+    work.append(titleRow, meta);
+    if (video.problem_report) {
+      const report = document.createElement('div');
+      report.className = 'reported-problem';
+      report.append(document.createElement('strong'));
+      report.querySelector('strong').textContent = 'Reported problem';
+      const reportText = document.createElement('p');
+      reportText.textContent = video.problem_report;
+      report.append(reportText);
+      work.append(report);
+    }
     const quickLabel = document.createElement('label');
     quickLabel.className = 'check-control';
     const quick = document.createElement('input');
@@ -247,12 +376,15 @@
     if (clips.length === 3) previewSequence(clips.map(clip => clip.url), playerArea, true);
     else preview(video.url, playerArea, true, entry.word);
     work.append(playerArea);
-    const editor = urlEditor(entry, video, renderUnverified);
+    const editor = urlEditor(entry, video, () => {
+      if (quick.checked && cursor >= rows.length - 1) cursor = 0;
+      renderUnverified();
+    });
     work.append(editor.fields, editor.previewArea, sequenceEditor(entry, renderUnverified));
     const verifyButton = button('Verify Video', async () => {
       try {
         await request('/api/verify', {entry_id: entry.entry_id});
-        if (quick.checked) cursor = Math.min(cursor, Math.max(0, unresolved().length - 1));
+        if (quick.checked && cursor >= rows.length - 1) cursor = 0;
         renderUnverified();
       } catch (error) {
         status(error.message, 'error');
@@ -261,7 +393,19 @@
     const navigation = document.createElement('div');
     navigation.className = 'fields';
     navigation.append(
-      verifyButton,
+      verifyButton
+    );
+    if (sequenceForWord(entry.word).length) {
+      navigation.append(button('Sequence not needed', async () => {
+        try {
+          await request('/api/sequence-not-needed', {entry_id: entry.entry_id});
+          renderUnverified();
+        } catch (error) {
+          status(error.message, 'error');
+        }
+      }));
+    }
+    navigation.append(
       button('Previous', () => {cursor = (cursor - 1 + rows.length) % rows.length; renderUnverified();}),
       button('Next', () => {cursor = (cursor + 1) % rows.length; renderUnverified();})
     );
@@ -297,6 +441,17 @@
         info.className = 'muted';
         info.textContent = video ? `${video.video_id} · ${video.verification_status}` : 'Awaiting video';
         card.append(title, info);
+        card.append(wordEditor(entry, renderFix));
+        if (video?.problem_report) {
+          const report = document.createElement('div');
+          report.className = 'reported-problem';
+          const reportHeading = document.createElement('strong');
+          reportHeading.textContent = 'Reported problem';
+          const reportText = document.createElement('p');
+          reportText.textContent = video.problem_report;
+          report.append(reportHeading, reportText);
+          card.append(report);
+        }
         const editor = urlEditor(entry, video, renderFix);
         card.append(editor.fields, editor.previewArea, sequenceEditor(entry, renderFix));
         list.append(card);
@@ -327,6 +482,7 @@
       info.className = 'muted';
       info.textContent = `${entry.topic || `Lesson ${entry.lesson}`} · sign ${entry.sign_id}`;
       card.append(title, info);
+      card.append(wordEditor(entry, renderAwaiting));
       const editor = urlEditor(entry, null, renderAwaiting);
       card.append(editor.fields, editor.previewArea, sequenceEditor(entry, renderAwaiting));
       list.append(card);

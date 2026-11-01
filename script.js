@@ -22,6 +22,8 @@ const allVocabulary = data.lesson_vocabulary.map(r => ({...r, meaning:signsById.
  dictionary_url:signBslVideoInfo(videosById.get(r.selected_video_id)?.url || '') ? videosById.get(r.selected_video_id).url : videosById.get(r.selected_video_id)?.source.match(/https:\/\/www\.signbsl\.com\/[^\s]+/)?.[0] || `https://www.signbsl.com/sign/${encodeURIComponent(r.word.toLowerCase())}`,
  video_url:videoSequencesBySign.get(r.sign_id)?.[0]?.url || videosById.get(r.selected_video_id)?.url || '',
  video_urls:videoSequencesBySign.get(r.sign_id)?.map(clip => clip.url) || (videosById.get(r.selected_video_id)?.url ? [videosById.get(r.selected_video_id).url] : []),
+ video_id:videosById.get(r.selected_video_id)?.video_id || '',
+ problem_report:videosById.get(r.selected_video_id)?.problem_report || '',
  status:videosById.get(r.selected_video_id)?.verification_status || (videoSequencesBySign.has(r.sign_id) ? 'Unverified' : 'Awaiting video')
 })).sort((a,b) => Number(a.global_order)-Number(b.global_order));
 const lessonsByLevel = {
@@ -39,6 +41,45 @@ function element(tag,cls,text) {
  const node=document.createElement(tag); if(cls) node.className=cls;
  if(text !== undefined) node.textContent=text; return node;
 }
+let reportTarget=null;
+const reportModal=element('div','report-modal');reportModal.hidden=true;
+const reportPanel=element('section','report-modal-panel');reportPanel.setAttribute('role','dialog');reportPanel.setAttribute('aria-modal','true');reportPanel.setAttribute('aria-labelledby','report-modal-title');
+const reportTitle=element('h2','','Report a video problem');reportTitle.id='report-modal-title';
+const reportDescription=element('p','','Describe the problem. The video will be marked Unverified and the message will appear in VerifyVideo.');
+const reportLabel=element('label','report-modal-label','Problem details');
+const reportTextarea=document.createElement('textarea');reportTextarea.maxLength=1000;reportTextarea.rows=5;reportTextarea.setAttribute('aria-describedby','report-modal-error');reportLabel.append(reportTextarea);
+const reportError=element('p','report-modal-error','');reportError.id='report-modal-error';reportError.setAttribute('role','status');
+const reportActions=element('div','report-modal-actions');
+const reportCancel=element('button','','Cancel');reportCancel.type='button';
+const reportSubmit=element('button','','Send report');reportSubmit.type='button';
+reportActions.append(reportCancel,reportSubmit);reportPanel.append(reportTitle,reportDescription,reportLabel,reportError,reportActions);reportModal.append(reportPanel);document.body.append(reportModal);
+function closeReportModal() {
+ reportModal.hidden=true;reportTarget?.button.focus();reportTarget=null;
+}
+function openReportModal(row,button) {
+ reportTarget={row,button};reportTextarea.value=row.problem_report || '';reportError.textContent='';
+ reportError.className='report-modal-error';reportSubmit.disabled=false;reportCancel.disabled=false;
+ reportModal.hidden=false;reportTextarea.focus();
+}
+reportCancel.addEventListener('click',closeReportModal);
+reportModal.addEventListener('click',event=>{if(event.target===reportModal)closeReportModal();});
+document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!reportModal.hidden)closeReportModal();});
+reportSubmit.addEventListener('click',async()=>{
+ if(!reportTarget)return;
+ const message=reportTextarea.value.trim();
+ if(!message){reportError.textContent='Please enter a short message describing the problem.';reportTextarea.focus();return;}
+ reportSubmit.disabled=true;reportCancel.disabled=true;reportTarget.button.disabled=true;
+ try {
+  const response=await fetch('/api/report-problem',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({video_id:reportTarget.row.video_id,message})});
+  const result=await response.json().catch(()=>null);
+  if(!response.ok)throw new Error(result?.error || 'Reports can only be saved when the dictionary is running with its local video server.');
+  reportError.className='report-modal-error success';reportError.textContent=result.message || 'Problem reported. The video is marked Unverified.';
+  window.setTimeout(()=>window.location.reload(),900);
+ } catch(error) {
+  reportError.textContent=error.message || 'Could not save the report. Please use the local video server.';
+  reportSubmit.disabled=false;reportCancel.disabled=false;reportTarget.button.disabled=false;
+ }
+});
 function makeSignBslEmbed(row) {
  const info=signBslVideoInfo(row.video_url);if(!info)return null;
  const quote=element('blockquote','signbsldata-embed');quote.dataset.vidref=info.videoId;
@@ -136,6 +177,10 @@ function makeTile(row,practice=false) {
   },{once:true});player.append(launch);
  }
  const bottom=element('div','bottom');const videoStatus=element('span','',row.status);videoStatus.hidden=row.status==='Verified';bottom.append(videoStatus);
+ if(row.status==='Verified' && row.video_id) {
+  const report=element('button','report-problem','Report problem');report.type='button';
+  report.addEventListener('click',() => openReportModal(row,report));bottom.append(report);
+ }
  const dictionary=element('a','','Check dictionary ↗');
  dictionary.href=row.dictionary_url;
  dictionary.target='_blank';dictionary.rel='noopener noreferrer';dictionary.hidden=hiddenAnswer;bottom.append(dictionary);

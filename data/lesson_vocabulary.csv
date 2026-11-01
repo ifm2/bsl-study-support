@@ -991,12 +991,12 @@
 990,sign_55e652141a70e88d,video_f6066b9fa84ceb49,2,,Items and Rooms,990,13,Radio,p13: Radio,,The Home,FALSE,13
 991,sign_ab943988c9c12457,video_a44e2c7190ef9d32,2,,Items and Rooms,991,12,Door,p12: Door,,The Home,FALSE,12
 992,sign_6b54b32f7d3761c0,video_d5ccbe7d34f5b947,2,,Items and Rooms,992,12,Windows,p12: Windows,,The Home,FALSE,12
-993,sign_48cf86684c0ce91c,,2,,Items and Rooms,993,12,Coffee Table,p12: Coffee Table,,The Home,FALSE,12
+993,sign_48cf86684c0ce91c,video_b768488922458fdd,2,,Items and Rooms,993,12,Coffee Table,p12: Coffee Table,,The Home,FALSE,12
 994,sign_32014874ba89905d,video_3ce1ff6134be3357,2,,Items and Rooms,994,12,Light,p12: Light,,The Home,FALSE,12
 995,sign_7d32a0de3d2b81ad,video_867111fd404107ec,2,,Items and Rooms,995,12,Chair,p12: Chair | p21: Sofa / Chair,Split from workbook label Sofa / Chair. Workbook groups two items. Check whether to split. Sofa and Chair also appear separately elsewhere; retained for review rather than assuming equivalence.,The Home,FALSE,12; 21
 996,sign_1d81e8d7d83971d4,video_3ed8009c6dd5a673,2,,Items and Rooms,996,42,Bedroom,p42: Bedroom,,The Home,FALSE,42
 997,sign_e9d3ffcbb973bb6d,video_8969c6b13cb23547,2,,Items and Rooms,997,42,Garden,p42: Garden,,The Home,FALSE,42
-998,sign_c3b69b9358ebd870,,2,,Types,998,13,Council House,p13: Council House | p21: Council / Council House,Recap spelling/wording normalised; original retained in source_text.,The Home,FALSE,13; 21
+998,sign_c3b69b9358ebd870,video_2ebe89005a486239,2,,Types,998,13,Council House,p13: Council House | p21: Council / Council House,Recap spelling/wording normalised; original retained in source_text.,The Home,FALSE,13; 21
 999,sign_485c82ea5c6e0c2d,video_b1f065ba84d55a24,2,,Types,999,13,Detached,p13: Detached,,The Home,FALSE,13
 1000,sign_ec80939bfb78324f,video_5195103faa66a412,2,,Types,1000,13,Semi-Detached,p13: Semi - Detached | p21: Semi - Detached,Recap spelling/wording normalised; original retained in source_text.,The Home,FALSE,13; 21
 1001,sign_f3fa6acf6f9f66a0,video_abf0f03fda23141a,2,,Types,1001,13,Buildings,p13: Buildings,,The Home,FALSE,13
@@ -1133,7 +1133,7 @@
 1132,sign_0833d260a30d8f64,video_056cc287e47aaa3a,2,,Emotions and personalities,1132,26,Disappointed,p26: Disappointed | p37: Disappointed,,People and Personalities,FALSE,26; 37
 1133,sign_b30728152d6d339d,video_fbb6c91a5ab4df0d,2,,Emotions and personalities,1133,26,Embarrassed,p26: Embarrassed,,People and Personalities,FALSE,26
 1134,sign_024cf0a627102aec,video_3689fa9b0bc069f0,2,,Emotions and personalities,1134,26,Excited,p26: Excited | p37: Excited,,People and Personalities,FALSE,26; 37
-1135,sign_c61e93b254ac9ca0,,2,,Emotions and personalities,1135,26,Fed up,p26: Fed up,,People and Personalities,FALSE,26
+1135,sign_c61e93b254ac9ca0,video_28601b88b0b59ed1,2,,Emotions and personalities,1135,26,Fed up,p26: Fed up,,People and Personalities,FALSE,26
 1136,sign_88989e902602bb2f,video_a6c3c9ed7a292c3f,2,,Emotions and personalities,1136,26,Funny,p26: Funny | p37: Funny,,People and Personalities,FALSE,26; 37
 1137,sign_d2aa95b6f0f6dfb5,video_114e27f85a48dce7,2,,Emotions and personalities,1137,26,Grumpy,p26: Grumpy | p37: Grumpy,,People and Personalities,FALSE,26; 37
 1138,sign_56ae55a37f1a1050,video_e9ae040d5aa6470f,2,,Emotions and personalities,1138,26,Guilty,p26: Guilty -GG,,People and Personalities,FALSE,26
@@ -1278,7 +1278,7 @@
 1277,sign_d3817632aac0e69b,video_a3af9e3f5c254cc1,2,,Health and care,1277,35,Ask,p35: Ask | p38: Ask,,Health and Fitness,FALSE,35; 38
 1278,sign_a1fa47a492541be5,video_7f7fe12a3a84b9e1,2,,Health and care,1278,35,Better,p35: Better | p38: Better,,Health and Fitness,FALSE,35; 38
 1279,sign_70716a4c44c12343,video_0365d524b6f414e6,2,,Health and care,1279,35,Blood,p35: Blood,,Health and Fitness,FALSE,35
-1280,sign_3cf07dba9b6c28d6,,2,,Health and care,1280,35,Blood Pressure,p35: Blood Pressure | p38: Blood pressure,Recap spelling/wording normalised; original retained in source_text.,Health and Fitness,FALSE,35; 38
+1280,sign_3cf07dba9b6c28d6,video_a1b692a93a2a203a,2,,Health and care,1280,35,Blood Pressure,p35: Blood Pressure | p38: Blood pressure,Recap spelling/wording normalised; original retained in source_text.,Health and Fitness,FALSE,35; 38
 1281,sign_c9b2a08401b74693,video_d15f783957998700,2,,Health and care,1281,35,Broken,p35: Broken | p38: Broken,,Health and Fitness,FALSE,35; 38
 1282,sign_9f3a26756f66cf75,video_e4de683f156d1585,2,,Health and care,1282,35,Bruise,p35: Bruise / Ache / Pain | p38: Bruise,Split from workbook label Bruise / Ache / Pain. ,Health and Fitness,FALSE,35; 38
 1283,sign_adf7c8b20268f184,video_c0dfc0aec876daa1,2,,Health and care,1283,35,Ache,p35: Bruise / Ache / Pain,Split from workbook label Bruise / Ache / Pain. ,Health and Fitness,FALSE,35
@@ -1296,7 +1296,7 @@
 1295,sign_f3afeaaaca491954,video_34a4057dc691425d,2,,Health and care,1295,35,Faint,p35: Faint,,Health and Fitness,FALSE,35
 1296,sign_fd0f133c3e1ab003,video_f669fdf6711d4d3b,2,,Health and care,1296,35,Feel,p35: Feel | p38: Feel,,Health and Fitness,FALSE,35; 38
 1297,sign_169bbafface6a8c5,video_77ba5a2cd6d3b430,2,,Health and care,1297,35,Fit,p35: Fit,,Health and Fitness,FALSE,35
-1298,sign_7d01953e9d0d419e,,2,,Health and care,1298,35,Health Centre,p35: Health Centre | p38: Health Centre,,Health and Fitness,FALSE,35; 38
+1298,sign_7d01953e9d0d419e,video_63f5b9e129cca4da,2,,Health and care,1298,35,Health Centre,p35: Health Centre | p38: Health Centre,,Health and Fitness,FALSE,35; 38
 1299,sign_86ffaaf3a0766dcf,video_90da9683bd57a790,2,,Health and care,1299,35,Heart Attack,p35: Heart Attack,,Health and Fitness,FALSE,35
 1300,sign_36481d898407b113,video_e6942b8cbfeee2f4,2,,Health and care,1300,35,India,p35: India,Workbook lists India among health vocabulary. Check whether intended or a workbook error.,Health and Fitness,FALSE,35
 1301,sign_897e826162a32096,video_d8dc0a49ae924f52,2,,Health and care,1301,35,Jab,p35: Jab / Injection | p38: Jab / Injection,Split from workbook label Jab / Injection. ,Health and Fitness,FALSE,35; 38
@@ -1323,8 +1323,8 @@
 1322,sign_d0b0bd872ddd4a2b,video_16beb2fc85dc2381,2,,Health and care,1322,35,X-ray,p35: X- ray,Recap spelling/wording normalised; original retained in source_text.,Health and Fitness,FALSE,35
 1323,sign_2fb1b55eba90510b,video_8cd8a9cdaed922c4,2,,Health and care,1323,38,Sleep,p38: Sleep,,Health and Fitness,FALSE,38
 1324,sign_51d336de4c896181,video_efce01604f6a0ea3,2,,Health and care,1324,38,Happened what,p38: Happened what,,Health and Fitness,FALSE,38
-1325,sign_cc66cc63cd8655a6,,2,,Time and frequency,1325,31,Monday - Sunday,p31: Monday - Sunday,Workbook range label retained. Individual days from p62 also appear; decide whether to expand or remove this range before import.,Home Life,FALSE,31
-1326,sign_0456331964af3abf,,2,,Time and frequency,1326,31,January - December,p31: January - December,Workbook range label retained. Decide whether to expand into individual months before import.,Home Life,FALSE,31
+1325,sign_cc66cc63cd8655a6,video_0ad349b991c8670f,2,,Time and frequency,1325,31,Monday - Sunday,p31: Monday - Sunday,Workbook range label retained. Individual days from p62 also appear; decide whether to expand or remove this range before import.,Home Life,FALSE,31
+1326,sign_0456331964af3abf,video_3504e99a6a258bea,2,,Time and frequency,1326,31,January - December,p31: January - December,Workbook range label retained. Decide whether to expand into individual months before import.,Home Life,FALSE,31
 1327,sign_211f62df9d5e3da6,video_37fcd6c67f02c02a,2,,Time and frequency,1327,31,Today,p31: Today,,Home Life,FALSE,31
 1328,sign_6eff856db5941674,video_a4d6ecaacc7a1fae,2,,Time and frequency,1328,31,Tomorrow,p31: Tomorrow,,Home Life,FALSE,31
 1329,sign_3124f803236464b1,video_da793bff8a363354,2,,Time and frequency,1329,31,Yesterday,p31: Yesterday,,Home Life,FALSE,31
@@ -1394,7 +1394,7 @@
 1393,sign_ef082f6c4ded60ca,video_5e65832c344bb4f1,2,,Everyday,1393,42,Hearing aid,p42: Hearing aid,,Home Life,FALSE,42
 1394,sign_596da94dff3a4812,video_2e53a3bb34833834,2,,Everyday,1394,42,Invite,p42: Invite,,Home Life,FALSE,42
 1395,sign_e037ba960a5a4509,video_06d813a4898bc9bc,2,,Everyday,1395,42,Must,p42: Must,,Home Life,FALSE,42
-1396,sign_e2f5f265c7c284fe,,2,,Everyday,1396,42,No one there,p42: No one there,,Home Life,FALSE,42
+1396,sign_e2f5f265c7c284fe,video_60f68206e0d44bf0,2,,Everyday,1396,42,No one there,p42: No one there,,Home Life,FALSE,42
 1397,sign_d251a2685ab48ee9,video_c9a5f1be1056bdcc,2,,Everyday,1397,42,Plan,p42: Plan,,Home Life,FALSE,42
 1398,sign_2a38a960d7908e27,video_24d6aa4f72ea5187,2,,Everyday,1398,42,Realise,p42: Realise,,Home Life,FALSE,42
 1399,sign_7144bf2694369583,video_b9cad78026a1eaf1,2,,Everyday,1399,42,Relax,p42: Relax,,Home Life,FALSE,42
@@ -1402,9 +1402,9 @@
 1401,sign_8762794e13e6ed29,video_f6fb0077176dafc7,2,,Everyday,1401,42,There,p42: There,,Home Life,FALSE,42
 1402,sign_1ae67e268e9521f4,video_d0e5250c8ba5f8a1,2,,Everyday,1402,42,Watch,p42: Watch,,Home Life,FALSE,42
 1403,sign_ce679ffbf882ab48,video_e9e3427941d93e01,2,,Daily routine and chores,1403,42,Brush Hair,p42: Brush Hair - NMF,,Home Life,TRUE,42
-1404,sign_a58eb08e0cd1c27d,,2,,Daily routine and chores,1404,42,Brush Teeth,p42: Brush Teeth - NMF,,Home Life,TRUE,42
+1404,sign_a58eb08e0cd1c27d,video_42e09d6e6f874fe1,2,,Daily routine and chores,1404,42,Brush Teeth,p42: Brush Teeth - NMF,,Home Life,TRUE,42
 1405,sign_aa08b876760b324b,video_6bd7f1fa792efeca,2,,Daily routine and chores,1405,42,Change Nappy,p42: Change Nappy,,Home Life,FALSE,42
-1406,sign_6bafe66f550cde78,,2,,Daily routine and chores,1406,42,Cook Breakfast,p42: Cook Breakfast,,Home Life,FALSE,42
+1406,sign_6bafe66f550cde78,video_5dc23254ea4dfc0c,2,,Daily routine and chores,1406,42,Cook Breakfast,p42: Cook Breakfast,,Home Life,FALSE,42
 1407,sign_1828423ac5445ee7,video_909787fe850c35b9,2,,Daily routine and chores,1407,42,Dirty,p42: Dirty / Happy,Split from workbook label Dirty / Happy. Workbook groups Dirty / Happy. Check wording and whether to split.,Home Life,FALSE,42
 1408,sign_27fdb41c0c08133e,video_5d914260564e6272,2,,Daily routine and chores,1408,42,Happy,p42: Dirty / Happy,Split from workbook label Dirty / Happy. Workbook groups Dirty / Happy. Check wording and whether to split.,Home Life,FALSE,42
 1409,sign_fdd4a1d2a8859a5b,video_ccc22b8281819585,2,,Daily routine and chores,1409,42,Do the washing up,p42: Do the washing up,,Home Life,FALSE,42
@@ -1413,7 +1413,7 @@
 1412,sign_337e7efd0e05aa08,video_17509ab60239f405,2,,Daily routine and chores,1412,42,Hoover,p42: Hoover,,Home Life,FALSE,42
 1413,sign_09b83213de0290e0,video_80f56b444beddb2b,2,,Daily routine and chores,1413,42,Iron,p42: Iron,,Home Life,FALSE,42
 1414,sign_040b2e4ad3cb9cb9,video_d55873a6f0571497,2,,Daily routine and chores,1414,42,Knock,p42: Knock,,Home Life,FALSE,42
-1415,sign_1d7a8514e7c1b787,,2,,Daily routine and chores,1415,42,Look after children,p42: Look after children,,Home Life,FALSE,42
+1415,sign_1d7a8514e7c1b787,video_599db2bccd378f65,2,,Daily routine and chores,1415,42,Look after children,p42: Look after children,,Home Life,FALSE,42
 1416,sign_65fb526502e6e54a,video_b713484b749eefa0,2,,Daily routine and chores,1416,42,Mess,p42: Mess,,Home Life,FALSE,42
 1417,sign_0ce4bda02d705f8b,video_31a7d7a5be0a1478,2,,Daily routine and chores,1417,42,Mow the Lawn,p42: Mow the Lawn,,Home Life,FALSE,42
 1418,sign_351716396557c9a1,video_065b759c31404c4c,2,,Daily routine and chores,1418,42,Paint,p42: Paint,,Home Life,FALSE,42
@@ -1502,12 +1502,12 @@
 1501,sign_1d33631e7adccbce,video_9132dc85f8d81bc2,2,,Travel and planning,1501,46,Find,p46: Find,,Travel and Holidays,FALSE,46
 1502,sign_e7d990785fa237e8,video_c2b0404aa14d7b08,2,,Travel and planning,1502,46,Finish,p46: Finish -3,,Travel and Holidays,FALSE,46
 1503,sign_7b6b131f866b6f74,video_cc25adcf07c8d131,2,,Travel and planning,1503,46,Flight,p46: Flight,,Travel and Holidays,FALSE,46
-1504,sign_4e9019a3734aca89,,2,,Travel and planning,1504,46,How Far,p46: How Far,,Travel and Holidays,FALSE,46
+1504,sign_4e9019a3734aca89,video_878239d7c5738404,2,,Travel and planning,1504,46,How Far,p46: How Far,,Travel and Holidays,FALSE,46
 1505,sign_d0e1f44e1f0cf9c5,video_c197458954a440d9,2,,Travel and planning,1505,46,Injections,p46: Injections,,Travel and Holidays,FALSE,46
 1506,sign_105b0baca1154d17,video_c862d6d32d0d873a,2,,Travel and planning,1506,46,Like what?,p46: Like what? | p62: Like what,Recap spelling/wording normalised; original retained in source_text.,Travel and Holidays,FALSE,46; 62
 1507,sign_1b21740b9c63f8a8,video_94fc4d9e2a0c2896,2,,Travel and planning,1507,46,Local,p46: Local,,Travel and Holidays,FALSE,46
 1508,sign_169db00e6ed59fac,video_001d729a27e66ba8,2,,Travel and planning,1508,46,Lost,p46: Lost,,Travel and Holidays,FALSE,46
-1509,sign_ee7cecbe512e118b,,2,,Travel and planning,1509,46,Lost Contact,p46: Lost Contact,,Travel and Holidays,FALSE,46
+1509,sign_ee7cecbe512e118b,video_9ad4908e6815a3f7,2,,Travel and planning,1509,46,Lost Contact,p46: Lost Contact,,Travel and Holidays,FALSE,46
 1510,sign_6b9232cf4378b824,video_7b7c36573ac1a8c0,2,,Travel and planning,1510,46,Luggage,p46: Luggage | p50: Luggage,,Travel and Holidays,FALSE,46; 50
 1511,sign_bb940b6b306b50ea,,2,,Travel and planning,1511,46,Missed,p46: Missed,,Travel and Holidays,FALSE,46
 1512,sign_ce708a50fb6cc201,video_06cfc68f991b6432,2,,Travel and planning,1512,46,Near,p46: Near,,Travel and Holidays,FALSE,46
@@ -1541,7 +1541,7 @@
 1540,sign_d4a762001549bcf3,video_9294201fd9441d0e,2,,Travel and planning,1540,50,Licence,p50: Licence,,Travel and Holidays,FALSE,50
 1541,sign_2b3a9222f0da1039,video_ec13a937cc117c39,2,,Travel and planning,1541,50,Long distance,p50: Long distance,,Travel and Holidays,FALSE,50
 1542,sign_7ef5740786672059,video_3dade86d9402b677,2,,Travel and planning,1542,50,Route,p50: Route / road,Split from workbook label Route / road. ,Travel and Holidays,FALSE,50
-1543,sign_1616295397ece12b,,2,,Travel and planning,1543,50,Seat belt,p50: Seat belt,,Travel and Holidays,FALSE,50
+1543,sign_1616295397ece12b,video_ed01fdbccdd0b0fc,2,,Travel and planning,1543,50,Seat belt,p50: Seat belt,,Travel and Holidays,FALSE,50
 1544,sign_c765525ea74ee539,video_e7e06404c72550da,2,,Travel and planning,1544,50,Tax,p50: Tax,,Travel and Holidays,FALSE,50
 1545,sign_d3817632aac0e69b,video_a3af9e3f5c254cc1,2,,Travel and planning,1545,62,Ask,p62: Ask,,Travel and Holidays,FALSE,62
 1546,sign_eddecfa5caa095c3,video_7b93d01f5e6281ed,2,,Travel and planning,1546,62,Beautiful,p62: Beautiful,,Travel and Holidays,FALSE,62
@@ -1565,12 +1565,12 @@
 1564,sign_33458b5ec826e9de,,2,,Breakfast foods,1564,52,Oat,p52: Milk / Almond / Oat,Split from workbook label Milk / Almond / Oat. Workbook groups milk and alternatives. Check whether to split.,Food and Drink,FALSE,52
 1565,sign_95c28b8375412225,video_c364a4bc1990e9ac,2,,Breakfast foods,1565,52,Mushrooms,p52: Mushrooms,,Food and Drink,FALSE,52
 1566,sign_34e86bfd86935a34,video_91d6bd18e0ca17e5,2,,Breakfast foods,1566,52,Pancakes,p52: Pancakes,,Food and Drink,FALSE,52
-1567,sign_18fa950afd570f9f,,2,,Breakfast foods,1567,52,Peanut Butter,p52: Peanut Butter,,Food and Drink,FALSE,52
+1567,sign_18fa950afd570f9f,video_15d0f77bdd5a60a3,2,,Breakfast foods,1567,52,Peanut Butter,p52: Peanut Butter,,Food and Drink,FALSE,52
 1568,sign_d388ea98b9dd5198,video_5317a5b8c2bbff93,2,,Breakfast foods,1568,52,Porridge,p52: Porridge,,Food and Drink,FALSE,52
 1569,sign_66fc17cf2268ee9c,video_384188181a824eae,2,,Breakfast foods,1569,52,Sausages,p52: Sausages,,Food and Drink,FALSE,52
 1570,sign_0c3bb1a05c150532,video_82c6fd99456f3106,2,,Breakfast foods,1570,52,Toast,p52: Toast,,Food and Drink,FALSE,52
 1571,sign_6bb8758ea2b36da0,video_67d8a9ef3e96db67,2,,Breakfast foods,1571,52,Tomatoes,p52: Tomatoes,,Food and Drink,FALSE,52
-1572,sign_447e6759ad6e5da2,,2,,Lunch foods,1572,52,BBQ sauce,p52: BBQ sauce,,Food and Drink,FALSE,52
+1572,sign_447e6759ad6e5da2,video_1e2c3a71a128ec02,2,,Lunch foods,1572,52,BBQ sauce,p52: BBQ sauce,,Food and Drink,FALSE,52
 1573,sign_2580a078f0385b60,video_f9a87f8ee1296997,2,,Lunch foods,1573,52,Bread,p52: Bread,,Food and Drink,FALSE,52
 1574,sign_88406dbf121b8089,video_7c025e300c000216,2,,Lunch foods,1574,52,Cheese,p52: Cheese | p62: Cheese,,Food and Drink,FALSE,52; 62
 1575,sign_f338f4fd1e86da08,video_b22d9da8b6bd3cdb,2,,Lunch foods,1575,52,Cucumber,p52: Cucumber,,Food and Drink,FALSE,52
@@ -1582,9 +1582,9 @@
 1581,sign_6d8021445d1d51d4,video_323d1ed3448267b8,2,,Lunch foods,1581,52,Pasta,p52: Pasta | p62: Pasta,,Food and Drink,FALSE,52; 62
 1582,sign_ffe722dbfcb6ee7a,,2,,Lunch foods,1582,52,Pickle,p52: Pickle,,Food and Drink,FALSE,52
 1583,sign_1968122b7fa66730,video_427a6e5448e1bdba,2,,Lunch foods,1583,52,Pizza,p52: Pizza | p62: Pizza,,Food and Drink,FALSE,52; 62
-1584,sign_6de7901721d4526a,,2,,Lunch foods,1584,52,Pub Lunch,p52: Pub Lunch,,Food and Drink,FALSE,52
+1584,sign_6de7901721d4526a,video_3faa2c5ef4ee0a33,2,,Lunch foods,1584,52,Pub Lunch,p52: Pub Lunch,,Food and Drink,FALSE,52
 1585,sign_61304a129766c315,video_076c7cbaed3d85be,2,,Lunch foods,1585,52,Salad,p52: Salad,,Food and Drink,FALSE,52
-1586,sign_30e98b40eebb9457,,2,,Lunch foods,1586,52,Salad Cream,p52: Salad Cream,,Food and Drink,FALSE,52
+1586,sign_30e98b40eebb9457,video_72b6e08272d8ba72,2,,Lunch foods,1586,52,Salad Cream,p52: Salad Cream,,Food and Drink,FALSE,52
 1587,sign_3e8f44c801e2feec,video_600b6b1adcfa27dd,2,,Lunch foods,1587,52,Sandwich,p52: Sandwich | p62: Sandwich,,Food and Drink,FALSE,52; 62
 1588,sign_42d7660217425dd1,video_d32c78facaa9cdb2,2,,Lunch foods,1588,52,Soup,p52: Soup | p62: Soup,,Food and Drink,FALSE,52; 62
 1589,sign_5a8a7ddca5b6d666,video_511e7644de3573a0,2,,Lunch foods,1589,52,Tomato,p52: Tomato,,Food and Drink,FALSE,52
@@ -1609,14 +1609,14 @@
 1608,sign_a38e7e940e3580ff,video_97d54861c59b16cc,2,,Drinks,1608,53,Beer,p53: Beer / Drink | p62: Beer,Split from workbook label Beer / Drink. ,Food and Drink,FALSE,53; 62
 1609,sign_65372146e21c2121,video_ba9ff73872b59676,2,,Drinks,1609,53,Drink,p53: Beer / Drink,Split from workbook label Beer / Drink. ,Food and Drink,FALSE,53
 1610,sign_499c7be7b6229a9a,video_327d1cec45255412,2,,Drinks,1610,53,Coke,p53: Coke / Diet Coke / Coke zero | p62: Coke,Split from workbook label Coke / Diet Coke / Coke zero. ,Food and Drink,FALSE,53; 62
-1611,sign_402da59f88acc9a8,,2,,Drinks,1611,53,Diet Coke,p53: Coke / Diet Coke / Coke zero,Split from workbook label Coke / Diet Coke / Coke zero. ,Food and Drink,FALSE,53
-1612,sign_faa3563f3e95ea8c,,2,,Drinks,1612,53,Coke zero,p53: Coke / Diet Coke / Coke zero,Split from workbook label Coke / Diet Coke / Coke zero. ,Food and Drink,FALSE,53
+1611,sign_402da59f88acc9a8,video_2599e49d04941128,2,,Drinks,1611,53,Diet Coke,p53: Coke / Diet Coke / Coke zero,Split from workbook label Coke / Diet Coke / Coke zero. ,Food and Drink,FALSE,53
+1612,sign_faa3563f3e95ea8c,video_94d167a4e4983e97,2,,Drinks,1612,53,Coke zero,p53: Coke / Diet Coke / Coke zero,Split from workbook label Coke / Diet Coke / Coke zero. ,Food and Drink,FALSE,53
 1613,sign_6f46959167cd06d8,video_1c9746929db2c824,2,,Drinks,1613,53,Hot chocolate,p53: Hot Chocolate,,Food and Drink,FALSE,53
 1614,sign_92a4b541a8d25390,video_14e83d9316153218,2,,Drinks,1614,53,Juice,p53: Juice,,Food and Drink,FALSE,53
 1615,sign_74f96c6f33d149dc,video_c712b15d0a47431c,2,,Drinks,1615,53,Milk,p53: Milk | p62: Milk,,Food and Drink,FALSE,53; 62
 1616,sign_3395762db62e8e9d,video_57d5a6d4855416e5,2,,Drinks,1616,53,Wine,p53: Wine | p62: Wine,,Food and Drink,FALSE,53; 62
-1617,sign_ad3e9d469f81aa7b,,2,,Takeaways and restaurants,1617,52,Burger King,p52: Burger King | p53: Burger King,"Included from the workbook’s fingerspelling suggestions, not a sign/video assignment.",Food and Drink,FALSE,52; 53
-1618,sign_2b82e6480898d0be,,2,,Takeaways and restaurants,1618,52,Cafe Nero,p52: Cafe Nero,"Included from the workbook’s fingerspelling suggestions, not a sign/video assignment.",Food and Drink,FALSE,52
+1617,sign_ad3e9d469f81aa7b,video_de062c1c45b4d715,2,,Takeaways and restaurants,1617,52,Burger King,p52: Burger King | p53: Burger King,"Included from the workbook’s fingerspelling suggestions, not a sign/video assignment.",Food and Drink,FALSE,52; 53
+1618,sign_2b82e6480898d0be,video_8c9fe4098c7fe225,2,,Takeaways and restaurants,1618,52,Cafe Nero,p52: Cafe Nero,"Included from the workbook’s fingerspelling suggestions, not a sign/video assignment.",Food and Drink,FALSE,52
 1619,sign_ffe321dc8bdb5f08,,2,,Takeaways and restaurants,1619,52,Costa,p52: Costa,"Included from the workbook’s fingerspelling suggestions, not a sign/video assignment.",Food and Drink,FALSE,52
 1620,sign_3d7826da49b3e359,video_730b60a0d7002589,2,,Takeaways and restaurants,1620,52,McDonalds,p52: McDonalds | p53: Mcdonalds,"Included from the workbook’s fingerspelling suggestions, not a sign/video assignment. Recap spelling/wording normalised; original retained in source_text.",Food and Drink,FALSE,52; 53
 1621,sign_4ad4180a0b4f8cdd,,2,,Takeaways and restaurants,1621,52,Starbucks,p52: Starbucks,"Included from the workbook’s fingerspelling suggestions, not a sign/video assignment.",Food and Drink,FALSE,52
@@ -1624,19 +1624,19 @@
 1623,sign_21fb82f54cb7ddd0,,2,,Takeaways and restaurants,1623,53,Chinese,p53: Chinese,,Food and Drink,FALSE,53
 1624,sign_8a4a35c6959da50f,,2,,Takeaways and restaurants,1624,53,Dominos,p53: Dominos,,Food and Drink,FALSE,53
 1625,sign_60fb33c7cbe0fef7,video_05b5a2f02f79c57c,2,,Takeaways and restaurants,1625,53,Fish and Chips,p53: Fish and Chips,,Food and Drink,FALSE,53
-1626,sign_dfa0e49cf44f54cf,,2,,Takeaways and restaurants,1626,53,Five Guys,p53: Five Guys,,Food and Drink,FALSE,53
+1626,sign_dfa0e49cf44f54cf,video_1b41ea961ba69b1e,2,,Takeaways and restaurants,1626,53,Five Guys,p53: Five Guys,,Food and Drink,FALSE,53
 1627,sign_7a56a9af2e8ed3f2,video_5fd8cd4610ae1448,2,,Takeaways and restaurants,1627,53,Kebab,p53: Kebab,,Food and Drink,FALSE,53
 1628,sign_0e179d69246f8238,video_2546f269ec7799e3,2,,Takeaways and restaurants,1628,53,Indian,p53: Indian,,Food and Drink,FALSE,53
 1629,sign_eca69c8be7077de7,,2,,Takeaways and restaurants,1629,53,Nandos,p53: Nandos,,Food and Drink,FALSE,53
-1630,sign_5c0feb17306fb838,,2,,Takeaways and restaurants,1630,53,Pizza Express,p53: Pizza Express,,Food and Drink,FALSE,53
-1631,sign_361c515c639a4727,,2,,Takeaways and restaurants,1631,53,Pizza Hut,p53: Pizza Hut,,Food and Drink,FALSE,53
+1630,sign_5c0feb17306fb838,video_47dba2867fe70273,2,,Takeaways and restaurants,1630,53,Pizza Express,p53: Pizza Express,,Food and Drink,FALSE,53
+1631,sign_361c515c639a4727,video_f598b39e23c74a98,2,,Takeaways and restaurants,1631,53,Pizza Hut,p53: Pizza Hut,,Food and Drink,FALSE,53
 1632,sign_1b17f2b56da19129,video_1cb012ef7d586d4f,2,,Takeaways and restaurants,1632,53,Pub,p53: Pub,,Food and Drink,FALSE,53
-1633,sign_fcac101001806b91,,2,,Takeaways and restaurants,1633,53,Red Lion,p53: Red Lion,,Food and Drink,FALSE,53
+1633,sign_fcac101001806b91,video_e31bfc6e0277a80e,2,,Takeaways and restaurants,1633,53,Red Lion,p53: Red Lion,,Food and Drink,FALSE,53
 1634,sign_aec202337f512aa8,video_8e4cea5ef18fec99,2,,Takeaways and restaurants,1634,53,Takeaway,p53: Takeaway,,Food and Drink,FALSE,53
 1635,sign_3235c4dca09e6f40,video_81ff0514fbe0b6e6,2,,Takeaways and restaurants,1635,53,Thai,p53: Thai,,Food and Drink,FALSE,53
-1636,sign_50c92e1ae295aa07,,2,,Takeaways and restaurants,1636,53,Turtle Bay,p53: Turtle Bay,,Food and Drink,FALSE,53
+1636,sign_50c92e1ae295aa07,video_5a042729dde80d72,2,,Takeaways and restaurants,1636,53,Turtle Bay,p53: Turtle Bay,,Food and Drink,FALSE,53
 1637,sign_b3a0d25653241286,,2,,Takeaways and restaurants,1637,53,Wendy's,p53: Wendy's,,Food and Drink,FALSE,53
-1638,sign_f1708031c098313f,,2,,Takeaways and restaurants,1638,53,White Hart,p53: White Hart,,Food and Drink,FALSE,53
+1638,sign_f1708031c098313f,video_23d86e81a7da0962,2,,Takeaways and restaurants,1638,53,White Hart,p53: White Hart,,Food and Drink,FALSE,53
 1639,sign_945000a57e9b8188,video_403c313bdd9689bd,2,,Meat and fish,1639,53,Beef,p53: Beef | p62: Beef,,Food and Drink,FALSE,53; 62
 1640,sign_a314f960f2a8f136,video_182ea6227be84711,2,,Meat and fish,1640,53,Lamb,p53: Lamb | p62: Lamb,,Food and Drink,FALSE,53; 62
 1641,sign_1d9c2a9192a041c4,video_81b73cb1ca834429,2,,Meat and fish,1641,53,Pork,p53: Pork | p62: Pork,,Food and Drink,FALSE,53; 62
@@ -1653,7 +1653,7 @@
 1652,sign_6a427a61f9bce940,video_f0f7bab30fda9b26,2,,Snacks and treats,1652,54,Chocolate,p54: Chocolate,,Food and Drink,FALSE,54
 1653,sign_ff69d5bcfb411d47,video_7f38c64df1e4e31c,2,,Snacks and treats,1653,54,Crisps,p54: Crisps,,Food and Drink,FALSE,54
 1654,sign_1470e0fc154c462e,video_a6fb3935e356da8f,2,,Snacks and treats,1654,54,Ice Cream,p54: Ice Cream,,Food and Drink,FALSE,54
-1655,sign_b11749fcabcbeb48,,2,,Snacks and treats,1655,54,Jaffa Cakes,p54: Jaffa Cakes,,Food and Drink,FALSE,54
+1655,sign_b11749fcabcbeb48,video_f463e8dd83ccef00,2,,Snacks and treats,1655,54,Jaffa Cakes,p54: Jaffa Cakes,,Food and Drink,FALSE,54
 1656,sign_75fa042af622eec2,,2,,Snacks and treats,1656,54,Olives,p54: Olives - FS,,Food and Drink,FALSE,54
 1657,sign_56fb4866854c7b58,,2,,Snacks and treats,1657,54,Popcorn,p54: Popcorn,,Food and Drink,FALSE,54
 1658,sign_5ecc5058c499871d,video_cf97b397f083ef3c,2,,Snacks and treats,1658,54,Sweets,p54: Sweets,,Food and Drink,FALSE,54

@@ -59,9 +59,9 @@ The editable CSV masters are:
 | File | Purpose |
 | --- | --- |
 | `data/signs.csv` | Deduplicated words/meanings, identified by permanent `sign_id`. |
-| `data/videos.csv` | Sourced video candidates, sign ownership, permanent `video_id`, priority and per-video verification status. |
+| `data/videos.csv` | Sourced video candidates, sign ownership, permanent `video_id`, priority, verification status and any reported problem message. |
 | `data/lesson_vocabulary.csv` | Study memberships, linking an entry to a sign, selected video, level, lesson/topic, category, source wording and pages. |
-| `data/video_sequences.csv` | Optional ordered three-clip MP4 sequences for a sign, played in order and looped. |
+| `data/video_sequences.csv` | Optional ordered two- or three-clip MP4 sequences for a sign, played in order and looped. |
 
 The vocabulary file keeps its original name for compatibility. Level 1 rows use `lesson` and leave `topic` blank; Level 2 rows use `topic` and leave `lesson` blank. `source_pages` records all printed page references, while `source_page` retains the first reference. `nmf` is TRUE only where explicitly marked in the source; FALSE does not mean the sign never uses a non-manual feature.
 
@@ -85,7 +85,7 @@ Use `VerifyVideo.html` to review unverified videos, replace a selected video URL
 python tools/verify_video_server.py
 ```
 
-Then open `http://127.0.0.1:8000/VerifyVideo.html`. Saving updates the affected CSV rows and regenerates `data/data.js` and `data/data.json`. A three-clip sequence can be set up in order using direct MP4 URLs; it plays continuously and loops. Keep this local tool off a public server. SignBSL page links require the host's embed widget to be available; direct MP4 previews may still be blocked by their video host.
+Then open `http://127.0.0.1:8000/VerifyVideo.html`. Saving updates the affected CSV rows and regenerates `data/data.js` and `data/data.json`. `Correct word` updates the shared sign word and every lesson entry linked to that sign. In the dictionary, `Report problem` stores the message with the video, marks it Unverified and makes the message visible in the verifier. Reporting requires the local server; static GitHub Pages cannot save reports. Two- and three-clip sequences can be set up in order using direct MP4 URLs; they play continuously and loop. In Individual mode, `Sequence not needed` removes sequence clips for every entry with the exact same word and leaves those entries' selected videos Unverified. `python tools/suggest_video_sequences.py` previews first guesses for multiword entries; add `--apply` to save them. Existing word videos are reused where possible, with SignStation filename guesses for missing words. The suggested sequences remain Unverified. Keep this local tool off a public server. SignBSL page links require the host's embed widget to be available; direct MP4 previews may still be blocked by their video host.
 
 ## Development checks
 
