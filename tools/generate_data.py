@@ -78,17 +78,20 @@ def validate(data):
         require(r['sign_id'] in smap, 'Unknown lesson sign_id: ' + r['sign_id'])
         require(r['level'] in {'1', '2'}, 'Level must be 1 or 2')
         if r['level'] == '1':
-            require(r['lesson'].isdigit() and 1 <= int(r['lesson']) <= 14, 'Lesson outside level range')
+            require(r['lesson'].isdigit() and 0 <= int(r['lesson']) <= 14, 'Lesson outside level range')
             require(not r['topic'], 'Level 1 uses lessons')
+            if r['lesson'] == '0':
+                require(r['category'] in {'Right Handed', 'Left Handed'}, 'Lesson 0 category must identify handedness')
         else:
             require(not r['lesson'] and r['topic'] in TOPICS, 'Level 2 requires a topic, not a lesson')
             require('/' not in r['word'], 'Split all Level 2 slash labels')
         require(r['nmf'] in {'TRUE', 'FALSE'}, 'nmf must be TRUE or FALSE')
         require(r['global_order'].isdigit() and int(r['global_order']) > 0, 'Invalid global_order')
         require(r['entry_id'].isdigit() and int(r['entry_id']) > 0, 'Invalid entry_id')
-        require(r['source_page'].isdigit() and int(r['source_page']) > 0, 'Invalid workbook page')
+        expected_min_page = 0 if r['level'] == '1' and r['lesson'] == '0' else 1
+        require(r['source_page'].isdigit() and int(r['source_page']) >= expected_min_page, 'Invalid workbook page')
         pages = [p.strip() for p in r['source_pages'].split(';')]
-        require(all(p.isdigit() and int(p) > 0 for p in pages) and r['source_page'] in pages, 'Invalid source_pages')
+        require(all(p.isdigit() and int(p) >= expected_min_page for p in pages) and r['source_page'] in pages, 'Invalid source_pages')
         require(bool(r['category']) and bool(r['word']) and bool(r['source_text']), 'Missing occurrence text')
         require(r['word'] == smap[r['sign_id']]['word'], 'Occurrence word does not match sign')
         if r['selected_video_id']:

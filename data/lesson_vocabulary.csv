@@ -1,4 +1,4 @@
-﻿entry_id,sign_id,selected_video_id,level,lesson,category,global_order,source_page,word,source_text,notes,topic,nmf,source_pages
+entry_id,sign_id,selected_video_id,level,lesson,category,global_order,source_page,word,source_text,notes,topic,nmf,source_pages
 1,sign_d9d3734cd05564a1,video_5656680d0e4c09d0,1,1,Greetings,1,3,Hello,Hello / Goodbye,Candidate URL; review sign and permission,,FALSE,3
 2,sign_41b75c4e66f5e627,video_bdd73059a66f9078,1,1,Greetings,2,3,Goodbye,Hello / Goodbye,Candidate URL; review sign and permission,,FALSE,3
 3,sign_03cb5fb3dd8f56aa,video_a9feca96e714a6fa,1,1,Greetings,3,3,Yes,Yes / No,Candidate URL; review sign and permission,,FALSE,3
@@ -43,13 +43,11 @@
 42,sign_f00d467934d2ff61,video_3025082e422127e4,1,2,Common places,42,7,Work,Work,Candidate URL from original SignStation naming pattern; not checked,,FALSE,7
 43,sign_7cb7bb1c995044a4,video_b541a672aa201c21,1,2,Common places,43,7,School,School,Candidate URL from original SignStation naming pattern; not checked,,FALSE,7
 44,sign_9d181c032a9edb71,video_44d61dc2a007de9b,1,2,Common places,44,7,Home,Home,Candidate URL from original SignStation naming pattern; not checked,,FALSE,7
-45,sign_35a7cabf04115dc7,video_126e0fa6d43c3f9d,1,2,Numbers,45,8,0–10,0–10,Candidate URL from original SignStation naming pattern; not checked,,FALSE,8
-46,sign_e4dda54e86921e36,video_79a7fcf0333d4665,1,2,Numbers,46,8,11,11,Candidate URL from original SignStation naming pattern; not checked,,FALSE,8
-47,sign_d189e509a912fc3e,video_34b38d930d36a39c,1,2,Numbers,47,8,12,12,Candidate URL from original SignStation naming pattern; not checked,,FALSE,8
-48,sign_b74f24df43a3a501,video_073f1a01a41444bf,1,2,Numbers,48,8,13–19,13–19,Candidate URL from original SignStation naming pattern; not checked,,FALSE,8
-49,sign_594d9ca765ccc893,video_1ada908f4fe0bea6,1,2,Numbers,49,8,20–99,20–99,Candidate URL from original SignStation naming pattern; not checked,,FALSE,8
-50,sign_3e817d8002d04b1a,video_ec402ff52d869a1b,1,2,Numbers,50,8,Hundreds,Hundreds,Candidate URL from original SignStation naming pattern; not checked,,FALSE,8
-51,sign_6ab7073abcf913ae,video_0acc99a5f430a863,1,2,Numbers,51,8,Thousands,Thousands,Candidate URL from original SignStation naming pattern; not checked,,FALSE,8
+46,sign_e4dda54e86921e36,video_79a7fcf0333d4665,1,2,Numbers,1780,8,11,11,Candidate URL from original SignStation naming pattern; not checked,,FALSE,8
+47,sign_d189e509a912fc3e,video_34b38d930d36a39c,1,2,Numbers,1781,8,12,12,Candidate URL from original SignStation naming pattern; not checked,,FALSE,8
+49,sign_594d9ca765ccc893,video_1ada908f4fe0bea6,1,2,Numbers,1789,8,20–99,20–99,Candidate URL from original SignStation naming pattern; not checked,,FALSE,8
+50,sign_3e817d8002d04b1a,video_ec402ff52d869a1b,1,2,Numbers,1800,8,Hundreds,Hundreds,Candidate URL from original SignStation naming pattern; not checked,,FALSE,8
+51,sign_6ab7073abcf913ae,video_0acc99a5f430a863,1,2,Numbers,1801,8,Thousands,Thousands,Candidate URL from original SignStation naming pattern; not checked,,FALSE,8
 52,sign_1a4ee58747167b1c,video_c58e5a996e2cd45b,1,2,Time,52,8,O’clock,O’clock,Candidate URL from original SignStation naming pattern; not checked,,FALSE,8
 53,sign_20d9270da47dc8f7,video_57e1adb016245111,1,2,Time,53,8,Half past,Half past,Candidate URL from original SignStation naming pattern; not checked,,FALSE,8
 54,sign_742c35c9fb9f9d5a,video_4186e6b211c0d0c5,1,2,Time,54,8,Quarter past,Quarter past,Candidate URL from original SignStation naming pattern; not checked,,FALSE,8
@@ -1664,3 +1662,83 @@
 1663,sign_d95ff63bee2bf033,video_6894b3b25d3a948f,2,,Vegetables,1663,62,Pepper,p62: Pepper,,Food and Drink,FALSE,62
 1664,sign_e615ff2b0cb84d29,video_e272391d19fa1888,2,,Everyday,1664,62,Delicious,p62: Delicious,,Food and Drink,FALSE,62
 1665,sign_04bcddf3bc038352,video_c18f7c102149f47f,2,,Everyday,1665,62,Favourite,p62: Favourite - 3,,Food and Drink,FALSE,62
+1666,sign_69fd2512b874ff20,video_ae40c5f358f9398f,1,0,Right Handed,1666,0,A (Right Handed),A (Right Handed),Supplemental alphabet entry; not from a workbook page.,,FALSE,0
+1667,sign_f878158ec4d8d484,video_6381bf800b626db1,1,0,Right Handed,1667,0,B (Right Handed),B (Right Handed),Supplemental alphabet entry; not from a workbook page.,,FALSE,0
+1668,sign_bc0626bf987a7b82,video_531fba884b6b2576,1,0,Right Handed,1668,0,C (Right Handed),C (Right Handed),Supplemental alphabet entry; not from a workbook page.,,FALSE,0
+1669,sign_e93024eb8a278028,video_b7c4ee20b06f4108,1,0,Right Handed,1669,0,D (Right Handed),D (Right Handed),Supplemental alphabet entry; not from a workbook page.,,FALSE,0
+1670,sign_9c240b84b52e1d5e,video_3f0922b96fb8fd3a,1,0,Right Handed,1670,0,E (Right Handed),E (Right Handed),Supplemental alphabet entry; not from a workbook page.,,FALSE,0
+1671,sign_a4a6ad31359a0a53,video_cfc5667eadf050c3,1,0,Right Handed,1671,0,F (Right Handed),F (Right Handed),Supplemental alphabet entry; not from a workbook page.,,FALSE,0
+1672,sign_493e6ea43e1e9163,video_1cb73cc481bcbd42,1,0,Right Handed,1672,0,G (Right Handed),G (Right Handed),Supplemental alphabet entry; not from a workbook page.,,FALSE,0
+1673,sign_f67ae42081a1ecac,video_1251d9bdb03d6482,1,0,Right Handed,1673,0,H (Right Handed),H (Right Handed),Supplemental alphabet entry; not from a workbook page.,,FALSE,0
+1674,sign_711e72fa8ef3af89,video_aad4aea4b72c49ee,1,0,Right Handed,1674,0,I (Right Handed),I (Right Handed),Supplemental alphabet entry; not from a workbook page.,,FALSE,0
+1675,sign_2f98b56c040458b1,video_73998f7d587a3cdf,1,0,Right Handed,1675,0,J (Right Handed),J (Right Handed),Supplemental alphabet entry; not from a workbook page.,,FALSE,0
+1676,sign_e0c57137c3e56b1d,video_965731fbf94bfd09,1,0,Right Handed,1676,0,K (Right Handed),K (Right Handed),Supplemental alphabet entry; not from a workbook page.,,FALSE,0
+1677,sign_72f1b536174d22c4,video_b576308fcc5daa3f,1,0,Right Handed,1677,0,L (Right Handed),L (Right Handed),Supplemental alphabet entry; not from a workbook page.,,FALSE,0
+1678,sign_ff5a1487ad9ca35a,video_b2a7902252413961,1,0,Right Handed,1678,0,M (Right Handed),M (Right Handed),Supplemental alphabet entry; not from a workbook page.,,FALSE,0
+1679,sign_ec98ed08cc1e988c,video_70c8ca6de59707d2,1,0,Right Handed,1679,0,N (Right Handed),N (Right Handed),Supplemental alphabet entry; not from a workbook page.,,FALSE,0
+1680,sign_08d91233942dacb2,video_58353198314d505f,1,0,Right Handed,1680,0,O (Right Handed),O (Right Handed),Supplemental alphabet entry; not from a workbook page.,,FALSE,0
+1681,sign_dc7bf34804216597,video_c0213e2d59321148,1,0,Right Handed,1681,0,P (Right Handed),P (Right Handed),Supplemental alphabet entry; not from a workbook page.,,FALSE,0
+1682,sign_afb40c6e34de0dc5,video_e070294299798209,1,0,Right Handed,1682,0,Q (Right Handed),Q (Right Handed),Supplemental alphabet entry; not from a workbook page.,,FALSE,0
+1683,sign_8d2eb69b6a620ed9,video_c52c02f604e1cfd4,1,0,Right Handed,1683,0,R (Right Handed),R (Right Handed),Supplemental alphabet entry; not from a workbook page.,,FALSE,0
+1684,sign_7d142cc39263fa6e,video_c9c46863def96835,1,0,Right Handed,1684,0,S (Right Handed),S (Right Handed),Supplemental alphabet entry; not from a workbook page.,,FALSE,0
+1685,sign_8d09f3720db51e9a,video_124d24b2b5e083b7,1,0,Right Handed,1685,0,T (Right Handed),T (Right Handed),Supplemental alphabet entry; not from a workbook page.,,FALSE,0
+1686,sign_c3216107d9b1dc54,video_da437aa61ac030d7,1,0,Right Handed,1686,0,U (Right Handed),U (Right Handed),Supplemental alphabet entry; not from a workbook page.,,FALSE,0
+1687,sign_5e5d7f8af1255a8c,video_17bf4057d33dd198,1,0,Right Handed,1687,0,V (Right Handed),V (Right Handed),Supplemental alphabet entry; not from a workbook page.,,FALSE,0
+1688,sign_c498ec20ed684fee,video_31c05f49c4b1e5da,1,0,Right Handed,1688,0,W (Right Handed),W (Right Handed),Supplemental alphabet entry; not from a workbook page.,,FALSE,0
+1689,sign_61d484b637884d8d,video_beb6758aef043937,1,0,Right Handed,1689,0,X (Right Handed),X (Right Handed),Supplemental alphabet entry; not from a workbook page.,,FALSE,0
+1690,sign_b46ea18a9669d301,video_ce0b01a4451d1fbb,1,0,Right Handed,1690,0,Y (Right Handed),Y (Right Handed),Supplemental alphabet entry; not from a workbook page.,,FALSE,0
+1691,sign_796d9ec469e73810,video_11b4f2ed5a7feff6,1,0,Right Handed,1691,0,Z (Right Handed),Z (Right Handed),Supplemental alphabet entry; not from a workbook page.,,FALSE,0
+1692,sign_f8e3909c58a05cb2,video_806ec9364c3411fc,1,0,Left Handed,1692,0,A (Left Handed),A (Left Handed),Supplemental alphabet entry; not from a workbook page.,,FALSE,0
+1693,sign_889696cb93c5d8bc,video_93db959c8f047075,1,0,Left Handed,1693,0,B (Left Handed),B (Left Handed),Supplemental alphabet entry; not from a workbook page.,,FALSE,0
+1694,sign_7dc902c4bced31c0,video_d37e8c68845dc263,1,0,Left Handed,1694,0,C (Left Handed),C (Left Handed),Temporary placeholder using the B Left Handed video; replace and verify later.,,FALSE,0
+1695,sign_aa3ee697fc533119,video_3d240cf7e66613ea,1,0,Left Handed,1695,0,D (Left Handed),D (Left Handed),Temporary placeholder using the B Left Handed video; replace and verify later.,,FALSE,0
+1696,sign_d50ef5a249a06b86,video_74160c5aaa57b7ac,1,0,Left Handed,1696,0,E (Left Handed),E (Left Handed),Temporary placeholder using the B Left Handed video; replace and verify later.,,FALSE,0
+1697,sign_0b89ce6ff0084da4,video_834a88fdee937194,1,0,Left Handed,1697,0,F (Left Handed),F (Left Handed),Temporary placeholder using the B Left Handed video; replace and verify later.,,FALSE,0
+1698,sign_4367c8af52f206ab,video_b386cfcd048d59c1,1,0,Left Handed,1698,0,G (Left Handed),G (Left Handed),Temporary placeholder using the B Left Handed video; replace and verify later.,,FALSE,0
+1699,sign_121e02501bcf99fa,video_ea1f6161d95d27cf,1,0,Left Handed,1699,0,H (Left Handed),H (Left Handed),Temporary placeholder using the B Left Handed video; replace and verify later.,,FALSE,0
+1700,sign_b9fe0eb1dfc15b3b,video_0f70e129f66a9126,1,0,Left Handed,1700,0,I (Left Handed),I (Left Handed),Temporary placeholder using the B Left Handed video; replace and verify later.,,FALSE,0
+1701,sign_c380750a758312a3,video_2920262df8ffc373,1,0,Left Handed,1701,0,J (Left Handed),J (Left Handed),Temporary placeholder using the B Left Handed video; replace and verify later.,,FALSE,0
+1702,sign_644a391af8020a1d,video_9ad22b782ff7d203,1,0,Left Handed,1702,0,K (Left Handed),K (Left Handed),Temporary placeholder using the B Left Handed video; replace and verify later.,,FALSE,0
+1703,sign_59248275bdd07500,video_d5fcf338b994c65c,1,0,Left Handed,1703,0,L (Left Handed),L (Left Handed),Temporary placeholder using the B Left Handed video; replace and verify later.,,FALSE,0
+1704,sign_d1c42170848749ac,video_6e25d1363830da31,1,0,Left Handed,1704,0,M (Left Handed),M (Left Handed),Temporary placeholder using the B Left Handed video; replace and verify later.,,FALSE,0
+1705,sign_359442813631e96a,video_24b5fe5347455b43,1,0,Left Handed,1705,0,N (Left Handed),N (Left Handed),Temporary placeholder using the B Left Handed video; replace and verify later.,,FALSE,0
+1706,sign_4c49d4bcfd74712e,video_e3534601d6f49037,1,0,Left Handed,1706,0,O (Left Handed),O (Left Handed),Temporary placeholder using the B Left Handed video; replace and verify later.,,FALSE,0
+1707,sign_53d1aa504bee4a2e,video_0e263dff040f890b,1,0,Left Handed,1707,0,P (Left Handed),P (Left Handed),Temporary placeholder using the B Left Handed video; replace and verify later.,,FALSE,0
+1708,sign_4d1728bd0b3b58f0,video_1da833ac49627f34,1,0,Left Handed,1708,0,Q (Left Handed),Q (Left Handed),Temporary placeholder using the B Left Handed video; replace and verify later.,,FALSE,0
+1709,sign_f62b9a52b4cb028b,video_6a06082916b927c4,1,0,Left Handed,1709,0,R (Left Handed),R (Left Handed),Temporary placeholder using the B Left Handed video; replace and verify later.,,FALSE,0
+1710,sign_c31be32f41956d7d,video_456d134850e0137e,1,0,Left Handed,1710,0,S (Left Handed),S (Left Handed),Temporary placeholder using the B Left Handed video; replace and verify later.,,FALSE,0
+1711,sign_f22dc60098f8df4b,video_1b6d3d42d0340076,1,0,Left Handed,1711,0,T (Left Handed),T (Left Handed),Temporary placeholder using the B Left Handed video; replace and verify later.,,FALSE,0
+1712,sign_87667a4c0d88a14f,video_9b1fb99a0fddfcaa,1,0,Left Handed,1712,0,U (Left Handed),U (Left Handed),Temporary placeholder using the B Left Handed video; replace and verify later.,,FALSE,0
+1713,sign_3757674eb352974f,video_e2591ed8751eb8e3,1,0,Left Handed,1713,0,V (Left Handed),V (Left Handed),Temporary placeholder using the B Left Handed video; replace and verify later.,,FALSE,0
+1714,sign_44b9aa46bf925be6,video_4e0546af24e3bd1a,1,0,Left Handed,1714,0,W (Left Handed),W (Left Handed),Temporary placeholder using the B Left Handed video; replace and verify later.,,FALSE,0
+1715,sign_de724532a8be055a,video_6f5f8d7ecc8a2a13,1,0,Left Handed,1715,0,X (Left Handed),X (Left Handed),Temporary placeholder using the B Left Handed video; replace and verify later.,,FALSE,0
+1716,sign_708a279bb90f2035,video_9884c5d2a260fc54,1,0,Left Handed,1716,0,Y (Left Handed),Y (Left Handed),Temporary placeholder using the B Left Handed video; replace and verify later.,,FALSE,0
+1717,sign_bbc72e70d87a8911,video_5ba58df7222f682f,1,0,Left Handed,1717,0,Z (Left Handed),Z (Left Handed),Temporary placeholder using the B Left Handed video; replace and verify later.,,FALSE,0
+1718,sign_17777e2e9a1a5562,video_c3b5ed08d249fbea,1,2,Numbers,1769,8,0,0,Expanded from workbook number range; candidate URL by number naming pattern; not checked.,,FALSE,8
+1719,sign_203b61681572d469,video_aa6b972f4c5bbf8b,1,2,Numbers,1770,8,1,1,Expanded from workbook number range; candidate URL by number naming pattern; not checked.,,FALSE,8
+1720,sign_252d2194c3213277,video_1bc382e53e31647c,1,2,Numbers,1771,8,2,2,Expanded from workbook number range; candidate URL by number naming pattern; not checked.,,FALSE,8
+1721,sign_40905fd7f49fd64f,video_52c7384df431625c,1,2,Numbers,1772,8,3,3,Expanded from workbook number range; candidate URL by number naming pattern; not checked.,,FALSE,8
+1722,sign_22e6e2e1c3966eca,video_cfdde4dc3d25a518,1,2,Numbers,1773,8,4,4,Expanded from workbook number range; candidate URL by number naming pattern; not checked.,,FALSE,8
+1723,sign_d8f7819183b2d5ef,video_6c27d94ebaadfb70,1,2,Numbers,1774,8,5,5,Expanded from workbook number range; candidate URL by number naming pattern; not checked.,,FALSE,8
+1724,sign_0b560d9ee49175f4,video_1af21c87581c5c3c,1,2,Numbers,1775,8,6,6,Expanded from workbook number range; candidate URL by number naming pattern; not checked.,,FALSE,8
+1725,sign_17a9a9581049a890,video_d8d41a66a50f85ee,1,2,Numbers,1776,8,7,7,Expanded from workbook number range; candidate URL by number naming pattern; not checked.,,FALSE,8
+1726,sign_3a0b367a43bca109,video_1ab5a9039b11e459,1,2,Numbers,1777,8,8,8,Expanded from workbook number range; candidate URL by number naming pattern; not checked.,,FALSE,8
+1727,sign_f3148f6f362cb28b,video_9c350074d951d524,1,2,Numbers,1778,8,9,9,Expanded from workbook number range; candidate URL by number naming pattern; not checked.,,FALSE,8
+1728,sign_be0bf04cb8f44f88,video_753ecfa6fd0c5589,1,2,Numbers,1779,8,10,10,Expanded from workbook number range; candidate URL by number naming pattern; not checked.,,FALSE,8
+1729,sign_53c9919bdf01583a,video_3805b448f5efb051,1,2,Numbers,1782,8,13,13,Expanded from workbook number range; candidate URL by number naming pattern; not checked.,,FALSE,8
+1730,sign_8ac757b2f1f38ee2,video_2512451e9a8651ba,1,2,Numbers,1783,8,14,14,Expanded from workbook number range; candidate URL by number naming pattern; not checked.,,FALSE,8
+1731,sign_abde89c3fc4ec546,video_d01f6ba430ce8f00,1,2,Numbers,1784,8,15,15,Expanded from workbook number range; candidate URL by number naming pattern; not checked.,,FALSE,8
+1732,sign_d44dc0e7763a7f18,video_d8d3568e4a484262,1,2,Numbers,1785,8,16,16,Expanded from workbook number range; candidate URL by number naming pattern; not checked.,,FALSE,8
+1733,sign_77e9f0178d5b1ea5,video_78968f1347b59a72,1,2,Numbers,1786,8,17,17,Expanded from workbook number range; candidate URL by number naming pattern; not checked.,,FALSE,8
+1734,sign_52586467f4301f13,video_3521863ebb4e8f71,1,2,Numbers,1787,8,18,18,Expanded from workbook number range; candidate URL by number naming pattern; not checked.,,FALSE,8
+1735,sign_c6cd418f43d455c4,video_9939a4919aa37ad4,1,2,Numbers,1788,8,19,19,Expanded from workbook number range; candidate URL by number naming pattern; not checked.,,FALSE,8
+1736,sign_b484eedc6e8038d5,video_9d2839175bb9c42d,1,2,Numbers,1790,8,21,21,Supplemental number entry; candidate URL by numeric naming pattern; not checked.,,FALSE,8
+1737,sign_2449a06e1a0a45bd,video_33b70b3fa7bfebcd,1,2,Numbers,1791,8,22,22,Supplemental number entry; candidate URL by numeric naming pattern; not checked.,,FALSE,8
+1738,sign_60cc272d8865c9a9,video_bcdd94385567dda1,1,2,Numbers,1792,8,23,23,Supplemental number entry; candidate URL by numeric naming pattern; not checked.,,FALSE,8
+1739,sign_2b2620ab275055cc,video_ef8e1f3157ab12bc,1,2,Numbers,1793,8,24,24,Supplemental number entry; candidate URL by numeric naming pattern; not checked.,,FALSE,8
+1740,sign_33d31cee8c3cc299,video_ffa17ca69f48aa14,1,2,Numbers,1794,8,25,25,Supplemental number entry; candidate URL by numeric naming pattern; not checked.,,FALSE,8
+1741,sign_8a6e747020df152a,video_edea18b91f1f112b,1,2,Numbers,1795,8,26,26,Supplemental number entry; candidate URL by numeric naming pattern; not checked.,,FALSE,8
+1742,sign_7278ddba25d13e29,video_dd316e0f1c9280a3,1,2,Numbers,1796,8,27,27,Supplemental number entry; candidate URL by numeric naming pattern; not checked.,,FALSE,8
+1743,sign_281a21447b354832,video_c554f5436ebc2b8a,1,2,Numbers,1797,8,28,28,Supplemental number entry; candidate URL by numeric naming pattern; not checked.,,FALSE,8
+1744,sign_1b616f24acae35fe,video_a027e05d03d7af83,1,2,Numbers,1798,8,29,29,Supplemental number entry; candidate URL by numeric naming pattern; not checked.,,FALSE,8
+1745,sign_505be44d2a43e2c3,video_6f125e99cd5fca6b,1,2,Numbers,1799,8,30,30,Supplemental number entry; candidate URL by numeric naming pattern; not checked.,,FALSE,8

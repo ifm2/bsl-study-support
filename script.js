@@ -27,7 +27,7 @@ const allVocabulary = data.lesson_vocabulary.map(r => ({...r, meaning:signsById.
  status:videosById.get(r.selected_video_id)?.verification_status || (videoSequencesBySign.has(r.sign_id) ? 'Unverified' : 'Awaiting video')
 })).sort((a,b) => Number(a.global_order)-Number(b.global_order));
 const lessonsByLevel = {
- 1:['Alphabet & Greetings','Numbers & Everyday Living','Weather & Feelings','Days & Months','Sentence Structure & Gesturing','Pets, Colours & Placement','Transport & Directions','Family','Descriptions & Clothes','Recap','Food & Drink','Home & Hobbies','People, Animals & Objects','Final Recap & Conversations'],
+ 1:['Alphabet','Greetings','Numbers & Everyday Living','Weather & Feelings','Days & Months','Sentence Structure & Gesturing','Pets, Colours & Placement','Transport & Directions','Family','Descriptions & Clothes','Recap','Food & Drink','Home & Hobbies','People, Animals & Objects','Final Recap & Conversations'],
  2:[...new Set(allVocabulary.filter(r => r.level==='2').map(r => r.topic))]
 };
 const lessonEmoji = ['👋','🔢','🌦️','📅','💬','🐾','🚌','👨‍👩‍👧‍👦','👕','🔄','🍽️','🏠','🧑‍🤝‍🧑','🎓'];
@@ -93,25 +93,25 @@ function stopPlayers(scope=content) {
 }
 function resetPractice() {practiceRows=null;practiceIndex=0;answerRevealed=false;ratings.clear();}
 function groupKey(row) {return row.level==='1' ? Number(row.lesson) : row.topic;}
-function groupName(level,key) {return level===1 ? `Lesson ${key}: ${lessonsByLevel[1][Number(key)-1]}` : key;}
+function groupName(level,key) {return level===1 ? `Lesson ${key}: ${lessonsByLevel[1][Number(key)]}` : key;}
 function chooseLevel(level) {
  currentLevel=level; $('level-nav').value=String(level); $('lesson-nav').replaceChildren();
  lessonsByLevel[level].forEach((name,i) => {
-  const prefix=level===1 ? `${lessonEmoji[i]}  ` : `${topicEmoji[name] || '📚'}  `;
-  const option=element('option','',level===1 ? `${prefix}Lesson ${i+1}: ${name}` : `${prefix}${name}`);
-  option.value=level===1 ? String(i+1) : name; $('lesson-nav').append(option);
+  const prefix=level===1 ? (i===0 ? '🔤  ' : `${lessonEmoji[i-1]}  `) : `${topicEmoji[name] || '📚'}  `;
+  const option=element('option','',level===1 ? `${prefix}Lesson ${i}: ${name}` : `${prefix}${name}`);
+  option.value=level===1 ? String(i) : name; $('lesson-nav').append(option);
  });
  $('level-summary').textContent=`Level ${level} · Vocabulary library · ${lessonsByLevel[level].length} ${level===1 ? 'lessons' : 'topics'}`;
  document.querySelector('label[for="lesson-nav"]').textContent=level===1 ? 'Choose lesson' : 'Choose topic';
  $('lesson-nav').setAttribute('aria-label',level===1 ? 'Choose lesson' : 'Choose topic');
- chooseLesson(level===1 ? 1 : lessonsByLevel[2][0]);
+ chooseLesson(level===1 ? 0 : lessonsByLevel[2][0]);
 }
 function chooseLesson(lesson) {
  currentLesson=lesson;
  vocabulary=allVocabulary.filter(r => Number(r.level)===currentLevel && groupKey(r)===lesson);
  categories=[...new Set(vocabulary.map(r => r.category))]; $('lesson-nav').value=String(lesson);
  $('lesson-title').textContent=groupName(currentLevel,lesson);
- $('lesson-description').textContent=currentLevel===2 ? 'Vocabulary grouped by topic. Entries awaiting video remain available in Dictionary.' : '';
+ $('lesson-description').textContent=currentLevel===1 && currentLesson===0 ? 'Choose a section below. Left handed entries will be added as their videos are identified.' : currentLevel===2 ? 'Vocabulary grouped by topic. Entries awaiting video remain available in Dictionary.' : '';
  $('search').value=''; practiceCategory=''; resetPractice(); render();
 }
 function setStudyMode(mode) {
