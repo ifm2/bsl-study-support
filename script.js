@@ -1,13 +1,28 @@
-// Three CSV masters; never shuffle their records in place.
+// CSV masters; never shuffle their records in place.
 'use strict';
 const $ = id => document.getElementById(id);
 const data = window.BSL_DATA;
 if (!data) throw new Error('Missing generated data. Run tools/generate_data.py.');
 const signsById = new Map(data.signs.map(s => [s.sign_id,s]));
 const videosById = new Map(data.videos.map(v => [v.video_id,v]));
+const videoSequencesBySign = new Map();
+for (const clip of data.video_sequences || []) {
+ if (!videoSequencesBySign.has(clip.sign_id)) videoSequencesBySign.set(clip.sign_id,[]);
+ videoSequencesBySign.get(clip.sign_id).push(clip);
+}
+for (const clips of videoSequencesBySign.values()) clips.sort((a,b) => Number(a.position)-Number(b.position));
+function signBslVideoInfo(rawUrl) {
+ try {
+  const url=new URL(rawUrl),host=url.hostname.toLowerCase(),videoId=decodeURIComponent(url.hash.slice(1));
+  if(!['signbsl.com','www.signbsl.com'].includes(host)||!/^\/sign\/[^/]+$/.test(url.pathname)||! /^[A-Za-z0-9_-]{1,64}$/.test(videoId)) return null;
+  return {page:`${url.origin}${url.pathname}`,videoId};
+ } catch { return null; }
+}
 const allVocabulary = data.lesson_vocabulary.map(r => ({...r, meaning:signsById.get(r.sign_id).meaning,
- dictionary_url:videosById.get(r.selected_video_id)?.source.match(/https:\/\/www\.signbsl\.com\/[^\s]+/)?.[0] || `https://www.signbsl.com/sign/${encodeURIComponent(r.word.toLowerCase())}`,
- video_url:videosById.get(r.selected_video_id)?.url || '', status:videosById.get(r.selected_video_id)?.verification_status || 'Awaiting video'
+ dictionary_url:signBslVideoInfo(videosById.get(r.selected_video_id)?.url || '') ? videosById.get(r.selected_video_id).url : videosById.get(r.selected_video_id)?.source.match(/https:\/\/www\.signbsl\.com\/[^\s]+/)?.[0] || `https://www.signbsl.com/sign/${encodeURIComponent(r.word.toLowerCase())}`,
+ video_url:videoSequencesBySign.get(r.sign_id)?.[0]?.url || videosById.get(r.selected_video_id)?.url || '',
+ video_urls:videoSequencesBySign.get(r.sign_id)?.map(clip => clip.url) || (videosById.get(r.selected_video_id)?.url ? [videosById.get(r.selected_video_id).url] : []),
+ status:videosById.get(r.selected_video_id)?.verification_status || (videoSequencesBySign.has(r.sign_id) ? 'Unverified' : 'Awaiting video')
 })).sort((a,b) => Number(a.global_order)-Number(b.global_order));
 const lessonsByLevel = {
  1:['Alphabet & Greetings','Numbers & Everyday Living','Weather & Feelings','Days & Months','Sentence Structure & Gesturing','Pets, Colours & Placement','Transport & Directions','Family','Descriptions & Clothes','Recap','Food & Drink','Home & Hobbies','People, Animals & Objects','Final Recap & Conversations'],
@@ -23,6 +38,14 @@ const content=$('content');
 function element(tag,cls,text) {
  const node=document.createElement(tag); if(cls) node.className=cls;
  if(text !== undefined) node.textContent=text; return node;
+}
+function makeSignBslEmbed(row) {
+ const info=signBslVideoInfo(row.video_url);if(!info)return null;
+ const quote=element('blockquote','signbsldata-embed');quote.dataset.vidref=info.videoId;
+ const link=element('a','',`Watch how to sign '${row.word}' in British Sign Language`);link.href=info.page;quote.append(link);
+ const container=element('div','signbsl-player');container.append(quote);
+ const script=document.createElement('script');script.async=true;script.src='https://embed.signbsl.com/widgets.js';script.charset='utf-8';container.append(script);
+ return container;
 }
 function stopPlayers(scope=content) {
  scope.querySelectorAll('video').forEach(v => {v.pause();v.removeAttribute('src');v.replaceChildren();v.load();});
@@ -69,13 +92,23 @@ function setPlaybackMode(mode) {
  render();
 }
 function makeVideo(row,autoplay,hiddenAnswer) {
+ const sequence=row.video_urls?.length>1 ? row.video_urls : null;
+ if(!sequence) {const embed=makeSignBslEmbed(row);if(embed)return embed;}
  const video=document.createElement('video');
  video.controls=true;video.playsInline=true;video.loop=true;video.muted=true;video.defaultMuted=true;
+ if(sequence) video.loop=false;
  video.autoplay=autoplay;video.preload=autoplay ? 'auto' : 'metadata';
  video.setAttribute('aria-label',hiddenAnswer ? 'Practice sign video' : `Candidate sign video for ${row.word}`);
- const source=document.createElement('source'); source.src=row.video_url;source.type='video/mp4';video.append(source);
+ video.src=sequence ? sequence[0] : row.video_url;
+ if(sequence) {
+  let clipIndex=0;
+  video.addEventListener('ended',() => {
+   clipIndex=(clipIndex+1)%sequence.length;
+   video.src=sequence[clipIndex];video.load();video.play().catch(() => {});
+  });
+ }
  const showError=() => {if(video.isConnected) video.replaceWith(element('div','video-error','Video unavailable — try the dictionary link below.'));};
- video.addEventListener('error',showError);source.addEventListener('error',showError);
+ video.addEventListener('error',showError);
  if(autoplay) video.addEventListener('canplay',() => {
   if((studyMode==='practice' || playbackMode==='autoplay') && video.isConnected) video.play().catch(() => {});
  },{once:true});
@@ -99,7 +132,7 @@ function makeTile(row,practice=false) {
   launch.append(icon,element('span','','Play sign'));
   launch.addEventListener('click',() => {
    const video=makeVideo(row,false,practice && $('hide-english').checked && !answerRevealed);
-   player.replaceChildren(video);video.play().catch(() => {});
+   player.replaceChildren(video);if(video instanceof HTMLVideoElement) video.play().catch(() => {});
   },{once:true});player.append(launch);
  }
  const bottom=element('div','bottom');const videoStatus=element('span','',row.status);videoStatus.hidden=row.status==='Verified';bottom.append(videoStatus);

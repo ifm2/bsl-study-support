@@ -38,6 +38,9 @@ header p{font-size:13px;margin:0;color:#d7f0ed}
 /* Shared Dictionary / Practice controls. */
 [hidden],.tile-heading small[hidden],.bottom a[hidden]{display:none!important}
 .tile .bottom a:not([hidden]){margin-left:auto}
+.signbsldata-embed{margin:0}
+.player .signbsl-player{width:100%;height:100%;display:flex;align-items:center;justify-content:center}
+.player .signbsl-player iframe{width:100%;height:100%;border:0}
 .level-picker{display:flex;align-items:center;gap:12px;margin-top:12px;font-size:13px;font-weight:700}
 .level-picker select{max-width:100%;min-width:0;padding:9px 12px;border:1px solid #bcd5d2;border-radius:9px;background:#fff;color:#17333b;font:inherit}
 .check-control{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:600;color:#315a61;cursor:pointer}

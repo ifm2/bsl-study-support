@@ -46,7 +46,7 @@ Workbook page references and original wording are retained for checking. Level 2
 
 ## Video sources and limitations
 
-The dictionary uses direct MP4 links from [SignBSL](https://www.signbsl.com/) and credits the selected source through each card's dictionary link. Video rights remain with their respective owners. This project is an independent study aid to use alongside your course and tutor.
+The dictionary uses direct MP4 links or selected video links from [SignBSL](https://www.signbsl.com/). For a selected SignBSL video, store its sign page URL with the video reference after `#` (for example, `https://www.signbsl.com/sign/sorry#cwajncjt8i`). The dictionary uses SignBSL's embed widget for these links and keeps the selected video link on each card. Video rights remain with their respective owners. This project is an independent study aid to use alongside your course and tutor.
 
 Videos marked **Unverified** have not been confirmed for signing accuracy or regional suitability. A successful URL check does not establish that the clip is the correct sign for every context. Entries marked **Awaiting video** do not yet have a suitable selected candidate.
 
@@ -54,13 +54,14 @@ See [remaining video lookups](REMAINING_VIDEOS.md) for unresolved entries and [t
 
 ## Maintaining the data
 
-The three editable CSV masters are:
+The editable CSV masters are:
 
 | File | Purpose |
 | --- | --- |
 | `data/signs.csv` | Deduplicated words/meanings, identified by permanent `sign_id`. |
 | `data/videos.csv` | Sourced video candidates, sign ownership, permanent `video_id`, priority and per-video verification status. |
 | `data/lesson_vocabulary.csv` | Study memberships, linking an entry to a sign, selected video, level, lesson/topic, category, source wording and pages. |
+| `data/video_sequences.csv` | Optional ordered three-clip MP4 sequences for a sign, played in order and looped. |
 
 The vocabulary file keeps its original name for compatibility. Level 1 rows use `lesson` and leave `topic` blank; Level 2 rows use `topic` and leave `lesson` blank. `source_pages` records all printed page references, while `source_page` retains the first reference. `nmf` is TRUE only where explicitly marked in the source; FALSE does not mean the sign never uses a non-manual feature.
 
@@ -78,13 +79,13 @@ The site consists of plain HTML, CSS and JavaScript. GitHub Pages can serve it d
 
 ### Local video verification
 
-Use `VerifyVideo.html` to review unverified videos, replace a selected video URL, or assign a candidate to an entry awaiting video. Run the local editor server from the repository root:
+Use `VerifyVideo.html` to review unverified videos, replace a selected video URL, or assign a candidate to an entry awaiting video. Enter either a direct `.mp4` address or a SignBSL sign-page URL with its selected video reference after `#`. The latter is saved as entered and played through SignBSL's embed widget. Run the local editor server from the repository root:
 
 ```text
 python tools/verify_video_server.py
 ```
 
-Then open `http://127.0.0.1:8000/VerifyVideo.html`. Saving updates the affected row in the CSV master and regenerates `data/data.js` and `data/data.json`. Keep this local tool off a public server. The preview supports direct video URLs such as MP4; some hosts block playback when embedded.
+Then open `http://127.0.0.1:8000/VerifyVideo.html`. Saving updates the affected CSV rows and regenerates `data/data.js` and `data/data.json`. A three-clip sequence can be set up in order using direct MP4 URLs; it plays continuously and loops. Keep this local tool off a public server. SignBSL page links require the host's embed widget to be available; direct MP4 previews may still be blocked by their video host.
 
 ## Development checks
 

@@ -1,8 +1,9 @@
-"""Validate the three master CSVs and generate data.js / data.json. No network calls."""
+"""Validate the CSV masters and generate data.js / data.json. No network calls."""
 import csv
 import json
 from pathlib import Path
 from urllib.parse import urlparse
+import re
 
 ROOT = Path(__file__).resolve().parents[1]
 FIELDS = {
@@ -11,6 +12,7 @@ FIELDS = {
     'lesson_vocabulary': {'entry_id', 'sign_id', 'selected_video_id', 'level', 'lesson',
                           'category', 'global_order', 'source_page', 'word', 'source_text', 'notes',
                           'topic', 'nmf', 'source_pages'},
+    'video_sequences': {'sign_id', 'position', 'url'},
 }
 TOPICS = {'Work Life', 'The Home', 'Education', 'People and Personalities',
           'Hobbies and Activities', 'Health and Fitness', 'Home Life',
@@ -24,8 +26,21 @@ def unique(rows, field):
     values = [r[field] for r in rows]
     require(all(values) and len(values) == len(set(values)), f'{field} must be nonempty and unique')
 
+def valid_video_url(value):
+    url = urlparse(value)
+    if url.scheme != 'https' or not url.netloc:
+        return False
+    host = (url.hostname or '').lower()
+    if host in {'signbsl.com', 'www.signbsl.com'}:
+        return bool(re.fullmatch(r'/sign/[^/]+', url.path) and re.fullmatch(r'[A-Za-z0-9_-]{1,64}', url.fragment))
+    return url.path.lower().endswith('.mp4')
+
+def valid_direct_mp4_url(value):
+    url = urlparse(value)
+    return url.scheme == 'https' and bool(url.netloc) and url.path.lower().endswith('.mp4')
+
 def validate(data):
-    signs, videos, entries = (data[k] for k in FIELDS)
+    signs, videos, entries, sequences = (data[k] for k in FIELDS)
     require(bool(signs) and bool(entries), 'Signs and lesson vocabulary must not be empty')
     for rows, key in ((signs, 'sign_id'), (videos, 'video_id'), (entries, 'entry_id'), (entries, 'global_order')):
         unique(rows, key)
@@ -35,8 +50,7 @@ def validate(data):
     pairs, priorities = set(), set()
     for v in videos:
         require(v['sign_id'] in smap, 'Unknown video sign_id: ' + v['sign_id'])
-        url = urlparse(v['url'])
-        require(url.scheme == 'https' and bool(url.netloc), 'Video URL must be absolute HTTPS')
+        require(valid_video_url(v['url']), 'Video URL must be a direct MP4 or a SignBSL sign URL with a video ID after #')
         require(v['priority'].isdigit() and int(v['priority']) > 0, 'Priority must be a positive integer')
         require(v['verification_status'] in {'Unverified', 'Verified', 'Unavailable', 'Rejected'}, 'Unknown verification status')
         require(bool(v['source'].strip()), 'Video source must not be empty')
@@ -46,6 +60,18 @@ def validate(data):
         require(priority not in priorities, 'Duplicate priority within sign')
         pairs.add(pair)
         priorities.add(priority)
+    sequence_positions = set()
+    for clip in sequences:
+        require(clip['sign_id'] in smap, 'Unknown video sequence sign_id: ' + clip['sign_id'])
+        require(clip['position'].isdigit() and 1 <= int(clip['position']) <= 3,
+                'Video sequence positions must be 1, 2, or 3')
+        require(valid_direct_mp4_url(clip['url']), 'Video sequence clips must be direct HTTPS MP4 URLs')
+        key = (clip['sign_id'], int(clip['position']))
+        require(key not in sequence_positions, 'Duplicate video sequence position')
+        sequence_positions.add(key)
+    for sign_id in {clip['sign_id'] for clip in sequences}:
+        require({p for sid, p in sequence_positions if sid == sign_id} == {1, 2, 3},
+                'Each video sequence must contain clips at positions 1, 2, and 3')
     for r in entries:
         require(r['sign_id'] in smap, 'Unknown lesson sign_id: ' + r['sign_id'])
         require(r['level'] in {'1', '2'}, 'Level must be 1 or 2')
@@ -80,6 +106,7 @@ def load():
     data['lesson_vocabulary'].sort(key=lambda r: int(r['global_order']))
     data['signs'].sort(key=lambda r: r['sign_id'])
     data['videos'].sort(key=lambda r: (r['sign_id'], int(r['priority'])))
+    data['video_sequences'].sort(key=lambda r: (r['sign_id'], int(r['position'])))
     return data
 
 if __name__ == '__main__':
