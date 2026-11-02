@@ -7916,7 +7916,7 @@ window.BSL_DATA = {
       "sign_id": "sign_13332a42fca866a9",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/stay.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -11354,7 +11354,7 @@ window.BSL_DATA = {
       "sign_id": "sign_5920ae04cc3ef7ed",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/drive.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -12362,7 +12362,7 @@ window.BSL_DATA = {
       "sign_id": "sign_6ea2868fc5d185e9",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/me-think.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -14450,7 +14450,7 @@ window.BSL_DATA = {
       "sign_id": "sign_9aeaf864cc6ec427",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/project.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -18472,8 +18472,8 @@ window.BSL_DATA = {
       "video_id": "video_5820582a8270e28a",
       "sign_id": "sign_eadae0166ef0cf41",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/read-a-book.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signmonkey/mp4/read.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -53762,16 +53762,6 @@ window.BSL_DATA = {
       "url": "https://media.signbsl.com/videos/bsl/signstation/food.mp4"
     },
     {
-      "sign_id": "sign_105b0baca1154d17",
-      "position": "1",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/like.mp4"
-    },
-    {
-      "sign_id": "sign_105b0baca1154d17",
-      "position": "2",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/what.mp4"
-    },
-    {
       "sign_id": "sign_135d29fc1748ed51",
       "position": "1",
       "url": "https://media.signbsl.com/videos/bsl/signstation/petrol.mp4"
@@ -55025,21 +55015,6 @@ window.BSL_DATA = {
       "sign_id": "sign_e902ce4a046b8faa",
       "position": "3",
       "url": "https://media.signbsl.com/videos/bsl/signstation/console.mp4"
-    },
-    {
-      "sign_id": "sign_eadae0166ef0cf41",
-      "position": "1",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/read.mp4"
-    },
-    {
-      "sign_id": "sign_eadae0166ef0cf41",
-      "position": "2",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/a.mp4"
-    },
-    {
-      "sign_id": "sign_eadae0166ef0cf41",
-      "position": "3",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/book.mp4"
     },
     {
       "sign_id": "sign_ec80939bfb78324f",

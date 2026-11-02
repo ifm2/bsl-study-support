@@ -10,6 +10,12 @@
   let lessonFilter = 'all';
 
   const selected = entry => data.videos.find(video => video.video_id === entry.selected_video_id);
+  const dictionaryUrl = entry => {
+    const video = selected(entry);
+    if (signBslVideo(video?.url || '')) return video.url;
+    return video?.source.match(/https:\/\/www\.signbsl\.com\/[^\s]+/)?.[0]
+      || `https://www.signbsl.com/sign/${encodeURIComponent(entry.word.toLowerCase())}`;
+  };
   const wordParts = word => Array.from(word.matchAll(/[\p{L}\p{N}]+(?:['’][\p{L}\p{N}]+)*/gu), match => match[0]);
   const sequenceFor = signId => (data.video_sequences || [])
     .filter(clip => clip.sign_id === signId)
@@ -363,6 +369,12 @@
     meta.className = 'muted';
     meta.textContent = `Entry ${entry.entry_id} · ${entry.topic || `Lesson ${entry.lesson}`} · ${cursor + 1} of ${rows.length} · ${video.video_id} (${video.verification_status})`;
     work.append(titleRow, meta);
+    const dictionaryLink = document.createElement('a');
+    dictionaryLink.className = 'action dictionary-check';
+    dictionaryLink.textContent = 'Dictionary';
+    dictionaryLink.href = dictionaryUrl(entry);
+    dictionaryLink.target = '_blank';
+    dictionaryLink.rel = 'noopener noreferrer';
     if (video.problem_report) {
       const report = document.createElement('div');
       report.className = 'reported-problem';
@@ -412,9 +424,7 @@
     });
     const navigation = document.createElement('div');
     navigation.className = 'fields';
-    navigation.append(
-      verifyButton
-    );
+    navigation.append(verifyButton, dictionaryLink);
     if (sequenceForWord(entry.word).length) {
       navigation.append(button('Sequence not needed', async () => {
         try {
