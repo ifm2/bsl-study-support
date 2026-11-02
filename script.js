@@ -28,8 +28,10 @@ const allVocabulary = data.lesson_vocabulary.map(r => ({...r, meaning:signsById.
 })).sort((a,b) => Number(a.global_order)-Number(b.global_order));
 const lessonsByLevel = {
  1:['Alphabet','Greetings','Numbers & Everyday Living','Weather & Feelings','Days & Months','Sentence Structure & Gesturing','Pets, Colours & Placement','Transport & Directions','Family','Descriptions & Clothes','Recap','Food & Drink','Home & Hobbies','People, Animals & Objects','Final Recap & Conversations'],
- 2:[...new Set(allVocabulary.filter(r => r.level==='2').map(r => r.topic))]
+ 2:[...new Set(allVocabulary.filter(r => r.level==='2').map(r => r.topic))],
+ 3:['Home Life','Technology','Health and Wellbeing','Consumer Issues','Social Recreation','Education and Training','Employment','Deaf History']
 };
+const level3LessonEmoji=['🏠','💻','🏥','🛒','🎭','🎓','💼','🤟'];
 const lessonEmoji = ['👋','🔢','🌦️','📅','💬','🐾','🚌','👨‍👩‍👧‍👦','👕','🔄','🍽️','🏠','🧑‍🤝‍🧑','🎓'];
 const topicEmoji = {'Work Life':'💼','The Home':'🏠','Education':'🎓','People and Personalities':'👥','Hobbies and Activities':'🎨','Health and Fitness':'💪','Home Life':'🧺','Travel and Holidays':'✈️','Food and Drink':'🍽️'};
 let currentLevel=1, currentLesson=1, vocabulary=[], categories=[];
@@ -92,26 +94,32 @@ function stopPlayers(scope=content) {
  scope.querySelectorAll('video').forEach(v => {v.pause();v.removeAttribute('src');v.replaceChildren();v.load();});
 }
 function resetPractice() {practiceRows=null;practiceIndex=0;answerRevealed=false;ratings.clear();}
-function groupKey(row) {return row.level==='1' ? Number(row.lesson) : row.topic;}
-function groupName(level,key) {return level===1 ? `Lesson ${key}: ${lessonsByLevel[1][Number(key)]}` : key;}
+function groupKey(row) {return row.level==='2' ? row.topic : Number(row.lesson);}
+function groupName(level,key) {
+ if(level===2)return key;
+ const lessonIndex=level===1 ? Number(key) : Number(key)-1;
+ const emoji=level===3 ? `${level3LessonEmoji[lessonIndex]} ` : '';
+ return `Lesson ${key}: ${emoji}${lessonsByLevel[level][lessonIndex]}`;
+}
 function chooseLevel(level) {
  currentLevel=level; $('level-nav').value=String(level); $('lesson-nav').replaceChildren();
  lessonsByLevel[level].forEach((name,i) => {
-  const prefix=level===1 ? (i===0 ? '🔤  ' : `${lessonEmoji[i-1]}  `) : `${topicEmoji[name] || '📚'}  `;
-  const option=element('option','',level===1 ? `${prefix}Lesson ${i}: ${name}` : `${prefix}${name}`);
-  option.value=level===1 ? String(i) : name; $('lesson-nav').append(option);
+  const lessonNumber=level===1 ? i : i+1;
+  const prefix=level===2 ? `${topicEmoji[name] || '📚'}  ` : level===1 ? (i===0 ? '🔤  ' : `${lessonEmoji[i-1]}  `) : `${level3LessonEmoji[i]}  `;
+  const option=element('option','',level===2 ? `${prefix}${name}` : `${prefix}Lesson ${lessonNumber}: ${name}`);
+  option.value=level===2 ? name : String(lessonNumber); $('lesson-nav').append(option);
  });
- $('level-summary').textContent=`Level ${level} · Vocabulary library · ${lessonsByLevel[level].length} ${level===1 ? 'lessons' : 'topics'}`;
- document.querySelector('label[for="lesson-nav"]').textContent=level===1 ? 'Choose lesson' : 'Choose topic';
- $('lesson-nav').setAttribute('aria-label',level===1 ? 'Choose lesson' : 'Choose topic');
- chooseLesson(level===1 ? 0 : lessonsByLevel[2][0]);
+ $('level-summary').textContent=`Level ${level} · Vocabulary library · ${lessonsByLevel[level].length} ${level===2 ? 'topics' : 'lessons'}`;
+ document.querySelector('label[for="lesson-nav"]').textContent=level===2 ? 'Choose topic' : 'Choose lesson';
+ $('lesson-nav').setAttribute('aria-label',level===2 ? 'Choose topic' : 'Choose lesson');
+ chooseLesson(level===1 ? 0 : level===2 ? lessonsByLevel[2][0] : 1);
 }
 function chooseLesson(lesson) {
  currentLesson=lesson;
  vocabulary=allVocabulary.filter(r => Number(r.level)===currentLevel && groupKey(r)===lesson);
  categories=[...new Set(vocabulary.map(r => r.category))]; $('lesson-nav').value=String(lesson);
  $('lesson-title').textContent=groupName(currentLevel,lesson);
- $('lesson-description').textContent=currentLevel===1 && currentLesson===0 ? 'Choose a section below. Left handed entries will be added as their videos are identified.' : currentLevel===2 ? 'Vocabulary grouped by topic. Entries awaiting video remain available in Dictionary.' : '';
+ $('lesson-description').textContent=currentLevel===1 && currentLesson===0 ? 'Choose a section below. Left handed entries will be added as their videos are identified.' : currentLevel===2 ? 'Vocabulary grouped by topic. Entries awaiting video remain available in Dictionary.' : currentLevel===3 ? 'Full course vocabulary, grouped into lessons. Suggested videos are unverified.' : '';
  $('search').value=''; practiceCategory=''; resetPractice(); render();
 }
 function setStudyMode(mode) {
@@ -161,7 +169,8 @@ function makeTile(row,practice=false) {
  const titleRow=element('div','tile-heading');
  const title=element('h4','',hiddenAnswer ? 'What is this sign?' : row.word);
  const pages=row.source_pages || row.source_page;
- const meta=element('small','entry-meta',`#${row.entry_id} · Workbook page${pages.includes(';') ? 's' : ''} ${pages}`);
+ const pageLabel=row.level==='3' ? `PDF page${pages.includes(';') ? 's' : ''} ${pages}` : row.level==='1' && row.lesson==='0' ? 'Supplemental alphabet' : `Workbook page${pages.includes(';') ? 's' : ''} ${pages}`;
+ const meta=element('small','entry-meta',`#${row.entry_id} · ${pageLabel}`);
  meta.hidden=$('hide-details').checked;titleRow.append(title,meta);
  const player=element('div','player');const autoplay=practice || playbackMode==='autoplay';
  if(!row.video_url) player.append(element('p','video-error','Awaiting video'));
@@ -178,7 +187,7 @@ function makeTile(row,practice=false) {
  }
  const bottom=element('div','bottom');const videoStatus=element('span','',row.status);videoStatus.hidden=row.status==='Verified';bottom.append(videoStatus);
  if(row.status==='Verified' && row.video_id) {
-  const report=element('button','report-problem','Report problem');report.type='button';
+  const report=element('button','report-problem','Feedback');report.type='button';
   report.addEventListener('click',() => openReportModal(row,report));bottom.append(report);
  }
  const dictionary=element('a','','Check dictionary ↗');
@@ -314,7 +323,7 @@ function ratePractice(row,value) {
  focusTarget?.focus({preventScroll:true});
 }
 $('level-nav').addEventListener('change',() => chooseLevel(Number($('level-nav').value)));
-$('lesson-nav').addEventListener('change',() => chooseLesson(currentLevel===1 ? Number($('lesson-nav').value) : $('lesson-nav').value));
+$('lesson-nav').addEventListener('change',() => chooseLesson(currentLevel===2 ? $('lesson-nav').value : Number($('lesson-nav').value)));
 $('search').addEventListener('input',() => {practiceCategory='';resetPractice();render();});
 $('study-dictionary').addEventListener('click',() => setStudyMode('dictionary'));
 $('study-practice').addEventListener('click',() => setStudyMode('practice'));

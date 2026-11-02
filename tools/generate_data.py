@@ -76,10 +76,13 @@ def validate(data):
                 'Each video sequence must contain two or three clips in order')
     for r in entries:
         require(r['sign_id'] in smap, 'Unknown lesson sign_id: ' + r['sign_id'])
-        require(r['level'] in {'1', '2'}, 'Level must be 1 or 2')
-        if r['level'] == '1':
-            require(r['lesson'].isdigit() and 0 <= int(r['lesson']) <= 14, 'Lesson outside level range')
-            require(not r['topic'], 'Level 1 uses lessons')
+        require(r['level'] in {'1', '2', '3'}, 'Level must be 1, 2, or 3')
+        if r['level'] in {'1', '3'}:
+            maximum_lesson = 14 if r['level'] == '1' else 11
+            minimum_lesson = 0 if r['level'] == '1' else 1
+            require(r['lesson'].isdigit() and minimum_lesson <= int(r['lesson']) <= maximum_lesson,
+                    'Lesson outside level range')
+            require(not r['topic'], 'Level 1 and 3 use lessons')
             if r['lesson'] == '0':
                 require(r['category'] in {'Right Handed', 'Left Handed'}, 'Lesson 0 category must identify handedness')
         else:

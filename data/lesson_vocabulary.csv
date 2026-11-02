@@ -1742,3 +1742,399 @@ entry_id,sign_id,selected_video_id,level,lesson,category,global_order,source_pag
 1743,sign_281a21447b354832,video_c554f5436ebc2b8a,1,2,Numbers,1797,8,28,28,Supplemental number entry; candidate URL by numeric naming pattern; not checked.,,FALSE,8
 1744,sign_1b616f24acae35fe,video_a027e05d03d7af83,1,2,Numbers,1798,8,29,29,Supplemental number entry; candidate URL by numeric naming pattern; not checked.,,FALSE,8
 1745,sign_505be44d2a43e2c3,video_6f125e99cd5fca6b,1,2,Numbers,1799,8,30,30,Supplemental number entry; candidate URL by numeric naming pattern; not checked.,,FALSE,8
+1746,sign_f93d0039f603277a,video_3901eed70dd4d15b,3,1,Vocabulary,1802,1,First Language,First Language,From the supplied full course vocabulary list.,,FALSE,1
+1747,sign_4867ff21c3d78288,video_3ed2bf122e41e5bd,3,1,Vocabulary,1803,1,Misunderstanding,Misunderstanding,From the supplied full course vocabulary list.,,FALSE,1
+1748,sign_1b70a1bf7c5f3d78,video_9b0a700f59a87927,3,1,Vocabulary,1804,1,Bilingual,Bilingual,From the supplied full course vocabulary list.,,FALSE,1
+1749,sign_75f6082ee0da6348,video_897a1221f8152857,3,1,Vocabulary,1805,1,Communication,Communication,From the supplied full course vocabulary list.,,FALSE,1
+1750,sign_64b20330fecbef0a,video_e69bae7316240247,3,1,Vocabulary,1806,1,Access information,Access information,From the supplied full course vocabulary list.,,FALSE,1
+1751,sign_65e4a42387795ea0,video_3e24457c9e801140,3,1,Vocabulary,1807,1,Issue,Issue,From the supplied full course vocabulary list.,,FALSE,1
+1752,sign_0dc7ef9e61417416,video_6ebe9c008d8d2aeb,3,1,Vocabulary,1808,1,Medical,Medical,From the supplied full course vocabulary list.,,FALSE,1
+1753,sign_a02166aa0720f7fe,video_35eac01b6ea3ad5a,3,1,Vocabulary,1809,1,Language Development,Language Development,From the supplied full course vocabulary list.,,FALSE,1
+1754,sign_102f6d7fce3a35b5,video_9ed9ccf38ac43fd6,3,1,Vocabulary,1810,1,Appointment,Appointment,From the supplied full course vocabulary list.,,FALSE,1
+1755,sign_a1998e92a7610214,video_a59be12a1cee6795,3,1,Vocabulary,1811,1,Deaf Services,Deaf Services,From the supplied full course vocabulary list.,,FALSE,1
+1756,sign_22d86a4d231994b3,video_356068dc33b5b2b9,3,1,Vocabulary,1812,1,Barrier,Barrier,From the supplied full course vocabulary list.,,FALSE,1
+1757,sign_dea68c0d488115d4,video_abe68f57410cb991,3,1,Vocabulary,1813,1,Share life,Share life,From the supplied full course vocabulary list.,,FALSE,1
+1758,sign_363f12bab0820a85,video_a55c23900f7949b4,3,1,Vocabulary,1814,1,Different,Different,From the supplied full course vocabulary list.,,FALSE,1
+1759,sign_32cd4a3106713121,video_ab281ab54b737bca,3,1,Vocabulary,1815,1,Social services,Social services,From the supplied full course vocabulary list.,,FALSE,1
+1760,sign_3087e907e88a770e,video_4a0d24f7b1c3a4c6,3,1,Vocabulary,1816,1,Culture,Culture,From the supplied full course vocabulary list.,,FALSE,1
+1761,sign_34fef16770872eb8,video_bd7cbb8ed192624f,3,1,Vocabulary,1817,1,Social Worker,Social Worker,From the supplied full course vocabulary list.,,FALSE,1
+1762,sign_446a0053b0356c08,video_9ebd77f70a218f18,3,1,Vocabulary,1818,1,Hearing/Deaf World,Hearing/Deaf World,From the supplied full course vocabulary list.,,FALSE,1
+1763,sign_7038ec949f217ea9,video_9a978cd8ab80396e,3,1,Vocabulary,1819,1,Relationship,Relationship,From the supplied full course vocabulary list.,,FALSE,1
+1764,sign_80baa575bd9d622a,video_41cd46604e42d9ed,3,1,Vocabulary,1820,1,Impact,Impact,From the supplied full course vocabulary list.,,FALSE,1
+1765,sign_33ed4606df1c80e9,video_7e4db931d4ef2255,3,1,Vocabulary,1821,1,Oral communication,Oral communication,From the supplied full course vocabulary list.,,FALSE,1
+1766,sign_286256cd9f52ace5,video_c212e19140f76e95,3,1,Vocabulary,1822,1,Education,Education,From the supplied full course vocabulary list.,,FALSE,1
+1767,sign_29ff754bea39da2b,video_bd902574973ca221,3,1,Vocabulary,1823,1,Hearing aids,Hearing aids,From the supplied full course vocabulary list.,,FALSE,1
+1768,sign_fbd5cddfbf5f0ac8,video_8fbc571a0b8776f9,3,1,Vocabulary,1824,1,CODA - Child of Deaf Adult,CODA - Child of Deaf Adult,From the supplied full course vocabulary list.,,FALSE,1
+1769,sign_e5fce934874eaf78,video_152e86e2a18b4cc2,3,1,Vocabulary,1825,1,Makaton,Makaton,From the supplied full course vocabulary list.,,FALSE,1
+1770,sign_7a16fba34cc2897c,video_8b38bdc4d4035422,3,1,Vocabulary,1826,1,Identity,Identity,From the supplied full course vocabulary list.,,FALSE,1
+1771,sign_480c0bbe1929696b,video_7e4db63dc81a782f,3,1,Vocabulary,1827,1,Cochlear Implant,Cochlear implant,From the supplied full course vocabulary list.,,FALSE,1
+1772,sign_7ef17b3a7e1d474a,video_f8f7baa5761a3b94,3,1,Vocabulary,1828,1,Empowerment,Empowerment,From the supplied full course vocabulary list.,,FALSE,1
+1773,sign_4c30ab58d694d170,video_0b4b1f950ec9101a,3,1,Vocabulary,1829,1,Subtitles,Subtitles,From the supplied full course vocabulary list.,,FALSE,1
+1774,sign_2c3f4d58e4c5ba18,video_8692dc1d2f34a03b,3,1,Vocabulary,1830,1,PA - Personal Assistant,PA - Personal Assistant,From the supplied full course vocabulary list.,,FALSE,1
+1775,sign_6229ec065cf75c34,video_d79039b73f96a04a,3,1,Vocabulary,1831,1,Captions,Captions,From the supplied full course vocabulary list.,,FALSE,1
+1776,sign_4a2b9730b672dcf9,video_d205431ea62f4ad5,3,1,Vocabulary,1832,1,Webcam,Webcam,From the supplied full course vocabulary list.,,FALSE,1
+1777,sign_fc8b47a89ae5c3f2,video_50ece6ddf73217d9,3,2,Vocabulary,1833,2,Computer,Computer,From the supplied full course vocabulary list.,,FALSE,2
+1778,sign_ddc6d2a73cc86413,video_0f3ce94e1449eb11,3,2,Vocabulary,1834,2,Vibrating pillow pad,Vibrating pillow pad,From the supplied full course vocabulary list.,,FALSE,2
+1779,sign_ca1c81ef07e6c96a,video_5b2b1c7da5ff0894,3,2,Vocabulary,1835,2,Laptop,Laptop,From the supplied full course vocabulary list.,,FALSE,2
+1780,sign_4f08051b1f9ce0ce,video_35c342d7ca598743,3,2,Vocabulary,1836,2,Minicom/Type talk,Minicom/Type talk,From the supplied full course vocabulary list.,,FALSE,2
+1781,sign_7df1cd416d3a90b7,video_f9cb65a445f1585d,3,2,Vocabulary,1837,2,Ipad,Ipad,From the supplied full course vocabulary list.,,FALSE,2
+1782,sign_122d5d0a8b113b5e,video_7f472abc9e4472fd,3,2,Vocabulary,1838,2,In-vision Signer,In-vision Signer,From the supplied full course vocabulary list.,,FALSE,2
+1783,sign_ff5fe851cbbb1621,video_66890fe3ecca145d,3,2,Vocabulary,1839,2,Pager,Pager,From the supplied full course vocabulary list.,,FALSE,2
+1784,sign_0142a4258c436c93,video_b2f8aa14dca7369c,3,2,Vocabulary,1840,2,Relay UK,Relay UK,From the supplied full course vocabulary list.,,FALSE,2
+1785,sign_2c131b512a1ecee4,video_52235eeb0dbf1e8f,3,2,Vocabulary,1841,2,Mobile phone,Mobile phone,From the supplied full course vocabulary list.,,FALSE,2
+1786,sign_bab7d326b0034e3b,video_2662757fbc03ad6c,3,2,Vocabulary,1842,2,Download / Upload,Download / Upload,From the supplied full course vocabulary list.,,FALSE,2
+1787,sign_4a2b9730b672dcf9,video_d205431ea62f4ad5,3,2,Vocabulary,1843,2,Webcam,webcam,From the supplied full course vocabulary list.,,FALSE,2
+1788,sign_4c30ab58d694d170,video_0b4b1f950ec9101a,3,2,Vocabulary,1844,2,Subtitles,Subtitles,From the supplied full course vocabulary list.,,FALSE,2
+1789,sign_d23ac2f3129bee36,video_657870d339e22475,3,2,Vocabulary,1845,2,Skype,Skype,From the supplied full course vocabulary list.,,FALSE,2
+1790,sign_9ea01ecc2f456521,video_471ace40ad65230f,3,2,Vocabulary,1846,2,Flashing light,Flashing light,From the supplied full course vocabulary list.,,FALSE,2
+1791,sign_8c490a452e164bac,video_36510fce23ef6cfc,3,2,Vocabulary,1847,2,Zoom,Zoom,From the supplied full course vocabulary list.,,FALSE,2
+1792,sign_ccdd764cdcc00782,video_4ab59fa36edbd16f,3,2,Vocabulary,1848,2,doorbell,doorbell,From the supplied full course vocabulary list.,,FALSE,2
+1793,sign_0d08f359f7f18b73,video_8a05fd1a69edbba6,3,2,Vocabulary,1849,2,Google,Google,From the supplied full course vocabulary list.,,FALSE,2
+1794,sign_55067b3c3e6fb4e4,video_26e8c68bdd49ebf6,3,2,Vocabulary,1850,2,Alarm,Alarm,From the supplied full course vocabulary list.,,FALSE,2
+1795,sign_6daf7e625c90dc81,video_786ad51ce7f7bbfb,3,2,Vocabulary,1851,2,Facetime,Facetime,From the supplied full course vocabulary list.,,FALSE,2
+1796,sign_7d4970d90486dafa,video_e9c30d5ecddab928,3,2,Vocabulary,1852,2,Text/sms,Text/sms,From the supplied full course vocabulary list.,,FALSE,2
+1797,sign_91f1cda582571743,video_11dc63d3a50a049c,3,2,Vocabulary,1853,2,Social Media,Social Media,From the supplied full course vocabulary list.,,FALSE,2
+1798,sign_e6f9e9ae2b4aa659,video_c96d725d66d0896e,3,2,Vocabulary,1854,2,App,App,From the supplied full course vocabulary list.,,FALSE,2
+1799,sign_044398cba608b365,video_2f694559c0aaae52,3,2,Vocabulary,1855,2,Facebook,Facebook,From the supplied full course vocabulary list.,,FALSE,2
+1800,sign_703ba01d15879b4f,video_b5f9c780752e2d12,3,2,Vocabulary,1856,2,Twitter/X,Twitter/X,From the supplied full course vocabulary list.,,FALSE,2
+1801,sign_78d0beaf9f7c5629,video_b40ce07bc441f8f9,3,2,Vocabulary,1857,2,Whatsapp,Whatsapp,From the supplied full course vocabulary list.,,FALSE,2
+1802,sign_57ca9af7276061c9,video_6a5a2f0d6d7d19a0,3,1,Vocabulary,1858,3,Access,Access,From the supplied full course vocabulary list.,,FALSE,3
+1803,sign_513341139d94039a,video_7fc08dd6d643f52b,3,1,Vocabulary,1859,3,Private,Private,From the supplied full course vocabulary list.,,FALSE,3
+1804,sign_b9616c8843842bb7,video_45fc06b277a1e537,3,1,Vocabulary,1860,3,Active,Active,From the supplied full course vocabulary list.,,FALSE,3
+1805,sign_0de9d66e7afe15f1,video_b1335b5e362d6ead,3,1,Vocabulary,1861,3,Prefer,Prefer,From the supplied full course vocabulary list.,,FALSE,3
+1806,sign_009bbee04fd57fcf,video_d7496ae7904f7f4c,3,1,Vocabulary,1862,3,Additional,Additional,From the supplied full course vocabulary list.,,FALSE,3
+1807,sign_cdee42dc21dec3dd,video_ace2c436c3e2a30d,3,1,Vocabulary,1863,3,Sort out,Sort out,From the supplied full course vocabulary list.,,FALSE,3
+1808,sign_ed217ea2e4ccb4c2,video_7b2664afd8c28392,3,1,Vocabulary,1864,3,Afford,Afford,From the supplied full course vocabulary list.,,FALSE,3
+1809,sign_1ae67e268e9521f4,video_d0e5250c8ba5f8a1,3,1,Vocabulary,1865,3,Watch,Watch,From the supplied full course vocabulary list.,,FALSE,3
+1810,sign_3b83f60a4a2477ea,video_35f014c3ba59db8f,3,1,Vocabulary,1866,3,All day,All day,From the supplied full course vocabulary list.,,FALSE,3
+1811,sign_b9d55f1480730636,video_4f37e4f4c5ef74b8,3,1,Vocabulary,1867,3,Available,Available,From the supplied full course vocabulary list.,,FALSE,3
+1812,sign_0573867a4e3b605c,video_e92d0912142d2cf4,3,1,Vocabulary,1868,3,Behaviour,Behaviour,From the supplied full course vocabulary list.,,FALSE,3
+1813,sign_2c7a507cedda4701,video_dedf6b70131a1c7d,3,1,Vocabulary,1869,3,Careful,Careful,From the supplied full course vocabulary list.,,FALSE,3
+1814,sign_33e57310166bed21,video_2b6b0e1416474262,3,1,Vocabulary,1870,3,Catch up,Catch up,From the supplied full course vocabulary list.,,FALSE,3
+1815,sign_f2b2cad0e67ccad0,video_8a5a19e6d4296ea3,3,1,Vocabulary,1871,3,Deposit,Deposit,From the supplied full course vocabulary list.,,FALSE,3
+1816,sign_c2acd2177f812dfe,video_ea0b11264b544849,3,1,Vocabulary,1872,3,Experience,Experience,From the supplied full course vocabulary list.,,FALSE,3
+1817,sign_b690e3d6b0719362,video_2dca3c18560d2a24,3,1,Vocabulary,1873,3,Improve,Improve,From the supplied full course vocabulary list.,,FALSE,3
+1818,sign_4456d97fda030cb6,video_c20d315c5f75175d,3,1,Vocabulary,1874,3,Land lord,Land lord,From the supplied full course vocabulary list.,,FALSE,3
+1819,sign_ebd87d290e481417,video_74d21f9c028c5042,3,1,Vocabulary,1875,3,Law,Law,From the supplied full course vocabulary list.,,FALSE,3
+1820,sign_b1e02b5a68202ccd,video_939b38be8d5db6bf,3,1,Vocabulary,1876,3,Method,Method,From the supplied full course vocabulary list.,,FALSE,3
+1821,sign_4bc8999c081028ba,video_687254402ac13b8a,3,3,Vocabulary,1877,4,111,111,From the supplied full course vocabulary list.,,FALSE,4
+1822,sign_8a3e22ae9343bf33,video_b0b06191b36e1cb4,3,3,Vocabulary,1878,4,Date Of Birth,Date Of Birth,From the supplied full course vocabulary list.,,FALSE,4
+1823,sign_b5886c019804a960,video_cbcb79ee2a039990,3,3,Vocabulary,1879,4,Headache,Headache,From the supplied full course vocabulary list.,,FALSE,4
+1824,sign_8c8978dcd45d7f51,video_ae6faab69db9947b,3,3,Vocabulary,1880,4,Death / Died,Death / Died,From the supplied full course vocabulary list.,,FALSE,4
+1825,sign_14fed52b0025ee83,video_10cc56cbe1ff7578,3,3,Vocabulary,1881,4,999,999,From the supplied full course vocabulary list.,,FALSE,4
+1826,sign_6aa18cd351319f70,video_1df2a2d82eb5c4fc,3,3,Vocabulary,1882,4,Health,Health,From the supplied full course vocabulary list.,,FALSE,4
+1827,sign_8ee0d1e7a55d17e6,video_a34967586720306c,3,3,Vocabulary,1883,4,Diabetes,Diabetes,From the supplied full course vocabulary list.,,FALSE,4
+1828,sign_04b56cf528c72f60,video_32b5cdb1660c9277,3,3,Vocabulary,1884,4,Addiction,Addiction,From the supplied full course vocabulary list.,,FALSE,4
+1829,sign_86ffaaf3a0766dcf,video_90da9683bd57a790,3,3,Vocabulary,1885,4,Heart Attack,Heart Attack,From the supplied full course vocabulary list.,,FALSE,4
+1830,sign_87d97220cc0a5ff1,video_d42302db8ee887ad,3,3,Vocabulary,1886,4,Diagnosed,Diagnosed,From the supplied full course vocabulary list.,,FALSE,4
+1831,sign_bfb480fe56749db7,video_e78b9d26d5a805b7,3,3,Vocabulary,1887,4,Alcohol,Alcohol,From the supplied full course vocabulary list.,,FALSE,4
+1832,sign_b5b46943fe9cf7ef,video_59848cf6b96e4818,3,3,Vocabulary,1888,4,Hereditary,Hereditary,From the supplied full course vocabulary list.,,FALSE,4
+1833,sign_d53ea9c4bd3172b6,video_5a23436b81713e9e,3,3,Vocabulary,1889,4,Dietician,Dietician,From the supplied full course vocabulary list.,,FALSE,4
+1834,sign_b8f5da3ad321ed4d,video_02b2e0fea4505c97,3,3,Vocabulary,1890,4,Allergies,Allergies,From the supplied full course vocabulary list.,,FALSE,4
+1835,sign_d9ffc3874336f3b3,video_8a035a98683e7eb4,3,3,Vocabulary,1891,4,Hospital,Hospital,From the supplied full course vocabulary list.,,FALSE,4
+1836,sign_e2855d0a6e4d962b,video_6dfc256135bced13,3,3,Vocabulary,1892,4,Dieting,Dieting,From the supplied full course vocabulary list.,,FALSE,4
+1837,sign_44e57fdab4c35bf2,video_f3e6203bf85c8cc8,3,3,Vocabulary,1893,4,Ambulance,Ambulance,From the supplied full course vocabulary list.,,FALSE,4
+1838,sign_6652d0cfbb4b05e9,video_7ded35fcc95d2569,3,3,Vocabulary,1894,4,Illness / Disease,Illness / Disease,From the supplied full course vocabulary list.,,FALSE,4
+1839,sign_a127ba281871f3fc,video_412819fb094bd9a3,3,3,Vocabulary,1895,4,Doctor,Doctor,From the supplied full course vocabulary list.,,FALSE,4
+1840,sign_102f6d7fce3a35b5,video_9ed9ccf38ac43fd6,3,3,Vocabulary,1896,4,Appointment,Appointment,From the supplied full course vocabulary list.,,FALSE,4;5
+1841,sign_d0e1f44e1f0cf9c5,video_c197458954a440d9,3,3,Vocabulary,1897,4,Injections,Injections,From the supplied full course vocabulary list.,,FALSE,4
+1842,sign_a4c65626a31a09da,video_54c0f20646a088ff,3,3,Vocabulary,1898,4,Dizzy / Drunk,Dizzy / Drunk,From the supplied full course vocabulary list.,,FALSE,4
+1843,sign_70716a4c44c12343,video_0365d524b6f414e6,3,3,Vocabulary,1899,4,Blood,Blood,From the supplied full course vocabulary list.,,FALSE,4
+1844,sign_c394ab80e523d864,video_b2aaff281b4a5319,3,3,Vocabulary,1900,4,Isolated,Isolated,From the supplied full course vocabulary list.,,FALSE,4
+1845,sign_19ca2e1c7078519c,video_89a9868d6063b1d9,3,3,Vocabulary,1901,4,Emergency Services,Emergency Services,From the supplied full course vocabulary list.,,FALSE,4
+1846,sign_c9b2a08401b74693,video_d15f783957998700,3,3,Vocabulary,1902,4,Broken,Broken,From the supplied full course vocabulary list.,,FALSE,4
+1847,sign_2a56ce42c3153bea,video_61fdf6f938bce600,3,3,Vocabulary,1903,4,Itch / Rash,Itch / Rash,From the supplied full course vocabulary list.,,FALSE,4
+1848,sign_17ab778e851c4b94,video_ed14be913b4f5be9,3,3,Vocabulary,1904,4,Exercise,Exercise,From the supplied full course vocabulary list.,,FALSE,4
+1849,sign_de191e94709e1f20,video_b21b2884e9045272,3,3,Vocabulary,1905,4,Cancer,Cancer,From the supplied full course vocabulary list.,,FALSE,4
+1850,sign_3a1bcf6a8dd544c2,video_2cd9e656c99c3ae7,3,3,Vocabulary,1906,4,Medicine,Medicine,From the supplied full course vocabulary list.,,FALSE,4
+1851,sign_f3afeaaaca491954,video_34a4057dc691425d,3,3,Vocabulary,1907,4,Faint,Faint,From the supplied full course vocabulary list.,,FALSE,4
+1852,sign_f327b82371a98203,video_e524ab9f801a3c58,3,3,Vocabulary,1908,4,Clinic,Clinic,From the supplied full course vocabulary list.,,FALSE,4
+1853,sign_83eb484d93abf86c,video_1d452279d085d347,3,3,Vocabulary,1909,4,Mental Health,Mental Health,From the supplied full course vocabulary list.,,FALSE,4
+1854,sign_9871293aa5d40f8e,video_e11e3a9995a10adb,3,3,Vocabulary,1910,4,Fall / Fell,Fall / Fell,From the supplied full course vocabulary list.,,FALSE,4
+1855,sign_31d159fe2236b71e,video_d964c7576e7236de,3,3,Vocabulary,1911,4,Cold / Flu,Cold / Flu,From the supplied full course vocabulary list.,,FALSE,4
+1856,sign_fd4b67f39a790800,video_39bb42c3ade7a95f,3,3,Vocabulary,1912,4,Nurse,Nurse,From the supplied full course vocabulary list.,,FALSE,4
+1857,sign_b52b93e0fa2c999d,video_7139d17a7c8b9d78,3,3,Vocabulary,1913,4,Fire Service,Fire Service,From the supplied full course vocabulary list.,,FALSE,4
+1858,sign_3b8a2db26288635b,video_b6cf6b4db5509bf0,3,3,Vocabulary,1914,4,Coronavirus,Coronavirus,From the supplied full course vocabulary list.,,FALSE,4
+1859,sign_4cf223fd8e957811,video_97067cf07b9ddfc5,3,3,Vocabulary,1915,4,Obsession,Obsession,From the supplied full course vocabulary list.,,FALSE,4
+1860,sign_e4ef94ac24a78c55,video_0ef5eda7fb3e9e89,3,3,Vocabulary,1916,4,Genetic,Genetic,From the supplied full course vocabulary list.,,FALSE,4
+1861,sign_7391ab716d017e3d,video_ff270ff4fd98c5e1,3,3,Vocabulary,1917,4,Cough,Cough,From the supplied full course vocabulary list.,,FALSE,4
+1862,sign_fb95aa4304d95009,video_cd8a4f438c03674d,3,3,Vocabulary,1918,4,Occupational Therapist,Occupational Therapist,From the supplied full course vocabulary list.,,FALSE,4
+1863,sign_6ea7f875970131ed,video_0da4f39e3f6f1915,3,3,Vocabulary,1919,4,GP,GP,From the supplied full course vocabulary list.,,FALSE,4
+1864,sign_b73a68d289798514,video_0c24e6bfc3b17bc9,3,3,Vocabulary,1920,4,Counselling,Counselling,From the supplied full course vocabulary list.,,FALSE,4
+1865,sign_dcfe67b91daffd11,video_63fde7aba364cc9c,3,3,Vocabulary,1921,4,Operation,Operation,From the supplied full course vocabulary list.,,FALSE,4
+1866,sign_209b2fc5b44338cb,video_d9404d7d662ac8e0,3,3,Vocabulary,1922,4,Tinnitus,Tinnitus,From the supplied full course vocabulary list.,,FALSE,4
+1867,sign_0c20b60e1a527fb4,video_8c5b93101f144613,3,3,Vocabulary,1923,4,Physiotherapy,Physiotherapy,From the supplied full course vocabulary list.,,FALSE,4
+1868,sign_af8b8506b834869e,video_fe4329c871883b3d,3,3,Vocabulary,1924,5,Finished,Finished,From the supplied full course vocabulary list.,,FALSE,5
+1869,sign_d5343779f2b710b4,video_d86a07cc7173d051,3,3,Vocabulary,1925,5,Want to sleep,Want to sleep,From the supplied full course vocabulary list.,,FALSE,5
+1870,sign_9f3a26756f66cf75,video_e4de683f156d1585,3,3,Vocabulary,1926,5,Bruise,Bruise,From the supplied full course vocabulary list.,,FALSE,5
+1871,sign_17f916216c925384,video_0aad4bfe86a17964,3,3,Vocabulary,1927,5,Floor,Floor,From the supplied full course vocabulary list.,,FALSE,5
+1872,sign_830097f5bfda4d9e,video_9629ff5cf6fa1525,3,3,Vocabulary,1928,5,Weak,Weak,From the supplied full course vocabulary list.,,FALSE,5
+1873,sign_adf7c8b20268f184,video_c0dfc0aec876daa1,3,3,Vocabulary,1929,5,Ache,Ache,From the supplied full course vocabulary list.,,FALSE,5
+1874,sign_a4840518db3ce32d,video_8ad94a62e2f3f9a9,3,3,Vocabulary,1930,5,Medical Staff,Medical Staff,From the supplied full course vocabulary list.,,FALSE,5
+1875,sign_42c86bba801932c5,video_7af918f78f596eff,3,3,Vocabulary,1931,5,Wellbeing,Wellbeing,From the supplied full course vocabulary list.,,FALSE,5
+1876,sign_e71008b481d23a07,video_98401f25e9b8d03d,3,3,Vocabulary,1932,5,Pain,Pain,From the supplied full course vocabulary list.,,FALSE,5
+1877,sign_67b72595c768b977,video_e4c0f863f153297f,3,3,Vocabulary,1933,5,What happened,What Happened?,From the supplied full course vocabulary list.,,FALSE,5
+1878,sign_50b7834e76781e22,video_4e81b779b4e29f8c,3,3,Vocabulary,1934,5,Next,Next,From the supplied full course vocabulary list.,,FALSE,5
+1879,sign_d85c1a044bd0fe38,video_c745b17bbcde02c8,3,3,Vocabulary,1935,5,Comfortable,Comfortable,From the supplied full course vocabulary list.,,FALSE,5
+1880,sign_5d898d6bb7eb98c5,video_facf752486db9ac1,3,3,Vocabulary,1936,5,What's happening,What's happening,From the supplied full course vocabulary list.,,FALSE,5
+1881,sign_b47332bcc7ed0461,video_c6553006c423faee,3,3,Vocabulary,1937,5,Process,Process,From the supplied full course vocabulary list.,,FALSE,5
+1882,sign_5daaa1e1a52dda95,video_70e152b0a8896ff2,3,3,Vocabulary,1938,5,Confused,Confused,From the supplied full course vocabulary list.,,FALSE,5
+1883,sign_d0b0bd872ddd4a2b,video_16beb2fc85dc2381,3,3,Vocabulary,1939,5,X-ray,X-Ray,From the supplied full course vocabulary list.,,FALSE,5
+1884,sign_067a0e3cbe4d5dc2,video_ea5446b2eef854df,3,3,Vocabulary,1940,5,Urine / Urine Sample,Urine / Urine Sample,From the supplied full course vocabulary list.,,FALSE,5
+1885,sign_df9ff0a01715a11c,video_c0bf280d1bbc0eb9,3,3,Vocabulary,1941,5,COPD,COPD,From the supplied full course vocabulary list.,,FALSE,5
+1886,sign_1baa99934ab294d5,video_5c3ed71d2d7f8991,3,3,Vocabulary,1942,5,Abuse,Abuse,From the supplied full course vocabulary list.,,FALSE,5
+1887,sign_bd196246339f1b7c,video_1a96b954b6d0c534,3,3,Vocabulary,1943,5,Vision,Vision,From the supplied full course vocabulary list.,,FALSE,5
+1888,sign_5f2c776ddb71f09b,video_92c1f8fdd02ed41f,3,3,Vocabulary,1944,5,Exhausted,Exhausted,From the supplied full course vocabulary list.,,FALSE,5
+1889,sign_be6e823bb0291d3b,video_5f3adb4d04d98816,3,3,Vocabulary,1945,5,Visiting Hours,Visiting Hours,From the supplied full course vocabulary list.,,FALSE,5
+1890,sign_0aa9bc5d648a28a7,video_703190bd902a10f0,3,3,Vocabulary,1946,5,Assertive,Assertive,From the supplied full course vocabulary list.,,FALSE,5
+1891,sign_975e4661102cb582,video_dd34cb1316827b4b,3,3,Vocabulary,1947,5,Visiting Time,Visiting Time,From the supplied full course vocabulary list.,,FALSE,5
+1892,sign_98d383dd4f467f50,video_a46acc9a83007bc1,3,3,Vocabulary,1948,5,Audiology,Audiology,From the supplied full course vocabulary list.,,FALSE,5
+1893,sign_3c22eeedec1d8907,video_a4531a9b76b0e656,3,3,Vocabulary,1949,5,Virus,Virus,From the supplied full course vocabulary list.,,FALSE,5
+1894,sign_74548700064769b0,video_364c96ac8d2e0762,3,3,Vocabulary,1950,5,Depression,Depression,From the supplied full course vocabulary list.,,FALSE,5
+1895,sign_7a758b034907864a,video_0069062e2d4b8213,3,3,Vocabulary,1951,5,Vomit,Vomit,From the supplied full course vocabulary list.,,FALSE,5
+1896,sign_898ba43e8157a1fd,video_d4cda7ca606aad83,3,3,Vocabulary,1952,5,Emotional,Emotional,From the supplied full course vocabulary list.,,FALSE,5
+1897,sign_66f041537429779a,video_e017cec3db70a967,3,3,Vocabulary,1953,5,Brave,Brave,From the supplied full course vocabulary list.,,FALSE,5
+1898,sign_c9f93bd7ce7dc08d,video_e210b409651aa469,3,3,Vocabulary,1954,5,Grief,Grief,From the supplied full course vocabulary list.,,FALSE,5
+1899,sign_da6c7533a4da4684,video_8c8dccbf595d2d19,3,3,Vocabulary,1955,5,Neglect,Neglect,From the supplied full course vocabulary list.,,FALSE,5
+1900,sign_7acf431ed47d6913,video_5d50499a5b1083e0,3,3,Vocabulary,1956,5,Need,Need,From the supplied full course vocabulary list.,,FALSE,5
+1901,sign_ecd5831edaa17f12,video_9e5b1191fd173178,3,4,Vocabulary,1957,6,Bill,Bill,From the supplied full course vocabulary list.,,FALSE,6
+1902,sign_18b0f0a5cbbb745a,video_f26f69adeb3e83a0,3,4,Vocabulary,1958,6,Call Centre,Call Centre,From the supplied full course vocabulary list.,,FALSE,6
+1903,sign_5fcb2f83ac1f368c,video_515a3c25bc24a90a,3,4,Vocabulary,1959,6,Utility,Utility,From the supplied full course vocabulary list.,,FALSE,6
+1904,sign_bfd906200e92c38b,video_e42a86989928bd49,3,4,Vocabulary,1960,6,Streaming online,Streaming online,From the supplied full course vocabulary list.,,FALSE,6
+1905,sign_ad3ced3f6bbc5f3c,video_952d448ee437489c,3,4,Vocabulary,1961,6,Water,Water,From the supplied full course vocabulary list.,,FALSE,6
+1906,sign_aeba902f52241116,video_1afd52c7bcd1e7bd,3,4,Vocabulary,1962,6,Ability,Ability,From the supplied full course vocabulary list.,,FALSE,6
+1907,sign_a0022c9da51a0d18,video_9e0e1ee4d44e5922,3,4,Vocabulary,1963,6,Gas,Gas,From the supplied full course vocabulary list.,,FALSE,6
+1908,sign_c3800b564f5ceec9,video_a0ebf17e0800930f,3,4,Vocabulary,1964,6,Customer Service,Customer Service,From the supplied full course vocabulary list.,,FALSE,6
+1909,sign_70c8ce5b96a5d888,video_58012db565f70c6c,3,4,Vocabulary,1965,6,Electric,Electric,From the supplied full course vocabulary list.,,FALSE,6
+1910,sign_d63cfd889bbeda44,video_9c54c29cff7172e5,3,4,Vocabulary,1966,6,Manager,Manager,From the supplied full course vocabulary list.,,FALSE,6
+1911,sign_c4ba104de724a075,video_edd14768286bf15f,3,4,Vocabulary,1967,6,Petrol,Petrol,From the supplied full course vocabulary list.,,FALSE,6
+1912,sign_883de4c21966f525,video_17e06d2c248c4ab6,3,4,Vocabulary,1968,6,Automatic checkout,Automatic checkout,From the supplied full course vocabulary list.,,FALSE,6
+1913,sign_f4ec5673eedf9847,video_5d4749e271bd9b75,3,4,Vocabulary,1969,6,Road Tax,Road Tax,From the supplied full course vocabulary list.,,FALSE,6
+1914,sign_b47332bcc7ed0461,video_c6553006c423faee,3,4,Vocabulary,1970,6,Process,Process,From the supplied full course vocabulary list.,,FALSE,6
+1915,sign_e3e1460d9fe8ce38,video_e87c61e307704404,3,4,Vocabulary,1971,6,Rent/mortgage,Rent/mortgage,From the supplied full course vocabulary list.,,FALSE,6
+1916,sign_733c6ffe8d0aeb5b,video_d1c97b2264c5abce,3,4,Vocabulary,1972,6,Policy,Policy,From the supplied full course vocabulary list.,,FALSE,6
+1917,sign_d7a9da7a29fdcd01,video_b1b87b4c9321f0eb,3,4,Vocabulary,1973,6,Council Tax,Council Tax,From the supplied full course vocabulary list.,,FALSE,6
+1918,sign_ccbce927d01a5d32,video_4d1093c9a16d9cc7,3,4,Vocabulary,1974,6,Retail,Retail,From the supplied full course vocabulary list.,,FALSE,6
+1919,sign_2c131b512a1ecee4,video_52235eeb0dbf1e8f,3,4,Vocabulary,1975,6,Mobile phone,Mobile phone,From the supplied full course vocabulary list.,,FALSE,6
+1920,sign_ed217ea2e4ccb4c2,video_7b2664afd8c28392,3,4,Vocabulary,1976,6,Afford,Afford,From the supplied full course vocabulary list.,,FALSE,6
+1921,sign_237fd6afa7b41a5f,video_acb44c110e0eccf8,3,4,Vocabulary,1977,6,Environmental issues,Environmental issues,From the supplied full course vocabulary list.,,FALSE,6
+1922,sign_dfca0e041552ff85,video_c43420f6d1817581,3,4,Vocabulary,1978,6,Insurance,Insurance,From the supplied full course vocabulary list.,,FALSE,6
+1923,sign_7b3d23cd2830704f,video_1ca83f3262089b8a,3,4,Vocabulary,1979,6,Food shopping,Food shopping,From the supplied full course vocabulary list.,,FALSE,6
+1924,sign_ccabf21773153dfc,video_a41dd9a29a6b7a1a,3,4,Vocabulary,1980,6,Staff Training,Staff Training,From the supplied full course vocabulary list.,,FALSE,6
+1925,sign_8cbc93ecdba62486,video_f9997460995b1f97,3,4,Vocabulary,1981,6,Deaf Awareness,Deaf Awareness,From the supplied full course vocabulary list.,,FALSE,6
+1926,sign_1d5381a47a49ef8c,video_f8fd21c0f96b046a,3,2,Vocabulary,1982,7,Live Chat,Live Chat,From the supplied full course vocabulary list.,,FALSE,7
+1927,sign_bd40beda434e9242,video_ebe9ca2a5bcd80b5,3,2,Vocabulary,1983,7,Battery,Battery,From the supplied full course vocabulary list.,,FALSE,7
+1928,sign_d07f044cf504d553,video_055674f520491b50,3,2,Vocabulary,1984,7,Messaging,Messaging,From the supplied full course vocabulary list.,,FALSE,7
+1929,sign_1e255cfb238dce7f,video_904aee6d8cbfef37,3,2,Vocabulary,1985,7,Bluetooth,Bluetooth,From the supplied full course vocabulary list.,,FALSE,7
+1930,sign_df5cc4670309ff9b,video_527893878bc42484,3,2,Vocabulary,1986,7,TRS - Telephone relay service,TRS - Telephone relay service,From the supplied full course vocabulary list.,,FALSE,7
+1931,sign_8a4a650194352a27,video_0d60280ab32cd451,3,2,Vocabulary,1987,7,Digital,Digital,From the supplied full course vocabulary list.,,FALSE,7
+1932,sign_b62a4678251c66cc,video_288987201282d9fb,3,2,Vocabulary,1988,7,VRS - video relay service,VRS - video relay service,From the supplied full course vocabulary list.,,FALSE,7
+1933,sign_819b11f3538f4853,video_b0fb806a39d520b6,3,2,Vocabulary,1989,7,Sign Live,Sign Live,From the supplied full course vocabulary list.,,FALSE,7
+1934,sign_ba552f0023fc218f,video_181c901ecc6646b9,3,2,Vocabulary,1990,7,Video interpreters,Video interpreters,From the supplied full course vocabulary list.,,FALSE,7
+1935,sign_ca4b602d5f11cd41,video_bb05d7930d23d38e,3,2,Vocabulary,1991,7,Next Generation Text Now Relay UK,Next Generation Text Now Relay UK,From the supplied full course vocabulary list.,,FALSE,7
+1936,sign_a42f76761ea5734d,video_c298a3039e669834,3,2,Vocabulary,1992,7,Translate,Translate,From the supplied full course vocabulary list.,,FALSE,7
+1937,sign_2501722c87fadefc,video_0252b28c7d6047c0,3,2,Vocabulary,1993,7,Flexible,Flexible,From the supplied full course vocabulary list.,,FALSE,7
+1938,sign_7a6c7eca667b5a47,video_31262ebb3f091ffa,3,2,Vocabulary,1994,7,Patience,Patience,From the supplied full course vocabulary list.,,FALSE,7
+1939,sign_17ddc1ef857a4b9b,video_112ec32be6e8fdfd,3,2,Vocabulary,1995,7,WifI,WifI,From the supplied full course vocabulary list.,,FALSE,7
+1940,sign_764eba8472e723f4,video_5f28339e53aaabb8,3,2,Vocabulary,1996,7,Password,Password,From the supplied full course vocabulary list.,,FALSE,7
+1941,sign_2aa5d53e0a2aec4c,video_fa9ae8089bf0d997,3,2,Vocabulary,1997,7,AI - Artificial Intelligence,AI - Artificial Intelligence,From the supplied full course vocabulary list.,,FALSE,7
+1942,sign_7db818e633efcdb7,video_7505aa07e484fa01,3,2,Vocabulary,1998,7,Network Rail,Network Rail,From the supplied full course vocabulary list.,,FALSE,7
+1943,sign_5dd8015e4468723c,video_472c47b83ded208e,3,5,Vocabulary,1999,8,Access provision / providing,Access provision / providing,From the supplied full course vocabulary list.,,FALSE,8
+1944,sign_906a0762725d11a8,video_41d3e6253c1ac0f6,3,5,Vocabulary,2000,8,Compassion,Compassion,From the supplied full course vocabulary list.,,FALSE,8
+1945,sign_8ee50e8be95bd86c,video_e2b2d1cf3102f0ea,3,5,Vocabulary,2001,8,Deaflympics,Deaflympics,From the supplied full course vocabulary list.,,FALSE,8
+1946,sign_2f9e7973c673b8ef,video_6fc31e421b7246bb,3,5,Vocabulary,2002,8,Accessibility,Accessibility,From the supplied full course vocabulary list.,,FALSE,8
+1947,sign_ce56d90ceaa48b73,video_0a8435a0f28b1720,3,5,Vocabulary,2003,8,Community,Community,From the supplied full course vocabulary list.,,FALSE,8
+1948,sign_ca5ba4061fcff4ec,video_07faf7bb68c067f7,3,5,Vocabulary,2004,8,Deaf pubs,Deaf pubs,From the supplied full course vocabulary list.,,FALSE,8
+1949,sign_dfad2b2447b8ae0f,video_05fd573cba67f837,3,5,Vocabulary,2005,8,Annual,Annual,From the supplied full course vocabulary list.,,FALSE,8
+1950,sign_2be0ad48bba35750,video_431acbe9370683a1,3,5,Vocabulary,2006,8,Closing doors,Closing doors,From the supplied full course vocabulary list.,,FALSE,8
+1951,sign_3bed5f6156aedc07,video_ce772008deae8eb8,3,5,Vocabulary,2007,8,Deaf unity,Deaf unity,From the supplied full course vocabulary list.,,FALSE,8
+1952,sign_cdf08028e888fbb3,video_d493d319a72b6272,3,5,Vocabulary,2008,8,Barriers,Barriers,From the supplied full course vocabulary list.,,FALSE,8
+1953,sign_e0e8b27f880cc457,video_65f4e2b09cbd2dc4,3,5,Vocabulary,2009,8,Deaf community,Deaf community,From the supplied full course vocabulary list.,,FALSE,8
+1954,sign_c1c4046eecc90441,video_45455ddaf886c957,3,5,Vocabulary,2010,8,Discrimination,Discrimination,From the supplied full course vocabulary list.,,FALSE,8
+1955,sign_7190e6599fa9e57a,video_f4d3b9c5df403f8a,3,5,Vocabulary,2011,8,Captioning,Captioning,From the supplied full course vocabulary list.,,FALSE,8
+1956,sign_006119d3c7123b0e,video_deae4a060b1e43d3,3,5,Vocabulary,2012,8,Deaf club,Deaf club,From the supplied full course vocabulary list.,,FALSE,8
+1957,sign_b31d5ace8c53ff33,video_cb772383ccd12906,3,5,Vocabulary,2013,8,Digital Equipment,Digital Equipment,From the supplied full course vocabulary list.,,FALSE,8
+1958,sign_4ec7f56007704ce8,video_5b9a61de678f0de9,3,5,Vocabulary,2014,8,Club,Club,From the supplied full course vocabulary list.,,FALSE,8
+1959,sign_f0deb687cfa3d344,video_447388a89f0423dd,3,5,Vocabulary,2015,8,Deaf humour,Deaf humour,From the supplied full course vocabulary list.,,FALSE,8
+1960,sign_7407ee3231a5e5ca,video_07c06ac367613c42,3,5,Vocabulary,2016,8,Equality,Equality,From the supplied full course vocabulary list.,,FALSE,8
+1961,sign_17ab778e851c4b94,video_ed14be913b4f5be9,3,5,Vocabulary,2017,9,Exercise,Exercise,From the supplied full course vocabulary list.,,FALSE,9
+1962,sign_b690e3d6b0719362,video_2dca3c18560d2a24,3,5,Vocabulary,2018,9,Improve,Improve,From the supplied full course vocabulary list.,,FALSE,9
+1963,sign_ad7a212e4c84dd30,video_cf477d840869a877,3,5,Vocabulary,2019,9,Stagetext,Stagetext,From the supplied full course vocabulary list.,,FALSE,9
+1964,sign_ac1d31de78a7874a,video_6e7647a7be675821,3,5,Vocabulary,2020,9,Fitness,Fitness,From the supplied full course vocabulary list.,,FALSE,9
+1965,sign_83eb484d93abf86c,video_1d452279d085d347,3,5,Vocabulary,2021,9,Mental Health,Mental Health,From the supplied full course vocabulary list.,,FALSE,9
+1966,sign_266934526f19c04c,video_969249e5ebaef72d,3,5,Vocabulary,2022,9,Technology,Technology,From the supplied full course vocabulary list.,,FALSE,9
+1967,sign_ab748da428546e12,video_e00d2a49eb8abbd0,3,5,Vocabulary,2023,9,Friend,Friend,From the supplied full course vocabulary list.,,FALSE,9
+1968,sign_a63ba8b1978220c1,video_e419c78038dc32c4,3,5,Vocabulary,2024,9,UK Deaf Sport,UK Deaf Sport,From the supplied full course vocabulary list.,,FALSE,9
+1969,sign_0f069d3e5a2ba581,video_1c2aa8bf592f3dc7,3,5,Vocabulary,2025,9,Passion,Passion,From the supplied full course vocabulary list.,,FALSE,9
+1970,sign_075a12b4404420ae,video_eb62ba3e81a481b0,3,5,Vocabulary,2026,9,Gossip,Gossip,From the supplied full course vocabulary list.,,FALSE,9
+1971,sign_44a20f67bba7490f,video_0f095b1502a4f396,3,5,Vocabulary,2027,9,Visitor,Visitor,From the supplied full course vocabulary list.,,FALSE,9
+1972,sign_268d094b4d7ce0f8,video_b3d14b96c7f952be,3,5,Vocabulary,2028,9,Performance,Performance,From the supplied full course vocabulary list.,,FALSE,9
+1973,sign_30a1559d71d6f31b,video_d2f3c30f10609f17,3,5,Vocabulary,2029,9,Health & Safety,Health & Safety,From the supplied full course vocabulary list.,,FALSE,9
+1974,sign_a44e03fdea5f75cf,video_ee1915e0b0ca3570,3,5,Vocabulary,2030,9,Population,Population,From the supplied full course vocabulary list.,,FALSE,9
+1975,sign_7a16fba34cc2897c,video_8b38bdc4d4035422,3,5,Vocabulary,2031,9,Identity,Identity,From the supplied full course vocabulary list.,,FALSE,9
+1976,sign_27657c9e015cce14,video_98e5b5e3aaf9387f,3,5,Vocabulary,2032,9,Screenings,Screenings,From the supplied full course vocabulary list.,,FALSE,9
+1977,sign_8f386553232ec8b2,video_8b3976994504e5b0,3,5,Vocabulary,2033,9,Inclusive,Inclusive,From the supplied full course vocabulary list.,,FALSE,9
+1978,sign_7b29afc7b6ab41cd,video_d7d7ac0a152b56a1,3,5,Vocabulary,2034,9,Social exclusion,Social exclusion,From the supplied full course vocabulary list.,,FALSE,9
+1979,sign_7f5a603a0108e1bd,video_18932c4dd87f9e81,3,5,Vocabulary,2035,9,Inclusion,Inclusion,From the supplied full course vocabulary list.,,FALSE,9
+1980,sign_a6ede6b011a38c8c,video_6653310dfd0805bf,3,5,Vocabulary,2036,9,Society,Society,From the supplied full course vocabulary list.,,FALSE,9
+1981,sign_03fcd8804bab6828,video_e735ffdf35575702,3,5,Vocabulary,2037,9,Involved,Involved,From the supplied full course vocabulary list.,,FALSE,9
+1982,sign_f39b85aeaa406f98,video_f7a290ea02825ec6,3,5,Vocabulary,2038,9,Support,Support,From the supplied full course vocabulary list.,,FALSE,9
+1983,sign_4c05c2dfb736e40a,video_322dafd4a2481346,3,5,Vocabulary,2039,9,Interpreter,Interpreter,From the supplied full course vocabulary list.,,FALSE,9
+1984,sign_9e3734c3bc6f473c,video_6e5d1571d42e840b,3,5,Vocabulary,2040,9,Subscription,Subscription,From the supplied full course vocabulary list.,,FALSE,9
+1985,sign_c48153015a34a85d,video_728377996b7e1b96,3,6,Vocabulary,2041,10,Access to Work,Access to Work,From the supplied full course vocabulary list.,,FALSE,10
+1986,sign_40d120dfe4eca205,video_dae545494fe1b4fa,3,6,Vocabulary,2042,10,Clever,Clever,From the supplied full course vocabulary list.,,FALSE,10
+1987,sign_286256cd9f52ace5,video_c212e19140f76e95,3,6,Vocabulary,2043,10,Education,Education,From the supplied full course vocabulary list.,,FALSE,10
+1988,sign_3c9e527c79fa5d77,video_5dff0a7381157585,3,6,Vocabulary,2044,10,ADHD,ADHD,From the supplied full course vocabulary list.,,FALSE,10
+1989,sign_75f6082ee0da6348,video_897a1221f8152857,3,6,Vocabulary,2045,10,Communication,Communication,From the supplied full course vocabulary list.,,FALSE,10
+1990,sign_d01e7300b622a5f2,video_5ff084045f81a2f7,3,6,Vocabulary,2046,10,Encourage,Encourage,From the supplied full course vocabulary list.,,FALSE,10
+1991,sign_08339b3ef3c254ca,video_eff3257bcb4a8f33,3,6,Vocabulary,2047,10,After school club,After school club,From the supplied full course vocabulary list.,,FALSE,10
+1992,sign_81e92828495fd7e7,video_beed61d0a2549976,3,6,Vocabulary,2048,10,Support Worker,support worker,From the supplied full course vocabulary list.,,FALSE,10
+1993,sign_d4b5b08da3db8b1d,video_e9836e65265c2762,3,6,Vocabulary,2049,10,Evaluate,Evaluate,From the supplied full course vocabulary list.,,FALSE,10
+1994,sign_d0e8b6e61e079c59,video_3324c0feb8679080,3,6,Vocabulary,2050,10,A-Level,A-Level,From the supplied full course vocabulary list.,,FALSE,10
+1995,sign_f7ec95fe8d298500,video_0e6913d6ffae9933,3,6,Vocabulary,2051,10,Confident,Confident,From the supplied full course vocabulary list.,,FALSE,10
+1996,sign_003c77735c133a76,video_4d7fc42e56dc6848,3,6,Vocabulary,2052,10,Every year,Every Year,From the supplied full course vocabulary list.,,FALSE,10
+1997,sign_2c8eb099fd507789,video_1505aec3f6b0f1a5,3,6,Vocabulary,2053,10,Apprenticeship,Apprenticeship,From the supplied full course vocabulary list.,,FALSE,10
+1998,sign_3986de301f01267f,video_bbe41df30a127cfb,3,6,Vocabulary,2054,10,Cost / Fees,Cost / Fees,From the supplied full course vocabulary list.,,FALSE,10
+1999,sign_e121af866d8f62a3,video_12e5afe9095c0d1e,3,6,Vocabulary,2055,10,Exams,Exams,From the supplied full course vocabulary list.,,FALSE,10
+2000,sign_90f46ee96a9d7a9f,video_6be6f67ae4d3b31f,3,6,Vocabulary,2056,10,Arts,Arts,From the supplied full course vocabulary list.,,FALSE,10
+2001,sign_8daf4d100259b0dc,video_fe0e4a3760a63380,3,6,Vocabulary,2057,10,Creative subjects,Creative subjects,From the supplied full course vocabulary list.,,FALSE,10
+2002,sign_c2acd2177f812dfe,video_ea0b11264b544849,3,6,Vocabulary,2058,10,Experience,Experience,From the supplied full course vocabulary list.,,FALSE,10
+2003,sign_cfc413759df18115,video_8c062e2e7474d6f2,3,6,Vocabulary,2059,10,Autism,Autism,From the supplied full course vocabulary list.,,FALSE,10
+2004,sign_563cfc8b1fbc86ac,video_2a6a972c83779600,3,6,Vocabulary,2060,10,Coursework,Coursework,From the supplied full course vocabulary list.,,FALSE,10
+2005,sign_20f4bf99c3b5decc,video_f4ff4120a9a9b544,3,6,Vocabulary,2061,10,Extra,Extra,From the supplied full course vocabulary list.,,FALSE,10
+2006,sign_3f91180d967a5fca,video_9d6d6f30fbd3b809,3,6,Vocabulary,2062,10,Baby sign,Baby sign,From the supplied full course vocabulary list.,,FALSE,10
+2007,sign_7f09ec545fff9a11,video_26305082cef8218e,3,6,Vocabulary,2063,10,Cultural Identity,Cultural Identity,From the supplied full course vocabulary list.,,FALSE,10
+2008,sign_ce1dc960954e05aa,video_892fa48f1d650926,3,6,Vocabulary,2064,10,Fail,Fail,From the supplied full course vocabulary list.,,FALSE,10
+2009,sign_f54fbbe383415866,video_23a0fa4b3522f542,3,6,Vocabulary,2065,10,Basic,Basic,From the supplied full course vocabulary list.,,FALSE,10
+2010,sign_2e781430fe10c7d6,video_ee10ca33d440679d,3,6,Vocabulary,2066,10,Degree,Degree,From the supplied full course vocabulary list.,,FALSE,10
+2011,sign_8f386553232ec8b2,video_8b3976994504e5b0,3,6,Vocabulary,2067,10,Inclusive,Inclusive,From the supplied full course vocabulary list.,,FALSE,10
+2012,sign_1b70a1bf7c5f3d78,video_9b0a700f59a87927,3,6,Vocabulary,2068,10,Bilingual,Bilingual,From the supplied full course vocabulary list.,,FALSE,10
+2013,sign_74548700064769b0,video_364c96ac8d2e0762,3,6,Vocabulary,2069,10,Depression,Depression,From the supplied full course vocabulary list.,,FALSE,10
+2014,sign_985bdf1154343a5b,video_8953d2ce6cfcd253,3,6,Vocabulary,2070,10,Integration,Integration,From the supplied full course vocabulary list.,,FALSE,10
+2015,sign_b31d5ace8c53ff33,video_cb772383ccd12906,3,6,Vocabulary,2071,10,Digital Equipment,Digital Equipment,From the supplied full course vocabulary list.,,FALSE,10
+2016,sign_0d791768cd04717b,video_f44ad04742c65dce,3,6,Vocabulary,2072,10,Isolation,Isolation,From the supplied full course vocabulary list.,,FALSE,10
+2017,sign_6db0480798e5a0b8,video_0b0477e5b33d04ab,3,6,Vocabulary,2073,10,Boarding,Boarding,From the supplied full course vocabulary list.,,FALSE,10
+2018,sign_891cca0bdf96c525,video_92c1f979551486c3,3,6,Vocabulary,2074,10,Dyslexia,Dyslexia,From the supplied full course vocabulary list.,,FALSE,10
+2019,sign_e27643639cc2fa5e,video_d63adefbbf478cd6,3,6,Vocabulary,2075,10,Advocate,Advocate,From the supplied full course vocabulary list.,,FALSE,10
+2020,sign_3578d547edf76413,video_fab0d9639da6b9df,3,6,Vocabulary,2076,10,Bullying,Bullying,From the supplied full course vocabulary list.,,FALSE,10
+2021,sign_9f0ae5568402cda2,video_c9cc4c11de4dbf73,3,6,Vocabulary,2077,10,Attitude,Attitude,From the supplied full course vocabulary list.,,FALSE,10
+2022,sign_b1f7b04fef335374,video_a1dd7ff3039fb3ce,3,6,Vocabulary,2078,11,Good/bad behaviour,Good/bad behaviour,From the supplied full course vocabulary list.,,FALSE,11
+2023,sign_a51089766367d8eb,video_1196190f96e13d75,3,6,Vocabulary,2079,11,Mainstream Education,Mainstream Education,From the supplied full course vocabulary list.,,FALSE,11
+2024,sign_a435c41422ef566c,video_1d03e73eefbecc7a,3,6,Vocabulary,2080,11,Government Funding,Government Funding,From the supplied full course vocabulary list.,,FALSE,11
+2025,sign_6c9cc747f22645a4,video_ec37b9a0b771272e,3,6,Vocabulary,2081,11,National Curriculum,National Curriculum,From the supplied full course vocabulary list.,,FALSE,11
+2026,sign_a1149d3620fa9a8e,video_8c3e027200a77b4c,3,6,Vocabulary,2082,11,Harassment,Harassment,From the supplied full course vocabulary list.,,FALSE,11
+2027,sign_1b055b7cbf4c1c71,video_bb999340f6fe600d,3,6,Vocabulary,2083,11,National,National,From the supplied full course vocabulary list.,,FALSE,11
+2028,sign_8af149ac01c0b60a,video_7e5e6ea0711d667f,3,6,Vocabulary,2084,11,Head teacher,Head teacher,From the supplied full course vocabulary list.,,FALSE,11
+2029,sign_6d7a6751cc27d73d,video_fd3d35f962907b3b,3,6,Vocabulary,2085,11,Note taker,Note taker,From the supplied full course vocabulary list.,,FALSE,11
+2030,sign_a6b6510df893daa2,video_1ff504fafe4d1267,3,6,Vocabulary,2086,11,Higher Education,Higher Education,From the supplied full course vocabulary list.,,FALSE,11
+2031,sign_2533b04865c0499e,video_eab1922aa537a200,3,6,Vocabulary,2087,11,Nursery,Nursery,From the supplied full course vocabulary list.,,FALSE,11
+2032,sign_d82f48cd9ad98b2a,video_c2359cee6af71e48,3,6,Vocabulary,2088,11,Home sick,Home sick,From the supplied full course vocabulary list.,,FALSE,11
+2033,sign_f05289dfeeae22dc,video_278baa1c21af85ed,3,6,Vocabulary,2089,11,Pre-School,Pre-school,From the supplied full course vocabulary list.,,FALSE,11
+2034,sign_0ad7b8f4125db866,video_459a7183d93015a5,3,6,Vocabulary,2090,11,Identify,Identify,From the supplied full course vocabulary list.,,FALSE,11
+2035,sign_c0a6a57281e2bcd3,video_d8fc0a8063166ede,3,6,Vocabulary,2091,11,Online courses/training,Online courses/training,From the supplied full course vocabulary list.,,FALSE,11
+2036,sign_c584052bb08adc6b,video_a9227342a3d4e31a,3,6,Vocabulary,2092,11,Knowledge,Knowledge,From the supplied full course vocabulary list.,,FALSE,11
+2037,sign_07ec01a361e851e3,video_25e3c93f5c2c68a2,3,6,Vocabulary,2093,11,Safeguard,Safeguard,From the supplied full course vocabulary list.,,FALSE,11
+2038,sign_cf5b85b305fd8541,video_ff081e8a55f5509e,3,6,Vocabulary,2094,11,Lecture,Lecture,From the supplied full course vocabulary list.,,FALSE,11
+2039,sign_3f7dc95e52f20110,video_531d39d8186df142,3,6,Vocabulary,2095,11,Social Skills,Social Skills,From the supplied full course vocabulary list.,,FALSE,11
+2040,sign_b1e02b5a68202ccd,video_939b38be8d5db6bf,3,6,Vocabulary,2096,11,Method,Method,From the supplied full course vocabulary list.,,FALSE,11
+2041,sign_bc7721567e19c24e,video_0b0a082f0aba31a1,3,6,Vocabulary,2097,11,Speech and Language Therapist,Speech and Language Therapist,From the supplied full course vocabulary list.,,FALSE,11
+2042,sign_5c438194fe367775,video_0d1a64378ffc9e8f,3,6,Vocabulary,2098,11,University,University,From the supplied full course vocabulary list.,,FALSE,11
+2043,sign_8d7acf4ea7822764,video_7d7f86c9836928ae,3,7,Vocabulary,2099,12,Interviews,Interviews,From the supplied full course vocabulary list.,,FALSE,12
+2044,sign_eab822b5f31d5c6c,video_cb48a692837b0cea,3,7,Vocabulary,2100,12,Act,Act,From the supplied full course vocabulary list.,,FALSE,12
+2045,sign_76ab74dc169f80d9,video_6092b851c30d9602,3,7,Vocabulary,2101,12,Jobcentre,Jobcentre,From the supplied full course vocabulary list.,,FALSE,12
+2046,sign_2410b175e75407af,video_3c8247d0fcc4748b,3,7,Vocabulary,2102,12,Annual leave,Annual leave,From the supplied full course vocabulary list.,,FALSE,12
+2047,sign_be523f0f70e91a0f,video_c07e0745fecae54e,3,7,Vocabulary,2103,12,Management,Management,From the supplied full course vocabulary list.,,FALSE,12
+2048,sign_02c3422932f96024,video_2cb79063f3bbd079,3,7,Vocabulary,2104,12,Career,Career,From the supplied full course vocabulary list.,,FALSE,12
+2049,sign_ca04bceafbc2d8ab,video_5e9c6d82fb95cd4b,3,7,Vocabulary,2105,12,Membership,Membership,From the supplied full course vocabulary list.,,FALSE,12
+2050,sign_8286fd4e023d5d48,video_d9aef758d72ff167,3,7,Vocabulary,2106,12,Colleagues,Colleagues,From the supplied full course vocabulary list.,,FALSE,12
+2051,sign_d026d29f29fbaa92,video_0dd6aceaf365c16e,3,7,Vocabulary,2107,12,Negative / Positive,Negative / Positive,From the supplied full course vocabulary list.,,FALSE,12
+2052,sign_d40617f5f6e404b5,video_9fa3c7cbfb5f0ffd,3,7,Vocabulary,2108,12,CPD - continuing professional development,CPD - continuing professional development,From the supplied full course vocabulary list.,,FALSE,12
+2053,sign_da6c7533a4da4684,video_8c8dccbf595d2d19,3,7,Vocabulary,2109,12,Neglect,Neglect,From the supplied full course vocabulary list.,,FALSE,12
+2054,sign_f9c7305fdfda6fbf,video_a8dc563d13cb4257,3,7,Vocabulary,2110,12,Newspaper Advert,Newspaper Advert,From the supplied full course vocabulary list.,,FALSE,12
+2055,sign_b89578589f4f4abc,video_06f16f1817a008a3,3,7,Vocabulary,2111,12,Diversity,Diversity,From the supplied full course vocabulary list.,,FALSE,12
+2056,sign_9aed3b2490bd52ad,video_14f7c7bfde3a22a9,3,7,Vocabulary,2112,12,Opportunities,Opportunities,From the supplied full course vocabulary list.,,FALSE,12
+2057,sign_ce44635ed51a5164,video_6e31545675035f49,3,7,Vocabulary,2113,12,Employed,Employed,From the supplied full course vocabulary list.,,FALSE,12
+2058,sign_81d55a9b71acd8e6,video_a27c9e8aa4436c4a,3,7,Vocabulary,2114,12,Overtime,Overtime,From the supplied full course vocabulary list.,,FALSE,12
+2059,sign_9b2b104da8db052b,video_3071c4d7fd3cadf9,3,7,Vocabulary,2115,12,Employment,Employment,From the supplied full course vocabulary list.,,FALSE,12
+2060,sign_e6ca556d55e1bd76,video_3da5c2358d982ebb,3,7,Vocabulary,2116,12,Part Time,Part-time,From the supplied full course vocabulary list.,,FALSE,12
+2061,sign_7407ee3231a5e5ca,video_07c06ac367613c42,3,7,Vocabulary,2117,12,Equality,Equality,From the supplied full course vocabulary list.,,FALSE,12
+2062,sign_e9a900135b07b4f0,video_0fab0315940ca0ec,3,7,Vocabulary,2118,12,Payslips,Payslips,From the supplied full course vocabulary list.,,FALSE,12
+2063,sign_c2acd2177f812dfe,video_ea0b11264b544849,3,7,Vocabulary,2119,12,Experience,Experience,From the supplied full course vocabulary list.,,FALSE,12
+2064,sign_268d094b4d7ce0f8,video_b3d14b96c7f952be,3,7,Vocabulary,2120,12,Performance,Performance,From the supplied full course vocabulary list.,,FALSE,12
+2065,sign_d26eb312fc1f5992,video_1a129fcdfbab73b3,3,7,Vocabulary,2121,12,Fire alarm,Fire alarm,From the supplied full course vocabulary list.,,FALSE,12
+2066,sign_1aa5935e587a8534,video_50a04bf03815dae3,3,7,Vocabulary,2122,12,Full Time,Full-time,From the supplied full course vocabulary list.,,FALSE,12
+2067,sign_8e5e69ae1315b84e,video_a32ca8a2104dbd15,3,7,Vocabulary,2123,12,Rights,Rights,From the supplied full course vocabulary list.,,FALSE,12
+2068,sign_5cf121ffb4c5aa4a,video_fdd721821d20b732,3,7,Vocabulary,2124,13,Personal,Personal,From the supplied full course vocabulary list.,,FALSE,13
+2069,sign_ed15a015a2544e53,video_2175d3d512e9245a,3,7,Vocabulary,2125,13,Serious,Serious,From the supplied full course vocabulary list.,,FALSE,13
+2070,sign_0de9d66e7afe15f1,video_b1335b5e362d6ead,3,7,Vocabulary,2126,13,Prefer,Prefer,From the supplied full course vocabulary list.,,FALSE,13
+2071,sign_19fd2f943aebf18f,video_a0da99b3016b5d36,3,7,Vocabulary,2127,13,Shift Work,Shift Work,From the supplied full course vocabulary list.,,FALSE,13
+2072,sign_45741fdd6f488037,video_80911c4fbf086b52,3,7,Vocabulary,2128,13,Prepare,Prepare,From the supplied full course vocabulary list.,,FALSE,13
+2073,sign_ae40d37cee9f0f89,video_19a41aef3e52c51c,3,7,Vocabulary,2129,13,Since,Since,From the supplied full course vocabulary list.,,FALSE,13
+2074,sign_cd5f8aab40cf077a,video_4ca4595f00f96c57,3,7,Vocabulary,2130,13,Promotion,Promotion,From the supplied full course vocabulary list.,,FALSE,13
+2075,sign_468b961432ac79b7,video_c0f5b4ca6f94b5de,3,7,Vocabulary,2131,13,Sick note,Sick note,From the supplied full course vocabulary list.,,FALSE,13
+2076,sign_bd20ba86a254932e,video_565c7baaf2978cbb,3,7,Vocabulary,2132,13,Qualifications,Qualifications,From the supplied full course vocabulary list.,,FALSE,13
+2077,sign_871aa08c99358b40,video_6838078f68536a46,3,7,Vocabulary,2133,13,Sick pay,Sick pay,From the supplied full course vocabulary list.,,FALSE,13
+2078,sign_81c60cfd08827b3f,video_c92b8329a1a77a03,3,7,Vocabulary,2134,13,Quit,Quit,From the supplied full course vocabulary list.,,FALSE,13
+2079,sign_806f969f790b1a02,video_128b3ac2a6437383,3,7,Vocabulary,2135,13,Strategy,Strategy,From the supplied full course vocabulary list.,,FALSE,13
+2080,sign_bc9b27ae2ec63a73,video_110dd16d7f9e0ede,3,7,Vocabulary,2136,13,Recommend,Recommend,From the supplied full course vocabulary list.,,FALSE,13
+2081,sign_9e3734c3bc6f473c,video_6e5d1571d42e840b,3,7,Vocabulary,2137,13,Subscription,Subscription,From the supplied full course vocabulary list.,,FALSE,13
+2082,sign_39d0c32dfaa54138,video_b22a2fe2e39c5a92,3,7,Vocabulary,2138,13,Redundant,Redundant,From the supplied full course vocabulary list.,,FALSE,13
+2083,sign_9fa6040f6ee2d7f7,video_fec8ffffc9d132ea,3,7,Vocabulary,2139,13,Supervisor,Supervisor,From the supplied full course vocabulary list.,,FALSE,13
+2084,sign_4bf1d3959f46bc25,video_1b27339ea11d482f,3,7,Vocabulary,2140,13,Reliable,Reliable,From the supplied full course vocabulary list.,,FALSE,13
+2085,sign_1fce73017760ec53,video_55eb05edf7c8d082,3,7,Vocabulary,2141,13,Training,Training,From the supplied full course vocabulary list.,,FALSE,13
+2086,sign_84ff24f3dd3bd262,video_6c348eec5167ffe9,3,7,Vocabulary,2142,13,Report,Report,From the supplied full course vocabulary list.,,FALSE,13
+2087,sign_4d56d3afab049f5a,video_2129932db2074cb0,3,7,Vocabulary,2143,13,Wages,Wages,From the supplied full course vocabulary list.,,FALSE,13
+2088,sign_4cc8ec45b5bc499c,video_632eff4dcc481e4d,3,7,Vocabulary,2144,13,Resign,Resign,From the supplied full course vocabulary list.,,FALSE,13
+2089,sign_c0c65c73525f85a1,video_55bc57cc8ebff91a,3,7,Vocabulary,2145,13,Respect,Respect,From the supplied full course vocabulary list.,,FALSE,13
+2090,sign_316eadd7926430ad,video_9540ba544ad1844c,3,7,Vocabulary,2146,13,Responsibility,Responsibility,From the supplied full course vocabulary list.,,FALSE,13
+2091,sign_fee72dea952e3cbe,video_9ccb4a5974d912c9,3,7,Vocabulary,2147,13,Rota,Rota,From the supplied full course vocabulary list.,,FALSE,13
+2092,sign_02042f6195005550,video_7e1ec9e347232034,3,6,Vocabulary,2148,14,Benefits,Benefits,From the supplied full course vocabulary list.,,FALSE,14
+2093,sign_f11eb7229f78d9da,video_03b8e6df69a6bcf0,3,6,Vocabulary,2149,14,Equality Act,Equality Act,From the supplied full course vocabulary list.,,FALSE,14
+2094,sign_5c387090236d605b,video_f199057bc8418b72,3,6,Vocabulary,2150,14,Child tax credits,Child tax credits,From the supplied full course vocabulary list.,,FALSE,14
+2095,sign_bde398d8c5e5151c,video_4911f2a7a8dbb231,3,6,Vocabulary,2151,14,National insurance,National insurance,From the supplied full course vocabulary list.,,FALSE,14
+2096,sign_1dde164ddde7c3b5,video_cfeb909c5eb19053,3,6,Vocabulary,2152,14,Working tax credits,Working tax credits,From the supplied full course vocabulary list.,,FALSE,14
+2097,sign_ce28f18d5c26ad73,video_4c5e02f990b89a27,3,6,Vocabulary,2153,14,Universal Credit,Universal Credit,From the supplied full course vocabulary list.,,FALSE,14
+2098,sign_d9deebe8782b718b,video_1b946bfb7a828e89,3,6,Vocabulary,2154,14,Job advisor,Job advisor,From the supplied full course vocabulary list.,,FALSE,14
+2099,sign_ed2ba95793a6370a,video_63a8a019d85a4d22,3,6,Vocabulary,2155,14,Citizens advice bureau,Citizens advice bureau,From the supplied full course vocabulary list.,,FALSE,14
+2100,sign_9af2564f20e11df5,video_1b6ba03be8bedbd8,3,6,Vocabulary,2156,14,Pension,Pension,From the supplied full course vocabulary list.,,FALSE,14
+2101,sign_d314dcbf9ece7676,video_8f9525044d18a685,3,6,Vocabulary,2157,14,Retirement,Retirement,From the supplied full course vocabulary list.,,FALSE,14
+2102,sign_c1c4046eecc90441,video_45455ddaf886c957,3,6,Vocabulary,2158,14,Discrimination,Discrimination,From the supplied full course vocabulary list.,,FALSE,14
+2103,sign_49b3b78c0e8099b6,video_d0e6a0048ab2c044,3,6,Vocabulary,2159,14,Flexible working,Flexible working,From the supplied full course vocabulary list.,,FALSE,14
+2104,sign_c48153015a34a85d,video_728377996b7e1b96,3,6,Vocabulary,2160,14,Access to Work,Access to work,From the supplied full course vocabulary list.,,FALSE,14
+2105,sign_c2c25fbd875d0c8e,video_7c0ad7ab4c116f68,3,6,Vocabulary,2161,14,Union,Union,From the supplied full course vocabulary list.,,FALSE,14
+2106,sign_ab696347ec797907,video_aebe0e5c85643420,3,8,Vocabulary,2162,15,Development,Development,From the supplied full course vocabulary list.,,FALSE,15
+2107,sign_209ed023c2415f4e,video_c7eece16d9b926a3,3,8,Vocabulary,2163,15,Deaf Rights,Deaf Rights,From the supplied full course vocabulary list.,,FALSE,15
+2108,sign_84905ad9a6e5002a,video_85be7bfb2009ebfa,3,8,Vocabulary,2164,15,Mainstream,Mainstream,From the supplied full course vocabulary list.,,FALSE,15
+2109,sign_3087e907e88a770e,video_4a0d24f7b1c3a4c6,3,8,Vocabulary,2165,15,Culture,Culture,From the supplied full course vocabulary list.,,FALSE,15
+2110,sign_73b91b3a23aaefc2,video_7c39dfbd96e18480,3,8,Vocabulary,2166,15,Advocacy,Advocacy,From the supplied full course vocabulary list.,,FALSE,15
+2111,sign_6935c9c381b3a2a6,video_31c6995c469e4149,3,8,Vocabulary,2167,15,History,History,From the supplied full course vocabulary list.,,FALSE,15
+2112,sign_67f0215a9221e04e,video_36362509cd2da669,3,8,Vocabulary,2168,15,Fingerspelling alphabet,Fingerspelling alphabet,From the supplied full course vocabulary list.,,FALSE,15
+2113,sign_b26d2d5820fb2a59,video_aa0a520a108eb3d9,3,8,Vocabulary,2169,15,Awareness,Awareness,From the supplied full course vocabulary list.,,FALSE,15
+2114,sign_70cdf8b5b357344a,video_2e1b8a8bd97d2a8a,3,8,Vocabulary,2170,15,Social,Social,From the supplied full course vocabulary list.,,FALSE,15
+2115,sign_2a8e7f7120222feb,video_2178ff10acfe5f62,3,8,Vocabulary,2171,15,Century,Century,From the supplied full course vocabulary list.,,FALSE,15
+2116,sign_47eae770a1cf9bbc,video_2ac7ddb0337c89e3,3,8,Vocabulary,2172,15,Legislation,Legislation,From the supplied full course vocabulary list.,,FALSE,15
+2117,sign_cdf08028e888fbb3,video_d493d319a72b6272,3,8,Vocabulary,2173,15,Barriers,Barriers,From the supplied full course vocabulary list.,,FALSE,15
+2118,sign_5fc02e0d6dd5525c,video_3a24af3ed6cf0977,3,8,Vocabulary,2174,15,Ban,Ban,From the supplied full course vocabulary list.,,FALSE,15
+2119,sign_733c6ffe8d0aeb5b,video_d1c97b2264c5abce,3,8,Vocabulary,2175,15,Policy,Policy,From the supplied full course vocabulary list.,,FALSE,15
+2120,sign_f5b3e49bc002967d,video_9ad555f7a65b2086,3,8,Vocabulary,2176,15,Solution,Solution,From the supplied full course vocabulary list.,,FALSE,15
+2121,sign_bf3f5b4eb35742a5,video_12234585eef45da9,3,8,Vocabulary,2177,15,Not allowed,Not allowed,From the supplied full course vocabulary list.,,FALSE,15
+2122,sign_4e8a278fe991bce7,video_e6fd25ea02af0541,3,8,Vocabulary,2178,15,Disability,Disability,From the supplied full course vocabulary list.,,FALSE,15
+2123,sign_b40f78b3ac20a6f0,video_1d857c1f9bb3d1b5,3,8,Vocabulary,2179,15,Activist,Activist,From the supplied full course vocabulary list.,,FALSE,15
+2124,sign_85797c0d97013210,video_f2e7c20057bbc169,3,8,Vocabulary,2180,15,Oralism,Oralism,From the supplied full course vocabulary list.,,FALSE,15
+2125,sign_d0758b6a1215a59c,video_7edeac20f1030de2,3,8,Vocabulary,2181,15,Recognition,Recognition,From the supplied full course vocabulary list.,,FALSE,15
+2126,sign_5f3f470a330cf08e,video_056e9a55036630ca,3,8,Vocabulary,2182,15,Partnership,Partnership,From the supplied full course vocabulary list.,,FALSE,15
+2127,sign_054e964a51bb9a2d,video_4af20995503cc597,3,8,Vocabulary,2183,15,Suppression/ Identity,Suppression/ Identity,From the supplied full course vocabulary list.,,FALSE,15
+2128,sign_7e9bd365cf6a4979,video_cbbd3a793ea1a2d8,3,8,Vocabulary,2184,15,Oral history,Oral history,From the supplied full course vocabulary list.,,FALSE,15
+2129,sign_21c7d4c75c3f7e8a,video_1ba08b09e8136a77,3,8,Vocabulary,2185,15,Oppression/ Heritage,Oppression/ Heritage,From the supplied full course vocabulary list.,,FALSE,15
+2130,sign_9df1e1eb7cc5c6d2,video_fe531f9377e231b1,3,8,Vocabulary,2186,15,Research,Research,From the supplied full course vocabulary list.,,FALSE,15
+2131,sign_c1c4046eecc90441,video_45455ddaf886c957,3,8,Vocabulary,2187,15,Discrimination,Discrimination,From the supplied full course vocabulary list.,,FALSE,15
+2132,sign_1fd18389698c1502,video_a5ea03e90bd364df,3,8,Vocabulary,2188,15,Empower,Empower,From the supplied full course vocabulary list.,,FALSE,15
+2133,sign_ce56d90ceaa48b73,video_0a8435a0f28b1720,3,8,Vocabulary,2189,15,Community,Community,From the supplied full course vocabulary list.,,FALSE,15
+2134,sign_e219338ccccaa43d,video_849a5df96cf10d3f,3,8,Vocabulary,2190,15,Pioneer,Pioneer,From the supplied full course vocabulary list.,,FALSE,15
+2135,sign_a6ede6b011a38c8c,video_6653310dfd0805bf,3,8,Vocabulary,2191,15,Society,Society,From the supplied full course vocabulary list.,,FALSE,15
+2136,sign_78331ad083a8580d,video_b4892da296e1b6b7,3,8,Vocabulary,2192,15,Campaign,Campaign,From the supplied full course vocabulary list.,,FALSE,15
+2137,sign_19cdee9d7f094858,video_98d8db77b261ac99,3,8,Vocabulary,2193,15,Inclusion / Exclusion,Inclusion / Exclusion,From the supplied full course vocabulary list.,,FALSE,15
+2138,sign_7b3418bb69666b63,video_5bf29357ef193ab1,3,8,Vocabulary,2194,15,Protest,Protest,From the supplied full course vocabulary list.,,FALSE,15
+2139,sign_2f9e7973c673b8ef,video_6fc31e421b7246bb,3,8,Vocabulary,2195,15,Accessibility,Accessibility,From the supplied full course vocabulary list.,,FALSE,15
+2140,sign_d38dd8dd2597b8e7,video_a8cce0d6124f1fb8,3,8,Vocabulary,2196,15,March,March,From the supplied full course vocabulary list.,,FALSE,15
+2141,sign_7407ee3231a5e5ca,video_07c06ac367613c42,3,8,Vocabulary,2197,15,Equality,Equality,From the supplied full course vocabulary list.,,FALSE,15

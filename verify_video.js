@@ -22,10 +22,13 @@
     const video = selected(entry);
     return video && video.verification_status === 'Unverified';
   });
-  const lessonKey = entry => entry.level === '1'
-    ? `1:lesson:${entry.lesson}` : `2:topic:${entry.topic}`;
-  const lessonName = entry => entry.level === '1'
-    ? `Lesson ${entry.lesson}` : entry.topic;
+  const level3LessonNames = ['Home Life','Technology','Health and Wellbeing','Consumer Issues',
+    'Social Recreation','Education and Training','Employment','Deaf History'];
+  const level3LessonEmoji = ['🏠','💻','🏥','🛒','🎭','🎓','💼','🤟'];
+  const lessonKey = entry => entry.level === '2'
+    ? `2:topic:${entry.topic}` : `${entry.level}:lesson:${entry.lesson}`;
+  const lessonName = entry => entry.level === '2' ? entry.topic : entry.level === '3'
+    ? `Lesson ${entry.lesson}: ${level3LessonEmoji[Number(entry.lesson)-1]} ${level3LessonNames[Number(entry.lesson)-1]}` : `Lesson ${entry.lesson}`;
   const awaiting = () => data.lesson_vocabulary.filter(entry => !selected(entry));
   const isDirectMp4 = value => {
     try {
@@ -148,6 +151,7 @@
     input.type = 'url';
     input.placeholder = 'SignBSL page#video-id or direct .mp4 URL';
     input.value = video?.url || '';
+    let previewedUrl = '';
     label.append(input);
     const previewArea = document.createElement('div');
     fields.append(label);
@@ -155,23 +159,29 @@
       try {
         const url = new URL(input.value);
         if (url.protocol !== 'https:' || (!signBslVideo(url.href) && !url.pathname.toLowerCase().endsWith('.mp4'))) throw Error();
+        previewedUrl = url.href;
         preview(url.href, previewArea, true, entry.word);
       } catch {
         status('Enter a SignBSL sign URL with #video-id, or a direct .mp4 URL.', 'error');
       }
     }));
+    async function saveUrl(value = input.value) {
+      const url = new URL(value);
+      if (url.protocol !== 'https:' || (!signBslVideo(url.href) && !url.pathname.toLowerCase().endsWith('.mp4')))
+        throw Error('Enter a SignBSL sign URL with #video-id, or a direct .mp4 URL.');
+      const result = await save({entry_id: entry.entry_id, url: url.href, mode});
+      onDone?.(result);
+      return result;
+    }
     const saveButton = button('Save URL', async () => {
       try {
-        const url = new URL(input.value);
-        if (url.protocol !== 'https:') throw Error('Enter a SignBSL sign URL with #video-id, or a direct .mp4 URL.');
-        const result = await save({entry_id: entry.entry_id, url: url.href, mode});
-        onDone?.(result);
+        await saveUrl();
       } catch (error) {
         status(error.message || 'Enter a valid video URL.', 'error');
       }
     });
     fields.append(saveButton);
-    return {fields, previewArea};
+    return {fields, previewArea, previewedUrl: () => previewedUrl, saveUrl};
   }
 
   function sequenceEditor(entry, onDone) {
@@ -383,6 +393,16 @@
     work.append(editor.fields, editor.previewArea, sequenceEditor(entry, renderUnverified));
     const verifyButton = button('Verify Video', async () => {
       try {
+        const previewedUrl = editor.previewedUrl();
+        if (previewedUrl && previewedUrl !== video.url) {
+          const usePreview = window.confirm(
+            'You previewed a different video URL.\n\nPress OK to save and verify the previewed video. Press Cancel to verify the original video.'
+          );
+          if (usePreview) {
+            await editor.saveUrl(previewedUrl);
+            return;
+          }
+        }
         await request('/api/verify', {entry_id: entry.entry_id});
         if (quick.checked && cursor >= rows.length - 1) cursor = 0;
         renderUnverified();

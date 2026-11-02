@@ -2,7 +2,7 @@
 
 BSL Study Support is a video dictionary and revision tool for learners of British Sign Language. It brings vocabulary into one place so you can look up signs, revisit course material and practise recognising signs at your own pace.
 
-The site includes the Level 1 course, including a supplemental Lesson 0 alphabet, and Level 2 topics. Lessons or topics are divided into smaller categories so you can focus on what you want to study.
+The site includes the Level 1 course, including a supplemental Lesson 0 alphabet, Level 2 topics, and the Level 3 full course vocabulary list. Lessons or topics are divided into smaller categories so you can focus on what you want to study.
 
 ## Getting started
 
@@ -39,6 +39,7 @@ Entries without an assigned video remain visible in Dictionary but are excluded 
 | --- | --- |
 | Level 1 | Lesson 0 is the supplemental alphabet with Right Handed and Left Handed sections. Lessons 1–14 are the course lessons, with vocabulary kept in permanent workbook order. Lesson 1 is Greetings. Lesson 14 has no explicit vocabulary entries in the supplied dataset. |
 | Level 2 | Work Life; The Home; Education; People and Personalities; Hobbies and Activities; Health and Fitness; Home Life; Travel and Holidays; Food and Drink. |
+| Level 3 | Home Life; Technology; Health and Wellbeing; Consumer Issues; Social Recreation; Education and Training; Employment; Deaf History. |
 
 Words can appear in more than one lesson, topic or category. These are separate study memberships that can share the same sign and video record.
 
@@ -63,7 +64,7 @@ The editable CSV masters are:
 | `data/lesson_vocabulary.csv` | Study memberships, linking an entry to a sign, selected video, level, lesson/topic, category, source wording and pages. |
 | `data/video_sequences.csv` | Optional ordered two- or three-clip MP4 sequences for a sign, played in order and looped. |
 
-The vocabulary file keeps its original name for compatibility. Level 1 rows use `lesson` and leave `topic` blank; Lesson 0 supplemental rows have no workbook page. Level 2 rows use `topic` and leave `lesson` blank. `source_pages` records all printed page references, while `source_page` retains the first reference. `nmf` is TRUE only where explicitly marked in the source; FALSE does not mean the sign never uses a non-manual feature.
+The vocabulary file keeps its original name for compatibility. Level 1 and Level 3 rows use `lesson` and leave `topic` blank; Level 2 rows use `topic` and leave `lesson` blank. Lesson 0 supplemental rows have no workbook page. `source_pages` records all printed page references, while `source_page` retains the first reference. `nmf` is TRUE only where explicitly marked in the source; FALSE does not mean the sign never uses a non-manual feature.
 
 Keep all existing IDs permanent. A blank `selected_video_id` means no candidate is assigned. Add only sourced video URLs and keep their verification status accurate.
 
