@@ -12190,8 +12190,8 @@ window.BSL_DATA = {
       "video_id": "video_c7b5777e9bf0393c",
       "sign_id": "sign_6c496892e0e12680",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/cycling.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/bslfirst/mp4/996267847.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -17761,8 +17761,8 @@ window.BSL_DATA = {
       "video_id": "video_4f57cc613295a6fe",
       "sign_id": "sign_dd72b50916a76181",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/dancing.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signon/mp4/daw11.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
