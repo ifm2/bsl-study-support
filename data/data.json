@@ -8095,8 +8095,8 @@
       "video_id": "video_77ba5a2cd6d3b430",
       "sign_id": "sign_169bbafface6a8c5",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/fit.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/bslfirst/mp4/996139735.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -15529,8 +15529,8 @@
       "video_id": "video_e92b3639b14737dd",
       "sign_id": "sign_b290571c2521b112",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/football.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/football-2.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
