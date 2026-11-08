@@ -8159,7 +8159,7 @@
       "sign_id": "sign_17ab778e851c4b94",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/exercise.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -9995,7 +9995,7 @@
       "sign_id": "sign_3b3c29a48f90dd6b",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/hockey.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -10957,8 +10957,8 @@
       "video_id": "video_d20f978c9bf99d40",
       "sign_id": "sign_4f067384268161a4",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/gardening.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/garden.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -13639,8 +13639,8 @@
       "video_id": "video_c204cf722527506d",
       "sign_id": "sign_880dac132be75b82",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/hobbies.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/hobby.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -14774,7 +14774,7 @@
       "sign_id": "sign_a06311cd33304101",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/gym.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -19021,8 +19021,8 @@
       "video_id": "video_13b5c118343013d7",
       "sign_id": "sign_f5c4ef7a7a0a4544",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/healthy.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/bslfirst/mp4/996139776.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -19238,7 +19238,7 @@
       "sign_id": "sign_fa90d325e4b181e5",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/ice-hockey.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
