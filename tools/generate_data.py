@@ -64,16 +64,16 @@ def validate(data):
     sequence_positions = set()
     for clip in sequences:
         require(clip['sign_id'] in smap, 'Unknown video sequence sign_id: ' + clip['sign_id'])
-        require(clip['position'].isdigit() and 1 <= int(clip['position']) <= 3,
-                'Video sequence positions must be 1, 2, or 3')
+        require(clip['position'].isdigit() and 1 <= int(clip['position']) <= 10,
+                'Video sequence positions must be between 1 and 10')
         require(valid_direct_mp4_url(clip['url']), 'Video sequence clips must be direct HTTPS MP4 URLs')
         key = (clip['sign_id'], int(clip['position']))
         require(key not in sequence_positions, 'Duplicate video sequence position')
         sequence_positions.add(key)
     for sign_id in {clip['sign_id'] for clip in sequences}:
         positions = sorted(p for sid, p in sequence_positions if sid == sign_id)
-        require(len(positions) in {2, 3} and positions == list(range(1, len(positions) + 1)),
-                'Each video sequence must contain two or three clips in order')
+        require(2 <= len(positions) <= 10 and positions == list(range(1, len(positions) + 1)),
+                'Each video sequence must contain between two and ten clips in order')
     for r in entries:
         require(r['sign_id'] in smap, 'Unknown lesson sign_id: ' + r['sign_id'])
         require(r['level'] in {'1', '2', '3'}, 'Level must be 1, 2, or 3')

@@ -37,7 +37,9 @@ const topicEmoji = {'Work Life':'💼','The Home':'🏠','Education':'🎓','Peo
 let currentLevel=1, currentLesson=1, vocabulary=[], categories=[];
 let studyMode='dictionary', playbackMode='flashcard';
 let practiceCategory='', practiceRows=null, practiceIndex=0, answerRevealed=false;
+let practiceQuestionStyle='self-rate', practiceChoiceResult=null;
 let ratings=new Map();
+let masterQuiz={rows:null,index:0,style:'choice',answers:[],requestedCount:10};
 const content=$('content');
 function element(tag,cls,text) {
  const node=document.createElement(tag); if(cls) node.className=cls;
@@ -82,10 +84,10 @@ reportSubmit.addEventListener('click',async()=>{
   reportSubmit.disabled=false;reportCancel.disabled=false;reportTarget.button.disabled=false;
  }
 });
-function makeSignBslEmbed(row) {
+function makeSignBslEmbed(row,hideWord=false) {
  const info=signBslVideoInfo(row.video_url);if(!info)return null;
  const quote=element('blockquote','signbsldata-embed');quote.dataset.vidref=info.videoId;
- const link=element('a','',`Watch how to sign '${row.word}' in British Sign Language`);link.href=info.page;quote.append(link);
+ const link=element('a','',hideWord ? 'Open sign video' : `Watch how to sign '${row.word}' in British Sign Language`);link.href=info.page;quote.append(link);
  const container=element('div','signbsl-player');container.append(quote);
  const script=document.createElement('script');script.async=true;script.src='https://embed.signbsl.com/widgets.js';script.charset='utf-8';container.append(script);
  return container;
@@ -93,13 +95,43 @@ function makeSignBslEmbed(row) {
 function stopPlayers(scope=content) {
  scope.querySelectorAll('video').forEach(v => {v.pause();v.removeAttribute('src');v.replaceChildren();v.load();});
 }
-function resetPractice() {practiceRows=null;practiceIndex=0;answerRevealed=false;ratings.clear();}
+function resetPractice() {practiceRows=null;practiceIndex=0;answerRevealed=false;practiceChoiceResult=null;ratings.clear();}
 function groupKey(row) {return row.level==='2' ? row.topic : Number(row.lesson);}
 function groupName(level,key) {
  if(level===2)return key;
  const lessonIndex=level===1 ? Number(key) : Number(key)-1;
  const emoji=level===3 ? `${level3LessonEmoji[lessonIndex]} ` : '';
  return `Lesson ${key}: ${emoji}${lessonsByLevel[level][lessonIndex]}`;
+}
+function resetMasterQuiz() {masterQuiz={rows:null,index:0,style:'choice',answers:[],requestedCount:10,notice:''};}
+function shuffleRows(rows) {
+ const shuffled=rows.slice();
+ for(let i=shuffled.length-1;i>0;i--) {const j=Math.floor(Math.random()*(i+1));[shuffled[i],shuffled[j]]=[shuffled[j],shuffled[i]];}
+ return shuffled;
+}
+function populateMasterQuizTopics() {
+ const container=$('master-quiz-topics');container.replaceChildren();
+ for(const level of [1,2,3]) {
+  const fieldset=element('fieldset','master-level');
+  fieldset.append(element('legend','',`Level ${level}`));
+  const actions=element('div','master-level-actions');
+  const selectAll=element('button','','Select all');selectAll.type='button';
+  const clear=element('button','','Clear');clear.type='button';
+  actions.append(selectAll,clear);fieldset.append(actions);
+  lessonsByLevel[level].forEach((name,index)=>{
+   const key=level===2 ? name : String(level===1 ? index : index+1);
+   const matching=allVocabulary.filter(row=>row.level===String(level) && String(groupKey(row))===String(key));
+   if(!matching.length)return;
+   const playable=new Set(matching.filter(canPractice).map(row=>row.sign_id)).size;
+   const label=element('label','master-topic');
+   const checkbox=document.createElement('input');checkbox.type='checkbox';checkbox.value=`${level}|${key}`;
+   label.append(checkbox,element('span','',`${level===2 ? name : groupName(level,key)} `),element('small','',`(${playable} signs)`));
+   fieldset.append(label);
+  });
+  selectAll.addEventListener('click',()=>fieldset.querySelectorAll('.master-topic input').forEach(input=>{input.checked=true;}));
+  clear.addEventListener('click',()=>fieldset.querySelectorAll('.master-topic input').forEach(input=>{input.checked=false;}));
+  if(fieldset.querySelector('.master-topic'))container.append(fieldset);
+ }
 }
 function chooseLevel(level) {
  currentLevel=level; $('level-nav').value=String(level); $('lesson-nav').replaceChildren();
@@ -124,12 +156,37 @@ function chooseLesson(lesson) {
 }
 function setStudyMode(mode) {
  if(studyMode===mode) return;
+ const leavingMasterQuiz=studyMode==='master-quiz';
+ if(leavingMasterQuiz && mode==='dictionary') {
+  window.location.reload();
+  return;
+ }
+ if(studyMode==='master-quiz')resetMasterQuiz();
+ if(mode==='practice') {
+  currentLevel=Number($('level-nav').value);
+  currentLesson=currentLevel===2 ? $('lesson-nav').value : Number($('lesson-nav').value);
+  practiceCategory='';
+  $('search').value='';
+  resetPractice();
+ }
  studyMode=mode; answerRevealed=false;
- for(const name of ['dictionary','practice']) {
+ for(const name of ['dictionary','practice','master-quiz']) {
   $('study-'+name).classList.toggle('active',name===mode);
   $('study-'+name).setAttribute('aria-pressed',String(name===mode));
  }
- $('dictionary-controls').hidden=mode!=='dictionary'; $('practice-controls').hidden=mode!=='practice'; render();
+ $('dictionary-controls').hidden=mode!=='dictionary';
+ $('practice-controls').hidden=mode!=='practice';
+ $('master-quiz-controls').hidden=mode!=='master-quiz';
+ $('level-nav').closest('.level-picker').hidden=mode==='master-quiz';
+ $('level-summary').hidden=mode==='master-quiz';
+ $('lesson-nav').closest('.lesson-picker').hidden=mode==='master-quiz';
+ $('intro').hidden=mode==='master-quiz';
+ $('hide-details').closest('.check-control').hidden=mode==='master-quiz';
+ $('category-nav').hidden=mode==='master-quiz';
+ $('stats').hidden=mode==='master-quiz';
+ if(mode!=='master-quiz')resetMasterQuiz();
+ if(mode==='practice')chooseLesson(currentLesson);
+ else render();
 }
 function setPlaybackMode(mode) {
  playbackMode=mode;
@@ -140,13 +197,13 @@ function setPlaybackMode(mode) {
  $('mode-help').textContent=mode==='flashcard' ? 'Videos load only when you press Play.' : 'All visible videos try to play automatically, muted and looping. Browsers may limit simultaneous playback.';
  render();
 }
-function makeVideo(row,autoplay,hiddenAnswer) {
+function makeVideo(row,autoplay,hiddenAnswer,loadOnDemand=false) {
  const sequence=row.video_urls?.length>1 ? row.video_urls : null;
- if(!sequence) {const embed=makeSignBslEmbed(row);if(embed)return embed;}
+ if(!sequence) {const embed=makeSignBslEmbed(row,hiddenAnswer);if(embed)return embed;}
  const video=document.createElement('video');
  video.controls=true;video.playsInline=true;video.loop=true;video.muted=true;video.defaultMuted=true;
  if(sequence) video.loop=false;
- video.autoplay=autoplay;video.preload=autoplay ? 'auto' : 'metadata';
+ video.autoplay=autoplay;video.preload=autoplay ? 'auto' : loadOnDemand ? 'none' : 'metadata';
  video.setAttribute('aria-label',hiddenAnswer ? 'Practice sign video' : `Candidate sign video for ${row.word}`);
  video.src=sequence ? sequence[0] : row.video_url;
  if(sequence) {
@@ -165,7 +222,8 @@ function makeVideo(row,autoplay,hiddenAnswer) {
 }
 function makeTile(row,practice=false) {
  const tile=element('article','tile');tile.dataset.entryId=row.entry_id;
- const hiddenAnswer=practice && $('hide-english').checked && !answerRevealed;
+ const choiceAnswered=practiceQuestionStyle==='choice' && practiceChoiceResult?.row.entry_id===row.entry_id;
+ const hiddenAnswer=practice && (practiceQuestionStyle==='choice' ? !choiceAnswered : $('hide-english').checked && !answerRevealed);
  const titleRow=element('div','tile-heading');
  const title=element('h4','',hiddenAnswer ? 'What is this sign?' : row.word);
  const pages=row.source_pages || row.source_page;
@@ -195,28 +253,51 @@ function makeTile(row,practice=false) {
  dictionary.target='_blank';dictionary.rel='noopener noreferrer';dictionary.hidden=hiddenAnswer;bottom.append(dictionary);
  tile.append(titleRow,player);
  if(practice) {
-  const reveal=element('button','answer-button');reveal.type='button';
-  const answer=element('p','revealed-answer',row.word);answer.setAttribute('aria-live','polite');
-  const confidence=element('fieldset','confidence');
-  confidence.append(element('legend','','How did you do?'));
-  const choices=element('div','confidence-choices');
-  for(const [value,label] of [[0,'Not Yet'],[0.5,'Almost'],[1,'Got it']]) {
-   const button=element('button','confidence-button',label);button.type='button';
-   button.dataset.score=String(value);
-   button.addEventListener('click',() => ratePractice(row,value),{once:true});choices.append(button);
+  if(practiceQuestionStyle==='choice') {
+   const prompt=element('p','practice-choice-prompt','Which word matches this sign?');
+   const choices=element('div','practice-choice-options');
+   const feedback=element('p','practice-choice-feedback','');feedback.setAttribute('aria-live','polite');
+   const next=element('button','practice-choice-next',practiceIndex===practiceRows.length-1?'See score':'Next sign');next.type='button';next.hidden=!choiceAnswered;
+   if(choiceAnswered) {
+    const result=practiceChoiceResult;
+    feedback.textContent=result.correct?`Correct — ${row.word}`:`Not quite — the answer is ${row.word}`;
+    feedback.classList.toggle('incorrect',!result.correct);
+   }
+   for(const word of practiceChoiceWords(row)) {
+    const option=element('button','practice-choice-option',word);option.type='button';
+    if(choiceAnswered) {
+     option.disabled=true;
+     if(word===row.word)option.classList.add('correct');
+     else if(word===practiceChoiceResult.selected)option.classList.add('incorrect');
+    } else option.addEventListener('click',()=>answerPracticeChoice(row,word));
+    choices.append(option);
+   }
+   next.addEventListener('click',advancePracticeChoice);
+   tile.append(prompt,choices,feedback,next);
+  } else {
+   const reveal=element('button','answer-button');reveal.type='button';
+   const answer=element('p','revealed-answer',row.word);answer.setAttribute('aria-live','polite');
+   const confidence=element('fieldset','confidence');
+   confidence.append(element('legend','','How did you do?'));
+   const choices=element('div','confidence-choices');
+   for(const [value,label] of [[0,'Not Yet'],[0.5,'Almost'],[1,'Got it']]) {
+    const button=element('button','confidence-button',label);button.type='button';
+    button.dataset.score=String(value);
+    button.addEventListener('click',() => ratePractice(row,value),{once:true});choices.append(button);
+   }
+   confidence.append(choices);
+   const updateAnswer=() => {
+    const hidden=$('hide-english').checked && !answerRevealed;
+    title.textContent=hidden ? 'What is this sign?' : row.word;dictionary.hidden=hidden;
+    answer.hidden=hidden;confidence.hidden=hidden;
+    reveal.hidden=!hidden;reveal.textContent='Reveal answer';
+    reveal.setAttribute('aria-expanded',String(!hidden));
+    player.querySelector('video')?.setAttribute('aria-label',hidden ? 'Practice sign video' : `Candidate sign video for ${row.word}`);
+    player.querySelector('button')?.setAttribute('aria-label',hidden ? 'Play practice sign video' : `Play ${row.word} sign video`);
+   };
+   reveal.addEventListener('click',() => {answerRevealed=true;updateAnswer();});
+   updateAnswer();tile.append(answer,reveal,confidence);
   }
-  confidence.append(choices);
-  const updateAnswer=() => {
-   const hidden=$('hide-english').checked && !answerRevealed;
-   title.textContent=hidden ? 'What is this sign?' : row.word;dictionary.hidden=hidden;
-   answer.hidden=hidden;confidence.hidden=hidden;
-   reveal.hidden=!hidden;reveal.textContent='Reveal answer';
-   reveal.setAttribute('aria-expanded',String(!hidden));
-   player.querySelector('video')?.setAttribute('aria-label',hidden ? 'Practice sign video' : `Candidate sign video for ${row.word}`);
-   player.querySelector('button')?.setAttribute('aria-label',hidden ? 'Play practice sign video' : `Play ${row.word} sign video`);
-  };
-  reveal.addEventListener('click',() => {answerRevealed=true;updateAnswer();});
-  updateAnswer();tile.append(answer,reveal,confidence);
  }
  tile.append(bottom);return tile;
 }
@@ -247,6 +328,27 @@ function startPractice(rows) {
  practiceIndex=0;answerRevealed=false;
 }
 function canPractice(row) {return !!row.video_url && !['Rejected','Unavailable'].includes(row.status);}
+function practiceChoiceWords(row) {
+ const wordKey=value=>value.trim().toLocaleLowerCase();
+ const correctKey=wordKey(row.word), distractors=new Map();
+ for(const candidate of [...shuffleRows(practiceRows || []),...shuffleRows(allVocabulary)]) {
+  const key=wordKey(candidate.word);
+  if(candidate.sign_id===row.sign_id || key===correctKey || distractors.has(key))continue;
+  distractors.set(key,candidate.word);
+  if(distractors.size===2)break;
+ }
+ return shuffleRows([row.word,...distractors.values()]);
+}
+function answerPracticeChoice(row,selected) {
+ if(studyMode!=='practice' || practiceQuestionStyle!=='choice' || practiceRows?.[practiceIndex]?.entry_id!==row.entry_id || ratings.has(row.entry_id))return;
+ const correct=selected===row.word;
+ ratings.set(row.entry_id,correct?1:0);practiceChoiceResult={row,selected,correct};render();
+}
+function advancePracticeChoice() {
+ if(!practiceChoiceResult)return;
+ practiceIndex++;practiceChoiceResult=null;answerRevealed=false;render();
+ content.querySelector('.practice-choice-option')?.focus({preventScroll:true});
+}
 function renderScore() {
  const panel=$('practice-score');panel.replaceChildren();panel.hidden=true;
  if(studyMode!=='practice' || !practiceRows?.length) return;
@@ -256,17 +358,23 @@ function renderScore() {
  panel.hidden=false;
  const label=groupName(currentLevel,currentLesson)+(practiceCategory ? ': '+practiceCategory : '');
  const heading=element('h3','',`Your Score for ${label}`);heading.tabIndex=-1;panel.append(heading);
- const breakdown=element('dl','score-breakdown');
- for(const [value,label] of [[0,'Not Yet'],[0.5,'Almost'],[1,'Got it']]) {
-  const count=practiceRows.filter(row => ratings.get(row.entry_id)===value).length;
-  const percentage=Number((count/practiceRows.length*100).toFixed(1));
-  const result=element('div','score-result');result.dataset.rating=String(value);
-  result.append(element('dt','',label),element('dd','score-percentage',`${percentage}%`),element('dd','score-count',`${count} of ${practiceRows.length} ${practiceRows.length===1 ? 'card' : 'cards'}`));
-  breakdown.append(result);
+ if(practiceQuestionStyle==='choice') {
+  const correct=practiceRows.filter(row=>ratings.get(row.entry_id)===1).length;
+  const percent=Math.round(correct/practiceRows.length*100);
+  panel.append(element('p','practice-choice-score',`${correct} of ${practiceRows.length} correct · ${percent}%`));
+ } else {
+  const breakdown=element('dl','score-breakdown');
+  for(const [value,label] of [[0,'Not Yet'],[0.5,'Almost'],[1,'Got it']]) {
+   const count=practiceRows.filter(row => ratings.get(row.entry_id)===value).length;
+   const percentage=Number((count/practiceRows.length*100).toFixed(1));
+   const result=element('div','score-result');result.dataset.rating=String(value);
+   result.append(element('dt','',label),element('dd','score-percentage',`${percentage}%`),element('dd','score-count',`${count} of ${practiceRows.length} ${practiceRows.length===1 ? 'card' : 'cards'}`));
+   breakdown.append(result);
+  }
+  panel.append(breakdown);
  }
- panel.append(breakdown);
  const restart=element('button','answer-button','Restart practice');restart.type='button';
- restart.addEventListener('click',() => {ratings.clear();practiceIndex=0;answerRevealed=false;render();});panel.append(restart);
+ restart.addEventListener('click',() => {ratings.clear();practiceIndex=0;answerRevealed=false;practiceChoiceResult=null;render();});panel.append(restart);
 }
 function renderOtherMatches(rows) {
  const panel=$('other-matches');panel.replaceChildren();panel.hidden=true;
@@ -287,10 +395,126 @@ function renderOtherMatches(rows) {
   });panel.append(button);
  }
 }
+function startMasterQuiz() {
+ const message=$('master-quiz-message');message.textContent='';message.className='master-quiz-message';
+ const selected=new Set([...$('master-quiz-topics').querySelectorAll('input:checked')].map(input=>input.value));
+ if(!selected.size){message.textContent='Select at least one lesson or topic.';return;}
+ const requested=Number($('master-quiz-count').value);
+ if(!Number.isInteger(requested)||requested<1||requested>999){message.textContent='Enter a question count between 1 and 999.';return;}
+ const bySign=new Map();
+ for(const row of allVocabulary) {
+  if(!selected.has(`${row.level}|${groupKey(row)}`)||!canPractice(row)||bySign.has(row.sign_id))continue;
+  bySign.set(row.sign_id,row);
+ }
+ const candidates=[...bySign.values()];
+ if(!candidates.length){message.textContent='The selected lessons have no entries with an available video.';return;}
+ const style=document.querySelector('input[name="master-quiz-style"]:checked')?.value || 'choice';
+ const rows=shuffleRows(candidates).slice(0,Math.min(requested,candidates.length));
+ const notice=rows.length<requested?`You asked for ${requested} questions, but only ${rows.length} playable signs are available. Each will be used once.`:'';
+ masterQuiz={rows,index:0,style,answers:[],requestedCount:requested,optionPool:candidates,notice};
+ if(notice)message.textContent=notice;
+ $('master-quiz-controls').hidden=true;render();
+}
+function masterChoiceWords(row) {
+ const wordKey=value=>value.trim().toLocaleLowerCase();
+ const correctKey=wordKey(row.word);
+ const distractors=new Map();
+ for(const candidate of [...shuffleRows(masterQuiz.optionPool),...shuffleRows(allVocabulary)]) {
+  const key=wordKey(candidate.word);
+  if(candidate.sign_id===row.sign_id||key===correctKey||distractors.has(key))continue;
+  distractors.set(key,candidate.word);
+  if(distractors.size===2)break;
+ }
+ return shuffleRows([row.word,...distractors.values()]);
+}
+function advanceMasterQuiz() {masterQuiz.index++;render();}
+function renderMasterQuestion() {
+ const row=masterQuiz.rows[masterQuiz.index];
+ const stage=element('section','master-quiz-stage');
+ stage.append(element('h2','','Master Quiz'),element('p','master-progress',`Question ${masterQuiz.index+1} of ${masterQuiz.rows.length}`));
+ if(masterQuiz.index===0&&masterQuiz.notice)stage.append(element('p','master-quiz-notice',masterQuiz.notice));
+ const card=element('article','master-sign-player');const player=element('div','player');player.append(makeVideo(row,true,true));card.append(player);stage.append(card);
+ if(masterQuiz.style==='choice') {
+  stage.append(element('p','master-question','Which word matches this sign?'));
+  const choices=element('div','master-options');
+  const feedback=element('p','master-feedback','');feedback.setAttribute('aria-live','polite');
+  const next=element('button','master-next',masterQuiz.index===masterQuiz.rows.length-1?'See results':'Next sign');next.type='button';next.hidden=true;
+  next.addEventListener('click',advanceMasterQuiz);
+  for(const word of masterChoiceWords(row)) {
+   const option=element('button','master-option',word);option.type='button';
+   option.addEventListener('click',()=>{
+    if(masterQuiz.answers[masterQuiz.index])return;
+    const correct=word===row.word;
+    masterQuiz.answers[masterQuiz.index]={row,score:correct?1:0,correct};
+    for(const button of choices.querySelectorAll('button')) {
+     button.disabled=true;
+     if(button.textContent===row.word)button.classList.add('correct');
+     else if(button===option&&!correct)button.classList.add('incorrect');
+    }
+    feedback.textContent=correct?`Correct — ${row.word}`:`Not quite — the answer is ${row.word}`;
+    feedback.classList.toggle('incorrect',!correct);next.hidden=false;next.focus();
+   });
+   choices.append(option);
+  }
+  stage.append(choices,feedback,next);
+ } else {
+  stage.append(element('p','master-question','Watch the sign, then reveal the answer when you are ready.'));
+  const reveal=element('button','master-reveal','Reveal answer');reveal.type='button';
+  const answer=element('p','master-answer','');answer.hidden=true;
+  const rates=element('div','master-confidence');rates.hidden=true;
+  reveal.addEventListener('click',()=>{answer.textContent=row.word;answer.hidden=false;rates.hidden=false;reveal.hidden=true;rates.querySelector('button')?.focus();});
+  for(const [score,label] of [[0,'Not Yet'],[0.5,'Almost'],[1,'Got it']]) {
+   const rate=element('button','',label);rate.type='button';
+   rate.addEventListener('click',()=>{masterQuiz.answers[masterQuiz.index]={row,score,correct:score===1};advanceMasterQuiz();});
+   rates.append(rate);
+  }
+  stage.append(reveal,answer,rates);
+ }
+ content.append(stage);
+}
+function renderMasterResults() {
+ const results=element('section','master-quiz-results');results.append(element('h2','','Quiz complete'));
+ const answers=masterQuiz.answers;
+ const achieved=answers.reduce((total,answer)=>total+answer.score,0);
+ const percent=answers.length?Math.round(achieved/answers.length*100):0;
+ results.append(element('p','master-score',`${percent}%`));
+ results.append(element('p','',masterQuiz.style==='choice'
+  ? `${answers.filter(answer=>answer.correct).length} of ${answers.length} correct`
+  : `Self-rated score across ${answers.length} signs · Got it = 1, Almost = 0.5, Not Yet = 0`));
+ const missed=answers.filter(answer=>answer.score<1);
+ results.append(element('h3','',missed.length?'Signs to review':'All signs marked Got it'));
+ if(missed.length) {
+  const list=element('div','master-review-list');
+  for(const {row,score} of missed) {
+   const item=element('article','master-review-card');
+   item.append(element('h4','',row.word));
+   item.append(element('p','master-review-rating',masterQuiz.style==='choice'?(score?'Correct':'Missed'):score===0?'Not Yet':'Almost'));
+   const player=element('div','player');player.append(makeVideo(row,false,false,true));item.append(player);
+   const link=element('a','master-review-dictionary','Open dictionary ↗');link.href=row.dictionary_url;link.target='_blank';link.rel='noopener noreferrer';item.append(link);
+   list.append(item);
+  }
+  results.append(list);
+ }
+ const change=element('button','master-change-settings','Choose lessons and start another quiz');change.type='button';
+ change.addEventListener('click',()=>{resetMasterQuiz();$('master-quiz-message').textContent='';$('master-quiz-controls').hidden=false;render();});
+ results.append(change);content.append(results);
+}
 function render() {
- stopPlayers();content.replaceChildren();const rows=searchRows();renderCategories(rows);
+ stopPlayers();content.replaceChildren();const rows=searchRows();
  $('practice-position').hidden=true;
  $('practice-progress').textContent='';
+ if(studyMode==='master-quiz') {
+  $('category-nav').hidden=true;$('stats').hidden=true;$('other-matches').hidden=true;
+  $('practice-score').hidden=true;
+  $('master-quiz-controls').hidden=masterQuiz.rows!==null;
+  content.hidden=masterQuiz.rows===null;
+  if(masterQuiz.rows!==null&&masterQuiz.index>=masterQuiz.rows.length)renderMasterResults();
+  else if(masterQuiz.rows!==null)renderMasterQuestion();
+  return;
+ }
+ content.hidden=false;
+ $('category-nav').hidden=false;$('stats').hidden=false;
+ renderCategories(rows);
  if(studyMode==='practice') {
   if(practiceRows===null) startPractice(rows);
   const excluded=rows.filter(r => (!practiceCategory || r.category===practiceCategory) && !canPractice(r)).length;
@@ -327,11 +551,21 @@ $('lesson-nav').addEventListener('change',() => chooseLesson(currentLevel===2 ? 
 $('search').addEventListener('input',() => {practiceCategory='';resetPractice();render();});
 $('study-dictionary').addEventListener('click',() => setStudyMode('dictionary'));
 $('study-practice').addEventListener('click',() => setStudyMode('practice'));
+$('study-master-quiz').addEventListener('click',() => setStudyMode('master-quiz'));
+$('master-quiz-start').addEventListener('click',startMasterQuiz);
 $('mode-flashcard').addEventListener('click',() => setPlaybackMode('flashcard'));
 $('mode-autoplay').addEventListener('click',() => setPlaybackMode('autoplay'));
 $('random-order').addEventListener('change',() => {resetPractice();render();});
+$('practice-controls').querySelectorAll('input[name="practice-question-style"]').forEach(input=>input.addEventListener('change',()=>{
+ practiceQuestionStyle=input.value;
+ $('practice-mode-help').textContent=practiceQuestionStyle==='choice'
+  ? 'Choose the matching word. Your answer is shown before you move to the next sign.'
+  : 'Watch the sign, reveal the answer, then choose Not Yet, Almost or Got it to move to the next card.';
+ resetPractice();if(studyMode==='practice')render();
+}));
 $('hide-english').addEventListener('change',() => {answerRevealed=false;render();});
 $('hide-details').addEventListener('change',() => {document.querySelectorAll('.entry-meta').forEach(meta => {meta.hidden=$('hide-details').checked;});});
 // Reset restored browser form values on each page load.
 $('hide-details').checked=true;$('random-order').checked=true;$('hide-english').checked=true;
+populateMasterQuizTopics();
 chooseLevel(1);

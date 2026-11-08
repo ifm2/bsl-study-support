@@ -63,7 +63,7 @@ class Handler(SimpleHTTPRequestHandler):
             return self.send_error(404)
         try:
             length = int(self.headers.get('Content-Length', '0'))
-            if length <= 0 or length > 10000:
+            if length <= 0 or length > 25000:
                 raise ValueError('Invalid request size')
             body = json.loads(self.rfile.read(length))
             entries, entry_encoding, entry_newline = read_master('lesson_vocabulary')
@@ -145,8 +145,8 @@ class Handler(SimpleHTTPRequestHandler):
 
             if self.path == '/api/sequence':
                 urls = body.get('urls')
-                if not isinstance(urls, list) or len(urls) not in {2, 3}:
-                    raise ValueError('Enter two or three direct MP4 URLs in the order they should play.')
+                if not isinstance(urls, list) or not 2 <= len(urls) <= 10:
+                    raise ValueError('Enter between two and ten direct MP4 URLs in the order they should play.')
                 urls = [str(url).strip() for url in urls]
                 for raw_url in urls:
                     parsed = urlparse(raw_url)

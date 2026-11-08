@@ -197,43 +197,74 @@
     details.open = existing.length > 0;
     const summary = document.createElement('summary');
     const words = wordParts(entry.word);
-    const clipCount = [2, 3].includes(words.length) ? words.length : (existing.length || 3);
-    summary.textContent = existing.length
-      ? `Edit ${clipCount}-clip sequence`
-      : `Set up a ${clipCount}-clip sequence`;
-    details.append(summary);
-    const labels = words.length === clipCount ? words : Array.from({length: clipCount}, (_, index) => `Clip ${index + 1}`);
+    const initialCount = existing.length || ([2, 3].includes(words.length) ? words.length : 3);
+    const maxClips = 10;
+    const urls = existing.length ? existing.slice() : Array(initialCount).fill('');
+    const clipFields = document.createElement('div');
     const inputs = [];
-    labels.forEach((name, index) => {
-      const label = document.createElement('label');
-      label.textContent = `${name} · clip ${index + 1}`;
-      const input = document.createElement('input');
-      input.type = 'url';
-      input.placeholder = 'Direct HTTPS .mp4 URL';
-      input.value = existing[index] || '';
-      label.append(input);
-      details.append(label);
-      inputs.push(input);
+    const updateSummary = () => {
+      summary.textContent = existing.length
+        ? `Edit ${urls.length}-clip sequence`
+        : `Set up a ${urls.length}-clip sequence`;
+    };
+    let addClip;
+    let removeClip;
+    const renderClipFields = () => {
+      clipFields.replaceChildren();
+      inputs.length = 0;
+      const labels = words.length === urls.length
+        ? words : Array.from({length: urls.length}, (_, index) => `Clip ${index + 1}`);
+      labels.forEach((name, index) => {
+        const label = document.createElement('label');
+        label.textContent = `${name} · clip ${index + 1}`;
+        const input = document.createElement('input');
+        input.type = 'url';
+        input.placeholder = 'Direct HTTPS .mp4 URL';
+        input.value = urls[index] || '';
+        input.addEventListener('input', () => { urls[index] = input.value; });
+        label.append(input);
+        clipFields.append(label);
+        inputs.push(input);
+      });
+      updateSummary();
+      removeClip.disabled = urls.length <= 2;
+      addClip.disabled = urls.length >= maxClips;
+    };
+    details.append(summary);
+    const clipControls = document.createElement('div');
+    clipControls.className = 'fields sequence-controls';
+    addClip = button('Add clip', () => {
+      if (urls.length >= maxClips) return;
+      urls.push('');
+      renderClipFields();
     });
+    removeClip = button('Remove last clip', () => {
+      if (urls.length <= 2) return;
+      urls.pop();
+      renderClipFields();
+    });
+    clipControls.append(addClip, removeClip);
+    details.append(clipFields, clipControls);
+    renderClipFields();
     const previewArea = document.createElement('div');
     const actions = document.createElement('div');
     actions.className = 'fields';
     actions.append(button('Preview sequence', () => {
-      const urls = inputs.map(input => input.value.trim());
-      if (![2, 3].includes(urls.length) || !urls.every(isDirectMp4)) {
-        status('Enter two or three direct HTTPS .mp4 URLs to preview the sequence.', 'error');
+      const clips = inputs.map(input => input.value.trim());
+      if (clips.length < 2 || clips.length > maxClips || !clips.every(isDirectMp4)) {
+        status(`Enter between 2 and ${maxClips} direct HTTPS .mp4 URLs to preview the sequence.`, 'error');
         return;
       }
-      previewSequence(urls, previewArea, true);
+      previewSequence(clips, previewArea, true);
     }));
     actions.append(button('Save sequence', async () => {
-      const urls = inputs.map(input => input.value.trim());
-      if (![2, 3].includes(urls.length) || !urls.every(isDirectMp4)) {
-        status('Enter two or three direct HTTPS .mp4 URLs to save the sequence.', 'error');
+      const clips = inputs.map(input => input.value.trim());
+      if (clips.length < 2 || clips.length > maxClips || !clips.every(isDirectMp4)) {
+        status(`Enter between 2 and ${maxClips} direct HTTPS .mp4 URLs to save the sequence.`, 'error');
         return;
       }
       try {
-        await request('/api/sequence', {entry_id: entry.entry_id, urls});
+        await request('/api/sequence', {entry_id: entry.entry_id, urls: clips});
         onDone?.();
       } catch (error) {
         status(error.message, 'error');
