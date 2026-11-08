@@ -13,6 +13,7 @@ FIELDS = {
                           'category', 'global_order', 'source_page', 'word', 'source_text', 'notes',
                           'topic', 'nmf', 'source_pages'},
     'video_sequences': {'sign_id', 'position', 'url'},
+    'missing_videos': {'sign_id', 'suggestion'},
 }
 TOPICS = {'Work Life', 'The Home', 'Education', 'People and Personalities',
           'Hobbies and Activities', 'Health and Fitness', 'Home Life',
@@ -40,12 +41,21 @@ def valid_direct_mp4_url(value):
     return url.scheme == 'https' and bool(url.netloc) and url.path.lower().endswith('.mp4')
 
 def validate(data):
-    signs, videos, entries, sequences = (data[k] for k in FIELDS)
+    signs, videos, entries, sequences, missing = (data[k] for k in FIELDS)
     require(bool(signs) and bool(entries), 'Signs and lesson vocabulary must not be empty')
     for rows, key in ((signs, 'sign_id'), (videos, 'video_id'), (entries, 'entry_id'), (entries, 'global_order')):
         unique(rows, key)
     require(len({(s['word'], s['meaning']) for s in signs}) == len(signs), 'Duplicate sign/meaning')
     smap = {s['sign_id']: s for s in signs}
+    missing_ids = [r['sign_id'] for r in missing]
+    require(len(missing_ids) == len(set(missing_ids)), 'Missing video sign IDs must be unique')
+    for row in missing:
+        require(row['sign_id'] in smap, 'Unknown missing video sign_id: ' + row['sign_id'])
+        require(len(row['suggestion']) <= 2048, 'Suggestions must be 2048 characters or fewer')
+        require(not any(clip['sign_id'] == row['sign_id'] for clip in sequences),
+                'Missing signs must not retain video sequences')
+        require(not any(e['sign_id'] == row['sign_id'] and e['selected_video_id'] for e in entries),
+                'Missing sign entries must not select a video')
     vmap = {v['video_id']: v for v in videos}
     pairs, priorities = set(), set()
     for v in videos:
@@ -84,7 +94,8 @@ def validate(data):
                     'Lesson outside level range')
             require(not r['topic'], 'Level 1 and 3 use lessons')
             if r['lesson'] == '0':
-                require(r['category'] in {'Right Handed', 'Left Handed'}, 'Lesson 0 category must identify handedness')
+                require(r['category'] in {'Right Handed', 'Left Handed', 'Vocabulary'},
+                        'Lesson 0 category must identify handedness or vocabulary')
         else:
             require(not r['lesson'] and r['topic'] in TOPICS, 'Level 2 requires a topic, not a lesson')
             require('/' not in r['word'], 'Split all Level 2 slash labels')
@@ -115,6 +126,7 @@ def load():
     data['signs'].sort(key=lambda r: r['sign_id'])
     data['videos'].sort(key=lambda r: (r['sign_id'], int(r['priority'])))
     data['video_sequences'].sort(key=lambda r: (r['sign_id'], int(r['position'])))
+    data['missing_videos'].sort(key=lambda r: r['sign_id'])
     return data
 
 if __name__ == '__main__':

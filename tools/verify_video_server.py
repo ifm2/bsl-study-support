@@ -19,6 +19,7 @@ COLUMNS = {
     'lesson_vocabulary': ['entry_id', 'sign_id', 'selected_video_id', 'level', 'lesson', 'category',
                           'global_order', 'source_page', 'word', 'source_text', 'notes', 'topic', 'nmf', 'source_pages'],
     'video_sequences': ['sign_id', 'position', 'url'],
+    'missing_videos': ['sign_id', 'suggestion'],
 }
 
 
@@ -59,7 +60,7 @@ class Handler(SimpleHTTPRequestHandler):
         super().end_headers()
 
     def do_POST(self):
-        if self.path not in {'/api/save', '/api/verify', '/api/sequence', '/api/sequence-not-needed', '/api/report-problem', '/api/word'}:
+        if self.path not in {'/api/save', '/api/verify', '/api/sequence', '/api/sequence-not-needed', '/api/report-problem', '/api/suggestion', '/api/missing', '/api/word'}:
             return self.send_error(404)
         try:
             length = int(self.headers.get('Content-Length', '0'))
@@ -68,6 +69,27 @@ class Handler(SimpleHTTPRequestHandler):
             body = json.loads(self.rfile.read(length))
             entries, entry_encoding, entry_newline = read_master('lesson_vocabulary')
             videos, video_encoding, video_newline = read_master('videos')
+            missing, missing_encoding, missing_newline = read_master('missing_videos')
+            if self.path == '/api/suggestion':
+                sign_id = str(body.get('sign_id', ''))
+                sign_entries = [e for e in entries if e['sign_id'] == sign_id]
+                if not sign_entries or any(e['selected_video_id'] for e in sign_entries):
+                    raise ValueError('This sign already has an assigned video; refresh the dictionary and try again.')
+                sequences, _, _ = read_master('video_sequences')
+                if any(clip['sign_id'] == sign_id for clip in sequences):
+                    raise ValueError('This sign already has an assigned sequence; refresh the dictionary and try again.')
+                suggestion = str(body.get('message', '')).strip()
+                if not suggestion or len(suggestion) > 2048:
+                    raise ValueError('Enter a URL or note of 1 to 2048 characters.')
+                missing_row = next((r for r in missing if r['sign_id'] == sign_id), None)
+                if not missing_row:
+                    missing_row = {'sign_id': sign_id, 'suggestion': ''}
+                    missing.append(missing_row)
+                missing_row['suggestion'] = suggestion
+                generate_data.validate({**generate_data.load(), 'missing_videos': missing})
+                write_master('missing_videos', missing, missing_encoding, missing_newline)
+                data = generated_data()
+                return self.respond(200, {'message': 'Suggestion saved. Thank you for helping find a video.', 'data': data})
             if self.path == '/api/report-problem':
                 video_id = str(body.get('video_id', ''))
                 reported_video = next((v for v in videos if v['video_id'] == video_id), None)
@@ -116,6 +138,29 @@ class Handler(SimpleHTTPRequestHandler):
                     'message': f'Word changed to “{word}” in all {len(affected)} entries for this sign.',
                     'data': data,
                 })
+            if self.path == '/api/missing':
+                entry = next((e for e in entries if e['entry_id'] == str(body.get('entry_id', ''))), None)
+                if not entry:
+                    raise ValueError('Entry not found; reload the page and try again.')
+                sign_id = entry['sign_id']
+                videos = [v for v in videos if v['sign_id'] != sign_id]
+                sequences, sequence_encoding, sequence_newline = read_master('video_sequences')
+                sequences = [clip for clip in sequences if clip['sign_id'] != sign_id]
+                for occurrence in entries:
+                    if occurrence['sign_id'] == sign_id:
+                        occurrence['selected_video_id'] = ''
+                if not any(row['sign_id'] == sign_id for row in missing):
+                    missing.append({'sign_id': sign_id, 'suggestion': ''})
+                validation_data = generate_data.load()
+                validation_data.update(videos=videos, video_sequences=sequences,
+                                       lesson_vocabulary=entries, missing_videos=missing)
+                generate_data.validate(validation_data)
+                write_master('videos', videos, video_encoding, video_newline)
+                write_master('video_sequences', sequences, sequence_encoding, sequence_newline)
+                write_master('lesson_vocabulary', entries, entry_encoding, entry_newline)
+                write_master('missing_videos', missing, missing_encoding, missing_newline)
+                data = generated_data()
+                return self.respond(200, {'message': f'{entry["word"]} marked Missing. Its URLs and sequences were removed.', 'data': data})
             video = next((v for v in videos if v['video_id'] == entry['selected_video_id']), None)
 
             if self.path == '/api/sequence-not-needed':
@@ -178,15 +223,18 @@ class Handler(SimpleHTTPRequestHandler):
                 if sequence_changed:
                     video['verification_status'] = 'Unverified'
                     video['problem_report'] = ''
+                missing = [row for row in missing if row['sign_id'] != entry['sign_id']]
 
                 validation_data = generate_data.load()
                 validation_data['videos'] = videos
                 validation_data['lesson_vocabulary'] = entries
                 validation_data['video_sequences'] = sequences
+                validation_data['missing_videos'] = missing
                 generate_data.validate(validation_data)
                 write_master('video_sequences', sequences, sequence_encoding, sequence_newline)
                 write_master('videos', videos, video_encoding, video_newline)
                 write_master('lesson_vocabulary', entries, entry_encoding, entry_newline)
+                write_master('missing_videos', missing, missing_encoding, missing_newline)
                 data = generated_data()
                 return self.respond(200, {'video_id': video['video_id'],
                                           'message': f'{len(urls)}-clip sequence saved in order.', 'data': data})
@@ -232,13 +280,19 @@ class Handler(SimpleHTTPRequestHandler):
                              'problem_report': ''}
                     videos.append(video)
                 entry['selected_video_id'] = video_id
+            was_missing = any(row['sign_id'] == entry['sign_id'] for row in missing)
+            if was_missing:
+                missing = [row for row in missing if row['sign_id'] != entry['sign_id']]
 
             validation_data = generate_data.load()
             validation_data['videos'] = videos
             validation_data['lesson_vocabulary'] = entries
+            validation_data['missing_videos'] = missing
             generate_data.validate(validation_data)
             write_master('videos', videos, video_encoding, video_newline)
             write_master('lesson_vocabulary', entries, entry_encoding, entry_newline)
+            if was_missing:
+                write_master('missing_videos', missing, missing_encoding, missing_newline)
             data = generated_data()
             return self.respond(200, {'video_id': video_id,
                                       'message': f'{video_id} URL saved and marked Verified.', 'data': data})

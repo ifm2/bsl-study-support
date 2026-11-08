@@ -1707,7 +1707,7 @@ entry_id,sign_id,selected_video_id,level,lesson,category,global_order,source_pag
 1708,sign_4d1728bd0b3b58f0,video_1da833ac49627f34,1,0,Left Handed,1708,0,Q (Left Handed),Q (Left Handed),Temporary placeholder using the B Left Handed video; replace and verify later.,,FALSE,0
 1709,sign_f62b9a52b4cb028b,video_6a06082916b927c4,1,0,Left Handed,1709,0,R (Left Handed),R (Left Handed),Temporary placeholder using the B Left Handed video; replace and verify later.,,FALSE,0
 1710,sign_c31be32f41956d7d,video_456d134850e0137e,1,0,Left Handed,1710,0,S (Left Handed),S (Left Handed),Temporary placeholder using the B Left Handed video; replace and verify later.,,FALSE,0
-1711,sign_f22dc60098f8df4b,video_1b6d3d42d0340076,1,0,Left Handed,1711,0,T (Left Handed),T (Left Handed),Temporary placeholder using the B Left Handed video; replace and verify later.,,FALSE,0
+1711,sign_f22dc60098f8df4b,,1,0,Left Handed,1711,0,T (Left Handed),T (Left Handed),Temporary placeholder using the B Left Handed video; replace and verify later.,,FALSE,0
 1712,sign_87667a4c0d88a14f,video_9b1fb99a0fddfcaa,1,0,Left Handed,1712,0,U (Left Handed),U (Left Handed),Temporary placeholder using the B Left Handed video; replace and verify later.,,FALSE,0
 1713,sign_3757674eb352974f,video_e2591ed8751eb8e3,1,0,Left Handed,1713,0,V (Left Handed),V (Left Handed),Temporary placeholder using the B Left Handed video; replace and verify later.,,FALSE,0
 1714,sign_44b9aa46bf925be6,video_4e0546af24e3bd1a,1,0,Left Handed,1714,0,W (Left Handed),W (Left Handed),Temporary placeholder using the B Left Handed video; replace and verify later.,,FALSE,0
@@ -2138,3 +2138,9 @@ entry_id,sign_id,selected_video_id,level,lesson,category,global_order,source_pag
 2139,sign_2f9e7973c673b8ef,video_6fc31e421b7246bb,3,8,Vocabulary,2195,15,Accessibility,Accessibility,From the supplied full course vocabulary list.,,FALSE,15
 2140,sign_d38dd8dd2597b8e7,video_a8cce0d6124f1fb8,3,8,Vocabulary,2196,15,March,March,From the supplied full course vocabulary list.,,FALSE,15
 2141,sign_7407ee3231a5e5ca,video_07c06ac367613c42,3,8,Vocabulary,2197,15,Equality,Equality,From the supplied full course vocabulary list.,,FALSE,15
+2142,sign_ac57b0e667bf3ec1,video_7865774b4909a740,1,0,Vocabulary,2198,0,Alphabet,Alphabet,Supplemental alphabet entry; not from a workbook page.,,FALSE,0
+2143,sign_eebd90a046c64b82,video_7cb472736b89d13f,1,0,Vocabulary,2199,0,Vocabulary,Vocabulary,Supplemental sign vocabulary entry; not from a workbook page.,,FALSE,0
+2144,sign_101f9104613b7edf,video_49d001da2ee8c562,1,0,Vocabulary,2200,0,Letter,Letter,Supplemental sign vocabulary entry; not from a workbook page.,,FALSE,0
+2145,sign_3a2860ece5a4ee0b,video_cbb4bf94470a0ba7,1,0,Vocabulary,2201,0,Word,Word,Supplemental sign vocabulary entry; not from a workbook page.,,FALSE,0
+2146,sign_8125fbca0451a0cd,video_b1656af1c20f002a,1,0,Vocabulary,2202,0,Fingerspelling,Fingerspelling,Supplemental sign vocabulary entry; not from a workbook page.,,FALSE,0
+2147,sign_1f5d64b92820f823,video_d9b75f2983062029,1,0,Vocabulary,2203,0,Meaning,Meaning,Supplemental sign vocabulary entry; not from a workbook page.,,FALSE,0

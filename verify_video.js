@@ -35,7 +35,9 @@
     ? `2:topic:${entry.topic}` : `${entry.level}:lesson:${entry.lesson}`;
   const lessonName = entry => entry.level === '2' ? entry.topic : entry.level === '3'
     ? `Lesson ${entry.lesson}: ${level3LessonEmoji[Number(entry.lesson)-1]} ${level3LessonNames[Number(entry.lesson)-1]}` : `Lesson ${entry.lesson}`;
-  const awaiting = () => data.lesson_vocabulary.filter(entry => !selected(entry));
+  const awaiting = () => data.lesson_vocabulary.filter(entry => !selected(entry) && !sequenceFor(entry.sign_id).length);
+  const isMissing = entry => (data.missing_videos || []).some(row => row.sign_id === entry.sign_id)
+    || (!selected(entry) && !sequenceFor(entry.sign_id).length);
   const isDirectMp4 = value => {
     try {
       const url = new URL(value);
@@ -453,9 +455,17 @@
         status(error.message, 'error');
       }
     });
+    const missingButton = button('Missing', async () => {
+      if (!window.confirm(`Mark “${entry.word}” as Missing? This removes all current video URLs and sequences for this sign and skips it in quizzes.`)) return;
+      try {
+        await request('/api/missing', {entry_id: entry.entry_id});
+        cursor = Math.min(cursor, Math.max(0, unresolved().length - 1));
+        renderUnverified();
+      } catch (error) { status(error.message, 'error'); }
+    });
     const navigation = document.createElement('div');
     navigation.className = 'fields';
-    navigation.append(verifyButton, dictionaryLink);
+    navigation.append(verifyButton, missingButton, dictionaryLink);
     if (sequenceForWord(entry.word).length) {
       navigation.append(button('Sequence not needed', async () => {
         try {
@@ -500,7 +510,7 @@
         title.textContent = `${entry.word} · Entry ${entry.entry_id}`;
         const info = document.createElement('p');
         info.className = 'muted';
-        info.textContent = video ? `${video.video_id} · ${video.verification_status}` : 'Awaiting video';
+        info.textContent = isMissing(entry) || !video ? 'Missing' : `${video.video_id} · ${video.verification_status}`;
         card.append(title, info);
         card.append(wordEditor(entry, renderFix));
         if (video?.problem_report) {
@@ -515,6 +525,13 @@
         }
         const editor = urlEditor(entry, video, renderFix);
         card.append(editor.fields, editor.previewArea, sequenceEditor(entry, renderFix));
+        card.append(button('Missing', async () => {
+          if (!window.confirm(`Mark “${entry.word}” as Missing? This removes all current video URLs and sequences for this sign and skips it in quizzes.`)) return;
+          try {
+            await request('/api/missing', {entry_id: entry.entry_id});
+            renderFix();
+          } catch (error) { status(error.message, 'error'); }
+        }));
         list.append(card);
       });
     }
@@ -525,7 +542,7 @@
     const rows = awaiting().filter(entry => `${entry.entry_id} ${entry.word}`.toLowerCase().includes(query.toLowerCase()));
     work.replaceChildren();
     const heading = document.createElement('h2');
-    heading.textContent = `Add New Video · ${rows.length} awaiting`;
+    heading.textContent = `Add New Video · ${rows.length} missing`;
     const search = document.createElement('input');
     search.type = 'search';
     search.placeholder = 'Filter by word or entry ID';
@@ -541,10 +558,11 @@
       title.textContent = `${entry.word} · Entry ${entry.entry_id}`;
       const info = document.createElement('p');
       info.className = 'muted';
-      info.textContent = `${entry.topic || `Lesson ${entry.lesson}`} · sign ${entry.sign_id}`;
+      info.textContent = `${entry.topic || `Lesson ${entry.lesson}`} · sign ${entry.sign_id} · Missing`;
       card.append(title, info);
       card.append(wordEditor(entry, renderAwaiting));
-      const editor = urlEditor(entry, null, renderAwaiting);
+      const candidate = data.videos.find(video => video.sign_id === entry.sign_id);
+      const editor = urlEditor(entry, candidate, renderAwaiting);
       card.append(editor.fields, editor.previewArea, sequenceEditor(entry, renderAwaiting));
       list.append(card);
     });

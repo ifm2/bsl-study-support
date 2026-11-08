@@ -5,6 +5,13 @@ const data = window.BSL_DATA;
 if (!data) throw new Error('Missing generated data. Run tools/generate_data.py.');
 const signsById = new Map(data.signs.map(s => [s.sign_id,s]));
 const videosById = new Map(data.videos.map(v => [v.video_id,v]));
+const videosBySign = new Map();
+for(const video of data.videos) {
+ if(!videosBySign.has(video.sign_id))videosBySign.set(video.sign_id,[]);
+ videosBySign.get(video.sign_id).push(video);
+}
+const missingVideoIds = new Set((data.missing_videos || []).map(row => row.sign_id));
+const missingVideoBySign = new Map((data.missing_videos || []).map(row => [row.sign_id,row]));
 const videoSequencesBySign = new Map();
 for (const clip of data.video_sequences || []) {
  if (!videoSequencesBySign.has(clip.sign_id)) videoSequencesBySign.set(clip.sign_id,[]);
@@ -24,8 +31,53 @@ const allVocabulary = data.lesson_vocabulary.map(r => ({...r, meaning:signsById.
  video_urls:videoSequencesBySign.get(r.sign_id)?.map(clip => clip.url) || (videosById.get(r.selected_video_id)?.url ? [videosById.get(r.selected_video_id).url] : []),
  video_id:videosById.get(r.selected_video_id)?.video_id || '',
  problem_report:videosById.get(r.selected_video_id)?.problem_report || '',
- status:videosById.get(r.selected_video_id)?.verification_status || (videoSequencesBySign.has(r.sign_id) ? 'Unverified' : 'Awaiting video')
+ suggestion:missingVideoBySign.get(r.sign_id)?.suggestion || '',
+ status:missingVideoIds.has(r.sign_id) ? 'Missing' : videosById.get(r.selected_video_id)?.verification_status || (videoSequencesBySign.has(r.sign_id) ? 'Unverified' : 'Missing')
 })).sort((a,b) => Number(a.global_order)-Number(b.global_order));
+function videoCounts(rows) {
+ const bySign=new Map();
+ for(const row of rows) {
+  const candidates=videosBySign.get(row.sign_id) || [];
+  const status=row.status==='Missing'
+   ? candidates.some(video=>video.verification_status==='Verified')?'Verified'
+    : candidates.some(video=>video.verification_status==='Unverified')?'Unverified':'Missing'
+   : ['Verified','Unverified'].includes(row.status)?row.status:'Missing';
+  const rank={Missing:0,Unverified:1,Verified:2};
+  if(!bySign.has(row.sign_id)||rank[status]>rank[bySign.get(row.sign_id)])bySign.set(row.sign_id,status);
+ }
+ const counts={Verified:0,Unverified:0,Missing:0};
+ for(const status of bySign.values())counts[status]++;
+ return counts;
+}
+function countSummary(counts) {
+ return `${counts.Verified} Verified Videos · ${counts.Unverified} Unverified Videos · ${counts.Missing} Missing Videos`;
+}
+const siteCounts=videoCounts(allVocabulary);
+if($('site-video-totals')) $('site-video-totals').textContent=`This website is a work in progress. ${countSummary(siteCounts)} across all lessons.`;
+const feedbackEmail=$('feedback-email');
+feedbackEmail?.addEventListener('click',event=>{
+ event.preventDefault();
+ const address=[101,109,112,105,114,101,106,111,117,108,101,115,64,103,109,97,105,108,46,99,111,109]
+  .map(code=>String.fromCharCode(code)).join('');
+ window.location.href=`mailto:${address}`;
+});
+async function updateLastUpdate() {
+ const label=$('site-last-update');
+ if(!label)return;
+ try {
+  const response=await fetch('https://api.github.com/repos/ifm2/bsl-study-support/commits/main',{
+   headers:{Accept:'application/vnd.github+json'},cache:'no-store'
+  });
+  if(!response.ok)throw new Error('GitHub update lookup failed');
+  const commit=await response.json();
+  const date=new Date(commit.commit.committer.date || commit.commit.author.date);
+  if(Number.isNaN(date.getTime()))throw new Error('Invalid commit date');
+  label.textContent=`Last update: ${new Intl.DateTimeFormat('en-GB',{day:'numeric',month:'long',year:'numeric',timeZone:'Europe/London'}).format(date)} (GitHub main)`;
+ } catch {
+  label.textContent='Last update: unavailable (could not reach GitHub)';
+ }
+}
+updateLastUpdate();
 const lessonsByLevel = {
  1:['Alphabet','Greetings','Numbers & Everyday Living','Weather & Feelings','Days & Months','Sentence Structure & Gesturing','Pets, Colours & Placement','Transport & Directions','Family','Descriptions & Clothes','Recap','Food & Drink','Home & Hobbies','People, Animals & Objects','Final Recap & Conversations'],
  2:[...new Set(allVocabulary.filter(r => r.level==='2').map(r => r.topic))],
@@ -58,10 +110,19 @@ const reportCancel=element('button','','Cancel');reportCancel.type='button';
 const reportSubmit=element('button','','Send report');reportSubmit.type='button';
 reportActions.append(reportCancel,reportSubmit);reportPanel.append(reportTitle,reportDescription,reportLabel,reportError,reportActions);reportModal.append(reportPanel);document.body.append(reportModal);
 function closeReportModal() {
- reportModal.hidden=true;reportTarget?.button.focus();reportTarget=null;
+ const target=reportTarget;
+ reportModal.hidden=true;reportTarget=null;
+ if(target?.button?.isConnected)target.button.focus({preventScroll:true});
+ if(target)window.scrollTo(0,target.scrollY);
 }
 function openReportModal(row,button) {
- reportTarget={row,button};reportTextarea.value=row.problem_report || '';reportError.textContent='';
+ const suggestion=row.status==='Missing';
+ reportTarget={row,button,suggestion,scrollY:window.scrollY};reportTextarea.value=suggestion?(row.suggestion || ''):(row.problem_report || '');reportError.textContent='';
+ reportTitle.textContent=suggestion?'Suggest a video':'Report a video problem';
+ reportDescription.textContent=suggestion?"We don't currently know of a good video for this sign. If you know a URL in mp4 format, please share it here":'Describe the problem. The video will be marked Unverified and the message will appear in VerifyVideo.';
+ reportLabel.firstChild.textContent=suggestion?'MP4 URL or note':'Problem details';
+ reportTextarea.maxLength=suggestion?2048:1000;
+ reportSubmit.textContent=suggestion?'Send suggestion':'Send report';
  reportError.className='report-modal-error';reportSubmit.disabled=false;reportCancel.disabled=false;
  reportModal.hidden=false;reportTextarea.focus();
 }
@@ -71,14 +132,27 @@ document.addEventListener('keydown',event=>{if(event.key==='Escape'&&!reportModa
 reportSubmit.addEventListener('click',async()=>{
  if(!reportTarget)return;
  const message=reportTextarea.value.trim();
- if(!message){reportError.textContent='Please enter a short message describing the problem.';reportTextarea.focus();return;}
+  if(!message){reportError.textContent=reportTarget.suggestion?'Please enter an MP4 URL or note.':'Please enter a short message describing the problem.';reportTextarea.focus();return;}
  reportSubmit.disabled=true;reportCancel.disabled=true;reportTarget.button.disabled=true;
  try {
-  const response=await fetch('/api/report-problem',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({video_id:reportTarget.row.video_id,message})});
+  const endpoint=reportTarget.suggestion?'/api/suggestion':'/api/report-problem';
+  const payload=reportTarget.suggestion?{sign_id:reportTarget.row.sign_id,message}:{video_id:reportTarget.row.video_id,message};
+  const response=await fetch(endpoint,{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(payload)});
   const result=await response.json().catch(()=>null);
   if(!response.ok)throw new Error(result?.error || 'Reports can only be saved when the dictionary is running with its local video server.');
+  if(reportTarget.suggestion) {
+   reportTarget.row.suggestion=message;
+   reportTarget.button.disabled=false;
+  } else {
+   reportTarget.row.status='Unverified';
+   reportTarget.row.problem_report=message;
+   const bottom=reportTarget.button.closest('.bottom');
+   const statusLabel=bottom?.querySelector('span');
+   if(statusLabel){statusLabel.textContent='Unverified';statusLabel.hidden=false;}
+   reportTarget.button.remove();
+  }
   reportError.className='report-modal-error success';reportError.textContent=result.message || 'Problem reported. The video is marked Unverified.';
-  window.setTimeout(()=>window.location.reload(),900);
+  window.setTimeout(closeReportModal,900);
  } catch(error) {
   reportError.textContent=error.message || 'Could not save the report. Please use the local video server.';
   reportSubmit.disabled=false;reportCancel.disabled=false;reportTarget.button.disabled=false;
@@ -141,7 +215,9 @@ function chooseLevel(level) {
   const option=element('option','',level===2 ? `${prefix}${name}` : `${prefix}Lesson ${lessonNumber}: ${name}`);
   option.value=level===2 ? name : String(lessonNumber); $('lesson-nav').append(option);
  });
- $('level-summary').textContent=`Level ${level} · Vocabulary library · ${lessonsByLevel[level].length} ${level===2 ? 'topics' : 'lessons'}`;
+ const levelCounts=videoCounts(allVocabulary.filter(row=>Number(row.level)===level));
+ const groupLabel=level===2?'Topics':'Lessons';
+ $('level-summary').textContent=`Level ${level} · Vocabulary Library · ${lessonsByLevel[level].length} ${groupLabel} · ${countSummary(levelCounts)}`;
  document.querySelector('label[for="lesson-nav"]').textContent=level===2 ? 'Choose topic' : 'Choose lesson';
  $('lesson-nav').setAttribute('aria-label',level===2 ? 'Choose topic' : 'Choose lesson');
  chooseLesson(level===1 ? 0 : level===2 ? lessonsByLevel[2][0] : 1);
@@ -149,9 +225,14 @@ function chooseLevel(level) {
 function chooseLesson(lesson) {
  currentLesson=lesson;
  vocabulary=allVocabulary.filter(r => Number(r.level)===currentLevel && groupKey(r)===lesson);
- categories=[...new Set(vocabulary.map(r => r.category))]; $('lesson-nav').value=String(lesson);
+ categories=[...new Set(vocabulary.map(r => r.category))];
+ if(currentLevel===1 && currentLesson===0) {
+  const lessonZeroOrder={'Vocabulary':0,'Right Handed':1,'Left Handed':2};
+  categories.sort((a,b)=>(lessonZeroOrder[a]??99)-(lessonZeroOrder[b]??99));
+ }
+ $('lesson-nav').value=String(lesson);
  $('lesson-title').textContent=groupName(currentLevel,lesson);
- $('lesson-description').textContent=currentLevel===1 && currentLesson===0 ? 'Choose a section below. Left handed entries will be added as their videos are identified.' : currentLevel===2 ? 'Vocabulary grouped by topic. Entries awaiting video remain available in Dictionary.' : currentLevel===3 ? 'Full course vocabulary, grouped into lessons. Suggested videos are unverified.' : '';
+ $('lesson-description').textContent=currentLevel===1 && currentLesson===0 ? 'Vocabulary comes first, followed by Right Handed and Left Handed alphabet sections.' : currentLevel===2 ? 'Vocabulary grouped by topic. Entries awaiting video remain available in Dictionary.' : currentLevel===3 ? 'Full course vocabulary, grouped into lessons. Suggested videos are unverified.' : '';
  $('search').value=''; practiceCategory=''; resetPractice(); render();
 }
 function setStudyMode(mode) {
@@ -231,7 +312,7 @@ function makeTile(row,practice=false) {
  const meta=element('small','entry-meta',`#${row.entry_id} · ${pageLabel}`);
  meta.hidden=$('hide-details').checked;titleRow.append(title,meta);
  const player=element('div','player');const autoplay=practice || playbackMode==='autoplay';
- if(!row.video_url) player.append(element('p','video-error','Awaiting video'));
+ if(!row.video_url) player.append(element('p','video-error',row.status==='Missing'?'Video missing':'Awaiting video'));
  else if(autoplay) player.append(makeVideo(row,true,hiddenAnswer));
  else {
   const launch=element('button','flashcard-launch');launch.type='button';
@@ -247,6 +328,10 @@ function makeTile(row,practice=false) {
  if(row.status==='Verified' && row.video_id) {
   const report=element('button','report-problem','Feedback');report.type='button';
   report.addEventListener('click',() => openReportModal(row,report));bottom.append(report);
+ }
+ if(row.status==='Missing') {
+  const suggestion=element('button','report-problem','Suggestion');suggestion.type='button';
+  suggestion.addEventListener('click',() => openReportModal(row,suggestion));bottom.append(suggestion);
  }
  const dictionary=element('a','','Check dictionary ↗');
  dictionary.href=row.dictionary_url;
@@ -327,7 +412,7 @@ function startPractice(rows) {
  }
  practiceIndex=0;answerRevealed=false;
 }
-function canPractice(row) {return !!row.video_url && !['Rejected','Unavailable'].includes(row.status);}
+function canPractice(row) {return !!row.video_url && !['Rejected','Unavailable','Missing'].includes(row.status);}
 function practiceChoiceWords(row) {
  const wordKey=value=>value.trim().toLocaleLowerCase();
  const correctKey=wordKey(row.word), distractors=new Map();

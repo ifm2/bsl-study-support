@@ -876,6 +876,11 @@ window.BSL_DATA = {
       "meaning": ""
     },
     {
+      "sign_id": "sign_1f5d64b92820f823",
+      "word": "Meaning",
+      "meaning": ""
+    },
+    {
       "sign_id": "sign_1fce73017760ec53",
       "word": "Training",
       "meaning": ""
@@ -1638,6 +1643,11 @@ window.BSL_DATA = {
     {
       "sign_id": "sign_3a1bcf6a8dd544c2",
       "word": "Medicine",
+      "meaning": ""
+    },
+    {
+      "sign_id": "sign_3a2860ece5a4ee0b",
+      "word": "Word",
       "meaning": ""
     },
     {
@@ -3556,6 +3566,11 @@ window.BSL_DATA = {
       "meaning": "Impact"
     },
     {
+      "sign_id": "sign_8125fbca0451a0cd",
+      "word": "Fingerspelling",
+      "meaning": ""
+    },
+    {
       "sign_id": "sign_8128b9f401dcb71b",
       "word": "Business",
       "meaning": ""
@@ -4654,6 +4669,11 @@ window.BSL_DATA = {
       "sign_id": "sign_ac1d31de78a7874a",
       "word": "Fitness",
       "meaning": "Fitness"
+    },
+    {
+      "sign_id": "sign_ac57b0e667bf3ec1",
+      "word": "Alphabet",
+      "meaning": ""
     },
     {
       "sign_id": "sign_ac8146bf00473378",
@@ -6596,6 +6616,11 @@ window.BSL_DATA = {
       "meaning": ""
     },
     {
+      "sign_id": "sign_eebd90a046c64b82",
+      "word": "Vocabulary",
+      "meaning": ""
+    },
+    {
       "sign_id": "sign_eec6fbe85db1d1a2",
       "word": "Volunteer",
       "meaning": ""
@@ -7367,7 +7392,7 @@ window.BSL_DATA = {
       "sign_id": "sign_05ef46d308da0268",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/rugby.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -7582,8 +7607,8 @@ window.BSL_DATA = {
       "video_id": "video_ddc22904dffa6e47",
       "sign_id": "sign_0a14540c338924d3",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/this-week.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/gpnhs/mp4/week.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -7636,8 +7661,8 @@ window.BSL_DATA = {
       "video_id": "video_1af21c87581c5c3c",
       "sign_id": "sign_0b560d9ee49175f4",
       "source": "SignStation number filename guess",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/six.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/nf/mp4/6.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -7645,8 +7670,8 @@ window.BSL_DATA = {
       "video_id": "video_834a88fdee937194",
       "sign_id": "sign_0b89ce6ff0084da4",
       "source": "Temporary Left Handed alphabet placeholder (B video)",
-      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/75aHo6_S1l0.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/6rEtUhsaDc4.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -7804,6 +7829,15 @@ window.BSL_DATA = {
       "problem_report": ""
     },
     {
+      "video_id": "video_49d001da2ee8c562",
+      "sign_id": "sign_101f9104613b7edf",
+      "source": "Manually added by user",
+      "url": "https://media.signbsl.com/videos/bsl/signon/mp4/msw30.mp4",
+      "verification_status": "Verified",
+      "priority": "2",
+      "problem_report": ""
+    },
+    {
       "video_id": "video_f4d10a0139d4beec",
       "sign_id": "sign_102dd316cb4bb005",
       "source": "SignStation via SignBSL",
@@ -7835,7 +7869,7 @@ window.BSL_DATA = {
       "sign_id": "sign_10c69b27cbb9557d",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/pm.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -7870,8 +7904,8 @@ window.BSL_DATA = {
       "video_id": "video_ea1f6161d95d27cf",
       "sign_id": "sign_121e02501bcf99fa",
       "source": "Temporary Left Handed alphabet placeholder (B video)",
-      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/75aHo6_S1l0.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/QSGv2pj3rbY.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -7898,7 +7932,7 @@ window.BSL_DATA = {
       "sign_id": "sign_12c8746ee784e5ce",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/tennis.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -8122,8 +8156,8 @@ window.BSL_DATA = {
       "video_id": "video_4222c2e153d7ba25",
       "sign_id": "sign_16e9138eca343bf6",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/last-month.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/nf/mp4/Last%20month.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -8149,8 +8183,8 @@ window.BSL_DATA = {
       "video_id": "video_d8d41a66a50f85ee",
       "sign_id": "sign_17a9a9581049a890",
       "source": "SignStation number filename guess",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/seven.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/nf/mp4/7.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -8302,8 +8336,8 @@ window.BSL_DATA = {
       "video_id": "video_c58e5a996e2cd45b",
       "sign_id": "sign_1a4ee58747167b1c",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/o-clock.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/one-o-clock.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -8614,6 +8648,15 @@ window.BSL_DATA = {
       "problem_report": ""
     },
     {
+      "video_id": "video_d9b75f2983062029",
+      "sign_id": "sign_1f5d64b92820f823",
+      "source": "Manually added by user",
+      "url": "https://media.signbsl.com/videos/bsl/signon/mp4/new47.mp4",
+      "verification_status": "Verified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
       "video_id": "video_55eb05edf7c8d082",
       "sign_id": "sign_1fce73017760ec53",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/training",
@@ -8797,8 +8840,8 @@ window.BSL_DATA = {
       "video_id": "video_e697228cb7d11b14",
       "sign_id": "sign_23ac5fe6537195fa",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/monthly.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/bslfirst/mp4/996135395.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -9049,8 +9092,8 @@ window.BSL_DATA = {
       "video_id": "video_9188b5c855182bad",
       "sign_id": "sign_28c54775879106a5",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/last-week.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/UhV4BdBJPSY.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -9383,7 +9426,7 @@ window.BSL_DATA = {
       "sign_id": "sign_2f9e7973c673b8ef",
       "source": "SignStation filename guess from Level 3 vocabulary",
       "url": "https://media.signbsl.com/videos/bsl/signstation/accessibility.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -9778,8 +9821,8 @@ window.BSL_DATA = {
       "video_id": "video_24b5fe5347455b43",
       "sign_id": "sign_359442813631e96a",
       "source": "Temporary Left Handed alphabet placeholder (B video)",
-      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/75aHo6_S1l0.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/9hr1pjS4GLo.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -9850,8 +9893,8 @@ window.BSL_DATA = {
       "video_id": "video_e2591ed8751eb8e3",
       "sign_id": "sign_3757674eb352974f",
       "source": "Temporary Left Handed alphabet placeholder (B video)",
-      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/75aHo6_S1l0.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/L3KM_5LUQOI.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -9940,8 +9983,8 @@ window.BSL_DATA = {
       "video_id": "video_1ab5a9039b11e459",
       "sign_id": "sign_3a0b367a43bca109",
       "source": "SignStation number filename guess",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/eight.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/nf/mp4/8.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -9951,6 +9994,15 @@ window.BSL_DATA = {
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/medicine",
       "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/ErA1BvODzmg.mp4",
       "verification_status": "Unverified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
+      "video_id": "video_cbb4bf94470a0ba7",
+      "sign_id": "sign_3a2860ece5a4ee0b",
+      "source": "Manually added by user",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/word.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -10363,8 +10415,8 @@ window.BSL_DATA = {
       "video_id": "video_b386cfcd048d59c1",
       "sign_id": "sign_4367c8af52f206ab",
       "source": "Temporary Left Handed alphabet placeholder (B video)",
-      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/75aHo6_S1l0.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/e9MV4SG0cXA.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -10426,8 +10478,8 @@ window.BSL_DATA = {
       "video_id": "video_4e0546af24e3bd1a",
       "sign_id": "sign_44b9aa46bf925be6",
       "source": "Temporary Left Handed alphabet placeholder (B video)",
-      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/75aHo6_S1l0.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/vQzOeeD2KHI.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -10795,8 +10847,8 @@ window.BSL_DATA = {
       "video_id": "video_e3534601d6f49037",
       "sign_id": "sign_4c49d4bcfd74712e",
       "source": "Temporary Left Handed alphabet placeholder (B video)",
-      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/75aHo6_S1l0.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/Y8DG-XJToSY.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -10849,8 +10901,8 @@ window.BSL_DATA = {
       "video_id": "video_1da833ac49627f34",
       "sign_id": "sign_4d1728bd0b3b58f0",
       "source": "Temporary Left Handed alphabet placeholder (B video)",
-      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/75aHo6_S1l0.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/isN6lLZOYso.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -11038,8 +11090,8 @@ window.BSL_DATA = {
       "video_id": "video_4e81b779b4e29f8c",
       "sign_id": "sign_50b7834e76781e22",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/next.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/next-2.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -11119,8 +11171,8 @@ window.BSL_DATA = {
       "video_id": "video_3521863ebb4e8f71",
       "sign_id": "sign_52586467f4301f13",
       "source": "SignStation number filename guess",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/18.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/nf/mp4/18.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -11182,8 +11234,8 @@ window.BSL_DATA = {
       "video_id": "video_0e263dff040f890b",
       "sign_id": "sign_53d1aa504bee4a2e",
       "source": "Temporary Left Handed alphabet placeholder (B video)",
-      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/75aHo6_S1l0.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/-I3W1h3JFMo.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -11362,8 +11414,8 @@ window.BSL_DATA = {
       "video_id": "video_d5fcf338b994c65c",
       "sign_id": "sign_59248275bdd07500",
       "source": "Temporary Left Handed alphabet placeholder (B video)",
-      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/75aHo6_S1l0.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/qsBqxlAyPQI.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -11839,8 +11891,8 @@ window.BSL_DATA = {
       "video_id": "video_9ad22b782ff7d203",
       "sign_id": "sign_644a391af8020a1d",
       "source": "Temporary Left Handed alphabet placeholder (B video)",
-      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/75aHo6_S1l0.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/VfmFy2dsdvw.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -11993,7 +12045,7 @@ window.BSL_DATA = {
       "sign_id": "sign_687121ac95d0ad71",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/with.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -12163,8 +12215,8 @@ window.BSL_DATA = {
       "video_id": "video_bb5324188498ff05",
       "sign_id": "sign_6bbd09689e2c1005",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/running.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/run.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -12496,8 +12548,8 @@ window.BSL_DATA = {
       "video_id": "video_9884c5d2a260fc54",
       "sign_id": "sign_708a279bb90f2035",
       "source": "Temporary Left Handed alphabet placeholder (B video)",
-      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/75aHo6_S1l0.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/Qe5Hrvk7b7o.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -12541,8 +12593,8 @@ window.BSL_DATA = {
       "video_id": "video_aad4aea4b72c49ee",
       "sign_id": "sign_711e72fa8ef3af89",
       "source": "SignStation alphabet video",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/I.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/9VLdezuUs6I.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -12695,7 +12747,7 @@ window.BSL_DATA = {
       "sign_id": "sign_7407ee3231a5e5ca",
       "source": "SignStation filename guess from Level 3 vocabulary",
       "url": "https://media.signbsl.com/videos/bsl/signstation/equality.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -12883,8 +12935,8 @@ window.BSL_DATA = {
       "video_id": "video_78968f1347b59a72",
       "sign_id": "sign_77e9f0178d5b1ea5",
       "source": "SignStation number filename guess",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/17.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/nf/mp4/17.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -13099,8 +13151,8 @@ window.BSL_DATA = {
       "video_id": "video_d6a86258f0aac7ab",
       "sign_id": "sign_7ce1e35de031c466",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/shopping.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/bslfirst/mp4/996269064.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -13180,8 +13232,8 @@ window.BSL_DATA = {
       "video_id": "video_d37e8c68845dc263",
       "sign_id": "sign_7dc902c4bced31c0",
       "source": "Temporary Left Handed alphabet placeholder (B video)",
-      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/75aHo6_S1l0.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/64AQ7CLFEAQ.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -13199,7 +13251,7 @@ window.BSL_DATA = {
       "sign_id": "sign_7dee4aac8526b504",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/this-month.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -13326,6 +13378,15 @@ window.BSL_DATA = {
       "source": "SignStation filename guess from Level 3 vocabulary",
       "url": "https://media.signbsl.com/videos/bsl/signstation/impact.mp4",
       "verification_status": "Unverified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
+      "video_id": "video_b1656af1c20f002a",
+      "sign_id": "sign_8125fbca0451a0cd",
+      "source": "Manually added by user",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/wfSjnCFceFA.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -13594,8 +13655,8 @@ window.BSL_DATA = {
       "video_id": "video_9b1fb99a0fddfcaa",
       "sign_id": "sign_87667a4c0d88a14f",
       "source": "Temporary Left Handed alphabet placeholder (B video)",
-      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/75aHo6_S1l0.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/PERJef6I6IQ.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -14108,9 +14169,9 @@ window.BSL_DATA = {
       "sign_id": "sign_9151e624f442bbad",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/t-shirt.mp4",
-      "verification_status": "Verified",
+      "verification_status": "Unverified",
       "priority": "1",
-      "problem_report": ""
+      "problem_report": "br"
     },
     {
       "video_id": "video_04c689b230f67fc6",
@@ -14288,7 +14349,7 @@ window.BSL_DATA = {
       "sign_id": "sign_950e8a657fbc6b03",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/am.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -14351,7 +14412,7 @@ window.BSL_DATA = {
       "sign_id": "sign_97cea18b375a7acd",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/swimming.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -14530,8 +14591,8 @@ window.BSL_DATA = {
       "video_id": "video_3f0922b96fb8fd3a",
       "sign_id": "sign_9c240b84b52e1d5e",
       "source": "SignStation alphabet video",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/E.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/C1h-403xtG4.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -14548,8 +14609,8 @@ window.BSL_DATA = {
       "video_id": "video_de79f67f255f06aa",
       "sign_id": "sign_9c6b292e1a9912fd",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/horse-riding.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/bslfirst/mp4/996142221.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -14909,7 +14970,7 @@ window.BSL_DATA = {
       "sign_id": "sign_a47fad1abee2ba93",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/walking.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -15115,8 +15176,8 @@ window.BSL_DATA = {
       "video_id": "video_26731945d141391d",
       "sign_id": "sign_a85f7acb31cda623",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/movies.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/movie.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -15169,8 +15230,8 @@ window.BSL_DATA = {
       "video_id": "video_3d240cf7e66613ea",
       "sign_id": "sign_aa3ee697fc533119",
       "source": "Temporary Left Handed alphabet placeholder (B video)",
-      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/75aHo6_S1l0.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/oci042Rq7oc.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -15243,6 +15304,15 @@ window.BSL_DATA = {
       "source": "SignStation filename guess from Level 3 vocabulary",
       "url": "https://media.signbsl.com/videos/bsl/signstation/fitness.mp4",
       "verification_status": "Unverified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
+      "video_id": "video_7865774b4909a740",
+      "sign_id": "sign_ac57b0e667bf3ec1",
+      "source": "SignStation via SignBSL",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/alphabet.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -15602,7 +15672,7 @@ window.BSL_DATA = {
       "sign_id": "sign_b463f2b0ba61a1e1",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/every-month.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -15907,8 +15977,8 @@ window.BSL_DATA = {
       "video_id": "video_0f70e129f66a9126",
       "sign_id": "sign_b9fe0eb1dfc15b3b",
       "source": "Temporary Left Handed alphabet placeholder (B video)",
-      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/75aHo6_S1l0.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/vtQc9AV4z48.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -15997,8 +16067,8 @@ window.BSL_DATA = {
       "video_id": "video_5ba58df7222f682f",
       "sign_id": "sign_bbc72e70d87a8911",
       "source": "Temporary Left Handed alphabet placeholder (B video)",
-      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/75aHo6_S1l0.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/zuoaJM8Zx1Y.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -16024,7 +16094,7 @@ window.BSL_DATA = {
       "video_id": "video_531fba884b6b2576",
       "sign_id": "sign_bc0626bf987a7b82",
       "source": "SignStation alphabet video",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/C.mp4",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/c.mp4",
       "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
@@ -16142,7 +16212,7 @@ window.BSL_DATA = {
       "sign_id": "sign_be0bf04cb8f44f88",
       "source": "SignStation number filename guess",
       "url": "https://media.signbsl.com/videos/bsl/signstation/ten.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -16187,7 +16257,7 @@ window.BSL_DATA = {
       "sign_id": "sign_bebb93f877259372",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/lazy.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -16322,7 +16392,7 @@ window.BSL_DATA = {
       "sign_id": "sign_c2978157ebe969d7",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/music.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -16366,8 +16436,8 @@ window.BSL_DATA = {
       "video_id": "video_456d134850e0137e",
       "sign_id": "sign_c31be32f41956d7d",
       "source": "Temporary Left Handed alphabet placeholder (B video)",
-      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/75aHo6_S1l0.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/Mq0QSS8VVYo.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -16393,8 +16463,8 @@ window.BSL_DATA = {
       "video_id": "video_2920262df8ffc373",
       "sign_id": "sign_c380750a758312a3",
       "source": "Temporary Left Handed alphabet placeholder (B video)",
-      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/75aHo6_S1l0.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/bO-DZ0uFqf8.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -16438,8 +16508,8 @@ window.BSL_DATA = {
       "video_id": "video_4dd40414bfb6a798",
       "sign_id": "sign_c4729a5fa2b97174",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/fireplace.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signmonkey/mp4/fireplace.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -16573,8 +16643,8 @@ window.BSL_DATA = {
       "video_id": "video_9939a4919aa37ad4",
       "sign_id": "sign_c6cd418f43d455c4",
       "source": "SignStation number filename guess",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/19.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/nf/mp4/19.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -16745,9 +16815,9 @@ window.BSL_DATA = {
       "sign_id": "sign_ca5baadeac264714",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/shirt.mp4",
-      "verification_status": "Verified",
+      "verification_status": "Unverified",
       "priority": "1",
-      "problem_report": ""
+      "problem_report": "br"
     },
     {
       "video_id": "video_edd9c0b5afea046f",
@@ -17158,8 +17228,8 @@ window.BSL_DATA = {
       "video_id": "video_6e25d1363830da31",
       "sign_id": "sign_d1c42170848749ac",
       "source": "Temporary Left Handed alphabet placeholder (B video)",
-      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/75aHo6_S1l0.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/LPQcE1Xh_pw.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -17329,8 +17399,8 @@ window.BSL_DATA = {
       "video_id": "video_d8d3568e4a484262",
       "sign_id": "sign_d44dc0e7763a7f18",
       "source": "SignStation number filename guess",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/16.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/nf/mp4/16.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -17401,8 +17471,8 @@ window.BSL_DATA = {
       "video_id": "video_74160c5aaa57b7ac",
       "sign_id": "sign_d50ef5a249a06b86",
       "source": "Temporary Left Handed alphabet placeholder (B video)",
-      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/75aHo6_S1l0.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/kxv9T04GWiM.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -17491,8 +17561,8 @@ window.BSL_DATA = {
       "video_id": "video_6acb4d54943da6dd",
       "sign_id": "sign_d71582148b20e16b",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/reading.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/bslfirst/mp4/996268896.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -17851,8 +17921,8 @@ window.BSL_DATA = {
       "video_id": "video_6f5f8d7ecc8a2a13",
       "sign_id": "sign_de724532a8be055a",
       "source": "Temporary Left Handed alphabet placeholder (B video)",
-      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/75aHo6_S1l0.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/i8BG1o4lNEY.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -18301,8 +18371,8 @@ window.BSL_DATA = {
       "video_id": "video_b7a35331f1d6167a",
       "sign_id": "sign_e6805cbc77349f29",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/weekly.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/every-week.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -18409,7 +18479,7 @@ window.BSL_DATA = {
       "video_id": "video_b7c4ee20b06f4108",
       "sign_id": "sign_e93024eb8a278028",
       "source": "SignStation alphabet video",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/D.mp4",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/d.mp4",
       "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
@@ -18676,6 +18746,15 @@ window.BSL_DATA = {
       "problem_report": ""
     },
     {
+      "video_id": "video_7cb472736b89d13f",
+      "sign_id": "sign_eebd90a046c64b82",
+      "source": "Manually added by user",
+      "url": "https://media.signbsl.com/videos/bsl/signmonkey/mp4/vocabulary.mp4",
+      "verification_status": "Verified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
       "video_id": "video_5f9ffa81b4d3bb8e",
       "sign_id": "sign_eec6fbe85db1d1a2",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/volunteer",
@@ -18820,15 +18899,6 @@ window.BSL_DATA = {
       "problem_report": ""
     },
     {
-      "video_id": "video_1b6d3d42d0340076",
-      "sign_id": "sign_f22dc60098f8df4b",
-      "source": "Temporary Left Handed alphabet placeholder (B video)",
-      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/75aHo6_S1l0.mp4",
-      "verification_status": "Unverified",
-      "priority": "1",
-      "problem_report": ""
-    },
-    {
       "video_id": "video_29ea5fc3516e555e",
       "sign_id": "sign_f2a79f1549bc6829",
       "source": "SignStation via SignBSL",
@@ -18859,8 +18929,8 @@ window.BSL_DATA = {
       "video_id": "video_9c350074d951d524",
       "sign_id": "sign_f3148f6f362cb28b",
       "source": "SignStation number filename guess",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/nine.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/nf/mp4/9.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -19057,8 +19127,8 @@ window.BSL_DATA = {
       "video_id": "video_6a06082916b927c4",
       "sign_id": "sign_f62b9a52b4cb028b",
       "source": "Temporary Left Handed alphabet placeholder (B video)",
-      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/75aHo6_S1l0.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/IionkzauYcs.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -46711,7 +46781,7 @@ window.BSL_DATA = {
     {
       "entry_id": "1711",
       "sign_id": "sign_f22dc60098f8df4b",
-      "selected_video_id": "video_1b6d3d42d0340076",
+      "selected_video_id": "",
       "level": "1",
       "lesson": "0",
       "category": "Left Handed",
@@ -53683,6 +53753,102 @@ window.BSL_DATA = {
       "topic": "",
       "nmf": "FALSE",
       "source_pages": "15"
+    },
+    {
+      "entry_id": "2142",
+      "sign_id": "sign_ac57b0e667bf3ec1",
+      "selected_video_id": "video_7865774b4909a740",
+      "level": "1",
+      "lesson": "0",
+      "category": "Vocabulary",
+      "global_order": "2198",
+      "source_page": "0",
+      "word": "Alphabet",
+      "source_text": "Alphabet",
+      "notes": "Supplemental alphabet entry; not from a workbook page.",
+      "topic": "",
+      "nmf": "FALSE",
+      "source_pages": "0"
+    },
+    {
+      "entry_id": "2143",
+      "sign_id": "sign_eebd90a046c64b82",
+      "selected_video_id": "video_7cb472736b89d13f",
+      "level": "1",
+      "lesson": "0",
+      "category": "Vocabulary",
+      "global_order": "2199",
+      "source_page": "0",
+      "word": "Vocabulary",
+      "source_text": "Vocabulary",
+      "notes": "Supplemental sign vocabulary entry; not from a workbook page.",
+      "topic": "",
+      "nmf": "FALSE",
+      "source_pages": "0"
+    },
+    {
+      "entry_id": "2144",
+      "sign_id": "sign_101f9104613b7edf",
+      "selected_video_id": "video_49d001da2ee8c562",
+      "level": "1",
+      "lesson": "0",
+      "category": "Vocabulary",
+      "global_order": "2200",
+      "source_page": "0",
+      "word": "Letter",
+      "source_text": "Letter",
+      "notes": "Supplemental sign vocabulary entry; not from a workbook page.",
+      "topic": "",
+      "nmf": "FALSE",
+      "source_pages": "0"
+    },
+    {
+      "entry_id": "2145",
+      "sign_id": "sign_3a2860ece5a4ee0b",
+      "selected_video_id": "video_cbb4bf94470a0ba7",
+      "level": "1",
+      "lesson": "0",
+      "category": "Vocabulary",
+      "global_order": "2201",
+      "source_page": "0",
+      "word": "Word",
+      "source_text": "Word",
+      "notes": "Supplemental sign vocabulary entry; not from a workbook page.",
+      "topic": "",
+      "nmf": "FALSE",
+      "source_pages": "0"
+    },
+    {
+      "entry_id": "2146",
+      "sign_id": "sign_8125fbca0451a0cd",
+      "selected_video_id": "video_b1656af1c20f002a",
+      "level": "1",
+      "lesson": "0",
+      "category": "Vocabulary",
+      "global_order": "2202",
+      "source_page": "0",
+      "word": "Fingerspelling",
+      "source_text": "Fingerspelling",
+      "notes": "Supplemental sign vocabulary entry; not from a workbook page.",
+      "topic": "",
+      "nmf": "FALSE",
+      "source_pages": "0"
+    },
+    {
+      "entry_id": "2147",
+      "sign_id": "sign_1f5d64b92820f823",
+      "selected_video_id": "video_d9b75f2983062029",
+      "level": "1",
+      "lesson": "0",
+      "category": "Vocabulary",
+      "global_order": "2203",
+      "source_page": "0",
+      "word": "Meaning",
+      "source_text": "Meaning",
+      "notes": "Supplemental sign vocabulary entry; not from a workbook page.",
+      "topic": "",
+      "nmf": "FALSE",
+      "source_pages": "0"
     }
   ],
   "video_sequences": [
@@ -53762,6 +53928,16 @@ window.BSL_DATA = {
       "url": "https://media.signbsl.com/videos/bsl/signstation/food.mp4"
     },
     {
+      "sign_id": "sign_10c69b27cbb9557d",
+      "position": "1",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/P.mp4"
+    },
+    {
+      "sign_id": "sign_10c69b27cbb9557d",
+      "position": "2",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/m.mp4"
+    },
+    {
       "sign_id": "sign_135d29fc1748ed51",
       "position": "1",
       "url": "https://media.signbsl.com/videos/bsl/signstation/petrol.mp4"
@@ -53805,16 +53981,6 @@ window.BSL_DATA = {
       "sign_id": "sign_1616295397ece12b",
       "position": "2",
       "url": "https://media.signbsl.com/videos/bsl/signstation/belt.mp4"
-    },
-    {
-      "sign_id": "sign_16e9138eca343bf6",
-      "position": "1",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/last.mp4"
-    },
-    {
-      "sign_id": "sign_16e9138eca343bf6",
-      "position": "2",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/month.mp4"
     },
     {
       "sign_id": "sign_18fa950afd570f9f",
@@ -54602,6 +54768,16 @@ window.BSL_DATA = {
       "url": "https://media.signbsl.com/videos/bsl/signstation/slow.mp4"
     },
     {
+      "sign_id": "sign_950e8a657fbc6b03",
+      "position": "1",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/Qjaaoku7R48.mp4"
+    },
+    {
+      "sign_id": "sign_950e8a657fbc6b03",
+      "position": "2",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/m.mp4"
+    },
+    {
       "sign_id": "sign_98546c157985a3df",
       "position": "1",
       "url": "https://media.signbsl.com/videos/bsl/signstation/police.mp4"
@@ -54620,16 +54796,6 @@ window.BSL_DATA = {
       "sign_id": "sign_9c2a4a879c46cc60",
       "position": "2",
       "url": "https://media.signbsl.com/videos/bsl/signstation/bolognese.mp4"
-    },
-    {
-      "sign_id": "sign_9c6b292e1a9912fd",
-      "position": "1",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/horse.mp4"
-    },
-    {
-      "sign_id": "sign_9c6b292e1a9912fd",
-      "position": "2",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/riding.mp4"
     },
     {
       "sign_id": "sign_9d091f40ae26294d",
@@ -55155,6 +55321,12 @@ window.BSL_DATA = {
       "sign_id": "sign_fe17af2e89848fc3",
       "position": "2",
       "url": "https://media.signbsl.com/videos/bsl/signstation/year.mp4"
+    }
+  ],
+  "missing_videos": [
+    {
+      "sign_id": "sign_f22dc60098f8df4b",
+      "suggestion": ""
     }
   ]
 };
