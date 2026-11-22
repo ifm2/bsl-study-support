@@ -104,7 +104,7 @@ entry_id,sign_id,selected_video_id,level,lesson,category,global_order,source_pag
 105,sign_6dbc0a9676901c21,video_b90524c3184a86f8,1,3,Feelings and descriptions,105,11,Tired,Tired,Candidate URL from original SignStation naming pattern; not checked,,FALSE,11
 106,sign_82f138acab8d871c,video_29f743649d31fc0d,1,3,Feelings and descriptions,106,11,Love,Love,Candidate URL from original SignStation naming pattern; not checked,,FALSE,11
 107,sign_f6d7cd58b3e5f4d4,video_24e64f112f4d15c9,1,3,Feelings and descriptions,107,11,But,But,Candidate URL from original SignStation naming pattern; not checked,,FALSE,11
-108,sign_105b0baca1154d17,video_c862d6d32d0d873a,1,3,Feelings and descriptions,108,11,Like what?,Like what?,Candidate URL from original SignStation naming pattern; not checked,,FALSE,11
+108,sign_105b0baca1154d17,,1,3,Feelings and descriptions,108,11,Like what?,Like what?,Candidate URL from original SignStation naming pattern; not checked,,FALSE,11
 109,sign_2398dfa6ffd431af,video_bafe392711e26d6d,1,3,Weather,109,13,Rain,Rain,Candidate URL from original SignStation naming pattern; not checked,,FALSE,13
 110,sign_cdd080fa8eac61ca,video_fbef5e3164f53182,1,3,Weather,110,13,Sun,Sun,Candidate URL from original SignStation naming pattern; not checked,,FALSE,13
 111,sign_0a9c3871d648bba3,video_0f0d42bc35e16244,1,3,Weather,111,13,Sunny,Sunny,Candidate URL from original SignStation naming pattern; not checked,,FALSE,13
@@ -213,9 +213,9 @@ entry_id,sign_id,selected_video_id,level,lesson,category,global_order,source_pag
 214,sign_eadae0166ef0cf41,video_5820582a8270e28a,1,5,Vocabulary for exercise,214,21,Read a book,Read a book,Candidate URL from original SignStation naming pattern; not checked,,FALSE,21
 215,sign_6ea2868fc5d185e9,video_98b7e87285e3705d,1,5,Vocabulary for exercise,215,21,Me think,Me think,Candidate URL from original SignStation naming pattern; not checked,,FALSE,21
 216,sign_5920ae04cc3ef7ed,video_472981ea2411608d,1,5,Vocabulary for exercise,216,21,Drive,Drive,Candidate URL from original SignStation naming pattern; not checked,,FALSE,21
-217,sign_6240e193da92aaa4,video_2f77dde9a46ab687,1,5,Vocabulary for exercise,217,21,Next door,Next door,Candidate URL from original SignStation naming pattern; not checked,,FALSE,21
+217,sign_6240e193da92aaa4,video_2f77dde9a46ab687,1,5,Vocabulary for exercise,217,21,Neighbour,Next door,Candidate URL from original SignStation naming pattern; not checked,,FALSE,21
 218,sign_9aeaf864cc6ec427,video_6645bc65b0ae31b2,1,5,Vocabulary for exercise,218,21,Project,Project,Candidate URL from original SignStation naming pattern; not checked,,FALSE,21
-219,sign_2a7beb113cef3538,video_da1ae56a93fca0a7,1,6,Pets and animals,219,26,Pets,Pets,Candidate URL from original SignStation naming pattern; not checked,,FALSE,26
+219,sign_ce79c057551dbb03,video_d23d8fb8769984bc,1,6,Pets and animals,219,26,Pet,Pets,Candidate URL from original SignStation naming pattern; not checked,,FALSE,26
 220,sign_6f9703ea6f6457a4,video_b36a8c84ab6e8a57,1,6,Pets and animals,220,26,Animal,Animal,Candidate URL from original SignStation naming pattern; not checked,,FALSE,26
 221,sign_dfe6347cf4ddafd7,video_86fa1fa05c496edf,1,6,Pets and animals,221,26,Bird,Bird,Candidate URL from original SignStation naming pattern; not checked,,FALSE,26
 222,sign_389320a29b00f38a,video_b2997f482948c908,1,6,Pets and animals,222,26,Cat,Cat,Candidate URL from original SignStation naming pattern; not checked,,FALSE,26
@@ -296,7 +296,7 @@ entry_id,sign_id,selected_video_id,level,lesson,category,global_order,source_pag
 297,sign_a5c1a49e2fe3254f,video_ad67527041cb741d,1,6,Emotions and responses,297,29,Sleepy,Sleepy,Candidate URL from original SignStation naming pattern; not checked,,FALSE,29
 298,sign_6dbc0a9676901c21,video_b90524c3184a86f8,1,6,Emotions and responses,298,29,Tired,Tired,Candidate URL from original SignStation naming pattern; not checked,,FALSE,29
 299,sign_f6d7cd58b3e5f4d4,video_24e64f112f4d15c9,1,6,Emotions and responses,299,29,But,But,Candidate URL from original SignStation naming pattern; not checked,,FALSE,29
-300,sign_105b0baca1154d17,video_c862d6d32d0d873a,1,6,Emotions and responses,300,29,Like what?,Like what?,Candidate URL from original SignStation naming pattern; not checked,,FALSE,29
+300,sign_105b0baca1154d17,,1,6,Emotions and responses,300,29,Like what?,Like what?,Candidate URL from original SignStation naming pattern; not checked,,FALSE,29
 301,sign_497e8dbe345ee50e,video_941d97cfc8e99dcb,1,7,Transport,301,30,Bike,Bike,Candidate URL from original SignStation naming pattern; not checked,,FALSE,30
 302,sign_3b344ca9eec9cf0e,video_5045cb38289816b3,1,7,Transport,302,30,Motorbike,Motorbike,Candidate URL from original SignStation naming pattern; not checked,,FALSE,30
 303,sign_abf3d8449f5ea59a,video_98ccee24e59e2274,1,7,Transport,303,30,Scooter,Scooter,Candidate URL from original SignStation naming pattern; not checked,,FALSE,30
@@ -371,9 +371,9 @@ entry_id,sign_id,selected_video_id,level,lesson,category,global_order,source_pag
 372,sign_925f6c7297f868e1,video_a7723c1fc96be56e,1,7,Daily activities,372,32,Go coffee shop,Go coffee shop,Candidate URL from original SignStation naming pattern; not checked,,FALSE,32
 373,sign_a06311cd33304101,video_58715f77d1623d9b,1,7,Daily activities,373,32,Gym,Gym,Candidate URL from original SignStation naming pattern; not checked,,FALSE,32
 374,sign_17ab778e851c4b94,video_ed14be913b4f5be9,1,7,Daily activities,374,32,Exercise,Exercise,Candidate URL from original SignStation naming pattern; not checked,,FALSE,32
-375,sign_7f85e4943871807c,video_dc304ed7abf948b0,1,7,Daily activities,375,32,Have a meal,Have a meal,Candidate URL from original SignStation naming pattern; not checked,,FALSE,32
-376,sign_d252ca27b9138909,video_e13433f0f5edd1e3,1,7,Daily activities,376,32,Listen to music,Listen to music,Candidate URL from original SignStation naming pattern; not checked,,FALSE,32
-377,sign_6e37c53c799c60ed,video_095d191153335b29,1,7,Daily activities,377,32,Look on internet,Look on internet,Candidate URL from original SignStation naming pattern; not checked,,FALSE,32
+375,sign_7f85e4943871807c,,1,7,Daily activities,375,32,Have a meal,Have a meal,Candidate URL from original SignStation naming pattern; not checked,,FALSE,32
+376,sign_d252ca27b9138909,,1,7,Daily activities,376,32,Listen to music,Listen to music,Candidate URL from original SignStation naming pattern; not checked,,FALSE,32
+377,sign_00a38d38ef3d54e1,video_161a5418fa7cbe92,1,7,Daily activities,377,32,Internet,Look on internet,Candidate URL from original SignStation naming pattern; not checked,,FALSE,32
 378,sign_6e06c23c5d793531,video_d17aae7f535f7f98,1,7,Daily activities,378,32,Meet,Meet,Candidate URL from original SignStation naming pattern; not checked,,FALSE,32
 379,sign_a85f7acb31cda623,video_26731945d141391d,1,7,Daily activities,379,32,Movies,Movies,Candidate URL from original SignStation naming pattern; not checked,,FALSE,32
 380,sign_1b17f2b56da19129,video_1cb012ef7d586d4f,1,7,Daily activities,380,32,Pub,Pub,Candidate URL from original SignStation naming pattern; not checked,,FALSE,32
@@ -382,9 +382,9 @@ entry_id,sign_id,selected_video_id,level,lesson,category,global_order,source_pag
 383,sign_4eae0657c7c140f1,video_71369172396a4397,1,7,Daily activities,383,32,Supermarket,Supermarket,Candidate URL from original SignStation naming pattern; not checked,,FALSE,32
 384,sign_9d06e282ba429693,video_83833aeb710cd942,1,7,Daily activities,384,32,TV,TV,Candidate URL from original SignStation naming pattern; not checked,,FALSE,32
 385,sign_a359f4f3082b586a,video_e743a7075f3ef728,1,7,Daily activities,385,32,Walk,Walk,Candidate URL from original SignStation naming pattern; not checked,,FALSE,32
-386,sign_a62fd6bb44bfe1d6,video_121aa5d29cb0a155,1,7,Daily activities,386,32,Walk dog,Walk dog,Candidate URL from original SignStation naming pattern; not checked,,FALSE,32
+386,sign_a62fd6bb44bfe1d6,,1,7,Daily activities,386,32,Walk dog,Walk dog,Candidate URL from original SignStation naming pattern; not checked,,FALSE,32
 387,sign_b3ad981fdd8f981a,video_4c241b2996cef931,1,7,Daily activities,387,32,Visit,Visit,Candidate URL from original SignStation naming pattern; not checked,,FALSE,32
-388,sign_6c9ed7ebd82e812d,video_c061dc3809212663,1,7,Daily activities,388,32,Hours,Hours,Candidate URL from original SignStation naming pattern; not checked,,FALSE,32
+388,sign_3fd76c32c6eb13a6,video_1e009f719cd092be,1,7,Daily activities,388,32,Hour,Hours,Candidate URL from original SignStation naming pattern; not checked,,FALSE,32
 389,sign_fa1a8d223e00d5f1,video_bc04db40e42dfffd,1,7,Roleplay vocabulary,389,33,Manchester,Manchester,Candidate URL from original SignStation naming pattern; not checked,,FALSE,33
 390,sign_1b17f2b56da19129,video_1cb012ef7d586d4f,1,7,Roleplay vocabulary,390,33,Pub,Pub,Candidate URL from original SignStation naming pattern; not checked,,FALSE,33
 391,sign_52ab6ad57bb44332,video_20005bbe78399283,1,7,Roleplay vocabulary,391,33,Roundabout,Roundabout,Candidate URL from original SignStation naming pattern; not checked,,FALSE,33
@@ -484,7 +484,7 @@ entry_id,sign_id,selected_video_id,level,lesson,category,global_order,source_pag
 485,sign_4ab4b0bf4674279f,video_9bcf9746b339ec49,1,9,Descriptions,485,38,Tall,Tall,Candidate URL from original SignStation naming pattern; not checked,,FALSE,38
 486,sign_fe89bc5c507b2a18,video_7670e74b7eb7e29d,1,9,Descriptions,486,38,Ugly,Ugly,Candidate URL from original SignStation naming pattern; not checked,,FALSE,38
 487,sign_fa009dde22521084,video_9e026dd4a907456c,1,9,Descriptions,487,38,Young,Young,Candidate URL from original SignStation naming pattern; not checked,,FALSE,38
-488,sign_105b0baca1154d17,video_c862d6d32d0d873a,1,9,Descriptions,488,38,Like what?,Like what?,Candidate URL from original SignStation naming pattern; not checked,,FALSE,38
+488,sign_105b0baca1154d17,,1,9,Descriptions,488,38,Like what?,Like what?,Candidate URL from original SignStation naming pattern; not checked,,FALSE,38
 489,sign_9151e624f442bbad,video_6659cc44dbbd1a49,1,9,Clothes,489,40,T-shirt,T-shirt,Candidate URL from original SignStation naming pattern; not checked,,FALSE,40
 490,sign_ca5baadeac264714,video_39f86d3adebb8b4a,1,9,Clothes,490,40,Shirt,Shirt,Candidate URL from original SignStation naming pattern; not checked,,FALSE,40
 491,sign_94b82493b637e3c8,video_c91eb99884543ccb,1,9,Clothes,491,40,Scarf,Scarf,Candidate URL from original SignStation naming pattern; not checked,,FALSE,40
@@ -524,7 +524,7 @@ entry_id,sign_id,selected_video_id,level,lesson,category,global_order,source_pag
 525,sign_055d215aa2e6988b,video_e69e6e8a27e5875b,1,9,Script vocabulary,525,41,Book,Book,Candidate URL from original SignStation naming pattern; not checked,,FALSE,41
 526,sign_de7b1ceeac166dfa,video_98eece4ce3853598,1,9,Script vocabulary,526,41,Dog,Dog,Candidate URL from original SignStation naming pattern; not checked,,FALSE,41
 527,sign_389320a29b00f38a,video_b2997f482948c908,1,9,Script vocabulary,527,41,Cat,Cat,Candidate URL from original SignStation naming pattern; not checked,,FALSE,41
-528,sign_2a7beb113cef3538,video_da1ae56a93fca0a7,1,10,Animals recap,528,42,Pets,Pets,Candidate URL from original SignStation naming pattern; not checked,,FALSE,42
+528,sign_ce79c057551dbb03,video_d23d8fb8769984bc,1,10,Animals recap,528,42,Pet,Pets,Candidate URL from original SignStation naming pattern; not checked,,FALSE,42
 529,sign_6f9703ea6f6457a4,video_b36a8c84ab6e8a57,1,10,Animals recap,529,42,Animal,Animal,Candidate URL from original SignStation naming pattern; not checked,,FALSE,42
 530,sign_dfe6347cf4ddafd7,video_86fa1fa05c496edf,1,10,Animals recap,530,42,Bird,Bird,Candidate URL from original SignStation naming pattern; not checked,,FALSE,42
 531,sign_389320a29b00f38a,video_b2997f482948c908,1,10,Animals recap,531,42,Cat,Cat,Candidate URL from original SignStation naming pattern; not checked,,FALSE,42
@@ -906,7 +906,7 @@ entry_id,sign_id,selected_video_id,level,lesson,category,global_order,source_pag
 907,sign_282d683eac12d63d,video_d7ccf09bf1de75e6,2,,Education,907,7,Secondary,p7: Secondary,,Work Life,FALSE,7
 908,sign_ab4038fd2fa5a231,video_35905b9e4b99bad1,2,,Education,908,7,College,p7: College,,Work Life,FALSE,7
 909,sign_5c438194fe367775,video_0d1a64378ffc9e8f,2,,Education,909,7,University,p7: University,,Work Life,FALSE,7
-910,sign_6c9ed7ebd82e812d,video_c061dc3809212663,2,,Everyday work,910,7,Hours,p7: Hours,,Work Life,FALSE,7
+910,sign_3fd76c32c6eb13a6,video_1e009f719cd092be,2,,Everyday work,910,7,Hour,p7: Hours,,Work Life,FALSE,7
 911,sign_13332a42fca866a9,video_43dfd133483e7a86,2,,Everyday work,911,7,Stay,p7: Stay,,Work Life,FALSE,7
 912,sign_d48c9fb3e9b77ba4,video_20b45bf61102198f,2,,Everyday work,912,7,Teaching,p7: Teaching,,Work Life,FALSE,7
 913,sign_f13abd68c8657fbb,video_853b9cccaef5d335,2,,Everyday work,913,7,Difficult,p7: Difficult,,Work Life,FALSE,7
@@ -1351,7 +1351,7 @@ entry_id,sign_id,selected_video_id,level,lesson,category,global_order,source_pag
 1352,sign_4efdc3109eb74472,video_ee8451b223ddda93,2,,Time and frequency,1352,62,Friday,p62: Friday -FF,,Home Life,FALSE,62
 1353,sign_e2bdbbb929613eb1,video_bce7554c281a31f7,2,,Time and frequency,1353,62,Saturday,p62: Saturday,,Home Life,FALSE,62
 1354,sign_48a24f3e651dad36,video_ec9fbddef8bf3c5d,2,,Time and frequency,1354,62,Sunday,p62: Sunday,,Home Life,FALSE,62
-1355,sign_2a7beb113cef3538,video_da1ae56a93fca0a7,2,,Pets and animals,1355,41,Pets,p41: Pets,,Home Life,FALSE,41
+1355,sign_ce79c057551dbb03,video_d23d8fb8769984bc,2,,Pets and animals,1355,41,Pet,p41: Pets,,Home Life,FALSE,41
 1356,sign_389320a29b00f38a,video_b2997f482948c908,2,,Pets and animals,1356,41,Cat,p41: Cat | p62: Cat,,Home Life,FALSE,41; 62
 1357,sign_de7b1ceeac166dfa,video_98eece4ce3853598,2,,Pets and animals,1357,41,Dog,p41: Dog | p62: Dog,,Home Life,FALSE,41; 62
 1358,sign_ba168696e351c76f,video_62c8c413efb58268,2,,Pets and animals,1358,41,Gold Fish,p41: Gold Fish,,Home Life,FALSE,41
@@ -1419,7 +1419,7 @@ entry_id,sign_id,selected_video_id,level,lesson,category,global_order,source_pag
 1420,sign_20e90ad5518d2e7a,,2,,Daily routine and chores,1420,42,Shave,p42: Shave,,Home Life,FALSE,42
 1421,sign_3e8f9dfc2b1d79cc,video_6e32082f015fe7ad,2,,Daily routine and chores,1421,42,Suitcase,p42: Suitcase,,Home Life,FALSE,42
 1422,sign_d434f38a3256b9af,video_42d3a078312cc6dc,2,,Daily routine and chores,1422,42,Wake up,p42: Wake up | p62: Wake up,Recap spelling/wording normalised; original retained in source_text.,Home Life,FALSE,42; 62
-1423,sign_a62fd6bb44bfe1d6,video_121aa5d29cb0a155,2,,Daily routine and chores,1423,42,Walk dog,p42: Walk Dog,,Home Life,FALSE,42
+1423,sign_a62fd6bb44bfe1d6,,2,,Daily routine and chores,1423,42,Walk dog,p42: Walk Dog,,Home Life,FALSE,42
 1424,sign_13edc256d3c1fba9,video_5c9a1bb15b83b3d2,2,,Daily routine and chores,1424,62,Shower,p62: Have a shower,Recap spelling/wording normalised; original retained in source_text.,Home Life,FALSE,62
 1425,sign_573097af663f999a,,2,,Numbers,1425,62,Numbers 1-19 plus regionals,p62: Numbers 1-19 plus regionals,Range label retained without creating numeric or regional variants.,Home Life,FALSE,62
 1426,sign_479725e2130bd577,video_b3082fdffe8c0525,2,,Countries,1426,45,America,p45: America | p62: America,,Travel and Holidays,FALSE,45; 62
@@ -1502,7 +1502,7 @@ entry_id,sign_id,selected_video_id,level,lesson,category,global_order,source_pag
 1503,sign_7b6b131f866b6f74,video_cc25adcf07c8d131,2,,Travel and planning,1503,46,Flight,p46: Flight,,Travel and Holidays,FALSE,46
 1504,sign_4e9019a3734aca89,video_878239d7c5738404,2,,Travel and planning,1504,46,How Far,p46: How Far,,Travel and Holidays,FALSE,46
 1505,sign_d0e1f44e1f0cf9c5,video_c197458954a440d9,2,,Travel and planning,1505,46,Injections,p46: Injections,,Travel and Holidays,FALSE,46
-1506,sign_105b0baca1154d17,video_c862d6d32d0d873a,2,,Travel and planning,1506,46,Like what?,p46: Like what? | p62: Like what,Recap spelling/wording normalised; original retained in source_text.,Travel and Holidays,FALSE,46; 62
+1506,sign_105b0baca1154d17,,2,,Travel and planning,1506,46,Like what?,p46: Like what? | p62: Like what,Recap spelling/wording normalised; original retained in source_text.,Travel and Holidays,FALSE,46; 62
 1507,sign_1b21740b9c63f8a8,video_94fc4d9e2a0c2896,2,,Travel and planning,1507,46,Local,p46: Local,,Travel and Holidays,FALSE,46
 1508,sign_169db00e6ed59fac,video_001d729a27e66ba8,2,,Travel and planning,1508,46,Lost,p46: Lost,,Travel and Holidays,FALSE,46
 1509,sign_ee7cecbe512e118b,video_9ad4908e6815a3f7,2,,Travel and planning,1509,46,Lost Contact,p46: Lost Contact,,Travel and Holidays,FALSE,46

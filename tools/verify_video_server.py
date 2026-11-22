@@ -120,8 +120,80 @@ class Handler(SimpleHTTPRequestHandler):
                 word = ' '.join(str(body.get('word', '')).split())
                 if not word or len(word) > 100:
                     raise ValueError('Enter a corrected word of 1 to 100 characters.')
-                if any(s['sign_id'] != sign['sign_id'] and s['word'] == word and s['meaning'] == sign['meaning'] for s in signs):
-                    raise ValueError('That correction duplicates another sign with the same meaning.')
+                duplicate = next((s for s in signs if s['sign_id'] != sign['sign_id']
+                                  and s['word'].strip().casefold() == word.casefold()
+                                  and s['meaning'] == sign['meaning']), None)
+                if duplicate:
+                    if body.get('merge') is not True:
+                        raise ValueError(f'“{word}” already exists. Confirm whether to merge this sign with the existing entry.')
+
+                    source_id, target_id = sign['sign_id'], duplicate['sign_id']
+                    source_entries = [e for e in entries if e['sign_id'] == source_id]
+                    target_entries = [e for e in entries if e['sign_id'] == target_id]
+                    sequences, sequence_encoding, sequence_newline = read_master('video_sequences')
+                    source_clips = [clip for clip in sequences if clip['sign_id'] == source_id]
+                    target_clips = [clip for clip in sequences if clip['sign_id'] == target_id]
+                    source_urls = [c['url'] for c in sorted(source_clips, key=lambda c: int(c['position']))]
+                    target_urls = [c['url'] for c in sorted(target_clips, key=lambda c: int(c['position']))]
+                    if source_urls and target_urls and source_urls != target_urls:
+                        raise ValueError('These entries have different video sequences. Resolve the sequences before merging the words.')
+
+                    target_video_ids = {e['selected_video_id'] for e in target_entries if e['selected_video_id']}
+                    target_video = next((v for v in videos if v['video_id'] in target_video_ids
+                                         and v['verification_status'] == 'Verified'), None)
+                    if not target_video:
+                        target_video = next((v for v in videos if v['video_id'] in target_video_ids), None)
+
+                    source_videos = [v for v in videos if v['sign_id'] == source_id]
+                    target_urls_existing = {v['url']: v for v in videos if v['sign_id'] == target_id}
+                    source_video_map = {}
+                    next_priority = max((int(v['priority']) for v in videos if v['sign_id'] == target_id), default=0)
+                    for candidate in source_videos:
+                        existing = target_urls_existing.get(candidate['url'])
+                        if existing:
+                            source_video_map[candidate['video_id']] = existing['video_id']
+                            continue
+                        next_priority += 1
+                        candidate['sign_id'] = target_id
+                        candidate['priority'] = str(next_priority)
+                        target_urls_existing[candidate['url']] = candidate
+                        source_video_map[candidate['video_id']] = candidate['video_id']
+                    videos = [v for v in videos if v['sign_id'] != source_id]
+
+                    for occurrence in source_entries:
+                        old_video_id = occurrence['selected_video_id']
+                        occurrence['sign_id'] = target_id
+                        occurrence['word'] = duplicate['word']
+                        if target_video:
+                            occurrence['selected_video_id'] = target_video['video_id']
+                        elif old_video_id:
+                            occurrence['selected_video_id'] = source_video_map.get(old_video_id, old_video_id)
+
+                    if source_clips:
+                        sequences = [c for c in sequences if c['sign_id'] != source_id]
+                        if not target_clips:
+                            sequences.extend({'sign_id': target_id, 'position': clip['position'], 'url': clip['url']}
+                                             for clip in source_clips)
+                    signs = [s for s in signs if s['sign_id'] != source_id]
+                    missing, missing_encoding, missing_newline = read_master('missing_videos')
+                    missing = [row for row in missing if row['sign_id'] != source_id]
+                    if target_video or target_clips or any(e['selected_video_id'] for e in target_entries + source_entries):
+                        missing = [row for row in missing if row['sign_id'] != target_id]
+
+                    validation_data = generate_data.load()
+                    validation_data.update(signs=signs, videos=videos, lesson_vocabulary=entries,
+                                           video_sequences=sequences, missing_videos=missing)
+                    generate_data.validate(validation_data)
+                    write_master('signs', signs, sign_encoding, sign_newline)
+                    write_master('videos', videos, video_encoding, video_newline)
+                    write_master('lesson_vocabulary', entries, entry_encoding, entry_newline)
+                    write_master('video_sequences', sequences, sequence_encoding, sequence_newline)
+                    write_master('missing_videos', missing, missing_encoding, missing_newline)
+                    data = generated_data()
+                    return self.respond(200, {
+                        'message': f'Merged {len(source_entries)} entries from “{sign["word"]}” into “{duplicate["word"]}”. Existing video candidates were retained.',
+                        'data': data,
+                    })
 
                 sign['word'] = word
                 affected = [e for e in entries if e['sign_id'] == sign['sign_id']]

@@ -297,7 +297,24 @@
         return;
       }
       try {
-        await request('/api/word', {entry_id: entry.entry_id, word});
+        const sourceSign = data.signs.find(sign => sign.sign_id === entry.sign_id);
+        const duplicate = data.signs.find(sign => sign.sign_id !== entry.sign_id
+          && sign.word.trim().toLocaleLowerCase() === word.toLocaleLowerCase()
+          && sign.meaning === sourceSign?.meaning);
+        let merge = false;
+        if (duplicate) {
+          const duplicateEntries = data.lesson_vocabulary.filter(row => row.sign_id === duplicate.sign_id);
+          const assignedVideo = duplicateEntries.map(row => data.videos.find(video => video.video_id === row.selected_video_id))
+            .find(video => video?.verification_status === 'Verified');
+          const videoNote = assignedVideo
+            ? ` The existing verified video will be used; the current video will remain as an alternate candidate.`
+            : ` Existing video candidates and any compatible sequence will be kept.`;
+          merge = window.confirm(
+            `“${word}” already exists. Merge ${duplicateEntries.length} “${entry.word}” lesson ${duplicateEntries.length === 1 ? 'entry' : 'entries'} into “${duplicate.word}”?${videoNote}\n\nPress OK to merge and remove the duplicate word record. Press Cancel to leave both versions unchanged.`
+          );
+          if (!merge) return;
+        }
+        await request('/api/word', {entry_id: entry.entry_id, word, merge});
         onDone?.();
       } catch (error) {
         status(error.message, 'error');
