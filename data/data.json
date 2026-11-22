@@ -1407,7 +1407,7 @@
     },
     {
       "sign_id": "sign_3178ac357e50d095",
-      "word": "Great Britain",
+      "word": "Britain",
       "meaning": ""
     },
     {
@@ -9777,7 +9777,7 @@
       "video_id": "video_3178ac357e50d095",
       "sign_id": "sign_3178ac357e50d095",
       "source": "Suggested SignStation URL; unverified",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/GreatBritain.mp4",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/101-06-1001.mp4",
       "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
@@ -55653,24 +55653,8 @@
       "category": "UK",
       "global_order": "2285",
       "source_page": "1",
-      "word": "Great Britain",
+      "word": "Britain",
       "source_text": "Great Britain",
-      "notes": "Suggested URL; verify in Video Verifier.",
-      "topic": "UK Cities",
-      "nmf": "FALSE",
-      "source_pages": "1"
-    },
-    {
-      "entry_id": "2230",
-      "sign_id": "sign_2dac6ddefe3b1453",
-      "selected_video_id": "video_2b6fcc61214a5f77",
-      "level": "4",
-      "lesson": "",
-      "category": "UK",
-      "global_order": "2286",
-      "source_page": "1",
-      "word": "Ireland",
-      "source_text": "Ireland",
       "notes": "Suggested URL; verify in Video Verifier.",
       "topic": "UK Cities",
       "nmf": "FALSE",

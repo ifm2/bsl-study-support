@@ -2224,8 +2224,7 @@ entry_id,sign_id,selected_video_id,level,lesson,category,global_order,source_pag
 2226,sign_8f15764312220a1e,video_e4d0a56d76bed5c8,4,,World Geography,2282,1,Wales,Wales,Suggested URL; verify in Video Verifier.,World Geography,FALSE,1
 2227,sign_ec0b4bd2d769573d,video_ec0b4bd2d769573d,4,,UK,2283,1,British,British,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
 2228,sign_78a5daaff610ffe2,video_4a80270ce5993dcb,4,,UK,2284,1,England,England,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
-2229,sign_3178ac357e50d095,video_3178ac357e50d095,4,,UK,2285,1,Great Britain,Great Britain,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
-2230,sign_2dac6ddefe3b1453,video_2b6fcc61214a5f77,4,,UK,2286,1,Ireland,Ireland,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2229,sign_3178ac357e50d095,video_3178ac357e50d095,4,,UK,2285,1,Britain,Great Britain,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
 2231,sign_6a968e5ec1a57d32,video_6a968e5ec1a57d32,4,,UK,2287,1,Northern Ireland,Northern Ireland,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
 2232,sign_d74f16ac8a82677b,video_1336d65d3236ba6f,4,,UK,2288,1,Scotland,Scotland,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
 2233,sign_9f360f83b854a393,video_9f360f83b854a393,4,,UK,2289,1,UK,UK,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1

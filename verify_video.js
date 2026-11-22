@@ -181,7 +181,7 @@
       onDone?.(result);
       return result;
     }
-    const saveButton = button('Save URL', async () => {
+    const saveButton = button('Save & Verify', async () => {
       try {
         await saveUrl();
       } catch (error) {
