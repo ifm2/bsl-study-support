@@ -81,11 +81,12 @@ updateLastUpdate();
 const lessonsByLevel = {
  1:['Alphabet','Greetings','Numbers & Everyday Living','Weather & Feelings','Days & Months','Sentence Structure & Gesturing','Pets, Colours & Placement','Transport & Directions','Family','Descriptions & Clothes','Recap','Food & Drink','Home & Hobbies','People, Animals & Objects','Final Recap & Conversations'],
  2:[...new Set(allVocabulary.filter(r => r.level==='2').map(r => r.topic))],
- 3:['Home Life','Technology','Health and Wellbeing','Consumer Issues','Social Recreation','Education and Training','Employment','Deaf History']
+ 3:['Home Life','Technology','Health and Wellbeing','Consumer Issues','Social Recreation','Education and Training','Employment','Deaf History'],
+ 4:[...new Set(allVocabulary.filter(r => r.level==='4').map(r => r.topic))]
 };
 const level3LessonEmoji=['🏠','💻','🏥','🛒','🎭','🎓','💼','🤟'];
 const lessonEmoji = ['👋','🔢','🌦️','📅','💬','🐾','🚌','👨‍👩‍👧‍👦','👕','🔄','🍽️','🏠','🧑‍🤝‍🧑','🎓'];
-const topicEmoji = {'Work Life':'💼','The Home':'🏠','Education':'🎓','People and Personalities':'👥','Hobbies and Activities':'🎨','Health and Fitness':'💪','Home Life':'🧺','Travel and Holidays':'✈️','Food and Drink':'🍽️'};
+const topicEmoji = {'Work Life':'💼','The Home':'🏠','Education':'🎓','People and Personalities':'👥','Hobbies and Activities':'🎨','Health and Fitness':'💪','Home Life':'🧺','Travel and Holidays':'✈️','Food and Drink':'🍽️','UK Cities':'🏙️','World Geography':'🌍'};
 let currentLevel=1, currentLesson=1, vocabulary=[], categories=[];
 let studyMode='dictionary', playbackMode='flashcard';
 let practiceCategory='', practiceRows=null, practiceIndex=0, answerRevealed=false;
@@ -170,9 +171,9 @@ function stopPlayers(scope=content) {
  scope.querySelectorAll('video').forEach(v => {v.pause();v.removeAttribute('src');v.replaceChildren();v.load();});
 }
 function resetPractice() {practiceRows=null;practiceIndex=0;answerRevealed=false;practiceChoiceResult=null;ratings.clear();}
-function groupKey(row) {return row.level==='2' ? row.topic : Number(row.lesson);}
+function groupKey(row) {return ['2','4'].includes(row.level) ? row.topic : Number(row.lesson);}
 function groupName(level,key) {
- if(level===2)return key;
+ if(level===2 || level===4)return key;
  const lessonIndex=level===1 ? Number(key) : Number(key)-1;
  const emoji=level===3 ? `${level3LessonEmoji[lessonIndex]} ` : '';
  return `Lesson ${key}: ${emoji}${lessonsByLevel[level][lessonIndex]}`;
@@ -185,7 +186,7 @@ function shuffleRows(rows) {
 }
 function populateMasterQuizTopics() {
  const container=$('master-quiz-topics');container.replaceChildren();
- for(const level of [1,2,3]) {
+ for(const level of [1,2,3,4]) {
   const fieldset=element('fieldset','master-level');
   fieldset.append(element('legend','',`Level ${level}`));
   const actions=element('div','master-level-actions');
@@ -193,13 +194,13 @@ function populateMasterQuizTopics() {
   const clear=element('button','','Clear');clear.type='button';
   actions.append(selectAll,clear);fieldset.append(actions);
   lessonsByLevel[level].forEach((name,index)=>{
-   const key=level===2 ? name : String(level===1 ? index : index+1);
+   const key=[2,4].includes(level) ? name : String(level===1 ? index : index+1);
    const matching=allVocabulary.filter(row=>row.level===String(level) && String(groupKey(row))===String(key));
    if(!matching.length)return;
    const playable=new Set(matching.filter(canPractice).map(row=>row.sign_id)).size;
    const label=element('label','master-topic');
    const checkbox=document.createElement('input');checkbox.type='checkbox';checkbox.value=`${level}|${key}`;
-   label.append(checkbox,element('span','',`${level===2 ? name : groupName(level,key)} `),element('small','',`(${playable} signs)`));
+   label.append(checkbox,element('span','',`${[2,4].includes(level) ? name : groupName(level,key)} `),element('small','',`(${playable} signs)`));
    fieldset.append(label);
   });
   selectAll.addEventListener('click',()=>fieldset.querySelectorAll('.master-topic input').forEach(input=>{input.checked=true;}));
@@ -211,16 +212,16 @@ function chooseLevel(level) {
  currentLevel=level; $('level-nav').value=String(level); $('lesson-nav').replaceChildren();
  lessonsByLevel[level].forEach((name,i) => {
   const lessonNumber=level===1 ? i : i+1;
-  const prefix=level===2 ? `${topicEmoji[name] || '📚'}  ` : level===1 ? (i===0 ? '🔤  ' : `${lessonEmoji[i-1]}  `) : `${level3LessonEmoji[i]}  `;
-  const option=element('option','',level===2 ? `${prefix}${name}` : `${prefix}Lesson ${lessonNumber}: ${name}`);
-  option.value=level===2 ? name : String(lessonNumber); $('lesson-nav').append(option);
+  const prefix=[2,4].includes(level) ? `${topicEmoji[name] || '📚'}  ` : level===1 ? (i===0 ? '🔤  ' : `${lessonEmoji[i-1]}  `) : `${level3LessonEmoji[i]}  `;
+  const option=element('option','',[2,4].includes(level) ? `${prefix}${name}` : `${prefix}Lesson ${lessonNumber}: ${name}`);
+  option.value=[2,4].includes(level) ? name : String(lessonNumber); $('lesson-nav').append(option);
  });
  const levelCounts=videoCounts(allVocabulary.filter(row=>Number(row.level)===level));
- const groupLabel=level===2?'Topics':'Lessons';
+ const groupLabel=[2,4].includes(level)?'Topics':'Lessons';
  $('level-summary').textContent=`Level ${level} · Vocabulary Library · ${lessonsByLevel[level].length} ${groupLabel} · ${countSummary(levelCounts)}`;
- document.querySelector('label[for="lesson-nav"]').textContent=level===2 ? 'Choose topic' : 'Choose lesson';
- $('lesson-nav').setAttribute('aria-label',level===2 ? 'Choose topic' : 'Choose lesson');
- chooseLesson(level===1 ? 0 : level===2 ? lessonsByLevel[2][0] : 1);
+ document.querySelector('label[for="lesson-nav"]').textContent=[2,4].includes(level) ? 'Choose topic' : 'Choose lesson';
+ $('lesson-nav').setAttribute('aria-label',[2,4].includes(level) ? 'Choose topic' : 'Choose lesson');
+ chooseLesson(level===1 ? 0 : [2,4].includes(level) ? lessonsByLevel[level][0] : 1);
 }
 function chooseLesson(lesson) {
  currentLesson=lesson;
@@ -230,9 +231,18 @@ function chooseLesson(lesson) {
   const lessonZeroOrder={'Vocabulary':0,'Right Handed':1,'Left Handed':2};
   categories.sort((a,b)=>(lessonZeroOrder[a]??99)-(lessonZeroOrder[b]??99));
  }
+ if(currentLevel===4 && currentLesson==='UK Cities') {
+  const citySectionOrder={'Areas':0,'UK':1,'Cities':2};
+  categories.sort((a,b)=>(citySectionOrder[a]??99)-(citySectionOrder[b]??99));
+ }
  $('lesson-nav').value=String(lesson);
  $('lesson-title').textContent=groupName(currentLevel,lesson);
- $('lesson-description').textContent=currentLevel===1 && currentLesson===0 ? 'Vocabulary comes first, followed by Right Handed and Left Handed alphabet sections.' : currentLevel===2 ? 'Vocabulary grouped by topic. Entries awaiting video remain available in Dictionary.' : currentLevel===3 ? 'Full course vocabulary, grouped into lessons. Suggested videos are unverified.' : '';
+ const description=$('lesson-description');
+ if(currentLevel===4 && currentLesson==='UK Cities') {
+  description.replaceChildren(document.createTextNode('Many cities have signs that relate to a historical features. Signs vary regionally; check with your local Deaf community. Formal settings favour using fingerspelling or initialised versions for places. See more place-name guidance from '));
+  const sourceLink=element('a','','Commanding Hands');sourceLink.href='https://commandinghands.co.uk/online-bsl-course/core-vocabulary/places-in-the-uk/';sourceLink.target='_blank';sourceLink.rel='noopener noreferrer';
+  description.append(sourceLink,document.createTextNode('.'));
+ } else description.textContent=currentLevel===1 && currentLesson===0 ? 'Vocabulary comes first, followed by Right Handed and Left Handed alphabet sections.' : currentLevel===2 ? 'Vocabulary grouped by topic. Entries awaiting video remain available in Dictionary.' : currentLevel===3 ? 'Full course vocabulary, grouped into lessons. Suggested videos are unverified.' : '';
  $('search').value=''; practiceCategory=''; resetPractice(); render();
 }
 function setStudyMode(mode) {
@@ -245,7 +255,7 @@ function setStudyMode(mode) {
  if(studyMode==='master-quiz')resetMasterQuiz();
  if(mode==='practice') {
   currentLevel=Number($('level-nav').value);
-  currentLesson=currentLevel===2 ? $('lesson-nav').value : Number($('lesson-nav').value);
+  currentLesson=[2,4].includes(currentLevel) ? $('lesson-nav').value : Number($('lesson-nav').value);
   practiceCategory='';
   $('search').value='';
   resetPractice();

@@ -86,6 +86,11 @@ window.BSL_DATA = {
       "meaning": ""
     },
     {
+      "sign_id": "sign_02be3bb513bf2026",
+      "word": "Gloucester",
+      "meaning": ""
+    },
+    {
       "sign_id": "sign_02c3422932f96024",
       "word": "Career",
       "meaning": "Career"
@@ -118,6 +123,11 @@ window.BSL_DATA = {
     {
       "sign_id": "sign_040b2e4ad3cb9cb9",
       "word": "Knock",
+      "meaning": ""
+    },
+    {
+      "sign_id": "sign_0415d6bef7d273ef",
+      "word": "East",
       "meaning": ""
     },
     {
@@ -171,6 +181,11 @@ window.BSL_DATA = {
       "meaning": "Behaviour"
     },
     {
+      "sign_id": "sign_059202e063c790d8",
+      "word": "Country",
+      "meaning": ""
+    },
+    {
       "sign_id": "sign_05e52040c255e1fc",
       "word": "Orange",
       "meaning": "colour"
@@ -214,6 +229,11 @@ window.BSL_DATA = {
       "sign_id": "sign_075a12b4404420ae",
       "word": "Gossip",
       "meaning": "Gossip"
+    },
+    {
+      "sign_id": "sign_076711fec704bb81",
+      "word": "Village",
+      "meaning": ""
     },
     {
       "sign_id": "sign_07d0de61cfe95bc8",
@@ -501,6 +521,11 @@ window.BSL_DATA = {
       "meaning": ""
     },
     {
+      "sign_id": "sign_13bebe539f440c5f",
+      "word": "Antarctica",
+      "meaning": ""
+    },
+    {
       "sign_id": "sign_13c4669f5144107b",
       "word": "Climb",
       "meaning": ""
@@ -646,6 +671,11 @@ window.BSL_DATA = {
       "meaning": ""
     },
     {
+      "sign_id": "sign_1864e72e7aa702cb",
+      "word": "Newcastle",
+      "meaning": ""
+    },
+    {
       "sign_id": "sign_18b0f0a5cbbb745a",
       "word": "Call Centre",
       "meaning": "Call Centre"
@@ -668,6 +698,11 @@ window.BSL_DATA = {
     {
       "sign_id": "sign_192e73575b72a0b4",
       "word": "Mum",
+      "meaning": ""
+    },
+    {
+      "sign_id": "sign_194bca046ff95986",
+      "word": "Chester",
       "meaning": ""
     },
     {
@@ -1371,6 +1406,11 @@ window.BSL_DATA = {
       "meaning": "Responsibility"
     },
     {
+      "sign_id": "sign_3178ac357e50d095",
+      "word": "Great Britain",
+      "meaning": ""
+    },
+    {
       "sign_id": "sign_317f11c3a6a5132b",
       "word": "Police",
       "meaning": ""
@@ -1433,6 +1473,11 @@ window.BSL_DATA = {
     {
       "sign_id": "sign_33458b5ec826e9de",
       "word": "Oat",
+      "meaning": ""
+    },
+    {
+      "sign_id": "sign_3364c1476fe30552",
+      "word": "Dundee",
       "meaning": ""
     },
     {
@@ -1736,6 +1781,11 @@ window.BSL_DATA = {
       "meaning": ""
     },
     {
+      "sign_id": "sign_3cfabbda8d193147",
+      "word": "Dublin",
+      "meaning": ""
+    },
+    {
       "sign_id": "sign_3d7826da49b3e359",
       "word": "McDonalds",
       "meaning": ""
@@ -1823,6 +1873,11 @@ window.BSL_DATA = {
     {
       "sign_id": "sign_412f5c4c7e924ed5",
       "word": "Where you from",
+      "meaning": ""
+    },
+    {
+      "sign_id": "sign_41423e81c7092492",
+      "word": "Cork",
       "meaning": ""
     },
     {
@@ -2091,6 +2146,11 @@ window.BSL_DATA = {
       "meaning": ""
     },
     {
+      "sign_id": "sign_4b95bd27f9598d75",
+      "word": "North America",
+      "meaning": ""
+    },
+    {
       "sign_id": "sign_4bc8999c081028ba",
       "word": "111",
       "meaning": "111"
@@ -2113,6 +2173,11 @@ window.BSL_DATA = {
     {
       "sign_id": "sign_4c273ba706e274ea",
       "word": "Child",
+      "meaning": ""
+    },
+    {
+      "sign_id": "sign_4c273d5d1edabaca",
+      "word": "Africa",
       "meaning": ""
     },
     {
@@ -2203,6 +2268,11 @@ window.BSL_DATA = {
     {
       "sign_id": "sign_4ec7f56007704ce8",
       "word": "Club",
+      "meaning": ""
+    },
+    {
+      "sign_id": "sign_4ee64e7502d3c788",
+      "word": "City",
       "meaning": ""
     },
     {
@@ -2361,6 +2431,11 @@ window.BSL_DATA = {
       "meaning": ""
     },
     {
+      "sign_id": "sign_5595159ac6bfc5cf",
+      "word": "Asia",
+      "meaning": ""
+    },
+    {
       "sign_id": "sign_55a3af0490f273e2",
       "word": "Black",
       "meaning": ""
@@ -2403,6 +2478,11 @@ window.BSL_DATA = {
     {
       "sign_id": "sign_574f0ae46946eee0",
       "word": "Lesson",
+      "meaning": ""
+    },
+    {
+      "sign_id": "sign_575331a5bdd6ae43",
+      "word": "North",
       "meaning": ""
     },
     {
@@ -2856,6 +2936,11 @@ window.BSL_DATA = {
       "meaning": ""
     },
     {
+      "sign_id": "sign_6a968e5ec1a57d32",
+      "word": "Northern Ireland",
+      "meaning": ""
+    },
+    {
       "sign_id": "sign_6aa18cd351319f70",
       "word": "Health",
       "meaning": "Health"
@@ -2906,6 +2991,11 @@ window.BSL_DATA = {
       "meaning": ""
     },
     {
+      "sign_id": "sign_6be86dc3b680b00a",
+      "word": "South America",
+      "meaning": ""
+    },
+    {
       "sign_id": "sign_6c055da1ea99d7c7",
       "word": "Approximately",
       "meaning": ""
@@ -2918,6 +3008,11 @@ window.BSL_DATA = {
     {
       "sign_id": "sign_6c496892e0e12680",
       "word": "Cycling",
+      "meaning": ""
+    },
+    {
+      "sign_id": "sign_6c795fbc92cce437",
+      "word": "Middle",
       "meaning": ""
     },
     {
@@ -3211,6 +3306,11 @@ window.BSL_DATA = {
       "meaning": ""
     },
     {
+      "sign_id": "sign_748e66f49140aa41",
+      "word": "Derry",
+      "meaning": ""
+    },
+    {
       "sign_id": "sign_74c72964b1e29685",
       "word": "Holiday",
       "meaning": ""
@@ -3224,6 +3324,11 @@ window.BSL_DATA = {
       "sign_id": "sign_74f96c6f33d149dc",
       "word": "Milk",
       "meaning": ""
+    },
+    {
+      "sign_id": "sign_75143c94671416be",
+      "word": "Turkey (Food)",
+      "meaning": "Food"
     },
     {
       "sign_id": "sign_755a3c94744df619",
@@ -3327,8 +3432,8 @@ window.BSL_DATA = {
     },
     {
       "sign_id": "sign_79246175e9f3a42f",
-      "word": "Turkey",
-      "meaning": ""
+      "word": "Turkey (Country)",
+      "meaning": "Country"
     },
     {
       "sign_id": "sign_796d9ec469e73810",
@@ -3456,6 +3561,11 @@ window.BSL_DATA = {
       "meaning": "Text/sms"
     },
     {
+      "sign_id": "sign_7da6f2be3f462492",
+      "word": "Belfast",
+      "meaning": ""
+    },
+    {
       "sign_id": "sign_7dae894b70f2d190",
       "word": "Orange",
       "meaning": "fruit"
@@ -3533,6 +3643,11 @@ window.BSL_DATA = {
     {
       "sign_id": "sign_7f85e4943871807c",
       "word": "Have a meal",
+      "meaning": ""
+    },
+    {
+      "sign_id": "sign_804363c846ca0694",
+      "word": "South",
       "meaning": ""
     },
     {
@@ -3673,6 +3788,11 @@ window.BSL_DATA = {
     {
       "sign_id": "sign_85ea31109f807bcf",
       "word": "Babysitter",
+      "meaning": ""
+    },
+    {
+      "sign_id": "sign_86224301828e4629",
+      "word": "West",
       "meaning": ""
     },
     {
@@ -3904,6 +4024,11 @@ window.BSL_DATA = {
       "sign_id": "sign_8d7acf4ea7822764",
       "word": "Interviews",
       "meaning": "Interviews"
+    },
+    {
+      "sign_id": "sign_8d98d027d32dbbab",
+      "word": "Coventry",
+      "meaning": ""
     },
     {
       "sign_id": "sign_8daf4d100259b0dc",
@@ -4186,6 +4311,11 @@ window.BSL_DATA = {
       "meaning": ""
     },
     {
+      "sign_id": "sign_99b3bde6e6ba9a5a",
+      "word": "Aberdeen",
+      "meaning": ""
+    },
+    {
       "sign_id": "sign_99e6ee3ae9c1a002",
       "word": "Fish",
       "meaning": ""
@@ -4338,6 +4468,11 @@ window.BSL_DATA = {
     {
       "sign_id": "sign_9f27d29ecf367ee2",
       "word": "Makeup",
+      "meaning": ""
+    },
+    {
+      "sign_id": "sign_9f360f83b854a393",
+      "word": "UK",
       "meaning": ""
     },
     {
@@ -4671,6 +4806,11 @@ window.BSL_DATA = {
       "meaning": ""
     },
     {
+      "sign_id": "sign_ad15bbf88d48cf86",
+      "word": "York",
+      "meaning": ""
+    },
+    {
       "sign_id": "sign_ad3ced3f6bbc5f3c",
       "word": "Water",
       "meaning": ""
@@ -4956,6 +5096,11 @@ window.BSL_DATA = {
       "meaning": "Improve"
     },
     {
+      "sign_id": "sign_b694edf6406a552b",
+      "word": "Norwich",
+      "meaning": ""
+    },
+    {
       "sign_id": "sign_b6a15cd2ca238f37",
       "word": "Revise",
       "meaning": ""
@@ -5231,6 +5376,11 @@ window.BSL_DATA = {
       "meaning": ""
     },
     {
+      "sign_id": "sign_c04e55ecec41804e",
+      "word": "Southampton",
+      "meaning": ""
+    },
+    {
       "sign_id": "sign_c0a6a57281e2bcd3",
       "word": "Online courses/training",
       "meaning": "Online courses/training"
@@ -5381,6 +5531,11 @@ window.BSL_DATA = {
       "meaning": ""
     },
     {
+      "sign_id": "sign_c53d14b09bf07134",
+      "word": "Doncaster",
+      "meaning": ""
+    },
+    {
       "sign_id": "sign_c584052bb08adc6b",
       "word": "Knowledge",
       "meaning": "Knowledge"
@@ -5456,6 +5611,11 @@ window.BSL_DATA = {
       "meaning": ""
     },
     {
+      "sign_id": "sign_c9b26d9e6ecf08bb",
+      "word": "Netherlands",
+      "meaning": ""
+    },
+    {
       "sign_id": "sign_c9b2a08401b74693",
       "word": "Broken",
       "meaning": ""
@@ -5474,6 +5634,11 @@ window.BSL_DATA = {
       "sign_id": "sign_c9f93bd7ce7dc08d",
       "word": "Grief",
       "meaning": "Grief"
+    },
+    {
+      "sign_id": "sign_ca0236902ff43bc7",
+      "word": "Ukraine",
+      "meaning": ""
     },
     {
       "sign_id": "sign_ca04bceafbc2d8ab",
@@ -6041,6 +6206,11 @@ window.BSL_DATA = {
       "meaning": ""
     },
     {
+      "sign_id": "sign_db0ad8178875c930",
+      "word": "Exeter",
+      "meaning": ""
+    },
+    {
       "sign_id": "sign_db0e90a84a5d8930",
       "word": "Lesbian",
       "meaning": ""
@@ -6106,6 +6276,11 @@ window.BSL_DATA = {
       "meaning": "Vibrating pillow pad"
     },
     {
+      "sign_id": "sign_ddcf602fdd8d261d",
+      "word": "Rural",
+      "meaning": ""
+    },
+    {
       "sign_id": "sign_de0270f91688762c",
       "word": "How are you",
       "meaning": ""
@@ -6133,6 +6308,11 @@ window.BSL_DATA = {
     {
       "sign_id": "sign_de5385bbd1904d52",
       "word": "Rug",
+      "meaning": ""
+    },
+    {
+      "sign_id": "sign_de5b95b4adb596c6",
+      "word": "Denmark",
       "meaning": ""
     },
     {
@@ -6381,6 +6561,11 @@ window.BSL_DATA = {
       "meaning": ""
     },
     {
+      "sign_id": "sign_e6534ddab34fce4e",
+      "word": "Canterbury",
+      "meaning": ""
+    },
+    {
       "sign_id": "sign_e6588c7b3f7e1ad4",
       "word": "Lights",
       "meaning": ""
@@ -6418,6 +6603,11 @@ window.BSL_DATA = {
     {
       "sign_id": "sign_e74fa0304ab2b744",
       "word": "Thank you",
+      "meaning": ""
+    },
+    {
+      "sign_id": "sign_e78ebb894aec448d",
+      "word": "Sweden",
       "meaning": ""
     },
     {
@@ -6466,6 +6656,11 @@ window.BSL_DATA = {
       "meaning": ""
     },
     {
+      "sign_id": "sign_ea0dd3f88fedfaa7",
+      "word": "Bradford",
+      "meaning": ""
+    },
+    {
       "sign_id": "sign_eab822b5f31d5c6c",
       "word": "Act",
       "meaning": "Act"
@@ -6499,6 +6694,11 @@ window.BSL_DATA = {
       "sign_id": "sign_ebd87d290e481417",
       "word": "Law",
       "meaning": "Law"
+    },
+    {
+      "sign_id": "sign_ec0b4bd2d769573d",
+      "word": "British",
+      "meaning": ""
     },
     {
       "sign_id": "sign_ec2c9011def3abd3",
@@ -6683,6 +6883,11 @@ window.BSL_DATA = {
     {
       "sign_id": "sign_f1708031c098313f",
       "word": "White Hart",
+      "meaning": ""
+    },
+    {
+      "sign_id": "sign_f19f8ca60d9b2b6b",
+      "word": "Oceania",
       "meaning": ""
     },
     {
@@ -7089,7 +7294,7 @@ window.BSL_DATA = {
       "sign_id": "sign_0067e5586a363787",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/germany",
       "url": "https://media.signbsl.com/videos/bsl/signstation/Germany.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -7220,6 +7425,15 @@ window.BSL_DATA = {
       "problem_report": ""
     },
     {
+      "video_id": "video_02be3bb513bf2026",
+      "sign_id": "sign_02be3bb513bf2026",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/Gloucester.mp4",
+      "verification_status": "Verified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
       "video_id": "video_2cb79063f3bbd079",
       "sign_id": "sign_02c3422932f96024",
       "source": "SignStation filename guess from Level 3 vocabulary",
@@ -7279,6 +7493,15 @@ window.BSL_DATA = {
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/knock",
       "url": "https://media.signbsl.com/videos/bsl/signstation/knock.mp4",
       "verification_status": "Unverified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
+      "video_id": "video_0415d6bef7d273ef",
+      "sign_id": "sign_0415d6bef7d273ef",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/east.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -7373,6 +7596,15 @@ window.BSL_DATA = {
       "problem_report": ""
     },
     {
+      "video_id": "video_059202e063c790d8",
+      "sign_id": "sign_059202e063c790d8",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/country.mp4",
+      "verification_status": "Verified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
       "video_id": "video_6f298684fd4643e5",
       "sign_id": "sign_05e52040c255e1fc",
       "source": "SignStation via SignBSL",
@@ -7450,6 +7682,15 @@ window.BSL_DATA = {
       "source": "SignStation filename guess from Level 3 vocabulary",
       "url": "https://media.signbsl.com/videos/bsl/signstation/gossip.mp4",
       "verification_status": "Unverified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
+      "video_id": "video_076711fec704bb81",
+      "sign_id": "sign_076711fec704bb81",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/village.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -7967,6 +8208,15 @@ window.BSL_DATA = {
       "problem_report": ""
     },
     {
+      "video_id": "video_13bebe539f440c5f",
+      "sign_id": "sign_13bebe539f440c5f",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/wolver/mp4/sci_Antarc_6586.mp4",
+      "verification_status": "Verified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
       "video_id": "video_6fc2bb2a49b20a75",
       "sign_id": "sign_13c4669f5144107b",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/climb",
@@ -8219,6 +8469,15 @@ window.BSL_DATA = {
       "problem_report": ""
     },
     {
+      "video_id": "video_1864e72e7aa702cb",
+      "sign_id": "sign_1864e72e7aa702cb",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/Newcastle.mp4",
+      "verification_status": "Verified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
       "video_id": "video_f26f69adeb3e83a0",
       "sign_id": "sign_18b0f0a5cbbb745a",
       "source": "SignStation filename guess from Level 3 vocabulary",
@@ -8260,6 +8519,15 @@ window.BSL_DATA = {
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/mum.mp4",
       "verification_status": "Verified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
+      "video_id": "video_194bca046ff95986",
+      "sign_id": "sign_194bca046ff95986",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/Chester.mp4",
+      "verification_status": "Unverified",
       "priority": "1",
       "problem_report": ""
     },
@@ -8547,7 +8815,7 @@ window.BSL_DATA = {
       "sign_id": "sign_1d9c2a9192a041c4",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/pork.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -9159,7 +9427,7 @@ window.BSL_DATA = {
       "sign_id": "sign_2a8a497d4227e71d",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/cardiff",
       "url": "https://media.signbsl.com/videos/bsl/signstation/Cardiff.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -9240,7 +9508,7 @@ window.BSL_DATA = {
       "sign_id": "sign_2bb54625382ad3b1",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/pear.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -9321,7 +9589,7 @@ window.BSL_DATA = {
       "sign_id": "sign_2dac6ddefe3b1453",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/ireland",
       "url": "https://media.signbsl.com/videos/bsl/signstation/Ireland.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -9506,6 +9774,15 @@ window.BSL_DATA = {
       "problem_report": ""
     },
     {
+      "video_id": "video_3178ac357e50d095",
+      "sign_id": "sign_3178ac357e50d095",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/GreatBritain.mp4",
+      "verification_status": "Verified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
       "video_id": "video_882c9d21f6a28ed3",
       "sign_id": "sign_317f11c3a6a5132b",
       "source": "SignStation via SignBSL",
@@ -9608,7 +9885,16 @@ window.BSL_DATA = {
       "video_id": "video_47b5874406a994df",
       "sign_id": "sign_3332ae549a906a32",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/centre",
-      "url": "https://media.signbsl.com/videos/wolver/mp4/eng_centre_8931.mp4",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/centre.mp4",
+      "verification_status": "Verified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
+      "video_id": "video_3364c1476fe30552",
+      "sign_id": "sign_3364c1476fe30552",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/Dundee.mp4",
       "verification_status": "Unverified",
       "priority": "1",
       "problem_report": ""
@@ -9924,7 +10210,7 @@ window.BSL_DATA = {
       "sign_id": "sign_38ce4c90dd78fd36",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/from",
       "url": "https://media.signbsl.com/videos/bsl/signstation/from.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -10077,7 +10363,7 @@ window.BSL_DATA = {
       "sign_id": "sign_3c198a20cc2b67af",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/poland",
       "url": "https://media.signbsl.com/videos/bsl/signstation/Poland.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -10145,6 +10431,15 @@ window.BSL_DATA = {
       "problem_report": ""
     },
     {
+      "video_id": "video_3cfabbda8d193147",
+      "sign_id": "sign_3cfabbda8d193147",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signmonkey/mp4/dublin.mp4",
+      "verification_status": "Verified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
       "video_id": "video_730b60a0d7002589",
       "sign_id": "sign_3d7826da49b3e359",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/mcdonalds",
@@ -10203,7 +10498,7 @@ window.BSL_DATA = {
       "sign_id": "sign_3f4b3a557858a3ba",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/switzerland",
       "url": "https://media.signbsl.com/videos/bsl/signstation/Switzerland.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -10275,7 +10570,7 @@ window.BSL_DATA = {
       "sign_id": "sign_406b6d527878b51a",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/cambridge",
       "url": "https://media.signbsl.com/videos/bsl/signstation/Cambridge.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -10311,6 +10606,15 @@ window.BSL_DATA = {
       "sign_id": "sign_412f5c4c7e924ed5",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/where-are-you-from",
       "url": "https://media.signbsl.com/videos/bsl/signwithfingers/mp4/where%20are%20you%20from.mp4",
+      "verification_status": "Unverified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
+      "video_id": "video_41423e81c7092492",
+      "sign_id": "sign_41423e81c7092492",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/Cork.mp4",
       "verification_status": "Unverified",
       "priority": "1",
       "problem_report": ""
@@ -10536,7 +10840,7 @@ window.BSL_DATA = {
       "sign_id": "sign_45bd82781043b781",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/spain",
       "url": "https://media.signbsl.com/videos/bsl/signstation/Spain.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -10775,6 +11079,15 @@ window.BSL_DATA = {
       "problem_report": ""
     },
     {
+      "video_id": "video_4b95bd27f9598d75",
+      "sign_id": "sign_4b95bd27f9598d75",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signmonkey/mp4/america.mp4",
+      "verification_status": "Verified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
       "video_id": "video_687254402ac13b8a",
       "sign_id": "sign_4bc8999c081028ba",
       "source": "SignStation filename guess from Level 3 vocabulary",
@@ -10815,6 +11128,15 @@ window.BSL_DATA = {
       "sign_id": "sign_4c273ba706e274ea",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/child.mp4",
+      "verification_status": "Verified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
+      "video_id": "video_4c273d5d1edabaca",
+      "sign_id": "sign_4c273d5d1edabaca",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/winkball/mp4/b7b76feb-2375-44dc-9618-3681d526924a.mp4",
       "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
@@ -10982,6 +11304,15 @@ window.BSL_DATA = {
       "problem_report": ""
     },
     {
+      "video_id": "video_4ee64e7502d3c788",
+      "sign_id": "sign_4ee64e7502d3c788",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signon/mp4/trw35.mp4",
+      "verification_status": "Verified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
       "video_id": "video_ee8451b223ddda93",
       "sign_id": "sign_4efdc3109eb74472",
       "source": "SignStation via SignBSL",
@@ -11031,7 +11362,7 @@ window.BSL_DATA = {
       "sign_id": "sign_4f9a13287cf4d4e4",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/nottingham",
       "url": "https://media.signbsl.com/videos/bsl/signstation/nottingham.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -11261,6 +11592,15 @@ window.BSL_DATA = {
       "problem_report": ""
     },
     {
+      "video_id": "video_5595159ac6bfc5cf",
+      "sign_id": "sign_5595159ac6bfc5cf",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/winkball/mp4/22cb497e-8caf-481a-8029-3629eec3348e.mp4",
+      "verification_status": "Verified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
       "video_id": "video_c73d2c2ce0ed0e12",
       "sign_id": "sign_55a3af0490f273e2",
       "source": "SignStation via SignBSL",
@@ -11324,6 +11664,15 @@ window.BSL_DATA = {
       "problem_report": ""
     },
     {
+      "video_id": "video_575331a5bdd6ae43",
+      "sign_id": "sign_575331a5bdd6ae43",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/north.mp4",
+      "verification_status": "Verified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
       "video_id": "video_6a5a2f0d6d7d19a0",
       "sign_id": "sign_57ca9af7276061c9",
       "source": "SignStation filename guess from Level 3 vocabulary",
@@ -11364,7 +11713,7 @@ window.BSL_DATA = {
       "sign_id": "sign_58a898ee28058255",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/france",
       "url": "https://media.signbsl.com/videos/bsl/signstation/France.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -11526,7 +11875,7 @@ window.BSL_DATA = {
       "sign_id": "sign_5c4315ea9a94e954",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/brighton",
       "url": "https://media.signbsl.com/videos/bsl/signstation/Brighton.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -12116,6 +12465,15 @@ window.BSL_DATA = {
       "problem_report": ""
     },
     {
+      "video_id": "video_6a968e5ec1a57d32",
+      "sign_id": "sign_6a968e5ec1a57d32",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/northern%20ireland.mp4",
+      "verification_status": "Verified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
       "video_id": "video_1df2a2d82eb5c4fc",
       "sign_id": "sign_6aa18cd351319f70",
       "source": "SignStation filename guess from Level 3 vocabulary",
@@ -12228,6 +12586,15 @@ window.BSL_DATA = {
       "sign_id": "sign_6c496892e0e12680",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/bslfirst/mp4/996267847.mp4",
+      "verification_status": "Verified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
+      "video_id": "video_6c795fbc92cce437",
+      "sign_id": "sign_6c795fbc92cce437",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/middle.mp4",
       "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
@@ -12746,6 +13113,15 @@ window.BSL_DATA = {
       "problem_report": ""
     },
     {
+      "video_id": "video_748e66f49140aa41",
+      "sign_id": "sign_748e66f49140aa41",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/Derry.mp4",
+      "verification_status": "Unverified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
       "video_id": "video_62a625ed0939047b",
       "sign_id": "sign_74c72964b1e29685",
       "source": "SignStation via SignBSL",
@@ -12768,6 +13144,15 @@ window.BSL_DATA = {
       "sign_id": "sign_74f96c6f33d149dc",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/milk.mp4",
+      "verification_status": "Unverified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
+      "video_id": "video_75143c94671416be",
+      "sign_id": "sign_75143c94671416be",
+      "source": "Manually added by user",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/3fqZmXYqtyM.mp4",
       "verification_status": "Unverified",
       "priority": "1",
       "problem_report": ""
@@ -12921,7 +13306,7 @@ window.BSL_DATA = {
       "sign_id": "sign_78a5daaff610ffe2",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/england",
       "url": "https://media.signbsl.com/videos/bsl/signstation/England.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -12947,8 +13332,8 @@ window.BSL_DATA = {
       "video_id": "video_bf380c82a184ae4d",
       "sign_id": "sign_79246175e9f3a42f",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/turkey.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/8qbAYcBdIW4.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -13011,7 +13396,7 @@ window.BSL_DATA = {
       "sign_id": "sign_7a2a723d0ed862b2",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/edinburgh",
       "url": "https://media.signbsl.com/videos/bsl/signstation/Edinburgh.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -13178,11 +13563,20 @@ window.BSL_DATA = {
       "problem_report": ""
     },
     {
+      "video_id": "video_7da6f2be3f462492",
+      "sign_id": "sign_7da6f2be3f462492",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/gpnhs/mp4/belfast.mp4",
+      "verification_status": "Verified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
       "video_id": "video_2fd0ce5b20742e5a",
       "sign_id": "sign_7dae894b70f2d190",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/orange.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -13209,7 +13603,7 @@ window.BSL_DATA = {
       "sign_id": "sign_7dccdbed3d393fee",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/town",
       "url": "https://media.signbsl.com/videos/bsl/signstation/town.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -13308,6 +13702,15 @@ window.BSL_DATA = {
       "sign_id": "sign_7f6a7f7e403a79ae",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/winter.mp4",
+      "verification_status": "Verified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
+      "video_id": "video_804363c846ca0694",
+      "sign_id": "sign_804363c846ca0694",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/South.mp4",
       "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
@@ -13552,6 +13955,15 @@ window.BSL_DATA = {
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/babysitter",
       "url": "https://media.signbsl.com/videos/bsl/signstation/babysitter.mp4",
       "verification_status": "Unverified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
+      "video_id": "video_86224301828e4629",
+      "sign_id": "sign_86224301828e4629",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/West.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -13943,6 +14355,15 @@ window.BSL_DATA = {
       "problem_report": ""
     },
     {
+      "video_id": "video_8d98d027d32dbbab",
+      "sign_id": "sign_8d98d027d32dbbab",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/Coventry.mp4",
+      "verification_status": "Unverified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
       "video_id": "video_fe0e4a3760a63380",
       "sign_id": "sign_8daf4d100259b0dc",
       "source": "SignStation filename guess from Level 3 vocabulary",
@@ -14019,7 +14440,7 @@ window.BSL_DATA = {
       "sign_id": "sign_8f15764312220a1e",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/wales",
       "url": "https://media.signbsl.com/videos/bsl/signstation/Wales.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -14109,7 +14530,7 @@ window.BSL_DATA = {
       "sign_id": "sign_913962d2ef246f06",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/austria",
       "url": "https://media.signbsl.com/videos/bsl/signstation/Austria.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -14118,7 +14539,7 @@ window.BSL_DATA = {
       "sign_id": "sign_914afeba5e1aa9e4",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/portsmouth",
       "url": "https://media.signbsl.com/videos/bsl/signstation/Portsmouth.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -14199,7 +14620,7 @@ window.BSL_DATA = {
       "sign_id": "sign_92f611e864502be6",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/chicken.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -14252,8 +14673,8 @@ window.BSL_DATA = {
       "video_id": "video_d141de7dc7eb9d6a",
       "sign_id": "sign_942b7f119e41f038",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/bristol",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/Bristol.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signmonkey/mp4/bristol.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -14262,7 +14683,7 @@ window.BSL_DATA = {
       "sign_id": "sign_945000a57e9b8188",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/beef.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -14312,6 +14733,15 @@ window.BSL_DATA = {
       "problem_report": ""
     },
     {
+      "video_id": "video_e4bdc33342bb36d3",
+      "sign_id": "sign_951ea911f5215771",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/Swansea.mp4",
+      "verification_status": "Unverified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
       "video_id": "video_a5aa35ed5f464cbd",
       "sign_id": "sign_958ac9b6d878ad78",
       "source": "SignStation via SignBSL",
@@ -14324,8 +14754,8 @@ window.BSL_DATA = {
       "video_id": "video_c364a4bc1990e9ac",
       "sign_id": "sign_95c28b8375412225",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/mushrooms.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/mushroom.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -14429,6 +14859,15 @@ window.BSL_DATA = {
       "problem_report": ""
     },
     {
+      "video_id": "video_99b3bde6e6ba9a5a",
+      "sign_id": "sign_99b3bde6e6ba9a5a",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/Aberdeen.mp4",
+      "verification_status": "Verified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
       "video_id": "video_daae20353154faed",
       "sign_id": "sign_99e6ee3ae9c1a002",
       "source": "SignStation via SignBSL",
@@ -14460,7 +14899,7 @@ window.BSL_DATA = {
       "sign_id": "sign_9abb949b2fe468ac",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/greece",
       "url": "https://media.signbsl.com/videos/bsl/signstation/Greece.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -14699,6 +15138,15 @@ window.BSL_DATA = {
       "problem_report": ""
     },
     {
+      "video_id": "video_9f360f83b854a393",
+      "sign_id": "sign_9f360f83b854a393",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/101-06-765.mp4",
+      "verification_status": "Verified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
       "video_id": "video_e4de683f156d1585",
       "sign_id": "sign_9f3a26756f66cf75",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/bruise",
@@ -14766,7 +15214,7 @@ window.BSL_DATA = {
       "sign_id": "sign_a0135b54381cb682",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/italy",
       "url": "https://media.signbsl.com/videos/bsl/deafway/mp4/Italy.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -15045,7 +15493,7 @@ window.BSL_DATA = {
       "sign_id": "sign_a5f5dbb7a8723cce",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/oxford",
       "url": "https://media.signbsl.com/videos/bsl/signstation/Oxford.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -15284,6 +15732,15 @@ window.BSL_DATA = {
       "problem_report": ""
     },
     {
+      "video_id": "video_ad15bbf88d48cf86",
+      "sign_id": "sign_ad15bbf88d48cf86",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/York.mp4",
+      "verification_status": "Unverified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
       "video_id": "video_952d448ee437489c",
       "sign_id": "sign_ad3ced3f6bbc5f3c",
       "source": "SignStation via SignBSL",
@@ -15360,7 +15817,7 @@ window.BSL_DATA = {
       "sign_id": "sign_ae83bc632761903d",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/belgium",
       "url": "https://media.signbsl.com/videos/bsl/signstation/Belgium.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -15450,7 +15907,7 @@ window.BSL_DATA = {
       "sign_id": "sign_b181b0864bd8c6d9",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/countryside",
       "url": "https://media.signbsl.com/videos/bsl/signstation/countryside.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -15747,7 +16204,7 @@ window.BSL_DATA = {
       "sign_id": "sign_b60148c9a4538ec6",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/far",
       "url": "https://media.signbsl.com/videos/bsl/signstation/FAR.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -15756,7 +16213,7 @@ window.BSL_DATA = {
       "sign_id": "sign_b60fe39ddd2fb31b",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/liverpool",
       "url": "https://media.signbsl.com/videos/bsl/signstation/Liverpool.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -15783,6 +16240,15 @@ window.BSL_DATA = {
       "sign_id": "sign_b690e3d6b0719362",
       "source": "SignStation filename guess from Level 3 vocabulary",
       "url": "https://media.signbsl.com/videos/bsl/signstation/improve.mp4",
+      "verification_status": "Unverified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
+      "video_id": "video_b694edf6406a552b",
+      "sign_id": "sign_b694edf6406a552b",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/Norwich.mp4",
       "verification_status": "Unverified",
       "priority": "1",
       "problem_report": ""
@@ -15873,7 +16339,7 @@ window.BSL_DATA = {
       "sign_id": "sign_b904dd6bd5e5a972",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/sheffield",
       "url": "https://media.signbsl.com/videos/bsl/signstation/Sheffield.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -16008,7 +16474,7 @@ window.BSL_DATA = {
       "sign_id": "sign_bbab36626d15a54d",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/chips.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -16269,6 +16735,15 @@ window.BSL_DATA = {
       "sign_id": "sign_c046b4efb86eb87b",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/conversation",
       "url": "https://media.signbsl.com/videos/bsl/signstation/conversation.mp4",
+      "verification_status": "Unverified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
+      "video_id": "video_c04e55ecec41804e",
+      "sign_id": "sign_c04e55ecec41804e",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/Southampton.mp4",
       "verification_status": "Unverified",
       "priority": "1",
       "problem_report": ""
@@ -16544,6 +17019,15 @@ window.BSL_DATA = {
       "problem_report": ""
     },
     {
+      "video_id": "video_c53d14b09bf07134",
+      "sign_id": "sign_c53d14b09bf07134",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/Doncaster.mp4",
+      "verification_status": "Unverified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
       "video_id": "video_a9227342a3d4e31a",
       "sign_id": "sign_c584052bb08adc6b",
       "source": "SignStation filename guess from Level 3 vocabulary",
@@ -16679,6 +17163,15 @@ window.BSL_DATA = {
       "problem_report": ""
     },
     {
+      "video_id": "video_c9b26d9e6ecf08bb",
+      "sign_id": "sign_c9b26d9e6ecf08bb",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/corpusngt/mp4/vlc-record-2015-04-08-15h18m00s-BSL_CN_lex_b.mpg-.mp4",
+      "verification_status": "Verified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
       "video_id": "video_d15f783957998700",
       "sign_id": "sign_c9b2a08401b74693",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/broken",
@@ -16715,6 +17208,15 @@ window.BSL_DATA = {
       "problem_report": ""
     },
     {
+      "video_id": "video_ca0236902ff43bc7",
+      "sign_id": "sign_ca0236902ff43bc7",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/vcPrIrF-QoE.mp4",
+      "verification_status": "Verified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
       "video_id": "video_5e9c6d82fb95cd4b",
       "sign_id": "sign_ca04bceafbc2d8ab",
       "source": "SignStation filename guess from Level 3 vocabulary",
@@ -16737,7 +17239,7 @@ window.BSL_DATA = {
       "sign_id": "sign_ca301352eee0038e",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/finland",
       "url": "https://media.signbsl.com/videos/bsl/signstation/Finland.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -16970,8 +17472,8 @@ window.BSL_DATA = {
       "video_id": "video_06cfc68f991b6432",
       "sign_id": "sign_ce708a50fb6cc201",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/near",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/about.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/near.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -16998,7 +17500,7 @@ window.BSL_DATA = {
       "sign_id": "sign_cf14ca40aeb28b4f",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/glasgow",
       "url": "https://media.signbsl.com/videos/bsl/signstation/Glasgow.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -17088,7 +17590,7 @@ window.BSL_DATA = {
       "sign_id": "sign_d052fe1989b85a82",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/portugal",
       "url": "https://media.signbsl.com/videos/bsl/signstation/Portugal.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -17367,7 +17869,7 @@ window.BSL_DATA = {
       "sign_id": "sign_d4915fd94886558c",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/birmingham",
       "url": "https://media.signbsl.com/videos/bsl/signstation/Birmingham.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -17520,7 +18022,7 @@ window.BSL_DATA = {
       "sign_id": "sign_d74f16ac8a82677b",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/scotland",
       "url": "https://media.signbsl.com/videos/bsl/signstation/Scotland.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -17696,6 +18198,15 @@ window.BSL_DATA = {
       "problem_report": ""
     },
     {
+      "video_id": "video_db0ad8178875c930",
+      "sign_id": "sign_db0ad8178875c930",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/Exeter.mp4",
+      "verification_status": "Unverified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
       "video_id": "video_6b5eadff5fe4fd26",
       "sign_id": "sign_db0e90a84a5d8930",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/lesbian",
@@ -17813,6 +18324,15 @@ window.BSL_DATA = {
       "problem_report": ""
     },
     {
+      "video_id": "video_ddcf602fdd8d261d",
+      "sign_id": "sign_ddcf602fdd8d261d",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/wolver/mp4/art_rural_3594.mp4",
+      "verification_status": "Verified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
       "video_id": "video_3438811c7c18fd4a",
       "sign_id": "sign_de0270f91688762c",
       "source": "SignStation via SignBSL",
@@ -17863,6 +18383,15 @@ window.BSL_DATA = {
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/rug",
       "url": "https://media.signbsl.com/videos/bsl/signstation/carpet.mp4",
       "verification_status": "Unverified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
+      "video_id": "video_de5b95b4adb596c6",
+      "sign_id": "sign_de5b95b4adb596c6",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/Denmark.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -18308,6 +18837,15 @@ window.BSL_DATA = {
       "problem_report": ""
     },
     {
+      "video_id": "video_e6534ddab34fce4e",
+      "sign_id": "sign_e6534ddab34fce4e",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/Canterbury.mp4",
+      "verification_status": "Unverified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
       "video_id": "video_80caf7ed4500b05e",
       "sign_id": "sign_e6588c7b3f7e1ad4",
       "source": "SignStation via SignBSL",
@@ -18375,6 +18913,15 @@ window.BSL_DATA = {
       "sign_id": "sign_e74fa0304ab2b744",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/thank-you.mp4",
+      "verification_status": "Verified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
+      "video_id": "video_e78ebb894aec448d",
+      "sign_id": "sign_e78ebb894aec448d",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/Sweden.mp4",
       "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
@@ -18461,6 +19008,15 @@ window.BSL_DATA = {
       "problem_report": ""
     },
     {
+      "video_id": "video_ea0dd3f88fedfaa7",
+      "sign_id": "sign_ea0dd3f88fedfaa7",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/Bradford.mp4",
+      "verification_status": "Verified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
       "video_id": "video_cb48a692837b0cea",
       "sign_id": "sign_eab822b5f31d5c6c",
       "source": "SignStation filename guess from Level 3 vocabulary",
@@ -18520,6 +19076,15 @@ window.BSL_DATA = {
       "source": "SignStation filename guess from Level 3 vocabulary",
       "url": "https://media.signbsl.com/videos/bsl/signstation/law.mp4",
       "verification_status": "Unverified",
+      "priority": "1",
+      "problem_report": ""
+    },
+    {
+      "video_id": "video_ec0b4bd2d769573d",
+      "sign_id": "sign_ec0b4bd2d769573d",
+      "source": "Suggested SignStation URL; unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/British.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -19022,8 +19587,8 @@ window.BSL_DATA = {
       "video_id": "video_58bc94972ededa7f",
       "sign_id": "sign_f5bad36b76ec4e20",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/europe",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/Europe.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signmonkey/mp4/europe.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -19194,7 +19759,7 @@ window.BSL_DATA = {
       "sign_id": "sign_f889cf8cc86c3445",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/plymouth",
       "url": "https://media.signbsl.com/videos/bsl/signstation/Plymouth.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -19392,7 +19957,7 @@ window.BSL_DATA = {
       "sign_id": "sign_fe896c4a570b8553",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/norway",
       "url": "https://media.signbsl.com/videos/bsl/signstation/Norway.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -19419,7 +19984,7 @@ window.BSL_DATA = {
       "sign_id": "sign_fea3dbb0e6d7c4f4",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/derby",
       "url": "https://media.signbsl.com/videos/bsl/signstation/derby.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -29625,14 +30190,14 @@ window.BSL_DATA = {
     },
     {
       "entry_id": "642",
-      "sign_id": "sign_79246175e9f3a42f",
-      "selected_video_id": "video_bf380c82a184ae4d",
+      "sign_id": "sign_75143c94671416be",
+      "selected_video_id": "video_75143c94671416be",
       "level": "1",
       "lesson": "11",
       "category": "Meats",
       "global_order": "642",
       "source_page": "46",
-      "word": "Turkey",
+      "word": "Turkey (Food)",
       "source_text": "Turkey",
       "notes": "Candidate URL from original SignStation naming pattern; not checked",
       "topic": "",
@@ -42496,9 +43061,9 @@ window.BSL_DATA = {
       "category": "Countries",
       "global_order": "1446",
       "source_page": "45",
-      "word": "Turkey",
-      "source_text": "p45: Turkey",
-      "notes": "",
+      "word": "Turkey (Country)",
+      "source_text": "Turkey",
+      "notes": "Country meaning; place video. Suggested URL verified.",
       "topic": "Travel and Holidays",
       "nmf": "FALSE",
       "source_pages": "45"
@@ -45648,9 +46213,9 @@ window.BSL_DATA = {
       "category": "Meat and fish",
       "global_order": "1643",
       "source_page": "53",
-      "word": "Turkey",
-      "source_text": "p53: Turkey | p62: Turkey",
-      "notes": "",
+      "word": "Turkey (Country)",
+      "source_text": "Turkey",
+      "notes": "Country meaning; place video. Suggested URL verified.",
       "topic": "Food and Drink",
       "nmf": "FALSE",
       "source_pages": "53; 62"
@@ -53798,6 +54363,1478 @@ window.BSL_DATA = {
       "topic": "",
       "nmf": "FALSE",
       "source_pages": "0"
+    },
+    {
+      "entry_id": "2148",
+      "sign_id": "sign_9c0805b13cb655ce",
+      "selected_video_id": "video_a4fc4fd0e617fb52",
+      "level": "4",
+      "lesson": "",
+      "category": "Areas",
+      "global_order": "2204",
+      "source_page": "1",
+      "word": "Live",
+      "source_text": "Live",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2149",
+      "sign_id": "sign_38ce4c90dd78fd36",
+      "selected_video_id": "video_d957b7e4cf436836",
+      "level": "4",
+      "lesson": "",
+      "category": "Areas",
+      "global_order": "2205",
+      "source_page": "1",
+      "word": "From",
+      "source_text": "From",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2150",
+      "sign_id": "sign_18d85d392b94ef5b",
+      "selected_video_id": "video_979bd9b95a63cf00",
+      "level": "4",
+      "lesson": "",
+      "category": "Areas",
+      "global_order": "2206",
+      "source_page": "1",
+      "word": "Born",
+      "source_text": "Born",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2151",
+      "sign_id": "sign_059202e063c790d8",
+      "selected_video_id": "video_059202e063c790d8",
+      "level": "4",
+      "lesson": "",
+      "category": "Areas",
+      "global_order": "2207",
+      "source_page": "1",
+      "word": "Country",
+      "source_text": "Country",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2152",
+      "sign_id": "sign_b181b0864bd8c6d9",
+      "selected_video_id": "video_9604bc412acb041c",
+      "level": "4",
+      "lesson": "",
+      "category": "Areas",
+      "global_order": "2208",
+      "source_page": "1",
+      "word": "Countryside",
+      "source_text": "Countryside",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2153",
+      "sign_id": "sign_076711fec704bb81",
+      "selected_video_id": "video_076711fec704bb81",
+      "level": "4",
+      "lesson": "",
+      "category": "Areas",
+      "global_order": "2209",
+      "source_page": "1",
+      "word": "Village",
+      "source_text": "Village",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2154",
+      "sign_id": "sign_4ee64e7502d3c788",
+      "selected_video_id": "video_4ee64e7502d3c788",
+      "level": "4",
+      "lesson": "",
+      "category": "Areas",
+      "global_order": "2210",
+      "source_page": "1",
+      "word": "City",
+      "source_text": "City",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2155",
+      "sign_id": "sign_7dccdbed3d393fee",
+      "selected_video_id": "video_b4e2b9aeb14d1a5b",
+      "level": "4",
+      "lesson": "",
+      "category": "Areas",
+      "global_order": "2211",
+      "source_page": "1",
+      "word": "Town",
+      "source_text": "Town",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2156",
+      "sign_id": "sign_ce708a50fb6cc201",
+      "selected_video_id": "video_06cfc68f991b6432",
+      "level": "4",
+      "lesson": "",
+      "category": "Areas",
+      "global_order": "2212",
+      "source_page": "1",
+      "word": "Near",
+      "source_text": "Near",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2157",
+      "sign_id": "sign_b60148c9a4538ec6",
+      "selected_video_id": "video_948ff3de509b0610",
+      "level": "4",
+      "lesson": "",
+      "category": "Areas",
+      "global_order": "2213",
+      "source_page": "1",
+      "word": "Far",
+      "source_text": "Far",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2158",
+      "sign_id": "sign_ddcf602fdd8d261d",
+      "selected_video_id": "video_ddcf602fdd8d261d",
+      "level": "4",
+      "lesson": "",
+      "category": "Areas",
+      "global_order": "2214",
+      "source_page": "1",
+      "word": "Rural",
+      "source_text": "Rural",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2159",
+      "sign_id": "sign_99b3bde6e6ba9a5a",
+      "selected_video_id": "video_99b3bde6e6ba9a5a",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2215",
+      "source_page": "1",
+      "word": "Aberdeen",
+      "source_text": "Aberdeen",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2160",
+      "sign_id": "sign_3cb7a75263a77b7c",
+      "selected_video_id": "video_434b9cbc68371e46",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2216",
+      "source_page": "1",
+      "word": "Bath",
+      "source_text": "Bath",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2161",
+      "sign_id": "sign_7da6f2be3f462492",
+      "selected_video_id": "video_7da6f2be3f462492",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2217",
+      "source_page": "1",
+      "word": "Belfast",
+      "source_text": "Belfast",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2162",
+      "sign_id": "sign_d4915fd94886558c",
+      "selected_video_id": "video_a7e9db3cd0c69166",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2218",
+      "source_page": "1",
+      "word": "Birmingham",
+      "source_text": "Birmingham",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2163",
+      "sign_id": "sign_ea0dd3f88fedfaa7",
+      "selected_video_id": "video_ea0dd3f88fedfaa7",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2219",
+      "source_page": "1",
+      "word": "Bradford",
+      "source_text": "Bradford",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2164",
+      "sign_id": "sign_5c4315ea9a94e954",
+      "selected_video_id": "video_312f84fdeefd0642",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2220",
+      "source_page": "1",
+      "word": "Brighton",
+      "source_text": "Brighton",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2165",
+      "sign_id": "sign_942b7f119e41f038",
+      "selected_video_id": "video_d141de7dc7eb9d6a",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2221",
+      "source_page": "1",
+      "word": "Bristol",
+      "source_text": "Bristol",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2166",
+      "sign_id": "sign_406b6d527878b51a",
+      "selected_video_id": "video_89304602ef7ebd3e",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2222",
+      "source_page": "1",
+      "word": "Cambridge",
+      "source_text": "Cambridge",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2167",
+      "sign_id": "sign_e6534ddab34fce4e",
+      "selected_video_id": "video_e6534ddab34fce4e",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2223",
+      "source_page": "1",
+      "word": "Canterbury",
+      "source_text": "Canterbury",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2168",
+      "sign_id": "sign_2a8a497d4227e71d",
+      "selected_video_id": "video_9dd157581578c2c8",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2224",
+      "source_page": "1",
+      "word": "Cardiff",
+      "source_text": "Cardiff",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2169",
+      "sign_id": "sign_194bca046ff95986",
+      "selected_video_id": "video_194bca046ff95986",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2225",
+      "source_page": "1",
+      "word": "Chester",
+      "source_text": "Chester",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2170",
+      "sign_id": "sign_41423e81c7092492",
+      "selected_video_id": "video_41423e81c7092492",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2226",
+      "source_page": "1",
+      "word": "Cork",
+      "source_text": "Cork",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2171",
+      "sign_id": "sign_8d98d027d32dbbab",
+      "selected_video_id": "video_8d98d027d32dbbab",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2227",
+      "source_page": "1",
+      "word": "Coventry",
+      "source_text": "Coventry",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2172",
+      "sign_id": "sign_fea3dbb0e6d7c4f4",
+      "selected_video_id": "video_a9faaf47a6e2044f",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2228",
+      "source_page": "1",
+      "word": "Derby",
+      "source_text": "Derby",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2173",
+      "sign_id": "sign_748e66f49140aa41",
+      "selected_video_id": "video_748e66f49140aa41",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2229",
+      "source_page": "1",
+      "word": "Derry",
+      "source_text": "Derry",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2174",
+      "sign_id": "sign_c53d14b09bf07134",
+      "selected_video_id": "video_c53d14b09bf07134",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2230",
+      "source_page": "1",
+      "word": "Doncaster",
+      "source_text": "Doncaster",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2175",
+      "sign_id": "sign_3cfabbda8d193147",
+      "selected_video_id": "video_3cfabbda8d193147",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2231",
+      "source_page": "1",
+      "word": "Dublin",
+      "source_text": "Dublin",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2176",
+      "sign_id": "sign_3364c1476fe30552",
+      "selected_video_id": "video_3364c1476fe30552",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2232",
+      "source_page": "1",
+      "word": "Dundee",
+      "source_text": "Dundee",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2177",
+      "sign_id": "sign_7a2a723d0ed862b2",
+      "selected_video_id": "video_e95091d61b2ba17f",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2233",
+      "source_page": "1",
+      "word": "Edinburgh",
+      "source_text": "Edinburgh",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2178",
+      "sign_id": "sign_db0ad8178875c930",
+      "selected_video_id": "video_db0ad8178875c930",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2234",
+      "source_page": "1",
+      "word": "Exeter",
+      "source_text": "Exeter",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2179",
+      "sign_id": "sign_cf14ca40aeb28b4f",
+      "selected_video_id": "video_d73be44e66c18ac0",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2235",
+      "source_page": "1",
+      "word": "Glasgow",
+      "source_text": "Glasgow",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2180",
+      "sign_id": "sign_02be3bb513bf2026",
+      "selected_video_id": "video_02be3bb513bf2026",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2236",
+      "source_page": "1",
+      "word": "Gloucester",
+      "source_text": "Gloucester",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2181",
+      "sign_id": "sign_3c3e5e36d8dd2ba9",
+      "selected_video_id": "video_ebb579eaa5708b9e",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2237",
+      "source_page": "1",
+      "word": "Leeds",
+      "source_text": "Leeds",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2182",
+      "sign_id": "sign_9a560035fa64227b",
+      "selected_video_id": "video_051286584c71f701",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2238",
+      "source_page": "1",
+      "word": "Leicester",
+      "source_text": "Leicester",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2183",
+      "sign_id": "sign_b60fe39ddd2fb31b",
+      "selected_video_id": "video_84e7e2d3132f5730",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2239",
+      "source_page": "1",
+      "word": "Liverpool",
+      "source_text": "Liverpool",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2184",
+      "sign_id": "sign_9371bd2c3bc67548",
+      "selected_video_id": "video_7994db7e2adff569",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2240",
+      "source_page": "1",
+      "word": "London",
+      "source_text": "London",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2185",
+      "sign_id": "sign_fa1a8d223e00d5f1",
+      "selected_video_id": "video_bc04db40e42dfffd",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2241",
+      "source_page": "1",
+      "word": "Manchester",
+      "source_text": "Manchester",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2186",
+      "sign_id": "sign_1864e72e7aa702cb",
+      "selected_video_id": "video_1864e72e7aa702cb",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2242",
+      "source_page": "1",
+      "word": "Newcastle",
+      "source_text": "Newcastle",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2187",
+      "sign_id": "sign_b694edf6406a552b",
+      "selected_video_id": "video_b694edf6406a552b",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2243",
+      "source_page": "1",
+      "word": "Norwich",
+      "source_text": "Norwich",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2188",
+      "sign_id": "sign_4f9a13287cf4d4e4",
+      "selected_video_id": "video_eaffa8498e8c587f",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2244",
+      "source_page": "1",
+      "word": "Nottingham",
+      "source_text": "Nottingham",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2189",
+      "sign_id": "sign_a5f5dbb7a8723cce",
+      "selected_video_id": "video_f7606ff555278480",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2245",
+      "source_page": "1",
+      "word": "Oxford",
+      "source_text": "Oxford",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2190",
+      "sign_id": "sign_f889cf8cc86c3445",
+      "selected_video_id": "video_59123e8f9100e072",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2246",
+      "source_page": "1",
+      "word": "Plymouth",
+      "source_text": "Plymouth",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2191",
+      "sign_id": "sign_914afeba5e1aa9e4",
+      "selected_video_id": "video_4f14d716fb2adf8a",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2247",
+      "source_page": "1",
+      "word": "Portsmouth",
+      "source_text": "Portsmouth",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2192",
+      "sign_id": "sign_b904dd6bd5e5a972",
+      "selected_video_id": "video_2e77fbf58d1fff01",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2248",
+      "source_page": "1",
+      "word": "Sheffield",
+      "source_text": "Sheffield",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2193",
+      "sign_id": "sign_c04e55ecec41804e",
+      "selected_video_id": "video_c04e55ecec41804e",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2249",
+      "source_page": "1",
+      "word": "Southampton",
+      "source_text": "Southampton",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2194",
+      "sign_id": "sign_951ea911f5215771",
+      "selected_video_id": "video_e4bdc33342bb36d3",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2250",
+      "source_page": "1",
+      "word": "Swansea",
+      "source_text": "Swansea",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2195",
+      "sign_id": "sign_ad15bbf88d48cf86",
+      "selected_video_id": "video_ad15bbf88d48cf86",
+      "level": "4",
+      "lesson": "",
+      "category": "Cities",
+      "global_order": "2251",
+      "source_page": "1",
+      "word": "York",
+      "source_text": "York",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2196",
+      "sign_id": "sign_2dac6ddefe3b1453",
+      "selected_video_id": "video_2b6fcc61214a5f77",
+      "level": "4",
+      "lesson": "",
+      "category": "UK",
+      "global_order": "2252",
+      "source_page": "1",
+      "word": "Ireland",
+      "source_text": "Ireland",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2197",
+      "sign_id": "sign_4c273d5d1edabaca",
+      "selected_video_id": "video_4c273d5d1edabaca",
+      "level": "4",
+      "lesson": "",
+      "category": "World Geography",
+      "global_order": "2253",
+      "source_page": "1",
+      "word": "Africa",
+      "source_text": "Africa",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "World Geography",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2198",
+      "sign_id": "sign_5595159ac6bfc5cf",
+      "selected_video_id": "video_5595159ac6bfc5cf",
+      "level": "4",
+      "lesson": "",
+      "category": "World Geography",
+      "global_order": "2254",
+      "source_page": "1",
+      "word": "Asia",
+      "source_text": "Asia",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "World Geography",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2199",
+      "sign_id": "sign_f5bad36b76ec4e20",
+      "selected_video_id": "video_58bc94972ededa7f",
+      "level": "4",
+      "lesson": "",
+      "category": "World Geography",
+      "global_order": "2255",
+      "source_page": "1",
+      "word": "Europe",
+      "source_text": "Europe",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "World Geography",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2200",
+      "sign_id": "sign_4b95bd27f9598d75",
+      "selected_video_id": "video_4b95bd27f9598d75",
+      "level": "4",
+      "lesson": "",
+      "category": "World Geography",
+      "global_order": "2256",
+      "source_page": "1",
+      "word": "North America",
+      "source_text": "North America",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "World Geography",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2201",
+      "sign_id": "sign_6be86dc3b680b00a",
+      "selected_video_id": "",
+      "level": "4",
+      "lesson": "",
+      "category": "World Geography",
+      "global_order": "2257",
+      "source_page": "1",
+      "word": "South America",
+      "source_text": "South America",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "World Geography",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2202",
+      "sign_id": "sign_f19f8ca60d9b2b6b",
+      "selected_video_id": "",
+      "level": "4",
+      "lesson": "",
+      "category": "World Geography",
+      "global_order": "2258",
+      "source_page": "1",
+      "word": "Oceania",
+      "source_text": "Oceania",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "World Geography",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2203",
+      "sign_id": "sign_13bebe539f440c5f",
+      "selected_video_id": "video_13bebe539f440c5f",
+      "level": "4",
+      "lesson": "",
+      "category": "World Geography",
+      "global_order": "2259",
+      "source_page": "1",
+      "word": "Antarctica",
+      "source_text": "Antarctica",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "World Geography",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2204",
+      "sign_id": "sign_913962d2ef246f06",
+      "selected_video_id": "video_7fa918c1d3898c4b",
+      "level": "4",
+      "lesson": "",
+      "category": "World Geography",
+      "global_order": "2260",
+      "source_page": "1",
+      "word": "Austria",
+      "source_text": "Austria",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "World Geography",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2205",
+      "sign_id": "sign_ae83bc632761903d",
+      "selected_video_id": "video_1bd81df0e8253e2c",
+      "level": "4",
+      "lesson": "",
+      "category": "World Geography",
+      "global_order": "2261",
+      "source_page": "1",
+      "word": "Belgium",
+      "source_text": "Belgium",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "World Geography",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2207",
+      "sign_id": "sign_de5b95b4adb596c6",
+      "selected_video_id": "video_de5b95b4adb596c6",
+      "level": "4",
+      "lesson": "",
+      "category": "World Geography",
+      "global_order": "2263",
+      "source_page": "1",
+      "word": "Denmark",
+      "source_text": "Denmark",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "World Geography",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2208",
+      "sign_id": "sign_78a5daaff610ffe2",
+      "selected_video_id": "video_4a80270ce5993dcb",
+      "level": "4",
+      "lesson": "",
+      "category": "World Geography",
+      "global_order": "2264",
+      "source_page": "1",
+      "word": "England",
+      "source_text": "England",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "World Geography",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2209",
+      "sign_id": "sign_ca301352eee0038e",
+      "selected_video_id": "video_cb43bb10d40a67c0",
+      "level": "4",
+      "lesson": "",
+      "category": "World Geography",
+      "global_order": "2265",
+      "source_page": "1",
+      "word": "Finland",
+      "source_text": "Finland",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "World Geography",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2210",
+      "sign_id": "sign_58a898ee28058255",
+      "selected_video_id": "video_f422e06e636f5313",
+      "level": "4",
+      "lesson": "",
+      "category": "World Geography",
+      "global_order": "2266",
+      "source_page": "1",
+      "word": "France",
+      "source_text": "France",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "World Geography",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2211",
+      "sign_id": "sign_0067e5586a363787",
+      "selected_video_id": "video_0b67e93f2a1ad68c",
+      "level": "4",
+      "lesson": "",
+      "category": "World Geography",
+      "global_order": "2267",
+      "source_page": "1",
+      "word": "Germany",
+      "source_text": "Germany",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "World Geography",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2212",
+      "sign_id": "sign_9abb949b2fe468ac",
+      "selected_video_id": "video_91fec67a1b38a778",
+      "level": "4",
+      "lesson": "",
+      "category": "World Geography",
+      "global_order": "2268",
+      "source_page": "1",
+      "word": "Greece",
+      "source_text": "Greece",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "World Geography",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2213",
+      "sign_id": "sign_2dac6ddefe3b1453",
+      "selected_video_id": "video_2b6fcc61214a5f77",
+      "level": "4",
+      "lesson": "",
+      "category": "World Geography",
+      "global_order": "2269",
+      "source_page": "1",
+      "word": "Ireland",
+      "source_text": "Ireland",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "World Geography",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2214",
+      "sign_id": "sign_a0135b54381cb682",
+      "selected_video_id": "video_cf3c4bea839ccc77",
+      "level": "4",
+      "lesson": "",
+      "category": "World Geography",
+      "global_order": "2270",
+      "source_page": "1",
+      "word": "Italy",
+      "source_text": "Italy",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "World Geography",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2215",
+      "sign_id": "sign_c9b26d9e6ecf08bb",
+      "selected_video_id": "video_c9b26d9e6ecf08bb",
+      "level": "4",
+      "lesson": "",
+      "category": "World Geography",
+      "global_order": "2271",
+      "source_page": "1",
+      "word": "Netherlands",
+      "source_text": "Netherlands",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "World Geography",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2216",
+      "sign_id": "sign_6a968e5ec1a57d32",
+      "selected_video_id": "video_6a968e5ec1a57d32",
+      "level": "4",
+      "lesson": "",
+      "category": "World Geography",
+      "global_order": "2272",
+      "source_page": "1",
+      "word": "Northern Ireland",
+      "source_text": "Northern Ireland",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "World Geography",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2217",
+      "sign_id": "sign_fe896c4a570b8553",
+      "selected_video_id": "video_9f49338117e57c86",
+      "level": "4",
+      "lesson": "",
+      "category": "World Geography",
+      "global_order": "2273",
+      "source_page": "1",
+      "word": "Norway",
+      "source_text": "Norway",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "World Geography",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2218",
+      "sign_id": "sign_3c198a20cc2b67af",
+      "selected_video_id": "video_109da4aa22389a22",
+      "level": "4",
+      "lesson": "",
+      "category": "World Geography",
+      "global_order": "2274",
+      "source_page": "1",
+      "word": "Poland",
+      "source_text": "Poland",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "World Geography",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2219",
+      "sign_id": "sign_d052fe1989b85a82",
+      "selected_video_id": "video_537a479463e2554e",
+      "level": "4",
+      "lesson": "",
+      "category": "World Geography",
+      "global_order": "2275",
+      "source_page": "1",
+      "word": "Portugal",
+      "source_text": "Portugal",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "World Geography",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2220",
+      "sign_id": "sign_d74f16ac8a82677b",
+      "selected_video_id": "video_1336d65d3236ba6f",
+      "level": "4",
+      "lesson": "",
+      "category": "World Geography",
+      "global_order": "2276",
+      "source_page": "1",
+      "word": "Scotland",
+      "source_text": "Scotland",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "World Geography",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2221",
+      "sign_id": "sign_45bd82781043b781",
+      "selected_video_id": "video_634713b2361092a6",
+      "level": "4",
+      "lesson": "",
+      "category": "World Geography",
+      "global_order": "2277",
+      "source_page": "1",
+      "word": "Spain",
+      "source_text": "Spain",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "World Geography",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2222",
+      "sign_id": "sign_e78ebb894aec448d",
+      "selected_video_id": "video_e78ebb894aec448d",
+      "level": "4",
+      "lesson": "",
+      "category": "World Geography",
+      "global_order": "2278",
+      "source_page": "1",
+      "word": "Sweden",
+      "source_text": "Sweden",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "World Geography",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2223",
+      "sign_id": "sign_3f4b3a557858a3ba",
+      "selected_video_id": "video_b70cf009f59efacc",
+      "level": "4",
+      "lesson": "",
+      "category": "World Geography",
+      "global_order": "2279",
+      "source_page": "1",
+      "word": "Switzerland",
+      "source_text": "Switzerland",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "World Geography",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2224",
+      "sign_id": "sign_79246175e9f3a42f",
+      "selected_video_id": "video_bf380c82a184ae4d",
+      "level": "4",
+      "lesson": "",
+      "category": "World Geography",
+      "global_order": "2280",
+      "source_page": "1",
+      "word": "Turkey (Country)",
+      "source_text": "Turkey",
+      "notes": "Country meaning; place video. Suggested URL verified.",
+      "topic": "World Geography",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2225",
+      "sign_id": "sign_ca0236902ff43bc7",
+      "selected_video_id": "video_ca0236902ff43bc7",
+      "level": "4",
+      "lesson": "",
+      "category": "World Geography",
+      "global_order": "2281",
+      "source_page": "1",
+      "word": "Ukraine",
+      "source_text": "Ukraine",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "World Geography",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2226",
+      "sign_id": "sign_8f15764312220a1e",
+      "selected_video_id": "video_e4d0a56d76bed5c8",
+      "level": "4",
+      "lesson": "",
+      "category": "World Geography",
+      "global_order": "2282",
+      "source_page": "1",
+      "word": "Wales",
+      "source_text": "Wales",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "World Geography",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2227",
+      "sign_id": "sign_ec0b4bd2d769573d",
+      "selected_video_id": "video_ec0b4bd2d769573d",
+      "level": "4",
+      "lesson": "",
+      "category": "UK",
+      "global_order": "2283",
+      "source_page": "1",
+      "word": "British",
+      "source_text": "British",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2228",
+      "sign_id": "sign_78a5daaff610ffe2",
+      "selected_video_id": "video_4a80270ce5993dcb",
+      "level": "4",
+      "lesson": "",
+      "category": "UK",
+      "global_order": "2284",
+      "source_page": "1",
+      "word": "England",
+      "source_text": "England",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2229",
+      "sign_id": "sign_3178ac357e50d095",
+      "selected_video_id": "video_3178ac357e50d095",
+      "level": "4",
+      "lesson": "",
+      "category": "UK",
+      "global_order": "2285",
+      "source_page": "1",
+      "word": "Great Britain",
+      "source_text": "Great Britain",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2230",
+      "sign_id": "sign_2dac6ddefe3b1453",
+      "selected_video_id": "video_2b6fcc61214a5f77",
+      "level": "4",
+      "lesson": "",
+      "category": "UK",
+      "global_order": "2286",
+      "source_page": "1",
+      "word": "Ireland",
+      "source_text": "Ireland",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2231",
+      "sign_id": "sign_6a968e5ec1a57d32",
+      "selected_video_id": "video_6a968e5ec1a57d32",
+      "level": "4",
+      "lesson": "",
+      "category": "UK",
+      "global_order": "2287",
+      "source_page": "1",
+      "word": "Northern Ireland",
+      "source_text": "Northern Ireland",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2232",
+      "sign_id": "sign_d74f16ac8a82677b",
+      "selected_video_id": "video_1336d65d3236ba6f",
+      "level": "4",
+      "lesson": "",
+      "category": "UK",
+      "global_order": "2288",
+      "source_page": "1",
+      "word": "Scotland",
+      "source_text": "Scotland",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2233",
+      "sign_id": "sign_9f360f83b854a393",
+      "selected_video_id": "video_9f360f83b854a393",
+      "level": "4",
+      "lesson": "",
+      "category": "UK",
+      "global_order": "2289",
+      "source_page": "1",
+      "word": "UK",
+      "source_text": "UK",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2234",
+      "sign_id": "sign_8f15764312220a1e",
+      "selected_video_id": "video_e4d0a56d76bed5c8",
+      "level": "4",
+      "lesson": "",
+      "category": "UK",
+      "global_order": "2290",
+      "source_page": "1",
+      "word": "Wales",
+      "source_text": "Wales",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2235",
+      "sign_id": "sign_575331a5bdd6ae43",
+      "selected_video_id": "video_575331a5bdd6ae43",
+      "level": "4",
+      "lesson": "",
+      "category": "Areas",
+      "global_order": "2291",
+      "source_page": "1",
+      "word": "North",
+      "source_text": "North",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2236",
+      "sign_id": "sign_804363c846ca0694",
+      "selected_video_id": "video_804363c846ca0694",
+      "level": "4",
+      "lesson": "",
+      "category": "Areas",
+      "global_order": "2292",
+      "source_page": "1",
+      "word": "South",
+      "source_text": "South",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2237",
+      "sign_id": "sign_0415d6bef7d273ef",
+      "selected_video_id": "video_0415d6bef7d273ef",
+      "level": "4",
+      "lesson": "",
+      "category": "Areas",
+      "global_order": "2293",
+      "source_page": "1",
+      "word": "East",
+      "source_text": "East",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2238",
+      "sign_id": "sign_86224301828e4629",
+      "selected_video_id": "video_86224301828e4629",
+      "level": "4",
+      "lesson": "",
+      "category": "Areas",
+      "global_order": "2294",
+      "source_page": "1",
+      "word": "West",
+      "source_text": "West",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2239",
+      "sign_id": "sign_3332ae549a906a32",
+      "selected_video_id": "video_47b5874406a994df",
+      "level": "4",
+      "lesson": "",
+      "category": "Areas",
+      "global_order": "2295",
+      "source_page": "1",
+      "word": "Centre",
+      "source_text": "Centre",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
+    },
+    {
+      "entry_id": "2240",
+      "sign_id": "sign_6c795fbc92cce437",
+      "selected_video_id": "video_6c795fbc92cce437",
+      "level": "4",
+      "lesson": "",
+      "category": "Areas",
+      "global_order": "2296",
+      "source_page": "1",
+      "word": "Middle",
+      "source_text": "Middle",
+      "notes": "Suggested URL; verify in Video Verifier.",
+      "topic": "UK Cities",
+      "nmf": "FALSE",
+      "source_pages": "1"
     }
   ],
   "video_sequences": [
@@ -55243,6 +57280,10 @@ window.BSL_DATA = {
       "suggestion": ""
     },
     {
+      "sign_id": "sign_6be86dc3b680b00a",
+      "suggestion": ""
+    },
+    {
       "sign_id": "sign_7f85e4943871807c",
       "suggestion": ""
     },
@@ -55252,6 +57293,10 @@ window.BSL_DATA = {
     },
     {
       "sign_id": "sign_d252ca27b9138909",
+      "suggestion": ""
+    },
+    {
+      "sign_id": "sign_f19f8ca60d9b2b6b",
       "suggestion": ""
     },
     {

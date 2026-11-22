@@ -17,7 +17,7 @@ FIELDS = {
 }
 TOPICS = {'Work Life', 'The Home', 'Education', 'People and Personalities',
           'Hobbies and Activities', 'Health and Fitness', 'Home Life',
-          'Travel and Holidays', 'Food and Drink'}
+          'Travel and Holidays', 'Food and Drink', 'UK Cities', 'World Geography'}
 
 def require(condition, message):
     if not condition:
@@ -86,7 +86,7 @@ def validate(data):
                 'Each video sequence must contain between two and ten clips in order')
     for r in entries:
         require(r['sign_id'] in smap, 'Unknown lesson sign_id: ' + r['sign_id'])
-        require(r['level'] in {'1', '2', '3'}, 'Level must be 1, 2, or 3')
+        require(r['level'] in {'1', '2', '3', '4'}, 'Level must be 1, 2, 3, or 4')
         if r['level'] in {'1', '3'}:
             maximum_lesson = 14 if r['level'] == '1' else 11
             minimum_lesson = 0 if r['level'] == '1' else 1
@@ -97,8 +97,9 @@ def validate(data):
                 require(r['category'] in {'Right Handed', 'Left Handed', 'Vocabulary'},
                         'Lesson 0 category must identify handedness or vocabulary')
         else:
-            require(not r['lesson'] and r['topic'] in TOPICS, 'Level 2 requires a topic, not a lesson')
-            require('/' not in r['word'], 'Split all Level 2 slash labels')
+            require(not r['lesson'] and r['topic'] in TOPICS, 'Level 2 and 4 require a topic, not a lesson')
+            if r['level'] == '2':
+                require('/' not in r['word'], 'Split all Level 2 slash labels')
         require(r['nmf'] in {'TRUE', 'FALSE'}, 'nmf must be TRUE or FALSE')
         require(r['global_order'].isdigit() and int(r['global_order']) > 0, 'Invalid global_order')
         require(r['entry_id'].isdigit() and int(r['entry_id']) > 0, 'Invalid entry_id')

@@ -638,7 +638,7 @@ entry_id,sign_id,selected_video_id,level,lesson,category,global_order,source_pag
 639,sign_b0be2fc7f1776aea,video_02776400803a98b2,1,11,Dinner,639,46,Jacket potato,Jacket potato,Candidate URL from original SignStation naming pattern; not checked,,FALSE,46
 640,sign_a314f960f2a8f136,video_182ea6227be84711,1,11,Meats,640,46,Lamb,Lamb,Candidate URL from original SignStation naming pattern; not checked,,FALSE,46
 641,sign_92f611e864502be6,video_f50708d5c641e319,1,11,Meats,641,46,Chicken,Chicken,Candidate URL from original SignStation naming pattern; not checked,,FALSE,46
-642,sign_79246175e9f3a42f,video_bf380c82a184ae4d,1,11,Meats,642,46,Turkey,Turkey,Candidate URL from original SignStation naming pattern; not checked,,FALSE,46
+642,sign_75143c94671416be,video_75143c94671416be,1,11,Meats,642,46,Turkey (Food),Turkey,Candidate URL from original SignStation naming pattern; not checked,,FALSE,46
 643,sign_945000a57e9b8188,video_403c313bdd9689bd,1,11,Meats,643,46,Beef,Beef,Candidate URL from original SignStation naming pattern; not checked,,FALSE,46
 644,sign_99e6ee3ae9c1a002,video_daae20353154faed,1,11,Meats,644,46,Fish,Fish,Candidate URL from original SignStation naming pattern; not checked,,FALSE,46
 645,sign_1d9c2a9192a041c4,video_81b73cb1ca834429,1,11,Meats,645,46,Pork,Pork,Candidate URL from original SignStation naming pattern; not checked,,FALSE,46
@@ -1442,7 +1442,7 @@ entry_id,sign_id,selected_video_id,level,lesson,category,global_order,source_pag
 1443,sign_aa37573ef7f76128,video_d36f927e179b5219,2,,Countries,1443,45,South Africa,p45: South Africa,,Travel and Holidays,FALSE,45
 1444,sign_45bd82781043b781,video_634713b2361092a6,2,,Countries,1444,45,Spain,p45: Spain | p62: Spain,,Travel and Holidays,FALSE,45; 62
 1445,sign_3f4b3a557858a3ba,video_b70cf009f59efacc,2,,Countries,1445,45,Switzerland,p45: Switzerland,,Travel and Holidays,FALSE,45
-1446,sign_79246175e9f3a42f,video_bf380c82a184ae4d,2,,Countries,1446,45,Turkey,p45: Turkey,,Travel and Holidays,FALSE,45
+1446,sign_79246175e9f3a42f,video_bf380c82a184ae4d,2,,Countries,1446,45,Turkey (Country),Turkey,Country meaning; place video. Suggested URL verified.,Travel and Holidays,FALSE,45
 1447,sign_8f15764312220a1e,video_e4d0a56d76bed5c8,2,,Countries,1447,45,Wales,p45: Wales | p62: Wales,,Travel and Holidays,FALSE,45; 62
 1448,sign_d4915fd94886558c,video_a7e9db3cd0c69166,2,,Cities and destinations,1448,45,Birmingham,p45: Birmingham - 2 | p62: Birmingham - BHAM,,Travel and Holidays,FALSE,45; 62
 1449,sign_8c353de5a7437b77,video_2389bfd5da7e098f,2,,Cities and destinations,1449,45,Blackpool,p45: Blackpool,,Travel and Holidays,FALSE,45
@@ -1639,7 +1639,7 @@ entry_id,sign_id,selected_video_id,level,lesson,category,global_order,source_pag
 1640,sign_a314f960f2a8f136,video_182ea6227be84711,2,,Meat and fish,1640,53,Lamb,p53: Lamb | p62: Lamb,,Food and Drink,FALSE,53; 62
 1641,sign_1d9c2a9192a041c4,video_81b73cb1ca834429,2,,Meat and fish,1641,53,Pork,p53: Pork | p62: Pork,,Food and Drink,FALSE,53; 62
 1642,sign_92f611e864502be6,video_f50708d5c641e319,2,,Meat and fish,1642,53,Chicken,p53: Chicken | p62: Chicken,,Food and Drink,FALSE,53; 62
-1643,sign_79246175e9f3a42f,video_bf380c82a184ae4d,2,,Meat and fish,1643,53,Turkey,p53: Turkey | p62: Turkey,,Food and Drink,FALSE,53; 62
+1643,sign_79246175e9f3a42f,video_bf380c82a184ae4d,2,,Meat and fish,1643,53,Turkey (Country),Turkey,Country meaning; place video. Suggested URL verified.,Food and Drink,FALSE,53; 62
 1644,sign_99e6ee3ae9c1a002,video_daae20353154faed,2,,Meat and fish,1644,53,Fish,p53: Fish | p62: Fish,,Food and Drink,FALSE,53; 62
 1645,sign_2915bb42cb1d262b,video_399127435f89628b,2,,Meat and fish,1645,53,Salmon,p53: Salmon | p62: Salmon,,Food and Drink,FALSE,53; 62
 1646,sign_9a709ac3556bc7e8,video_e961088c2ad5824f,2,,Meat and fish,1646,53,Tuna,p53: Tuna | p62: Tuna,,Food and Drink,FALSE,53; 62
@@ -2144,3 +2144,95 @@ entry_id,sign_id,selected_video_id,level,lesson,category,global_order,source_pag
 2145,sign_3a2860ece5a4ee0b,video_cbb4bf94470a0ba7,1,0,Vocabulary,2201,0,Word,Word,Supplemental sign vocabulary entry; not from a workbook page.,,FALSE,0
 2146,sign_8125fbca0451a0cd,video_b1656af1c20f002a,1,0,Vocabulary,2202,0,Fingerspelling,Fingerspelling,Supplemental sign vocabulary entry; not from a workbook page.,,FALSE,0
 2147,sign_1f5d64b92820f823,video_d9b75f2983062029,1,0,Vocabulary,2203,0,Meaning,Meaning,Supplemental sign vocabulary entry; not from a workbook page.,,FALSE,0
+2148,sign_9c0805b13cb655ce,video_a4fc4fd0e617fb52,4,,Areas,2204,1,Live,Live,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2149,sign_38ce4c90dd78fd36,video_d957b7e4cf436836,4,,Areas,2205,1,From,From,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2150,sign_18d85d392b94ef5b,video_979bd9b95a63cf00,4,,Areas,2206,1,Born,Born,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2151,sign_059202e063c790d8,video_059202e063c790d8,4,,Areas,2207,1,Country,Country,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2152,sign_b181b0864bd8c6d9,video_9604bc412acb041c,4,,Areas,2208,1,Countryside,Countryside,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2153,sign_076711fec704bb81,video_076711fec704bb81,4,,Areas,2209,1,Village,Village,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2154,sign_4ee64e7502d3c788,video_4ee64e7502d3c788,4,,Areas,2210,1,City,City,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2155,sign_7dccdbed3d393fee,video_b4e2b9aeb14d1a5b,4,,Areas,2211,1,Town,Town,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2156,sign_ce708a50fb6cc201,video_06cfc68f991b6432,4,,Areas,2212,1,Near,Near,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2157,sign_b60148c9a4538ec6,video_948ff3de509b0610,4,,Areas,2213,1,Far,Far,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2158,sign_ddcf602fdd8d261d,video_ddcf602fdd8d261d,4,,Areas,2214,1,Rural,Rural,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2159,sign_99b3bde6e6ba9a5a,video_99b3bde6e6ba9a5a,4,,Cities,2215,1,Aberdeen,Aberdeen,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2160,sign_3cb7a75263a77b7c,video_434b9cbc68371e46,4,,Cities,2216,1,Bath,Bath,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2161,sign_7da6f2be3f462492,video_7da6f2be3f462492,4,,Cities,2217,1,Belfast,Belfast,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2162,sign_d4915fd94886558c,video_a7e9db3cd0c69166,4,,Cities,2218,1,Birmingham,Birmingham,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2163,sign_ea0dd3f88fedfaa7,video_ea0dd3f88fedfaa7,4,,Cities,2219,1,Bradford,Bradford,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2164,sign_5c4315ea9a94e954,video_312f84fdeefd0642,4,,Cities,2220,1,Brighton,Brighton,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2165,sign_942b7f119e41f038,video_d141de7dc7eb9d6a,4,,Cities,2221,1,Bristol,Bristol,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2166,sign_406b6d527878b51a,video_89304602ef7ebd3e,4,,Cities,2222,1,Cambridge,Cambridge,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2167,sign_e6534ddab34fce4e,video_e6534ddab34fce4e,4,,Cities,2223,1,Canterbury,Canterbury,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2168,sign_2a8a497d4227e71d,video_9dd157581578c2c8,4,,Cities,2224,1,Cardiff,Cardiff,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2169,sign_194bca046ff95986,video_194bca046ff95986,4,,Cities,2225,1,Chester,Chester,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2170,sign_41423e81c7092492,video_41423e81c7092492,4,,Cities,2226,1,Cork,Cork,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2171,sign_8d98d027d32dbbab,video_8d98d027d32dbbab,4,,Cities,2227,1,Coventry,Coventry,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2172,sign_fea3dbb0e6d7c4f4,video_a9faaf47a6e2044f,4,,Cities,2228,1,Derby,Derby,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2173,sign_748e66f49140aa41,video_748e66f49140aa41,4,,Cities,2229,1,Derry,Derry,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2174,sign_c53d14b09bf07134,video_c53d14b09bf07134,4,,Cities,2230,1,Doncaster,Doncaster,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2175,sign_3cfabbda8d193147,video_3cfabbda8d193147,4,,Cities,2231,1,Dublin,Dublin,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2176,sign_3364c1476fe30552,video_3364c1476fe30552,4,,Cities,2232,1,Dundee,Dundee,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2177,sign_7a2a723d0ed862b2,video_e95091d61b2ba17f,4,,Cities,2233,1,Edinburgh,Edinburgh,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2178,sign_db0ad8178875c930,video_db0ad8178875c930,4,,Cities,2234,1,Exeter,Exeter,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2179,sign_cf14ca40aeb28b4f,video_d73be44e66c18ac0,4,,Cities,2235,1,Glasgow,Glasgow,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2180,sign_02be3bb513bf2026,video_02be3bb513bf2026,4,,Cities,2236,1,Gloucester,Gloucester,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2181,sign_3c3e5e36d8dd2ba9,video_ebb579eaa5708b9e,4,,Cities,2237,1,Leeds,Leeds,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2182,sign_9a560035fa64227b,video_051286584c71f701,4,,Cities,2238,1,Leicester,Leicester,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2183,sign_b60fe39ddd2fb31b,video_84e7e2d3132f5730,4,,Cities,2239,1,Liverpool,Liverpool,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2184,sign_9371bd2c3bc67548,video_7994db7e2adff569,4,,Cities,2240,1,London,London,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2185,sign_fa1a8d223e00d5f1,video_bc04db40e42dfffd,4,,Cities,2241,1,Manchester,Manchester,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2186,sign_1864e72e7aa702cb,video_1864e72e7aa702cb,4,,Cities,2242,1,Newcastle,Newcastle,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2187,sign_b694edf6406a552b,video_b694edf6406a552b,4,,Cities,2243,1,Norwich,Norwich,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2188,sign_4f9a13287cf4d4e4,video_eaffa8498e8c587f,4,,Cities,2244,1,Nottingham,Nottingham,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2189,sign_a5f5dbb7a8723cce,video_f7606ff555278480,4,,Cities,2245,1,Oxford,Oxford,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2190,sign_f889cf8cc86c3445,video_59123e8f9100e072,4,,Cities,2246,1,Plymouth,Plymouth,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2191,sign_914afeba5e1aa9e4,video_4f14d716fb2adf8a,4,,Cities,2247,1,Portsmouth,Portsmouth,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2192,sign_b904dd6bd5e5a972,video_2e77fbf58d1fff01,4,,Cities,2248,1,Sheffield,Sheffield,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2193,sign_c04e55ecec41804e,video_c04e55ecec41804e,4,,Cities,2249,1,Southampton,Southampton,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2194,sign_951ea911f5215771,video_e4bdc33342bb36d3,4,,Cities,2250,1,Swansea,Swansea,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2195,sign_ad15bbf88d48cf86,video_ad15bbf88d48cf86,4,,Cities,2251,1,York,York,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2196,sign_2dac6ddefe3b1453,video_2b6fcc61214a5f77,4,,UK,2252,1,Ireland,Ireland,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2197,sign_4c273d5d1edabaca,video_4c273d5d1edabaca,4,,World Geography,2253,1,Africa,Africa,Suggested URL; verify in Video Verifier.,World Geography,FALSE,1
+2198,sign_5595159ac6bfc5cf,video_5595159ac6bfc5cf,4,,World Geography,2254,1,Asia,Asia,Suggested URL; verify in Video Verifier.,World Geography,FALSE,1
+2199,sign_f5bad36b76ec4e20,video_58bc94972ededa7f,4,,World Geography,2255,1,Europe,Europe,Suggested URL; verify in Video Verifier.,World Geography,FALSE,1
+2200,sign_4b95bd27f9598d75,video_4b95bd27f9598d75,4,,World Geography,2256,1,North America,North America,Suggested URL; verify in Video Verifier.,World Geography,FALSE,1
+2201,sign_6be86dc3b680b00a,,4,,World Geography,2257,1,South America,South America,Suggested URL; verify in Video Verifier.,World Geography,FALSE,1
+2202,sign_f19f8ca60d9b2b6b,,4,,World Geography,2258,1,Oceania,Oceania,Suggested URL; verify in Video Verifier.,World Geography,FALSE,1
+2203,sign_13bebe539f440c5f,video_13bebe539f440c5f,4,,World Geography,2259,1,Antarctica,Antarctica,Suggested URL; verify in Video Verifier.,World Geography,FALSE,1
+2204,sign_913962d2ef246f06,video_7fa918c1d3898c4b,4,,World Geography,2260,1,Austria,Austria,Suggested URL; verify in Video Verifier.,World Geography,FALSE,1
+2205,sign_ae83bc632761903d,video_1bd81df0e8253e2c,4,,World Geography,2261,1,Belgium,Belgium,Suggested URL; verify in Video Verifier.,World Geography,FALSE,1
+2207,sign_de5b95b4adb596c6,video_de5b95b4adb596c6,4,,World Geography,2263,1,Denmark,Denmark,Suggested URL; verify in Video Verifier.,World Geography,FALSE,1
+2208,sign_78a5daaff610ffe2,video_4a80270ce5993dcb,4,,World Geography,2264,1,England,England,Suggested URL; verify in Video Verifier.,World Geography,FALSE,1
+2209,sign_ca301352eee0038e,video_cb43bb10d40a67c0,4,,World Geography,2265,1,Finland,Finland,Suggested URL; verify in Video Verifier.,World Geography,FALSE,1
+2210,sign_58a898ee28058255,video_f422e06e636f5313,4,,World Geography,2266,1,France,France,Suggested URL; verify in Video Verifier.,World Geography,FALSE,1
+2211,sign_0067e5586a363787,video_0b67e93f2a1ad68c,4,,World Geography,2267,1,Germany,Germany,Suggested URL; verify in Video Verifier.,World Geography,FALSE,1
+2212,sign_9abb949b2fe468ac,video_91fec67a1b38a778,4,,World Geography,2268,1,Greece,Greece,Suggested URL; verify in Video Verifier.,World Geography,FALSE,1
+2213,sign_2dac6ddefe3b1453,video_2b6fcc61214a5f77,4,,World Geography,2269,1,Ireland,Ireland,Suggested URL; verify in Video Verifier.,World Geography,FALSE,1
+2214,sign_a0135b54381cb682,video_cf3c4bea839ccc77,4,,World Geography,2270,1,Italy,Italy,Suggested URL; verify in Video Verifier.,World Geography,FALSE,1
+2215,sign_c9b26d9e6ecf08bb,video_c9b26d9e6ecf08bb,4,,World Geography,2271,1,Netherlands,Netherlands,Suggested URL; verify in Video Verifier.,World Geography,FALSE,1
+2216,sign_6a968e5ec1a57d32,video_6a968e5ec1a57d32,4,,World Geography,2272,1,Northern Ireland,Northern Ireland,Suggested URL; verify in Video Verifier.,World Geography,FALSE,1
+2217,sign_fe896c4a570b8553,video_9f49338117e57c86,4,,World Geography,2273,1,Norway,Norway,Suggested URL; verify in Video Verifier.,World Geography,FALSE,1
+2218,sign_3c198a20cc2b67af,video_109da4aa22389a22,4,,World Geography,2274,1,Poland,Poland,Suggested URL; verify in Video Verifier.,World Geography,FALSE,1
+2219,sign_d052fe1989b85a82,video_537a479463e2554e,4,,World Geography,2275,1,Portugal,Portugal,Suggested URL; verify in Video Verifier.,World Geography,FALSE,1
+2220,sign_d74f16ac8a82677b,video_1336d65d3236ba6f,4,,World Geography,2276,1,Scotland,Scotland,Suggested URL; verify in Video Verifier.,World Geography,FALSE,1
+2221,sign_45bd82781043b781,video_634713b2361092a6,4,,World Geography,2277,1,Spain,Spain,Suggested URL; verify in Video Verifier.,World Geography,FALSE,1
+2222,sign_e78ebb894aec448d,video_e78ebb894aec448d,4,,World Geography,2278,1,Sweden,Sweden,Suggested URL; verify in Video Verifier.,World Geography,FALSE,1
+2223,sign_3f4b3a557858a3ba,video_b70cf009f59efacc,4,,World Geography,2279,1,Switzerland,Switzerland,Suggested URL; verify in Video Verifier.,World Geography,FALSE,1
+2224,sign_79246175e9f3a42f,video_bf380c82a184ae4d,4,,World Geography,2280,1,Turkey (Country),Turkey,Country meaning; place video. Suggested URL verified.,World Geography,FALSE,1
+2225,sign_ca0236902ff43bc7,video_ca0236902ff43bc7,4,,World Geography,2281,1,Ukraine,Ukraine,Suggested URL; verify in Video Verifier.,World Geography,FALSE,1
+2226,sign_8f15764312220a1e,video_e4d0a56d76bed5c8,4,,World Geography,2282,1,Wales,Wales,Suggested URL; verify in Video Verifier.,World Geography,FALSE,1
+2227,sign_ec0b4bd2d769573d,video_ec0b4bd2d769573d,4,,UK,2283,1,British,British,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2228,sign_78a5daaff610ffe2,video_4a80270ce5993dcb,4,,UK,2284,1,England,England,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2229,sign_3178ac357e50d095,video_3178ac357e50d095,4,,UK,2285,1,Great Britain,Great Britain,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2230,sign_2dac6ddefe3b1453,video_2b6fcc61214a5f77,4,,UK,2286,1,Ireland,Ireland,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2231,sign_6a968e5ec1a57d32,video_6a968e5ec1a57d32,4,,UK,2287,1,Northern Ireland,Northern Ireland,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2232,sign_d74f16ac8a82677b,video_1336d65d3236ba6f,4,,UK,2288,1,Scotland,Scotland,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2233,sign_9f360f83b854a393,video_9f360f83b854a393,4,,UK,2289,1,UK,UK,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2234,sign_8f15764312220a1e,video_e4d0a56d76bed5c8,4,,UK,2290,1,Wales,Wales,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2235,sign_575331a5bdd6ae43,video_575331a5bdd6ae43,4,,Areas,2291,1,North,North,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2236,sign_804363c846ca0694,video_804363c846ca0694,4,,Areas,2292,1,South,South,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2237,sign_0415d6bef7d273ef,video_0415d6bef7d273ef,4,,Areas,2293,1,East,East,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2238,sign_86224301828e4629,video_86224301828e4629,4,,Areas,2294,1,West,West,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2239,sign_3332ae549a906a32,video_47b5874406a994df,4,,Areas,2295,1,Centre,Centre,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
+2240,sign_6c795fbc92cce437,video_6c795fbc92cce437,4,,Areas,2296,1,Middle,Middle,Suggested URL; verify in Video Verifier.,UK Cities,FALSE,1
