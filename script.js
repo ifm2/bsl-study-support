@@ -90,7 +90,7 @@ const topicEmoji = {'Work Life':'💼','The Home':'🏠','Education':'🎓','Peo
 let currentLevel=1, currentLesson=1, vocabulary=[], categories=[];
 let studyMode='dictionary', playbackMode='flashcard';
 let practiceCategory='', practiceRows=null, practiceIndex=0, answerRevealed=false;
-let practiceQuestionStyle='self-rate', practiceChoiceResult=null;
+let practiceQuestionStyle='choice', practiceChoiceResult=null;
 let ratings=new Map();
 let masterQuiz={rows:null,index:0,style:'choice',answers:[],requestedCount:10};
 const content=$('content');
