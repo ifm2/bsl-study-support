@@ -424,7 +424,7 @@ entry_id,sign_id,selected_video_id,level,lesson,category,global_order,source_pag
 425,sign_638244e63806362e,video_601f5147577a1451,1,8,Family,425,35,Niece,Niece,Candidate URL from original SignStation naming pattern; not checked,,FALSE,35
 426,sign_92efd051acabe78d,video_ab13ff1181e29fce,1,8,Family,426,35,Nephew,Nephew,Candidate URL from original SignStation naming pattern; not checked,,FALSE,35
 427,sign_356a9ddfbd74f04c,video_7321aef1b8c522d5,1,8,Family,427,35,Cousin,Cousin,Candidate URL from original SignStation naming pattern; not checked,,FALSE,35
-428,sign_5b40cc5dca4d9a8f,video_a27ca522dbf78b55,1,8,Family,428,35,Step relation,Step relation,Candidate URL from original SignStation naming pattern; not checked,,FALSE,35
+428,sign_5b40cc5dca4d9a8f,video_a27ca522dbf78b55,1,8,Family,428,35,Step (Relation),Step relation,Candidate URL from original SignStation naming pattern; not checked,,FALSE,35
 429,sign_37b67e9f514be9dd,video_713032c383be0e8c,1,8,Family,429,35,Grandmother,Grandmother,Candidate URL from original SignStation naming pattern; not checked,,FALSE,35
 430,sign_c6e38e1f6d1511ca,video_3055a4084c202959,1,8,Family,430,35,Grandma,Grandma,Candidate URL from original SignStation naming pattern; not checked,,FALSE,35
 431,sign_edbbf8b465ae10dd,video_a11903c3257c7569,1,8,Family,431,35,Nan,Nan,Candidate URL from original SignStation naming pattern; not checked,,FALSE,35
@@ -604,7 +604,7 @@ entry_id,sign_id,selected_video_id,level,lesson,category,global_order,source_pag
 605,sign_ee838facddf4b827,video_5adf69fafc1d5005,1,10,Places and responses,605,43,Interesting,Interesting,Candidate URL from original SignStation naming pattern; not checked,,FALSE,43
 606,sign_da867c7e5d38fbd3,video_3e8029201db6c597,1,10,Places and responses,606,43,Exciting,Exciting,Candidate URL from original SignStation naming pattern; not checked,,FALSE,43
 607,sign_def35ffcf84389da,video_b2081303050691ed,1,10,Places and responses,607,43,Nice,Nice,Candidate URL from original SignStation naming pattern; not checked,,FALSE,43
-608,sign_2401fbb7c9223e84,video_3486b8383929df04,1,10,Places and responses,608,43,Me same,Me same,Candidate URL from original SignStation naming pattern; not checked,,FALSE,43
+608,sign_2401fbb7c9223e84,video_3486b8383929df04,1,10,Places and responses,608,43,Same,Me same,Candidate URL from original SignStation naming pattern; not checked,,FALSE,43
 609,sign_513abf1b5f3db2b6,video_ca4970de4a008552,1,10,Places and responses,609,43,Really,Really,Candidate URL from original SignStation naming pattern; not checked,,FALSE,43
 610,sign_a5319a65ae8e76b6,video_6deb8e3b90ec6da8,1,11,Breakfast,610,46,Eggs,Eggs,Candidate URL from original SignStation naming pattern; not checked,,FALSE,46
 611,sign_08341446d2b3f216,video_306d3fd7e1b7ca21,1,11,Breakfast,611,46,Bacon,Bacon,Candidate URL from original SignStation naming pattern; not checked,,FALSE,46
@@ -635,7 +635,7 @@ entry_id,sign_id,selected_video_id,level,lesson,category,global_order,source_pag
 636,sign_894a6e50630b7d59,video_a3166c0702332e8d,1,11,Dinner,636,46,Burger,Burger,Candidate URL from original SignStation naming pattern; not checked,,FALSE,46
 637,sign_bbab36626d15a54d,video_dc21ead7f2f24c51,1,11,Dinner,637,46,Chips,Chips,Candidate URL from original SignStation naming pattern; not checked,,FALSE,46
 638,sign_e33d9edef915718a,video_d9ac19e386c934dc,1,11,Dinner,638,46,Potato,Potato,Candidate URL from original SignStation naming pattern; not checked,,FALSE,46
-639,sign_b0be2fc7f1776aea,video_02776400803a98b2,1,11,Dinner,639,46,Jacket potato,Jacket potato,Candidate URL from original SignStation naming pattern; not checked,,FALSE,46
+639,sign_b0be2fc7f1776aea,,1,11,Dinner,639,46,Jacket potato,Jacket potato,Candidate URL from original SignStation naming pattern; not checked,,FALSE,46
 640,sign_a314f960f2a8f136,video_182ea6227be84711,1,11,Meats,640,46,Lamb,Lamb,Candidate URL from original SignStation naming pattern; not checked,,FALSE,46
 641,sign_92f611e864502be6,video_f50708d5c641e319,1,11,Meats,641,46,Chicken,Chicken,Candidate URL from original SignStation naming pattern; not checked,,FALSE,46
 642,sign_75143c94671416be,video_75143c94671416be,1,11,Meats,642,46,Turkey (Food),Turkey,Candidate URL from original SignStation naming pattern; not checked,,FALSE,46
@@ -656,8 +656,8 @@ entry_id,sign_id,selected_video_id,level,lesson,category,global_order,source_pag
 657,sign_95c28b8375412225,video_c364a4bc1990e9ac,1,11,Vegetables,657,47,Mushrooms,Mushrooms,Candidate URL from original SignStation naming pattern; not checked,,FALSE,47
 658,sign_f338f4fd1e86da08,video_b22d9da8b6bd3cdb,1,11,Vegetables,658,47,Cucumber,Cucumber,Candidate URL from original SignStation naming pattern; not checked,,FALSE,47
 659,sign_9bac90bd596ef7f8,video_e530271b00c8c899,1,11,Vegetables,659,47,Peas,Peas,Candidate URL from original SignStation naming pattern; not checked,,FALSE,47
-660,sign_ac8d5e775cae2827,video_092afcb13f4f0042,1,11,Vegetables,660,47,Broccoli,Broccoli,Candidate URL from original SignStation naming pattern; not checked,,FALSE,47
-661,sign_73acbc3c03614037,video_d902c0191695d1bc,1,11,Vegetables,661,47,Peppers,Peppers,Candidate URL from original SignStation naming pattern; not checked,,FALSE,47
+660,sign_ac8d5e775cae2827,,1,11,Vegetables,660,47,Broccoli,Broccoli,Candidate URL from original SignStation naming pattern; not checked,,FALSE,47
+661,sign_73acbc3c03614037,,1,11,Vegetables,661,47,Peppers,Peppers,Candidate URL from original SignStation naming pattern; not checked,,FALSE,47
 662,sign_c4dc50b96bbf6c1a,video_a8925dad35e83271,1,11,Vegetables,662,47,Cabbage,Cabbage,Candidate URL from original SignStation naming pattern; not checked,,FALSE,47
 663,sign_b714d9a400d5fb2a,video_4f38ead3010b6b7d,1,11,Vegetables,663,47,Brussels sprout,Brussels sprout,Candidate URL from original SignStation naming pattern; not checked,,FALSE,47
 664,sign_61304a129766c315,video_076c7cbaed3d85be,1,11,Vegetables,664,47,Salad,Salad,Candidate URL from original SignStation naming pattern; not checked,,FALSE,47
@@ -756,7 +756,7 @@ entry_id,sign_id,selected_video_id,level,lesson,category,global_order,source_pag
 757,sign_264d49b221ab077d,video_469c6ead5e5177ff,1,13,People and family,757,56,Boy,Boy,Candidate URL from original SignStation naming pattern; not checked,,FALSE,56
 758,sign_622558c54cc06716,video_487b2060b8d148af,1,13,People and family,758,56,Baby,Baby,Candidate URL from original SignStation naming pattern; not checked,,FALSE,56
 759,sign_4c273ba706e274ea,video_f908a26f0666b593,1,13,People and family,759,56,Child,Child,Candidate URL from original SignStation naming pattern; not checked,,FALSE,56
-760,sign_1ccd469d298e1f7f,video_38325233a73654e3,1,13,People and family,760,56,Teenager,Teenager,Candidate URL from original SignStation naming pattern; not checked,,FALSE,56
+760,sign_1ccd469d298e1f7f,,1,13,People and family,760,56,Teenager,Teenager,Candidate URL from original SignStation naming pattern; not checked,,FALSE,56
 761,sign_4565f36db54d4810,video_47312a4a7093ab45,1,13,People and family,761,56,Adult,Adult,Candidate URL from original SignStation naming pattern; not checked,,FALSE,56
 762,sign_ab748da428546e12,video_e00d2a49eb8abbd0,1,13,People and family,762,56,Friend,Friend,Candidate URL from original SignStation naming pattern; not checked,,FALSE,56
 763,sign_8b02970d9e273d34,video_238cbb0066015c90,1,13,People and family,763,56,Teacher,Teacher,Candidate URL from original SignStation naming pattern; not checked,,FALSE,56
@@ -807,8 +807,8 @@ entry_id,sign_id,selected_video_id,level,lesson,category,global_order,source_pag
 808,sign_6b109b3c6c0b0600,video_ae538750b2e0975f,1,13,Colours and appearance,808,56,Ginger,Ginger,Candidate URL from original SignStation naming pattern; not checked,,FALSE,56
 809,sign_002cd5d6685a5b53,video_85841398677331df,1,13,Colours and appearance,809,56,Bald,Bald,Candidate URL from original SignStation naming pattern; not checked,,FALSE,56
 810,sign_e8dce8fb53d80e83,video_94a56ad4221527f7,1,13,Colours and appearance,810,56,Hair,Hair,Candidate URL from original SignStation naming pattern; not checked,,FALSE,56
-811,sign_c8bddec65044efd4,video_9e5fc4fb3accb9d9,1,13,Colours and appearance,811,56,Short hair,Short hair,Candidate URL from original SignStation naming pattern; not checked,,FALSE,56
-812,sign_563fa9f3fe607ad9,video_1ced65cafbf4d978,1,13,Colours and appearance,812,56,Long hair,Long hair,Candidate URL from original SignStation naming pattern; not checked,,FALSE,56
+811,sign_c8bddec65044efd4,,1,13,Colours and appearance,811,56,Short hair,Short hair,Candidate URL from original SignStation naming pattern; not checked,,FALSE,56
+812,sign_563fa9f3fe607ad9,,1,13,Colours and appearance,812,56,Long hair,Long hair,Candidate URL from original SignStation naming pattern; not checked,,FALSE,56
 813,sign_ce6edaadbc9779cc,video_641f60890b500907,1,13,Colours and appearance,813,56,Glasses,Glasses,Candidate URL from original SignStation naming pattern; not checked,,FALSE,56
 814,sign_be065f309cf18eec,video_ee9a941db3bd89de,1,13,Colours and appearance,814,56,Beard,Beard,Candidate URL from original SignStation naming pattern; not checked,,FALSE,56
 815,sign_9d5cccc37aa43b16,video_c6dd3664490449fd,1,13,Colours and appearance,815,56,Moustache,Moustache,Candidate URL from original SignStation naming pattern; not checked,,FALSE,56
@@ -1573,7 +1573,7 @@ entry_id,sign_id,selected_video_id,level,lesson,category,global_order,source_pag
 1574,sign_88406dbf121b8089,video_7c025e300c000216,2,,Lunch foods,1574,52,Cheese,p52: Cheese | p62: Cheese,,Food and Drink,FALSE,52; 62
 1575,sign_f338f4fd1e86da08,video_b22d9da8b6bd3cdb,2,,Lunch foods,1575,52,Cucumber,p52: Cucumber,,Food and Drink,FALSE,52
 1576,sign_17b630e265afe0d5,video_a8e67a02e1f1257a,2,,Lunch foods,1576,52,Ham,p52: Ham,,Food and Drink,FALSE,52
-1577,sign_b0be2fc7f1776aea,video_02776400803a98b2,2,,Lunch foods,1577,52,Jacket potato,p52: Jacket Potato,,Food and Drink,FALSE,52
+1577,sign_b0be2fc7f1776aea,,2,,Lunch foods,1577,52,Jacket potato,p52: Jacket Potato,,Food and Drink,FALSE,52
 1578,sign_bc3a952962feda36,video_50df6b2bb33a0624,2,,Lunch foods,1578,52,Ketchup,p52: Ketchup,,Food and Drink,FALSE,52
 1579,sign_de2adef2c138db31,video_aa04965c71fbf6e4,2,,Lunch foods,1579,52,Lettuce,p52: Lettuce,,Food and Drink,FALSE,52
 1580,sign_99e9d1790af4f666,,2,,Lunch foods,1580,52,Mayo,p52: Mayo,,Food and Drink,FALSE,52
@@ -1737,9 +1737,9 @@ entry_id,sign_id,selected_video_id,level,lesson,category,global_order,source_pag
 1738,sign_60cc272d8865c9a9,video_bcdd94385567dda1,1,2,Numbers,1792,8,23,23,Supplemental number entry; candidate URL by numeric naming pattern; not checked.,,FALSE,8
 1739,sign_2b2620ab275055cc,video_ef8e1f3157ab12bc,1,2,Numbers,1793,8,24,24,Supplemental number entry; candidate URL by numeric naming pattern; not checked.,,FALSE,8
 1740,sign_33d31cee8c3cc299,video_ffa17ca69f48aa14,1,2,Numbers,1794,8,25,25,Supplemental number entry; candidate URL by numeric naming pattern; not checked.,,FALSE,8
-1741,sign_8a6e747020df152a,video_edea18b91f1f112b,1,2,Numbers,1795,8,26,26,Supplemental number entry; candidate URL by numeric naming pattern; not checked.,,FALSE,8
-1742,sign_7278ddba25d13e29,video_dd316e0f1c9280a3,1,2,Numbers,1796,8,27,27,Supplemental number entry; candidate URL by numeric naming pattern; not checked.,,FALSE,8
-1743,sign_281a21447b354832,video_c554f5436ebc2b8a,1,2,Numbers,1797,8,28,28,Supplemental number entry; candidate URL by numeric naming pattern; not checked.,,FALSE,8
+1741,sign_8a6e747020df152a,,1,2,Numbers,1795,8,26,26,Supplemental number entry; candidate URL by numeric naming pattern; not checked.,,FALSE,8
+1742,sign_7278ddba25d13e29,,1,2,Numbers,1796,8,27,27,Supplemental number entry; candidate URL by numeric naming pattern; not checked.,,FALSE,8
+1743,sign_281a21447b354832,,1,2,Numbers,1797,8,28,28,Supplemental number entry; candidate URL by numeric naming pattern; not checked.,,FALSE,8
 1744,sign_1b616f24acae35fe,video_a027e05d03d7af83,1,2,Numbers,1798,8,29,29,Supplemental number entry; candidate URL by numeric naming pattern; not checked.,,FALSE,8
 1745,sign_505be44d2a43e2c3,video_6f125e99cd5fca6b,1,2,Numbers,1799,8,30,30,Supplemental number entry; candidate URL by numeric naming pattern; not checked.,,FALSE,8
 1746,sign_f93d0039f603277a,video_3901eed70dd4d15b,3,1,Vocabulary,1802,1,First Language,First Language,From the supplied full course vocabulary list.,,FALSE,1

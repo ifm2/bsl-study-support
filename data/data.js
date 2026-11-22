@@ -1042,7 +1042,7 @@ window.BSL_DATA = {
     },
     {
       "sign_id": "sign_2401fbb7c9223e84",
-      "word": "Me same",
+      "word": "Same",
       "meaning": ""
     },
     {
@@ -2577,7 +2577,7 @@ window.BSL_DATA = {
     },
     {
       "sign_id": "sign_5b40cc5dca4d9a8f",
-      "word": "Step relation",
+      "word": "Step (Relation)",
       "meaning": ""
     },
     {
@@ -7266,8 +7266,8 @@ window.BSL_DATA = {
       "video_id": "video_85841398677331df",
       "sign_id": "sign_002cd5d6685a5b53",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/bald.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signmonkey/mp4/bald.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -7357,7 +7357,7 @@ window.BSL_DATA = {
       "sign_id": "sign_011abe08779e1ff8",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/bag.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -7410,8 +7410,8 @@ window.BSL_DATA = {
       "video_id": "video_668895850da6fca8",
       "sign_id": "sign_0216b6c995c4eeb4",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/order.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/booking.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -7995,8 +7995,8 @@ window.BSL_DATA = {
       "video_id": "video_e0609168e5c60d1c",
       "sign_id": "sign_0d45959bef1f1484",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/indian-food.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/India.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -8077,7 +8077,7 @@ window.BSL_DATA = {
       "sign_id": "sign_102dd316cb4bb005",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/ticket.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -8617,7 +8617,7 @@ window.BSL_DATA = {
       "sign_id": "sign_1ae67e268e9521f4",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/watch.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -8753,15 +8753,6 @@ window.BSL_DATA = {
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/jam.mp4",
       "verification_status": "Verified",
-      "priority": "1",
-      "problem_report": ""
-    },
-    {
-      "video_id": "video_38325233a73654e3",
-      "sign_id": "sign_1ccd469d298e1f7f",
-      "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/teenager.mp4",
-      "verification_status": "Unverified",
       "priority": "1",
       "problem_report": ""
     },
@@ -9120,8 +9111,8 @@ window.BSL_DATA = {
       "video_id": "video_3486b8383929df04",
       "sign_id": "sign_2401fbb7c9223e84",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/me-same.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signon/mp4/wsw44.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -9219,8 +9210,8 @@ window.BSL_DATA = {
       "video_id": "video_037447bbb931acb1",
       "sign_id": "sign_25e6400dfcec885f",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/grandfather.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/grandad.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -9306,15 +9297,6 @@ window.BSL_DATA = {
       "problem_report": ""
     },
     {
-      "video_id": "video_c554f5436ebc2b8a",
-      "sign_id": "sign_281a21447b354832",
-      "source": "SignStation number filename guess",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/28.mp4",
-      "verification_status": "Unverified",
-      "priority": "1",
-      "problem_report": ""
-    },
-    {
       "video_id": "video_d7ccf09bf1de75e6",
       "sign_id": "sign_282d683eac12d63d",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/secondary-school",
@@ -9381,8 +9363,8 @@ window.BSL_DATA = {
       "video_id": "video_3b93141adf1ddf9b",
       "sign_id": "sign_29a1eeaabb3d8cde",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/banana.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/l4ieKtKh0yw.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -9418,7 +9400,7 @@ window.BSL_DATA = {
       "sign_id": "sign_2a5d46462667f53c",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/cup.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -9562,7 +9544,7 @@ window.BSL_DATA = {
       "sign_id": "sign_2cc6c7a3fd5f31ee",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/mirror.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -9786,8 +9768,8 @@ window.BSL_DATA = {
       "video_id": "video_882c9d21f6a28ed3",
       "sign_id": "sign_317f11c3a6a5132b",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/police.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/gpnhs/mp4/police.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -9921,8 +9903,8 @@ window.BSL_DATA = {
       "video_id": "video_57d5a6d4855416e5",
       "sign_id": "sign_3395762db62e8e9d",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/wine.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signmonkey/mp4/wine.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -9976,7 +9958,7 @@ window.BSL_DATA = {
       "sign_id": "sign_341bb7494f5518a1",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/grandad.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -10012,7 +9994,7 @@ window.BSL_DATA = {
       "sign_id": "sign_34dec5579aa7ba0f",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/sugar.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -10092,8 +10074,8 @@ window.BSL_DATA = {
       "video_id": "video_35494a04f8f4df05",
       "sign_id": "sign_35aad0dba563e367",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/carrots.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/Th1lFFiwyz4.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -10137,8 +10119,8 @@ window.BSL_DATA = {
       "video_id": "video_01eb3bd3bc4b7e04",
       "sign_id": "sign_370d5ce120666382",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/keys.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/key.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -10597,7 +10579,7 @@ window.BSL_DATA = {
       "sign_id": "sign_40d120dfe4eca205",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/clever.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -10633,7 +10615,7 @@ window.BSL_DATA = {
       "sign_id": "sign_41af1787e4705051",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/cafe.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -10813,7 +10795,7 @@ window.BSL_DATA = {
       "sign_id": "sign_4565f36db54d4810",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/adult.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -10831,7 +10813,7 @@ window.BSL_DATA = {
       "sign_id": "sign_458e0e9376c47fbf",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/tea.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -11181,8 +11163,8 @@ window.BSL_DATA = {
       "video_id": "video_20bb80ba75898b74",
       "sign_id": "sign_4ce8e5680beda113",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/pineapple.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signmonkey/mp4/pineapple.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -11344,7 +11326,7 @@ window.BSL_DATA = {
       "sign_id": "sign_4f46d2e31222c164",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/student.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -11559,8 +11541,8 @@ window.BSL_DATA = {
       "video_id": "video_0128e1edcaf07433",
       "sign_id": "sign_54a2c16f1e741e32",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/blonde.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signmonkey/mp4/blonde.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -11623,15 +11605,6 @@ window.BSL_DATA = {
       "sign_id": "sign_563cfc8b1fbc86ac",
       "source": "SignStation filename guess from Level 3 vocabulary",
       "url": "https://media.signbsl.com/videos/bsl/signstation/coursework.mp4",
-      "verification_status": "Unverified",
-      "priority": "1",
-      "problem_report": ""
-    },
-    {
-      "video_id": "video_1ced65cafbf4d978",
-      "sign_id": "sign_563fa9f3fe607ad9",
-      "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/long-hair.mp4",
       "verification_status": "Unverified",
       "priority": "1",
       "problem_report": ""
@@ -11757,8 +11730,8 @@ window.BSL_DATA = {
       "video_id": "video_1ada908f4fe0bea6",
       "sign_id": "sign_594d9ca765ccc893",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/20-99.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/twenty.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -11829,8 +11802,8 @@ window.BSL_DATA = {
       "video_id": "video_a27ca522dbf78b55",
       "sign_id": "sign_5b40cc5dca4d9a8f",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/step-relation.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/S.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -12109,7 +12082,7 @@ window.BSL_DATA = {
       "sign_id": "sign_61304a129766c315",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/salad.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -12190,7 +12163,7 @@ window.BSL_DATA = {
       "sign_id": "sign_6339abe5314a294f",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/family.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -12387,8 +12360,8 @@ window.BSL_DATA = {
       "video_id": "video_954671d2afc51ee0",
       "sign_id": "sign_688074f761d930ff",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/melon.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/uploads/mp4/watermelon.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -12549,8 +12522,8 @@ window.BSL_DATA = {
       "video_id": "video_67d8a9ef3e96db67",
       "sign_id": "sign_6bb8758ea2b36da0",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/tomatoes.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signmonkey/mp4/tomato.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -12801,8 +12774,8 @@ window.BSL_DATA = {
       "video_id": "video_1c9746929db2c824",
       "sign_id": "sign_6f46959167cd06d8",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/hot-chocolate.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/hot.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -12964,7 +12937,7 @@ window.BSL_DATA = {
       "sign_id": "sign_717d125a5b09ace8",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/phone.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -12991,15 +12964,6 @@ window.BSL_DATA = {
       "sign_id": "sign_71b5cb3c7b9cef9b",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/exchange-rate",
       "url": "https://media.signbsl.com/videos/bsl/bslfirst/mp4/996230637.mp4",
-      "verification_status": "Unverified",
-      "priority": "1",
-      "problem_report": ""
-    },
-    {
-      "video_id": "video_dd316e0f1c9280a3",
-      "sign_id": "sign_7278ddba25d13e29",
-      "source": "SignStation number filename guess",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/27.mp4",
       "verification_status": "Unverified",
       "priority": "1",
       "problem_report": ""
@@ -13054,15 +13018,6 @@ window.BSL_DATA = {
       "sign_id": "sign_7391ab716d017e3d",
       "source": "SignBSL dictionary: https://www.signbsl.com/sign/cough",
       "url": "https://media.signbsl.com/videos/bsl/signstation/cough.mp4",
-      "verification_status": "Unverified",
-      "priority": "1",
-      "problem_report": ""
-    },
-    {
-      "video_id": "video_d902c0191695d1bc",
-      "sign_id": "sign_73acbc3c03614037",
-      "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/peppers.mp4",
       "verification_status": "Unverified",
       "priority": "1",
       "problem_report": ""
@@ -13144,7 +13099,7 @@ window.BSL_DATA = {
       "sign_id": "sign_74f96c6f33d149dc",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/milk.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -13153,7 +13108,7 @@ window.BSL_DATA = {
       "sign_id": "sign_75143c94671416be",
       "source": "Manually added by user",
       "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/3fqZmXYqtyM.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -13549,7 +13504,7 @@ window.BSL_DATA = {
       "sign_id": "sign_7d32a0de3d2b81ad",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/chair.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -13818,8 +13773,8 @@ window.BSL_DATA = {
       "video_id": "video_b872fd8b38d0fafb",
       "sign_id": "sign_82c248dd17f2a59c",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/orange-juice.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/O.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -14034,8 +13989,8 @@ window.BSL_DATA = {
       "video_id": "video_3cb34477108c8d85",
       "sign_id": "sign_87b7d608e6342b40",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/watermelon.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/uploads/mp4/watermelon.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -14124,8 +14079,8 @@ window.BSL_DATA = {
       "video_id": "video_a3166c0702332e8d",
       "sign_id": "sign_894a6e50630b7d59",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/burger.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/gpnhs/mp4/hamburger.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -14184,15 +14139,6 @@ window.BSL_DATA = {
       "problem_report": ""
     },
     {
-      "video_id": "video_edea18b91f1f112b",
-      "sign_id": "sign_8a6e747020df152a",
-      "source": "SignStation number filename guess",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/26.mp4",
-      "verification_status": "Unverified",
-      "priority": "1",
-      "problem_report": ""
-    },
-    {
       "video_id": "video_2512451e9a8651ba",
       "sign_id": "sign_8ac757b2f1f38ee2",
       "source": "SignStation number filename guess",
@@ -14214,8 +14160,8 @@ window.BSL_DATA = {
       "video_id": "video_238cbb0066015c90",
       "sign_id": "sign_8b02970d9e273d34",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/teacher.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signmonkey/mp4/teacher.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -14340,8 +14286,8 @@ window.BSL_DATA = {
       "video_id": "video_b555c8f154af3496",
       "sign_id": "sign_8d616367c0879c08",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/friendly.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/101-06-452.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -14575,7 +14521,7 @@ window.BSL_DATA = {
       "sign_id": "sign_91f7b1022c279d20",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/shy.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -14997,8 +14943,8 @@ window.BSL_DATA = {
       "video_id": "video_5deef40351a208d0",
       "sign_id": "sign_9c2a4a879c46cc60",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/spaghetti-bolognese.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/spaghetti.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -15303,8 +15249,8 @@ window.BSL_DATA = {
       "video_id": "video_182ea6227be84711",
       "sign_id": "sign_a314f960f2a8f136",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/lamb.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/0q4gevRVwzY.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -15322,7 +15268,7 @@ window.BSL_DATA = {
       "sign_id": "sign_a38e7e940e3580ff",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/beer.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -15565,7 +15511,7 @@ window.BSL_DATA = {
       "sign_id": "sign_a7aa096ed69188e7",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/snake.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -15582,8 +15528,8 @@ window.BSL_DATA = {
       "video_id": "video_c756fb186e779744",
       "sign_id": "sign_a87cf773df64cf18",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/strawberries.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signmonkey/mp4/strawberry.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -15723,15 +15669,6 @@ window.BSL_DATA = {
       "problem_report": ""
     },
     {
-      "video_id": "video_092afcb13f4f0042",
-      "sign_id": "sign_ac8d5e775cae2827",
-      "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/broccoli.mp4",
-      "verification_status": "Unverified",
-      "priority": "1",
-      "problem_report": ""
-    },
-    {
       "video_id": "video_ad15bbf88d48cf86",
       "sign_id": "sign_ad15bbf88d48cf86",
       "source": "Suggested SignStation URL; unverified",
@@ -15745,7 +15682,7 @@ window.BSL_DATA = {
       "sign_id": "sign_ad3ced3f6bbc5f3c",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/water.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -15834,8 +15771,8 @@ window.BSL_DATA = {
       "video_id": "video_8e4cea5ef18fec99",
       "sign_id": "sign_aec202337f512aa8",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/takeaway.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/serve.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -15861,8 +15798,8 @@ window.BSL_DATA = {
       "video_id": "video_a7a9e09eb4462bf1",
       "sign_id": "sign_b03d56f501c3491b",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/kind.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/deafsigns/mp4/50bc6b55466ca9ed8aea763cb4466ace.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -15872,15 +15809,6 @@ window.BSL_DATA = {
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/old.mp4",
       "verification_status": "Verified",
-      "priority": "1",
-      "problem_report": ""
-    },
-    {
-      "video_id": "video_02776400803a98b2",
-      "sign_id": "sign_b0be2fc7f1776aea",
-      "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/jacket-potato.mp4",
-      "verification_status": "Unverified",
       "priority": "1",
       "problem_report": ""
     },
@@ -16167,8 +16095,8 @@ window.BSL_DATA = {
       "video_id": "video_f1277b32d91dc199",
       "sign_id": "sign_b550b97e688d53cc",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/chinese-food.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/China.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -16266,8 +16194,8 @@ window.BSL_DATA = {
       "video_id": "video_4f38ead3010b6b7d",
       "sign_id": "sign_b714d9a400d5fb2a",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/brussels-sprout.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signmonkey/mp4/brussel%20sprouts.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -16590,8 +16518,8 @@ window.BSL_DATA = {
       "video_id": "video_5160a802caf2faa2",
       "sign_id": "sign_bdcf2e76ef4c1aae",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/grapes.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/deafway/mp4/grapes.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -16618,7 +16546,7 @@ window.BSL_DATA = {
       "sign_id": "sign_be065f309cf18eec",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/beard.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -16635,8 +16563,8 @@ window.BSL_DATA = {
       "video_id": "video_8dd9cd226275085a",
       "sign_id": "sign_be1e32134d5ec06f",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/italian-food.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signmonkey/mp4/italy2.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -16662,8 +16590,8 @@ window.BSL_DATA = {
       "video_id": "video_45f55a3a19b86ef1",
       "sign_id": "sign_be92d31f3d50df5a",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/wallet.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/101-06-1071.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -16978,7 +16906,7 @@ window.BSL_DATA = {
       "sign_id": "sign_c4dc50b96bbf6c1a",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/cabbage.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -17005,7 +16933,7 @@ window.BSL_DATA = {
       "sign_id": "sign_c530040a1fc76d33",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/noisy.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -17141,15 +17069,6 @@ window.BSL_DATA = {
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signmonkey/mp4/do.mp4",
       "verification_status": "Verified",
-      "priority": "1",
-      "problem_report": ""
-    },
-    {
-      "video_id": "video_9e5fc4fb3accb9d9",
-      "sign_id": "sign_c8bddec65044efd4",
-      "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/short-hair.mp4",
-      "verification_status": "Unverified",
       "priority": "1",
       "problem_report": ""
     },
@@ -17707,7 +17626,7 @@ window.BSL_DATA = {
       "sign_id": "sign_d21be92a5c8b9f40",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/pen.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -18048,8 +17967,8 @@ window.BSL_DATA = {
       "video_id": "video_310ab8de35420d8b",
       "sign_id": "sign_d7cf266359632f12",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/turtle.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signmonkey/mp4/turtle.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -18058,7 +17977,7 @@ window.BSL_DATA = {
       "sign_id": "sign_d7fa7defc6e8e958",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/umbrella.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -18085,7 +18004,7 @@ window.BSL_DATA = {
       "sign_id": "sign_d8ec57b54c9f2c92",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/coffee.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -18229,7 +18148,7 @@ window.BSL_DATA = {
       "sign_id": "sign_db7eb450472d43c0",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/travel.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -18678,8 +18597,8 @@ window.BSL_DATA = {
       "video_id": "video_d9ac19e386c934dc",
       "sign_id": "sign_e33d9edef915718a",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/potato.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/youtube/mp4/5BxvMl7p254.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -18958,7 +18877,7 @@ window.BSL_DATA = {
       "sign_id": "sign_e8dce8fb53d80e83",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/hair.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -18966,8 +18885,8 @@ window.BSL_DATA = {
       "video_id": "video_0538f88b80e26952",
       "sign_id": "sign_e902ce4a046b8faa",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/video-game-console.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signmonkey/mp4/computer%20games.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -19128,8 +19047,8 @@ window.BSL_DATA = {
       "video_id": "video_ebefd686e64f14d7",
       "sign_id": "sign_ecb5f2f4e5a3eefe",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/me-want.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/ME.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -19156,7 +19075,7 @@ window.BSL_DATA = {
       "sign_id": "sign_ed1807f93f6c7fe2",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/lamp.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -19200,8 +19119,8 @@ window.BSL_DATA = {
       "video_id": "video_a11903c3257c7569",
       "sign_id": "sign_edbbf8b465ae10dd",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/nan.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/grandma.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -19470,8 +19389,8 @@ window.BSL_DATA = {
       "video_id": "video_b22d9da8b6bd3cdb",
       "sign_id": "sign_f338f4fd1e86da08",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/cucumber.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/signmonkey/mp4/cucumber.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -19596,8 +19515,8 @@ window.BSL_DATA = {
       "video_id": "video_88d13ab48dfeff33",
       "sign_id": "sign_f5c2aa000f998f86",
       "source": "SignStation via SignBSL",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/apple.mp4",
-      "verification_status": "Unverified",
+      "url": "https://media.signbsl.com/videos/bsl/nf/mp4/Apple.mp4",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -19723,7 +19642,7 @@ window.BSL_DATA = {
       "sign_id": "sign_f7ec95fe8d298500",
       "source": "SignStation via SignBSL",
       "url": "https://media.signbsl.com/videos/bsl/signstation/confident.mp4",
-      "verification_status": "Unverified",
+      "verification_status": "Verified",
       "priority": "1",
       "problem_report": ""
     },
@@ -26773,7 +26692,7 @@ window.BSL_DATA = {
       "category": "Family",
       "global_order": "428",
       "source_page": "35",
-      "word": "Step relation",
+      "word": "Step (Relation)",
       "source_text": "Step relation",
       "notes": "Candidate URL from original SignStation naming pattern; not checked",
       "topic": "",
@@ -29653,7 +29572,7 @@ window.BSL_DATA = {
       "category": "Places and responses",
       "global_order": "608",
       "source_page": "43",
-      "word": "Me same",
+      "word": "Same",
       "source_text": "Me same",
       "notes": "Candidate URL from original SignStation naming pattern; not checked",
       "topic": "",
@@ -30143,7 +30062,7 @@ window.BSL_DATA = {
     {
       "entry_id": "639",
       "sign_id": "sign_b0be2fc7f1776aea",
-      "selected_video_id": "video_02776400803a98b2",
+      "selected_video_id": "",
       "level": "1",
       "lesson": "11",
       "category": "Dinner",
@@ -30479,7 +30398,7 @@ window.BSL_DATA = {
     {
       "entry_id": "660",
       "sign_id": "sign_ac8d5e775cae2827",
-      "selected_video_id": "video_092afcb13f4f0042",
+      "selected_video_id": "",
       "level": "1",
       "lesson": "11",
       "category": "Vegetables",
@@ -30495,7 +30414,7 @@ window.BSL_DATA = {
     {
       "entry_id": "661",
       "sign_id": "sign_73acbc3c03614037",
-      "selected_video_id": "video_d902c0191695d1bc",
+      "selected_video_id": "",
       "level": "1",
       "lesson": "11",
       "category": "Vegetables",
@@ -32079,7 +31998,7 @@ window.BSL_DATA = {
     {
       "entry_id": "760",
       "sign_id": "sign_1ccd469d298e1f7f",
-      "selected_video_id": "video_38325233a73654e3",
+      "selected_video_id": "",
       "level": "1",
       "lesson": "13",
       "category": "People and family",
@@ -32895,7 +32814,7 @@ window.BSL_DATA = {
     {
       "entry_id": "811",
       "sign_id": "sign_c8bddec65044efd4",
-      "selected_video_id": "video_9e5fc4fb3accb9d9",
+      "selected_video_id": "",
       "level": "1",
       "lesson": "13",
       "category": "Colours and appearance",
@@ -32911,7 +32830,7 @@ window.BSL_DATA = {
     {
       "entry_id": "812",
       "sign_id": "sign_563fa9f3fe607ad9",
-      "selected_video_id": "video_1ced65cafbf4d978",
+      "selected_video_id": "",
       "level": "1",
       "lesson": "13",
       "category": "Colours and appearance",
@@ -45151,7 +45070,7 @@ window.BSL_DATA = {
     {
       "entry_id": "1577",
       "sign_id": "sign_b0be2fc7f1776aea",
-      "selected_video_id": "video_02776400803a98b2",
+      "selected_video_id": "",
       "level": "2",
       "lesson": "",
       "category": "Lunch foods",
@@ -47823,7 +47742,7 @@ window.BSL_DATA = {
     {
       "entry_id": "1741",
       "sign_id": "sign_8a6e747020df152a",
-      "selected_video_id": "video_edea18b91f1f112b",
+      "selected_video_id": "",
       "level": "1",
       "lesson": "2",
       "category": "Numbers",
@@ -47839,7 +47758,7 @@ window.BSL_DATA = {
     {
       "entry_id": "1742",
       "sign_id": "sign_7278ddba25d13e29",
-      "selected_video_id": "video_dd316e0f1c9280a3",
+      "selected_video_id": "",
       "level": "1",
       "lesson": "2",
       "category": "Numbers",
@@ -47855,7 +47774,7 @@ window.BSL_DATA = {
     {
       "entry_id": "1743",
       "sign_id": "sign_281a21447b354832",
-      "selected_video_id": "video_c554f5436ebc2b8a",
+      "selected_video_id": "",
       "level": "1",
       "lesson": "2",
       "category": "Numbers",
@@ -55910,7 +55829,7 @@ window.BSL_DATA = {
     {
       "sign_id": "sign_0d45959bef1f1484",
       "position": "1",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/Indian.mp4"
+      "url": "https://media.signbsl.com/videos/bsl/signstation/India.mp4"
     },
     {
       "sign_id": "sign_0d45959bef1f1484",
@@ -56398,14 +56317,19 @@ window.BSL_DATA = {
       "url": "https://media.signbsl.com/videos/bsl/signstation/month.mp4"
     },
     {
-      "sign_id": "sign_563fa9f3fe607ad9",
+      "sign_id": "sign_594d9ca765ccc893",
       "position": "1",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/long.mp4"
+      "url": "https://media.signbsl.com/videos/bsl/signstation/twenty.mp4"
     },
     {
-      "sign_id": "sign_563fa9f3fe607ad9",
+      "sign_id": "sign_594d9ca765ccc893",
       "position": "2",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/hair.mp4"
+      "url": "https://media.signbsl.com/videos/bsl/signstation/to.mp4"
+    },
+    {
+      "sign_id": "sign_594d9ca765ccc893",
+      "position": "3",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/99.mp4"
     },
     {
       "sign_id": "sign_59778974e0ead149",
@@ -56670,12 +56594,12 @@ window.BSL_DATA = {
     {
       "sign_id": "sign_82c248dd17f2a59c",
       "position": "1",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/orange.mp4"
+      "url": "https://media.signbsl.com/videos/bsl/signstation/O.mp4"
     },
     {
       "sign_id": "sign_82c248dd17f2a59c",
       "position": "2",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/juice.mp4"
+      "url": "https://media.signbsl.com/videos/bsl/signstation/J.mp4"
     },
     {
       "sign_id": "sign_86ffaaf3a0766dcf",
@@ -56755,7 +56679,12 @@ window.BSL_DATA = {
     {
       "sign_id": "sign_9c2a4a879c46cc60",
       "position": "2",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/bolognese.mp4"
+      "url": "https://media.signbsl.com/videos/bsl/signstation/B.mp4"
+    },
+    {
+      "sign_id": "sign_9c2a4a879c46cc60",
+      "position": "3",
+      "url": "https://media.signbsl.com/videos/bsl/signstation/g.mp4"
     },
     {
       "sign_id": "sign_9d091f40ae26294d",
@@ -56818,16 +56747,6 @@ window.BSL_DATA = {
       "url": "https://media.signbsl.com/videos/bsl/signstation/king.mp4"
     },
     {
-      "sign_id": "sign_b0be2fc7f1776aea",
-      "position": "1",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/jacket.mp4"
-    },
-    {
-      "sign_id": "sign_b0be2fc7f1776aea",
-      "position": "2",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/potato.mp4"
-    },
-    {
       "sign_id": "sign_b11749fcabcbeb48",
       "position": "1",
       "url": "https://media.signbsl.com/videos/bsl/signstation/jaffa.mp4"
@@ -56870,7 +56789,7 @@ window.BSL_DATA = {
     {
       "sign_id": "sign_b550b97e688d53cc",
       "position": "1",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/chinese.mp4"
+      "url": "https://media.signbsl.com/videos/bsl/signstation/China.mp4"
     },
     {
       "sign_id": "sign_b550b97e688d53cc",
@@ -56920,7 +56839,7 @@ window.BSL_DATA = {
     {
       "sign_id": "sign_be1e32134d5ec06f",
       "position": "1",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/italian.mp4"
+      "url": "https://media.signbsl.com/videos/bsl/signmonkey/mp4/italy2.mp4"
     },
     {
       "sign_id": "sign_be1e32134d5ec06f",
@@ -56956,16 +56875,6 @@ window.BSL_DATA = {
       "sign_id": "sign_c80cbe9ff8239688",
       "position": "2",
       "url": "https://media.signbsl.com/videos/bsl/signstation/old.mp4"
-    },
-    {
-      "sign_id": "sign_c8bddec65044efd4",
-      "position": "1",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/short.mp4"
-    },
-    {
-      "sign_id": "sign_c8bddec65044efd4",
-      "position": "2",
-      "url": "https://media.signbsl.com/videos/bsl/signstation/hair.mp4"
     },
     {
       "sign_id": "sign_c9d2ce23bb7883fd",
@@ -57264,7 +57173,27 @@ window.BSL_DATA = {
       "suggestion": ""
     },
     {
+      "sign_id": "sign_1ccd469d298e1f7f",
+      "suggestion": ""
+    },
+    {
+      "sign_id": "sign_281a21447b354832",
+      "suggestion": ""
+    },
+    {
+      "sign_id": "sign_563fa9f3fe607ad9",
+      "suggestion": ""
+    },
+    {
       "sign_id": "sign_6be86dc3b680b00a",
+      "suggestion": ""
+    },
+    {
+      "sign_id": "sign_7278ddba25d13e29",
+      "suggestion": ""
+    },
+    {
+      "sign_id": "sign_73acbc3c03614037",
       "suggestion": ""
     },
     {
@@ -57272,7 +57201,23 @@ window.BSL_DATA = {
       "suggestion": ""
     },
     {
+      "sign_id": "sign_8a6e747020df152a",
+      "suggestion": ""
+    },
+    {
       "sign_id": "sign_a62fd6bb44bfe1d6",
+      "suggestion": ""
+    },
+    {
+      "sign_id": "sign_ac8d5e775cae2827",
+      "suggestion": ""
+    },
+    {
+      "sign_id": "sign_b0be2fc7f1776aea",
+      "suggestion": ""
+    },
+    {
+      "sign_id": "sign_c8bddec65044efd4",
       "suggestion": ""
     },
     {

@@ -445,7 +445,7 @@
     quickLabel.append(quick, document.createTextNode('Quick mode'));
     work.append(quickLabel);
     const playerArea = document.createElement('div');
-    if (clips.length === 3) previewSequence(clips.map(clip => clip.url), playerArea, true);
+    if (clips.length >= 2) previewSequence(clips.map(clip => clip.url), playerArea, true);
     else preview(video.url, playerArea, true, entry.word);
     work.append(playerArea);
     const editor = urlEditor(entry, video, () => {

@@ -292,9 +292,16 @@ class Handler(SimpleHTTPRequestHandler):
                                  'priority': str(max(priorities, default=0) + 1), 'problem_report': ''}
                         videos.append(video)
                     entry['selected_video_id'] = video['video_id']
-                if sequence_changed:
-                    video['verification_status'] = 'Unverified'
-                    video['problem_report'] = ''
+                # A saved sequence is the verified video for this sign. Keep its
+                # first clip as the canonical single URL and remove competing URLs.
+                video['url'] = urls[0]
+                video['verification_status'] = 'Verified'
+                video['problem_report'] = ''
+                for occurrence in entries:
+                    if occurrence['sign_id'] == entry['sign_id']:
+                        occurrence['selected_video_id'] = video['video_id']
+                videos = [candidate for candidate in videos
+                          if candidate['sign_id'] != entry['sign_id'] or candidate['video_id'] == video['video_id']]
                 missing = [row for row in missing if row['sign_id'] != entry['sign_id']]
 
                 validation_data = generate_data.load()
