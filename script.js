@@ -251,23 +251,38 @@ function setStudyMode(mode) {
   resetPractice();
  }
  studyMode=mode; answerRevealed=false;
- for(const name of ['dictionary','practice','master-quiz']) {
+ for(const name of ['dictionary','practice','master-quiz','deaf-culture']) {
   $('study-'+name).classList.toggle('active',name===mode);
   $('study-'+name).setAttribute('aria-pressed',String(name===mode));
  }
  $('dictionary-controls').hidden=mode!=='dictionary';
  $('practice-controls').hidden=mode!=='practice';
  $('master-quiz-controls').hidden=mode!=='master-quiz';
+ $('culture-controls').hidden=mode!=='deaf-culture';
  $('level-nav').closest('.level-picker').hidden=mode==='master-quiz';
  $('level-summary').hidden=mode==='master-quiz';
  $('lesson-nav').closest('.lesson-picker').hidden=mode==='master-quiz';
  $('intro').hidden=mode==='master-quiz';
- $('hide-details').closest('.check-control').hidden=mode==='master-quiz';
- $('category-nav').hidden=mode==='master-quiz';
- $('stats').hidden=mode==='master-quiz';
+ $('hide-details').closest('.check-control').hidden=mode==='master-quiz'||mode==='deaf-culture';
+ $('category-nav').hidden=mode==='master-quiz'||mode==='deaf-culture';
+ $('stats').hidden=mode==='master-quiz'||mode==='deaf-culture';
+ $('other-matches').hidden=mode==='deaf-culture';
+ $('content').hidden=mode==='deaf-culture'||(mode==='master-quiz'&&masterQuiz.rows===null);
  if(mode!=='master-quiz')resetMasterQuiz();
  if(mode==='practice')chooseLesson(currentLesson);
- else render();
+ else { render(); if(mode==='deaf-culture')renderDeafCulture(); }
+}
+function renderDeafCulture() {
+ const lesson=currentLevel===1?String(currentLesson):'';
+ const page=(data.deaf_culture_lessons||[]).find(row=>row.lesson_number===lesson);
+ $('culture-title').textContent=page?`Lesson ${lesson}: ${page.title}`:'Deaf Culture';
+ $('culture-welcome').textContent=page?.welcome_text||'Culture notes for this lesson are being prepared.';
+ const facts=$('culture-facts');facts.replaceChildren();
+ const lessonFacts=(data.deaf_culture_facts||[]).filter(row=>row.lesson_number===lesson).sort((a,b)=>Number(a.order)-Number(b.order));
+ const resources=data.deaf_culture_resources||[];
+ for(const fact of lessonFacts){const card=element('article','culture-fact');card.append(element('h3','',`Did you know? · ${fact.order}`));card.append(element('p','',fact.fact_text));const links=resources.filter(row=>row.fact_id===fact.fact_id);if(links.length){const list=element('ul','culture-links');for(const item of links){const li=document.createElement('li'),a=element('a','',item.title);a.href=item.url;a.target='_blank';a.rel='noopener noreferrer';li.append(a);list.append(li)}card.append(list)}facts.append(card)}
+ $('culture-imagine-text').textContent=page?.scenario_prompt||'';
+ $('culture-print-status').textContent='';
 }
 function setPlaybackMode(mode) {
  playbackMode=mode;
@@ -588,6 +603,7 @@ function render() {
  stopPlayers();content.replaceChildren();const rows=searchRows();
  $('practice-position').hidden=true;
  $('practice-progress').textContent='';
+ if(studyMode==='deaf-culture'){renderDeafCulture();$('category-nav').hidden=true;$('stats').hidden=true;$('other-matches').hidden=true;content.hidden=true;$('culture-controls').hidden=false;return;}
  if(studyMode==='master-quiz') {
   $('category-nav').hidden=true;$('stats').hidden=true;$('other-matches').hidden=true;
   $('practice-score').hidden=true;
@@ -637,6 +653,8 @@ $('search').addEventListener('input',() => {practiceCategory='';resetPractice();
 $('study-dictionary').addEventListener('click',() => setStudyMode('dictionary'));
 $('study-practice').addEventListener('click',() => setStudyMode('practice'));
 $('study-master-quiz').addEventListener('click',() => setStudyMode('master-quiz'));
+$('study-deaf-culture').addEventListener('click',() => setStudyMode('deaf-culture'));
+$('culture-print').addEventListener('click',() => { $('culture-print-status').textContent='Opening print dialog…';window.print(); });
 $('master-quiz-start').addEventListener('click',startMasterQuiz);
 $('mode-flashcard').addEventListener('click',() => setPlaybackMode('flashcard'));
 $('mode-autoplay').addEventListener('click',() => setPlaybackMode('autoplay'));

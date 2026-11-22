@@ -121,6 +121,34 @@ def load():
             rows = list(reader)
             require(all(None not in r and all(v is not None for v in r.values()) for r in rows), f'Malformed row in {name}.csv')
             data[name] = rows
+    culture_dir = ROOT / 'data/deaf-culture'
+    culture_fields = {
+        'deaf_culture_lessons': {'lesson_number', 'title', 'welcome_text', 'scenario_prompt'},
+        'deaf_culture_facts': {'lesson_number', 'order', 'fact_text'},
+        'deaf_culture_resources': {'lesson_number', 'fact_number', 'title', 'url'},
+    }
+    for name, fields in culture_fields.items():
+        filename = {'deaf_culture_lessons':'Lessons.csv','deaf_culture_facts':'Facts.csv','deaf_culture_resources':'Resources.csv'}[name]
+        with (culture_dir / filename).open(encoding='utf-8-sig', newline='') as f:
+            reader = csv.DictReader(f)
+            require(set(reader.fieldnames or []) == fields, f'Unexpected columns in {filename}')
+            data[name] = list(reader)
+    lesson_ids = {row['lesson_number'] for row in data['deaf_culture_lessons']}
+    require(lesson_ids == {str(i) for i in range(15)}, 'Deaf Culture must include lessons 0 through 14')
+    fact_keys = set()
+    for row in data['deaf_culture_facts']:
+        require(row['lesson_number'] in lesson_ids and row['order'].isdigit() and row['fact_text'].strip(), 'Invalid Deaf Culture fact')
+        key = (row['lesson_number'], row['order'])
+        require(key not in fact_keys, 'Duplicate Deaf Culture fact order')
+        fact_keys.add(key)
+        row['fact_id'] = f"{key[0]}-{key[1]}"
+    for row in data['deaf_culture_resources']:
+        require((row['lesson_number'], row['fact_number']) in fact_keys, 'Resource refers to an unknown fact')
+        parsed = urlparse(row['url'])
+        require(parsed.scheme == 'https' and parsed.netloc, 'Deaf Culture resource URLs must use HTTPS')
+        row['fact_id'] = f"{row['lesson_number']}-{row['fact_number']}"
+    data['deaf_culture_lessons'].sort(key=lambda r: int(r['lesson_number']))
+    data['deaf_culture_facts'].sort(key=lambda r: (int(r['lesson_number']), int(r['order'])))
     validate(data)
     data['lesson_vocabulary'].sort(key=lambda r: int(r['global_order']))
     data['signs'].sort(key=lambda r: r['sign_id'])
